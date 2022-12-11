@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.all {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+        color: black;
+    }
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(../fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+:root {
+    --robotobold: RobotoBold;
+    --robotomedium: RobotoMedium;
+    --robotolight: RobotoLight;
+}
+
+//#region imports
+@import 'media';
+//#endregion imports
+
+//#region custom cols
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%;
+}
+
+.col-1-2 {
+    flex: 0 0 auto;
+    width: 10%;
+}
+
+.col-1-5 {
+    flex: 0 0 auto;
+    width: 12.5%;
+}
+
+.col-1-8 {
+    flex: 0 0 auto;
+    width: 15%;
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+
+.col-2-1 {
+    flex: 0 0 auto;
+    width: 17.5%;
+}
+
+.col-2-3 {
+    flex: 0 0 auto;
+    width: 19.166%;
+}
+
+.col-2-5 {
+    flex: 0 0 auto;
+    width: 20.83333%;
+}
+
+.col-2-8 {
+    flex: 0 0 auto;
+    width: 23.3333333%;
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
+.col-3-5 {
+    flex: 0 0 auto;
+    width: 29.1666%;
+}
+
+.col-3-8 {
+    flex: 0 0 auto;
+    width: 31.666666%;
+}
+
+.col-3-9 {
+    flex: 0 0 auto;
+    width: 32.5%;
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+}
+
+.col-4-5 {
+    flex: 0 0 auto;
+    width: 37.5%;
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+}
+
+.col-5-5 {
+    flex: 0 0 auto;
+    width: 45.833333%;
+}
+
+.col-5-8 {
+    flex: 0 0 auto;
+    width: 48.333333%;
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.col-6-5 {
+    flex: 0 0 auto;
+    width: 54.166666%;
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.33333333%;
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%;
+}
+
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.33333333%;
+}
+
+.col-10-5 {
+    flex: 0 0 auto;
+    width: 87.5%;
+}
+
+.col-11 {
+    flex: 0 0 auto;
+    width: 91.66666667%;
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.col-1-8 {
+    flex: 0 0 auto;
+    width: 15%;
+}
+
+@media (min-width: 992px) {
+    .col-lg-1 {
+        flex: 0 0 auto;
+        width: 8.33333333%;
+    }
+
+    .col-lg-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+
+    .col-lg-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .col-lg-5 {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .col-lg-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .col-lg-7-5 {
+        flex: 0 0 auto;
+        width: 62.5%;
+    }
+
+    .col-lg-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+
+    .col-lg-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        flex: 0 0 auto;
+        width: 83.33333333%;
+    }
+
+    .col-lg-11 {
+        flex: 0 0 auto;
+        width: 91.66666667%;
+    }
+
+    .col-lg-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-lg-0-5 {
+        flex: 0 0 auto;
+        width: 4.16666666%;
+    }
+
+    .col-lg-0-8 {
+        flex: 0 0 auto;
+        width: 6.6666%;
+    }
+
+    .col-lg-0-7 {
+        flex: 0 0 auto;
+        width: 5.83333%;
+    }
+
+    .col-lg-1-2 {
+        flex: 0 0 auto;
+        width: 10%;
+    }
+
+    .col-lg-1-5 {
+        flex: 0 0 auto;
+        width: 12.5%;
+    }
+
+    .col-lg-1-8 {
+        flex: 0 0 auto;
+        width: 15%;
+    }
+
+    .col-lg-2-2 {
+        flex: 0 0 auto;
+        width: 18.333333%;
+    }
+
+    .col-lg-2-4 {
+        flex: 0 0 auto;
+        width: 20%;
+    }
+
+    .col-lg-2-5 {
+        flex: 0 0 auto;
+        width: 20.8333333%;
+    }
+
+    .col-lg-2-8 {
+        flex: 0 0 auto;
+        width: 23.3333333%;
+    }
+
+    .col-lg-3-5 {
+        flex: 0 0 auto;
+        width: 29.16666666%;
+    }
+
+    .col-lg-3-8 {
+        flex: 0 0 auto;
+        width: 31.6666%;
+    }
+
+    .col-lg-4-5 {
+        flex: 0 0 auto;
+        width: 37.5%;
+    }
+
+    .col-lg-5-5 {
+        flex: 0 0 auto;
+        width: 45.8333%;
+    }
+
+    .col-lg-5-8 {
+        flex: 0 0 auto;
+        width: 48.3333333%;
+    }
+
+    .col-lg-5-9 {
+        flex: 0 0 auto;
+        width: 49.1666%;
+    }
+
+    .col-lg-6-5 {
+        flex: 0 0 auto;
+        width: 54.16666666%;
+    }
+}
+
+//#endregion custom cols
+
+#header {
+    z-index: 1000;
+    background-color: transparent;
+    width: 100%;
+    font-family: var(--robotolight);
+    font-size: 17px;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.05);
+
+    .all {
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        div {
+            &:nth-child(2) {
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                flex-wrap: wrap;
+
+                a {
+                    margin: 0 10px;
+                    transition: 0.2s;
+                    position: relative;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        height: 1px;
+                        background-color: #00ABE4;
+                        width: 0%;
+                        transition: 0.2s;
+                    }
+
+                    &:hover {
+                        color: #00ABE4;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            height: 1px;
+                            background-color: #00ABE4;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
