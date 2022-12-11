@@ -381,6 +381,7 @@ input::-webkit-inner-spin-button {
     left: 0%;
     top: 0%;
     background-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 1px 20px 1px grey;
 
     .all {
         padding: 5px 0;
@@ -400,6 +401,10 @@ input::-webkit-inner-spin-button {
                     margin: 0 10px;
                     transition: 0.2s;
                     position: relative;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
 
                     &::before {
                         content: '';
@@ -429,4 +434,9 @@ input::-webkit-inner-spin-button {
             }
         }
     }
+}
+
+#main {
+    margin-top: 40px;
+    
 }
