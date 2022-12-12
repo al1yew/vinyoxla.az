@@ -16,6 +16,13 @@ toastr.options = {
 
 $(document).ready(function () {
 
-    
+    //input toUpperCase
+
+    // $(document).on('keyup', '#vincodeinput', function () {
+    //     let value = $(this).val().toUpperCase();
+
+    //     $(this).val(value);
+    // })
+
 
 });

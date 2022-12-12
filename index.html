@@ -14,8 +14,6 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="./assets/plugins/bootstrap-datepicker/bootstrap-datepicker.css">
-
     <link rel="icon" href="./assets/images/garantautologoCROP.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
@@ -56,7 +54,16 @@
     <main id="main">
         <div class="container">
             <div class="row all">
-                
+                <form id="vincodeform" class="col-lg-8 col-12">
+                    <p class="firstp">Aşağıdaki xanaya VİN kodu daxil edin.</p>
+                    <input autocomplete="off" autofocus name="vincodeinput" maxlength="17" minlength="17" required
+                        placeholder="AAAAA11A11A111111" type="text" class="col-lg-8 col-8" id="vincodeinput"
+                        pattern="\b[(A-H|J-N|P|R-Z|0-9)]{17}\b">
+                    <button type="submit" id="vincodebutton" class="btn">Axtar</button>
+                    <p class="secondp">Sizin axtardığınız avtomobil haqqda məlumat tapılmadi</p>
+                </form>
+
+
             </div>
         </div>
     </main>
@@ -68,6 +75,56 @@
             </div>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+        Records Check by VIN (carfax and autocheck)
+
+        Method: GET
+
+        Request: https://api.allreports.tools/wp-json/v1/get_report_check/{vin}
+
+        Example request: https://api.allreports.tools/wp-json/v1/get_report_check/WAUDG74F25N111998
+
+
+
+
+        Get Report
+
+        You can get report using our API:
+
+        Method: GET
+
+        Request: https://api.allreports.tools/wp-json/v1/get_report_by_wholesaler/{vin}/{api_key}/{type}/{lang}
+
+        vin = {VIN}
+
+        api_key = 980b315139c9083af18d52b300ed5c95
+
+        type = {carfax|autocheck}
+
+        lang = {en}
+
+        Example request: https://api.allreports.tools/wp-json/v1/get_report_by_wholesaler/WAUDG74F25N111998/68523d5476af56837fd1b57c867f2fe9/carfax/en
+
+        For testing
+
+        Test VIN: WAUDG74F25N111998
+        Test VIN: 4T1BG22K9YU930834
+
+        Test api key : 68523d5476af56837fd1b57c867f2fe9
+     -->
+
 
     <!-- JQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
