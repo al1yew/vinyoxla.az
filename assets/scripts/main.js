@@ -35,17 +35,24 @@ $(document).ready(function () {
         //WAUDG74F25N111998
         //4T1BG22K9YU930834
 
-        console.log(vinCode);
+        let obj = {
+            carfax: {},
+            autocheck: {}
+        };
 
         fetchApi(vinCode)
-    })
 
+        async function fetchApi(vinCode) {
+            const response = await fetch(`https://api.allreports.tools/wp-json/v1/get_report_check/${vinCode}`);
+            obj = await response.json();
+            console.log(obj);
+        }
+
+        console.log('salam');
+
+        //pochemu podrad ne reshayet !?!??!
+
+    })
 
 });
 
-async function fetchApi(vinCode) {
-    const response = await fetch(`https://api.allreports.tools/wp-json/v1/get_report_check/${vinCode}`);
-    const obj = await response.json();
-    console.log(obj);
-    return obj;
-}
