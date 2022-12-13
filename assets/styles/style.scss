@@ -28,6 +28,49 @@ a {
     }
 }
 
+
+//preloader
+.preloaderdiv {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .preloader {
+        border: 10px solid #f3f3f3;
+        border-radius: 100%;
+        border-top: 10px solid red;
+        width: 100px;
+        height: 100px;
+        -webkit-animation: spin 2s linear infinite;
+        /* Safari */
+        animation: spin 2s linear infinite;
+    }
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 @font-face {
     font-family: RobotoBold;
     src: url(../fonts/roboto/Roboto-Bold.ttf);
@@ -384,7 +427,7 @@ input::-webkit-inner-spin-button {
     box-shadow: 0px 1px 20px 1px grey;
 
     .all {
-        padding: 5px 0;
+        padding: 10px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -412,13 +455,13 @@ input::-webkit-inner-spin-button {
                         bottom: 0;
                         left: 0;
                         height: 1px;
-                        background-color: #191970;
+                        background-color: #0055b0;
                         width: 0%;
                         transition: 0.2s;
                     }
 
                     &:hover {
-                        color: #191970;
+                        color: #0055b0;
 
                         &::before {
                             content: '';
@@ -426,7 +469,7 @@ input::-webkit-inner-spin-button {
                             bottom: 0;
                             left: 0;
                             height: 1px;
-                            background-color: #191970;
+                            background-color: #0055b0;
                             width: 100%;
                         }
                     }
@@ -477,7 +520,7 @@ input::-webkit-inner-spin-button {
                 color: black;
                 border: 0.5px solid grey;
                 outline: none;
-                border-radius: 4px;
+                border-radius: 5px;
                 transition: 0.2s;
 
                 &::placeholder {
@@ -486,11 +529,11 @@ input::-webkit-inner-spin-button {
                 }
 
                 &:hover {
-                    box-shadow: 0px 0px 5px 1px #19197075;
+                    box-shadow: 0px 0px 5px 1px #0055b075;
                 }
 
                 &:focus {
-                    box-shadow: 0px 0px 5px 1px #19197075;
+                    box-shadow: 0px 0px 5px 1px #0055b075;
                 }
 
                 &:valid {
@@ -505,18 +548,18 @@ input::-webkit-inner-spin-button {
             }
 
             button {
-                border: 0.5px solid grey;
                 padding: 3.7px 15px;
                 margin-left: 10px;
                 color: white;
-                background-color: #191970;
+                background-color: #0055b0;
+                border-radius: 5px;
 
                 &:hover {
-                    box-shadow: 0px 0px 5px 1px #19197075;
+                    box-shadow: 0px 0px 5px 1px #0055b075;
                 }
 
                 &:focus {
-                    box-shadow: 0px 0px 5px 1px #19197075;
+                    box-shadow: 0px 0px 5px 1px #0055b075;
                 }
             }
         }
@@ -552,8 +595,7 @@ input::-webkit-inner-spin-button {
                         a {
                             padding: 5px 10px;
                             font-size: 16px;
-                            background-color: #191970;
-                            border: 0.5px solid rgba(128, 128, 128, 0.5);
+                            background-color: #0055b0;
                             text-align: center;
                             border-radius: 5px;
                             color: white;
@@ -562,11 +604,11 @@ input::-webkit-inner-spin-button {
                             transition: 0.2s;
 
                             &:hover {
-                                box-shadow: 0px 0px 5px 1px #19197075;
+                                box-shadow: 0px 0px 5px 1px #0055b075;
                             }
 
                             &:focus {
-                                box-shadow: 0px 0px 5px 1px #19197075;
+                                box-shadow: 0px 0px 5px 1px #0055b075;
                             }
                         }
                     }
@@ -594,7 +636,7 @@ input::-webkit-inner-spin-button {
 
                                     &:nth-child(2) {
                                         text-align: end;
-                                        color: #191970;
+                                        color: #0055b0;
                                     }
                                 }
                             }

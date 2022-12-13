@@ -1,3 +1,5 @@
+// import axios from 'axios';
+
 toastr.options = {
     hideDuration: 300,
     timeOut: 2500,
@@ -28,6 +30,12 @@ $(document).ready(function () {
 
     $(document).on('submit', '#vincodeform', function (e) {
         e.preventDefault();
+
+        $('.preloader').removeClass('d-none');
+        $('#carfaxContainer').addClass('d-none');
+        $('#autocheckContainer').addClass('d-none');
+        $('#photosApiResult').addClass('d-none');
+
         const formData = new FormData(e.target);
 
         let vinCode = formData.get('vincodeinput');
@@ -35,22 +43,25 @@ $(document).ready(function () {
         //WAUDG74F25N111998
         //4T1BG22K9YU930834
 
-        let obj = {
-            carfax: {},
-            autocheck: {}
-        };
+        axios.get(`https://api.allreports.tools/wp-json/v1/get_report_check/${vinCode}`)
+            .then(function (res) {
 
-        fetchApi(vinCode)
+                $('#autoNameCarfax').html(res?.data?.carfax?.vehicle)
+                $('#recordsCountCarfax').html(res?.data?.carfax?.records)
+                $('#vinCodeCarfax').html(res?.data?.carfax?.vin)
+                $('#yearCarfax').html(res?.data?.carfax?.year)
 
-        async function fetchApi(vinCode) {
-            const response = await fetch(`https://api.allreports.tools/wp-json/v1/get_report_check/${vinCode}`);
-            obj = await response.json();
-            console.log(obj);
-        }
+                $('#autoNameAutocheck').html(res?.data?.autocheck?.vehicle)
+                $('#recordsCountAutocheck').html(res?.data?.autocheck?.records)
+                $('#vinCodeAutocheck').html(res?.data?.autocheck?.vin)
+                $('#yearAutocheck').html(res?.data?.autocheck?.year)
 
-        console.log('salam');
+                $('#carfaxContainer').removeClass('d-none')
+                $('#autocheckContainer').removeClass('d-none')
+                $('#photosApiResult').removeClass('d-none')
 
-        //pochemu podrad ne reshayet !?!??!
+                $('.preloader').addClass('d-none');
+            })
 
     })
 

@@ -29,6 +29,52 @@ a:hover {
   color: black;
 }
 
+.preloaderdiv {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.preloaderdiv .preloader {
+  border: 10px solid #f3f3f3;
+  border-radius: 100%;
+  border-top: 10px solid red;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @font-face {
   font-family: RobotoBold;
   src: url(../fonts/roboto/Roboto-Bold.ttf);
@@ -472,7 +518,7 @@ input::-webkit-inner-spin-button {
 }
 
 #header .all {
-  padding: 5px 0;
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,14 +563,14 @@ input::-webkit-inner-spin-button {
   bottom: 0;
   left: 0;
   height: 1px;
-  background-color: #191970;
+  background-color: #0055b0;
   width: 0%;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 #header .all div:nth-child(2) a:hover {
-  color: #191970;
+  color: #0055b0;
 }
 
 #header .all div:nth-child(2) a:hover::before {
@@ -533,7 +579,7 @@ input::-webkit-inner-spin-button {
   bottom: 0;
   left: 0;
   height: 1px;
-  background-color: #191970;
+  background-color: #0055b0;
   width: 100%;
 }
 
@@ -595,7 +641,7 @@ input::-webkit-inner-spin-button {
   color: black;
   border: 0.5px solid grey;
   outline: none;
-  border-radius: 4px;
+  border-radius: 5px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -621,13 +667,13 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all form input:hover {
-  -webkit-box-shadow: 0px 0px 5px 1px #19197075;
-          box-shadow: 0px 0px 5px 1px #19197075;
+  -webkit-box-shadow: 0px 0px 5px 1px #0055b075;
+          box-shadow: 0px 0px 5px 1px #0055b075;
 }
 
 #main .all form input:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px #19197075;
-          box-shadow: 0px 0px 5px 1px #19197075;
+  -webkit-box-shadow: 0px 0px 5px 1px #0055b075;
+          box-shadow: 0px 0px 5px 1px #0055b075;
 }
 
 #main .all form input:valid {
@@ -637,21 +683,21 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all form button {
-  border: 0.5px solid grey;
   padding: 3.7px 15px;
   margin-left: 10px;
   color: white;
-  background-color: #191970;
+  background-color: #0055b0;
+  border-radius: 5px;
 }
 
 #main .all form button:hover {
-  -webkit-box-shadow: 0px 0px 5px 1px #19197075;
-          box-shadow: 0px 0px 5px 1px #19197075;
+  -webkit-box-shadow: 0px 0px 5px 1px #0055b075;
+          box-shadow: 0px 0px 5px 1px #0055b075;
 }
 
 #main .all form button:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px #19197075;
-          box-shadow: 0px 0px 5px 1px #19197075;
+  -webkit-box-shadow: 0px 0px 5px 1px #0055b075;
+          box-shadow: 0px 0px 5px 1px #0055b075;
 }
 
 #main .all .resultsContainer {
@@ -709,8 +755,7 @@ input::-webkit-inner-spin-button {
 #main .all .resultsContainer .resultContainer div:nth-child(1) a {
   padding: 5px 10px;
   font-size: 16px;
-  background-color: #191970;
-  border: 0.5px solid rgba(128, 128, 128, 0.5);
+  background-color: #0055b0;
   text-align: center;
   border-radius: 5px;
   color: white;
@@ -721,13 +766,13 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all .resultsContainer .resultContainer div:nth-child(1) a:hover {
-  -webkit-box-shadow: 0px 0px 5px 1px #19197075;
-          box-shadow: 0px 0px 5px 1px #19197075;
+  -webkit-box-shadow: 0px 0px 5px 1px #0055b075;
+          box-shadow: 0px 0px 5px 1px #0055b075;
 }
 
 #main .all .resultsContainer .resultContainer div:nth-child(1) a:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px #19197075;
-          box-shadow: 0px 0px 5px 1px #19197075;
+  -webkit-box-shadow: 0px 0px 5px 1px #0055b075;
+          box-shadow: 0px 0px 5px 1px #0055b075;
 }
 
 #main .all .resultsContainer .resultContainer div:nth-child(2) ul {
@@ -761,6 +806,6 @@ input::-webkit-inner-spin-button {
 
 #main .all .resultsContainer .resultContainer div:nth-child(2) ul li span:nth-child(2) {
   text-align: end;
-  color: #191970;
+  color: #0055b0;
 }
 /*# sourceMappingURL=style.css.map */

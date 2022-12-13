@@ -31,20 +31,20 @@
     <header id="header">
         <div class="container">
             <div class="row all">
-                <div class="col-lg-1-2 col-2-1">
+                <div class="col-lg-1-8 col-3">
                     <a href="index.html">
-                        <img class="img-fluid" src="./assets/images/garantautologoCROP.png" alt="">
+                        <img class="img-fluid" src="./assets/images/logo1.png" alt="">
                     </a>
                 </div>
                 <div class="col-lg-4 col-8">
-                    <a href="terms.html" class="">
-                        Şərtlər
-                    </a>
-                    <a href="results.html" class="">
-                        Results
+                    <a href="login.html" class="">
+                        Daxil ol
                     </a>
                     <a href="contact.html" class="">
                         Əlaqə
+                    </a>
+                    <a href="terms.html" class="">
+                        Şərtlər
                     </a>
                 </div>
             </div>
@@ -60,11 +60,16 @@
                         placeholder="AAAAA11A11A111111" type="text" class="col-lg-7 col-8" id="vincodeinput"
                         pattern="\b[(A-H|J-N|P|R-Z|0-9)]{17}\b">
                     <button type="submit" id="vincodebutton" class="btn">Axtar</button>
-                    <p class="secondp">Sizin axtardığınız avtomobil haqqda məlumat tapılmadi</p>
+                    <!-- <p class="secondp">Sizin axtardığınız avtomobil haqqda məlumat tapılmadi</p> -->
                 </form>
 
                 <div class="resultsContainer col-lg-12 col-12">
-                    <div class="col-lg-5-8 col-12 carfaxContainer resultContainer" id="carfaxContainer">
+
+                    <div class="preloaderdiv col-lg-12 col-12">
+                        <div class="preloader d-none"></div>
+                    </div>
+
+                    <div class="col-lg-5-8 col-12 carfaxContainer resultContainer d-none" id="carfaxContainer">
                         <div class="col-lg-3 col-3">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 378.51 70.97">
                                 <defs>
@@ -115,25 +120,25 @@
                             <ul>
                                 <li>
                                     <span>Model:</span>
-                                    <span id="autoName">TOYOTA CAMRY CE/LE/XLE 2000</span>
+                                    <span id="autoNameCarfax"></span>
                                 </li>
                                 <li>
                                     <span>Rekordların sayı:</span>
-                                    <span id="recordsCount">24</span>
+                                    <span id="recordsCountCarfax"></span>
                                 </li>
                                 <li>
                                     <span>VIN:</span>
-                                    <span id="vinCode">4T1BG22K9YU930834</span>
+                                    <span id="vinCodeCarfax"></span>
                                 </li>
                                 <li>
                                     <span>Buraxılış ili:</span>
-                                    <span id="year">2000</span>
+                                    <span id="yearCarfax"></span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div class="col-lg-5-8 col-12 autocheckContainer resultContainer" id="autocheckContainer">
+                    <div class="col-lg-5-8 col-12 autocheckContainer resultContainer d-none" id="autocheckContainer">
                         <div class="col-lg-3 col-3">
                             <img class="img-fluid" src="./assets/images/autocheckLogo.png" alt="">
                             <a href="">Almaq</a>
@@ -142,25 +147,25 @@
                             <ul>
                                 <li>
                                     <span>Model:</span>
-                                    <span id="autoName">TOYOTA CAMRY CE/LE/XLE 2000</span>
+                                    <span id="autoNameAutocheck"></span>
                                 </li>
                                 <li>
                                     <span>Rekordların sayı:</span>
-                                    <span id="recordsCount">24</span>
+                                    <span id="recordsCountAutocheck"></span>
                                 </li>
                                 <li>
                                     <span>VIN:</span>
-                                    <span id="vinCode">4T1BG22K9YU930834</span>
+                                    <span id="vinCodeAutocheck"></span>
                                 </li>
                                 <li>
                                     <span>Buraxılış ili:</span>
-                                    <span id="year">2000</span>
+                                    <span id="yearAutocheck"></span>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-5-8 col-12 photosApiResult" id="photosApiResult">
+
+                    <div class="col-lg-5-8 col-12 photosApiResult d-none" id="photosApiResult">
                         Shekiller
                     </div>
 
@@ -224,6 +229,15 @@
         Test VIN: 4T1BG22K9YU930834
 
         Test api key : 68523d5476af56837fd1b57c867f2fe9
+
+
+
+
+
+        fotki
+
+        https://autoastat.com/api/history/1FMZU73K83ZB53903
+        https://autoastat.com/api/history/1FMZU73K83ZB53903
      -->
 
 
@@ -235,6 +249,10 @@
     <!-- Toastr -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+        integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- My JS -->
     <script src="./assets/scripts/main.js"></script>
