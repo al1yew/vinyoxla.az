@@ -538,7 +538,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main {
-  margin-top: 100px;
+  margin-top: 90px;
   font-family: var(--robotolight);
   font-size: 16px;
 }
@@ -556,7 +556,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all form {
-  padding: 40px 20px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, 0.05);
   border: 0.5px solid grey;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.3);
@@ -577,6 +577,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all form .firstp {
+  text-align: center;
   font-size: 18px;
   margin-bottom: 20px;
   color: black;
@@ -651,5 +652,114 @@ input::-webkit-inner-spin-button {
 #main .all form button:focus {
   -webkit-box-shadow: 0px 0px 5px 1px #19197075;
           box-shadow: 0px 0px 5px 1px #19197075;
+}
+
+#main .all .resultsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-family: var(--robotomedium);
+  font-size: 15px;
+}
+
+#main .all .resultsContainer .resultContainer {
+  padding: 15px;
+  border: 0.5px solid grey;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.3);
+          box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 150px;
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(1) a {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #191970;
+  border: 0.5px solid rgba(128, 128, 128, 0.5);
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-family: var(--robotomedium);
+  width: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(1) a:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px #19197075;
+          box-shadow: 0px 0px 5px 1px #19197075;
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(1) a:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px #19197075;
+          box-shadow: 0px 0px 5px 1px #19197075;
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(2) ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(2) ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(2) ul li span {
+  font-size: 16px;
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(2) ul li span:nth-child(1) {
+  text-align: start;
+  font-family: var(--robotomedium);
+}
+
+#main .all .resultsContainer .resultContainer div:nth-child(2) ul li span:nth-child(2) {
+  text-align: end;
 }
 /*# sourceMappingURL=style.css.map */

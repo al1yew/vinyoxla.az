@@ -437,7 +437,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main {
-    margin-top: 100px;
+    margin-top: 90px;
     font-family: var(--robotolight);
     font-size: 16px;
 
@@ -447,7 +447,7 @@ input::-webkit-inner-spin-button {
         align-items: center;
 
         form {
-            padding: 40px 20px;
+            padding: 20px;
             background-color: rgba(0, 0, 0, 0.05);
             border: 0.5px solid grey;
             box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.3);
@@ -459,6 +459,7 @@ input::-webkit-inner-spin-button {
             font-family: var(--robotolight);
 
             .firstp {
+                text-align: center;
                 font-size: 18px;
                 margin-bottom: 20px;
                 color: black;
@@ -516,6 +517,86 @@ input::-webkit-inner-spin-button {
 
                 &:focus {
                     box-shadow: 0px 0px 5px 1px #19197075;
+                }
+            }
+        }
+
+        .resultsContainer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+            font-family: var(--robotomedium);
+            font-size: 15px;
+
+            .resultContainer {
+                padding: 15px;
+                border: 0.5px solid grey;
+                box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.3);
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                max-height: 150px;
+
+                div {
+                    &:nth-child(1) {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        a {
+                            padding: 5px 10px;
+                            font-size: 16px;
+                            background-color: #191970;
+                            border: 0.5px solid rgba(128, 128, 128, 0.5);
+                            text-align: center;
+                            border-radius: 5px;
+                            color: white;
+                            font-family: var(--robotomedium);
+                            width: 100%;
+                            transition: 0.2s;
+
+                            &:hover {
+                                box-shadow: 0px 0px 5px 1px #19197075;
+                            }
+
+                            &:focus {
+                                box-shadow: 0px 0px 5px 1px #19197075;
+                            }
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        ul {
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+
+                            li {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 2px 0;
+                                border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+                                span {
+                                    font-size: 16px;
+                                    &:nth-child(1) {
+                                        text-align: start;
+                                        font-family: var(--robotomedium);
+                                    }
+
+                                    &:nth-child(2) {
+                                        text-align: end;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
