@@ -583,8 +583,10 @@ input::-webkit-inner-spin-button {
                                 align-items: center;
                                 padding: 2px 0;
                                 border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+
                                 span {
                                     font-size: 16px;
+
                                     &:nth-child(1) {
                                         text-align: start;
                                         font-family: var(--robotomedium);
@@ -592,6 +594,7 @@ input::-webkit-inner-spin-button {
 
                                     &:nth-child(2) {
                                         text-align: end;
+                                        color: #191970;
                                     }
                                 }
                             }
