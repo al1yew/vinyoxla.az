@@ -227,6 +227,10 @@ input::-webkit-inner-spin-button {
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement {
     font-size: 13px !important;
   }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+    text-align: start !important;
+  }
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
     font-family: var(--montlight) !important;
@@ -236,7 +240,7 @@ input::-webkit-inner-spin-button {
     padding: 10px !important;
   }
   #main .all .resultsContainer .resultContainer .icindeki .bottom a {
-    padding: 7px 40px !important;
+    padding: 7px 50px !important;
     font-size: 14px !important;
   }
 }
@@ -980,6 +984,11 @@ input::-webkit-inner-spin-button {
   padding-left: 5px;
 }
 
+#main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+#main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+  text-align: end;
+}
+
 #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
 #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
   font-family: var(--montmedium);
@@ -1002,7 +1011,7 @@ input::-webkit-inner-spin-button {
 }
 
 #main .all .resultsContainer .resultContainer .icindeki .bottom a {
-  padding: 10px 40px;
+  padding: 10px 50px;
   font-size: 16px;
   background-color: #0055b0;
   text-align: center;

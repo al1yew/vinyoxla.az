@@ -20,8 +20,6 @@ if ($(document).width() < 576) {
 
 $(document).ready(function () {
 
-    // navigator.clipboard.readText().then(text => alert(text))
-
     //input toUpperCase
 
     $(document).on('input keyup', '#vincodeinput', function () {
@@ -37,6 +35,25 @@ $(document).ready(function () {
             $('#vincodebutton').addClass('noClick')
         }
     });
+
+    //copy paste
+
+    $(document).on('click pointerdown pointerup', '.salamspan', function () {
+
+        navigator.clipboard.readText()
+            .then((text) => {
+
+                let regex = /\b[(A-H|J-N|P|R-Z|0-9)]{17}\b/
+
+                if (regex.test(text.trim().toUpperCase())) {
+                    $('#vincodeinput').val(text.trim().toUpperCase())
+                }
+
+                alert(text)
+
+            });
+
+    })
 
     //fetch
 

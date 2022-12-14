@@ -675,6 +675,12 @@ input::-webkit-inner-spin-button {
                                 &:nth-child(2) {
                                     text-align: start;
                                     padding-left: 5px;
+
+                                    span {
+                                        &:nth-child(2) {
+                                            text-align: end;
+                                        }
+                                    }
                                 }
 
                                 span {
@@ -695,7 +701,7 @@ input::-webkit-inner-spin-button {
                         padding: 15px 10px;
 
                         a {
-                            padding: 10px 40px;
+                            padding: 10px 50px;
                             font-size: 16px;
                             background-color: #0055b0;
                             text-align: center;
