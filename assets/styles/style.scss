@@ -72,18 +72,18 @@ a {
 
 
 @font-face {
-    font-family: RobotoBold;
-    src: url(../fonts/roboto/Roboto-Bold.ttf);
+    font-family: MontserratBold;
+    src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
 }
 
 @font-face {
-    font-family: RobotoMedium;
-    src: url(../fonts/roboto/Roboto-Medium.ttf);
+    font-family: MontserratMedium;
+    src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
 }
 
 @font-face {
-    font-family: RobotoLight;
-    src: url(../fonts/roboto/Roboto-Light.ttf);
+    font-family: MontserratLight;
+    src: url(../fonts/Montserrat/Montserrat-Light.ttf);
 }
 
 input::-webkit-outer-spin-button,
@@ -109,9 +109,9 @@ input::-webkit-inner-spin-button {
 }
 
 :root {
-    --robotobold: RobotoBold;
-    --robotomedium: RobotoMedium;
-    --robotolight: RobotoLight;
+    --montbold: MontserratBold;
+    --montmedium: MontserratMedium;
+    --montlight: MontserratLight;
 }
 
 //#region imports
@@ -410,20 +410,24 @@ input::-webkit-inner-spin-button {
         flex: 0 0 auto;
         width: 54.16666666%;
     }
+
+    .col-lg-9-5 {
+        flex: 0 0 auto;
+        width: 79.16666%;
+    }
 }
 
 //#endregion custom cols
 
 #header {
-    z-index: 1000;
-    background-color: transparent;
+    z-index: 10000;
     width: 100%;
-    font-family: var(--robotolight);
+    font-family: var(--montlight);
     font-size: 17px;
     position: fixed;
     left: 0%;
     top: 0%;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgb(211, 209, 209);
     box-shadow: 0px 1px 20px 1px grey;
 
     .all {
@@ -480,86 +484,131 @@ input::-webkit-inner-spin-button {
 }
 
 #main {
-    margin-top: 90px;
-    font-family: var(--robotolight);
+    margin: 70px 0;
+    font-family: var(--montlight);
     font-size: 16px;
 
     .all {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0;
+        padding: 0;
 
         form {
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.05);
-            border: 0.5px solid grey;
-            box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.3);
-            border-radius: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px 1px #0055b0;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
             flex-wrap: wrap;
-            font-family: var(--robotolight);
+            font-family: var(--montlight);
+            position: relative;
+            top: 0;
+            left: 0;
 
             .firstp {
-                text-align: center;
-                font-size: 18px;
-                margin-bottom: 20px;
-                color: black;
+                position: absolute;
+                top: 5%;
+                left: 3%;
+                text-align: start;
+                font-size: 40px;
+                color: #0055b0;
+                font-family: var(--montmedium);
+                text-shadow: 1px 1px 1px black;
             }
 
             .secondp {
-                font-size: 16px;
-                margin-top: 20px;
-                color: red;
+                position: absolute;
+                top: 32%;
+                left: 3%;
+                text-align: start;
+                font-size: 21px;
+                color: rgb(87, 87, 87);
             }
 
-            input {
+            .errorp {
                 font-size: 18px;
-                padding: 2px 5px;
-                color: black;
-                border: 0.5px solid grey;
-                outline: none;
+                bottom: 5%;
+                left: 3%;
+                position: absolute;
+                color: white;
+                opacity: 1;
+                visibility: visible;
+                transition: 0.2s;
+                border: 1px solid red;
                 border-radius: 5px;
+                padding: 2px;
+            }
+
+            .hideerrorp {
+                opacity: 0 !important;
+                visibility: hidden !important;
+            }
+
+            .inputbox {
+                position: absolute;
+                top: 75%;
+                left: 3%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 0.5px solid #0055b0;
+                border-radius: 8px;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                box-shadow: 0px 0px 5px 1px #0055b0;
+                background-color: rgb(108, 139, 224);
                 transition: 0.2s;
 
-                &::placeholder {
-                    color: grey;
+                &:hover {
+                    box-shadow: 0px 0px 10px 1px #0055b0;
+                }
+
+                &:focus {
+                    box-shadow: 0px 0px 10px 1px #0055b0;
+                }
+
+                input {
+                    font-size: 20px;
+                    color: white;
+                    letter-spacing: 4px;
+                    outline: none;
+                    border: none;
+                    background-color: rgb(108, 139, 224);
+                    border-bottom-left-radius: 5px;
+                    border-top-left-radius: 5px;
+                    transition: 0.2s;
+                    padding: 6px 20px;
+                    transition: 0.2s;
+
+                    &::placeholder {
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+
+                button {
+                    color: #0055b0;
+                    background-color: white;
+                    font-family: var(--montmedium);
                     font-size: 18px;
-                }
+                    padding: 10px 5px;
+                    border-bottom-right-radius: 5px;
+                    border-top-right-radius: 5px;
+                    border-bottom-left-radius: 0px;
+                    border-top-left-radius: 0px;
+                    transition: 0.2s;
 
-                &:hover {
-                    box-shadow: 0px 0px 5px 1px #0055b075;
-                }
+                    &:hover {
+                        color: white;
+                        background-color: #0055b0;
+                    }
 
-                &:focus {
-                    box-shadow: 0px 0px 5px 1px #0055b075;
-                }
-
-                &:valid {
-                    box-shadow: 0px 0px 5px 1px rgba(0, 128, 0, 0.5);
-                    border: 0.5px solid rgba(0, 128, 0, 0.5);
-                }
-
-                // &:invalid {
-                //     box-shadow: 0px 0px 5px 1px rgba(255, 0, 0, 0.5);
-                //     border: 0.5px solid rgba(255, 0, 0, 0.5);
-                // }
-            }
-
-            button {
-                padding: 3.7px 15px;
-                margin-left: 10px;
-                color: white;
-                background-color: #0055b0;
-                border-radius: 5px;
-
-                &:hover {
-                    box-shadow: 0px 0px 5px 1px #0055b075;
-                }
-
-                &:focus {
-                    box-shadow: 0px 0px 5px 1px #0055b075;
+                    &:focus {
+                        box-shadow: 0px 0px 5px 1px #0055b075;
+                    }
                 }
             }
         }
@@ -572,71 +621,90 @@ input::-webkit-inner-spin-button {
             margin: 0;
             padding: 0;
             margin-top: 20px;
-            font-family: var(--robotomedium);
+            font-family: var(--montmedium);
             font-size: 15px;
 
             .resultContainer {
-                padding: 15px;
-                border: 0.5px solid grey;
-                box-shadow: 0px 0px 10px 1px rgba(128, 128, 128, 0.3);
+                box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
                 border-radius: 8px;
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                max-height: 150px;
+                padding: 8px;
+                background-color: white;
 
-                div {
-                    &:nth-child(1) {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        align-items: center;
+                .icindeki {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    border: 0.5px solid #0055b0;
+                    border-radius: 8px;
+                    background-color: white;
 
-                        a {
-                            padding: 5px 10px;
-                            font-size: 16px;
-                            background-color: #0055b0;
-                            text-align: center;
-                            border-radius: 5px;
-                            color: white;
-                            font-family: var(--robotomedium);
-                            width: 100%;
-                            transition: 0.2s;
+                    div {
 
-                            &:hover {
-                                box-shadow: 0px 0px 5px 1px #0055b075;
-                            }
+                        &:nth-child(1) {
+                            padding: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
 
-                            &:focus {
-                                box-shadow: 0px 0px 5px 1px #0055b075;
+                            a {
+                                padding: 10px;
+                                font-size: 16px;
+                                background-color: #0055b0;
+                                text-align: center;
+                                border-radius: 5px;
+                                color: white;
+                                font-family: var(--montmedium);
+                                width: 100%;
+                                transition: 0.2s;
+
+                                &:hover {
+                                    box-shadow: 0px 0px 5px 1px #0055b075;
+                                }
+
+                                &:focus {
+                                    box-shadow: 0px 0px 5px 1px #0055b075;
+                                }
                             }
                         }
-                    }
 
-                    &:nth-child(2) {
-                        ul {
-                            margin: 0;
-                            padding: 0;
-                            list-style: none;
+                        &:nth-child(2) {
+                            padding: 10px;
+                            border-left: 0.5px solid #0055b0;
 
-                            li {
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                padding: 2px 0;
-                                border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+                            ul {
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
 
-                                span {
-                                    font-size: 16px;
+                                li {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 5px 0;
+                                    border-bottom: 0.5px solid #0055b0;
 
-                                    &:nth-child(1) {
-                                        text-align: start;
-                                        font-family: var(--robotomedium);
+                                    &:first-child {
+                                        padding-top: 0;
                                     }
 
-                                    &:nth-child(2) {
-                                        text-align: end;
-                                        color: #0055b0;
+                                    &:last-child {
+                                        border: none;
+                                        padding-bottom: 0;
+                                    }
+
+                                    span {
+                                        font-size: 16px;
+
+                                        &:nth-child(1) {
+                                            text-align: start;
+                                            font-family: var(--montmedium);
+                                        }
+
+                                        &:nth-child(2) {
+                                            text-align: end;
+                                            color: #0055b0;
+                                        }
                                     }
                                 }
                             }

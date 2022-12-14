@@ -21,9 +21,17 @@ $(document).ready(function () {
     //input toUpperCase
 
     $(document).on('keyup', '#vincodeinput', function () {
-        let value = $(this).val().toUpperCase();
+        let value = $(this).val();
+        $(this).val(value.toUpperCase());
 
-        $(this).val(value);
+        let regex = /\b[(A-H|J-N|P|R-Z|0-9)]{17}\b/
+
+        if (regex.test(value.toUpperCase())) {
+            $('#vincodebutton').removeAttr('disabled')
+        }
+        else {
+            $('#vincodebutton').prop('disabled', 'disabled')
+        }
     });
 
     //sample fetch
@@ -31,14 +39,24 @@ $(document).ready(function () {
     $(document).on('submit', '#vincodeform', function (e) {
         e.preventDefault();
 
+        const formData = new FormData(e.target);
+
+        let vinCode = formData.get('vincodeinput');
+
+        let regex = /\b[(A-H|J-N|P|R-Z|0-9)]{17}\b/
+
+        if (!regex.test(vinCode.trim().toUpperCase())) {
+            $('.errorp').removeClass('hideerrorp');
+            $('.errorp').html("Daxil edilən VİN kodun strukturu səhvdir!");
+            return;
+        }
+
         $('.preloader').removeClass('d-none');
         $('#carfaxContainer').addClass('d-none');
         $('#autocheckContainer').addClass('d-none');
         $('#photosApiResult').addClass('d-none');
 
-        const formData = new FormData(e.target);
-
-        let vinCode = formData.get('vincodeinput');
+        $(document).scrollTop(1000)
 
         //WAUDG74F25N111998
         //4T1BG22K9YU930834
