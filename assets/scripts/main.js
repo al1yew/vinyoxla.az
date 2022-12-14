@@ -62,24 +62,26 @@ $(document).ready(function () {
         axios.get(`https://api.allreports.tools/wp-json/v1/get_report_check/${vinCode}`)
             .then(function (res) {
 
-                $('#autoNameCarfax').html(res?.data?.carfax?.vehicle)
-                $('#recordsCountCarfax').html(res?.data?.carfax?.records)
-                $('#vinCodeCarfax').html(res?.data?.carfax?.vin)
-                $('#yearCarfax').html(res?.data?.carfax?.year)
+                if (res?.data?.carfax?.records > 0) {
+                    $('#autoNameCarfax').html(res?.data?.carfax?.vehicle);
+                    $('#recordsCountCarfax').html(res?.data?.carfax?.records);
+                    $('#vinCodeCarfax').html(res?.data?.carfax?.vin);
+                    $('#yearCarfax').html(res?.data?.carfax?.year);
+                    $('#carfaxContainer').removeClass('d-none');
+                }
 
-                $('#autoNameAutocheck').html(res?.data?.autocheck?.vehicle)
-                $('#recordsCountAutocheck').html(res?.data?.autocheck?.records)
-                $('#vinCodeAutocheck').html(res?.data?.autocheck?.vin)
-                $('#yearAutocheck').html(res?.data?.autocheck?.year)
+                if (res?.data?.autocheck?.records > 0) {
+                    $('#autoNameAutocheck').html(res?.data?.autocheck?.vehicle);
+                    $('#recordsCountAutocheck').html(res?.data?.autocheck?.records);
+                    $('#vinCodeAutocheck').html(res?.data?.autocheck?.vin);
+                    $('#yearAutocheck').html(res?.data?.autocheck?.year);
+                    $('#autocheckContainer').removeClass('d-none');
+                }
 
-                $('#carfaxContainer').removeClass('d-none')
-                $('#autocheckContainer').removeClass('d-none')
-                $('#photosApiResult').removeClass('d-none')
-
+                $('#photosApiResult').removeClass('d-none');
                 $('.preloaderdiv').addClass('d-none');
-                
-                $(document).scrollTop(1000)
 
+                $(document).scrollTop(1000);
             })
 
     })

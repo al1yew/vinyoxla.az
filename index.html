@@ -35,7 +35,7 @@
     <header id="header">
         <div class="container">
             <div class="row all">
-                <div class="col-lg-1-8 col-3">
+                <div class="col-lg-1-8 col-3-5">
                     <a href="index.html">
                         <img class="img-fluid" src="./assets/images/logo1.png" alt="">
                     </a>
@@ -71,7 +71,7 @@
                         xərclərdən özünü qoru!
                     </p>
 
-                    <div class="col-lg-5-8 col-12 inputbox">
+                    <div class="col-lg-5-5 col-12 inputbox">
                         <input autocomplete="off" autofocus name="vincodeinput" maxlength="17" minlength="17" required
                             placeholder="AAAAA11A11A111111" type="text" class="col-lg-9-5 col-9" id="vincodeinput">
 
@@ -185,26 +185,25 @@
 
                     <div class="col-lg-5-8 col-12 carfaxContainer resultContainer d-none" id="carfaxContainer">
                         <div class="col-lg-12 col-12 icindeki">
-
                             <div class="col-lg-12 col-12 top">
                                 <div class="toptop col-lg-12 col-12">
-                                    <span class="col-lg-8 col-8 topelement">
-                                        <span class="col-lg-2 col-2">Model:</span>
-                                        <span class="col-lg-10 col-10" id="autoNameCarfax"></span>
+                                    <span class="col-lg-8 col-9 topelement">
+                                        <span class="col-lg-2 col-12">Model:</span>
+                                        <span class="col-lg-10 col-12" id="autoNameCarfax"></span>
                                     </span>
-                                    <span class="col-lg-4 col-4 topelement">
-                                        <span>Rekordların sayı:</span>
-                                        <span id="recordsCountCarfax"></span>
+                                    <span class="col-lg-4 col-3 topelement">
+                                        <span class="col-12">Buraxılış ili:</span>
+                                        <span class="col-12" id="yearCarfax"></span>
                                     </span>
                                 </div>
                                 <div class="topbottom col-lg-12 col-12">
-                                    <span class="col-lg-8 col-8 topelement">
-                                        <span class="col-lg-2 col-2">VIN:</span>
-                                        <span class="col-lg-10 col-10" id="vinCodeCarfax"></span>
+                                    <span class="col-lg-8 col-9 topelement">
+                                        <span class="col-lg-2 col-12">VIN:</span>
+                                        <span class="col-lg-10 col-11" id="vinCodeCarfax"></span>
                                     </span>
-                                    <span class="col-lg-4 col-4 topelement">
-                                        <span>Buraxılış ili:</span>
-                                        <span id="yearCarfax"></span>
+                                    <span class="col-lg-4 col-3 topelement">
+                                        <span class="col-12">Rekord sayı:</span>
+                                        <span class="col-12" id="recordsCountCarfax"></span>
                                     </span>
                                 </div>
                             </div>
@@ -262,26 +261,25 @@
 
                     <div class="col-lg-5-8 col-12 autocheckContainer resultContainer d-none" id="autocheckContainer">
                         <div class="col-lg-12 col-12 icindeki">
-
                             <div class="col-lg-12 col-12 top">
                                 <div class="toptop col-lg-12 col-12">
-                                    <span class="col-lg-8 col-8 topelement">
-                                        <span class="col-lg-2 col-2">Model:</span>
-                                        <span class="col-lg-10 col-10" id="autoNameAutocheck"></span>
+                                    <span class="col-lg-8 col-9 topelement">
+                                        <span class="col-lg-2 col-12">Model:</span>
+                                        <span class="col-lg-10 col-12" id="autoNameAutocheck"></span>
                                     </span>
-                                    <span class="col-lg-4 col-4 topelement">
-                                        <span>Rekordların sayı:</span>
-                                        <span id="recordsCountAutocheck"></span>
+                                    <span class="col-lg-4 col-3 topelement">
+                                        <span class="col-12">Buraxılış ili:</span>
+                                        <span class="col-12" id="yearAutocheck"></span>
                                     </span>
                                 </div>
                                 <div class="topbottom col-lg-12 col-12">
-                                    <span class="col-lg-8 col-8 topelement">
-                                        <span class="col-lg-2 col-2">VIN:</span>
-                                        <span class="col-lg-10 col-10" id="vinCodeAutocheck"></span>
+                                    <span class="col-lg-8 col-9 topelement">
+                                        <span class="col-lg-2 col-12">VIN:</span>
+                                        <span class="col-lg-10 col-11" id="vinCodeAutocheck"></span>
                                     </span>
-                                    <span class="col-lg-4 col-4 topelement">
-                                        <span>Buraxılış ili:</span>
-                                        <span id="yearAutocheck"></span>
+                                    <span class="col-lg-4 col-3 topelement">
+                                        <span class="col-12">Rekord sayı:</span>
+                                        <span class="col-12" id="recordsCountAutocheck"></span>
                                     </span>
                                 </div>
                             </div>
@@ -296,7 +294,7 @@
                     </div>
 
                     <div class="col-lg-5-8 col-12 photosApiResult d-none" id="photosApiResult">
-                        Shekiller
+
                     </div>
 
                 </div>
@@ -317,15 +315,9 @@
 
 
     <!-- 
-        Records Check by VIN (carfax and autocheck)
+        dla fotok doljno bilo rabotat
 
-        Method: GET
-
-        Request: https://api.allreports.tools/wp-json/v1/get_report_check/{vin}
-
-        Example request: https://api.allreports.tools/wp-json/v1/get_report_check/WAUDG74F25N111998
-
-
+        https://autoastat.com/api/history/1FMZU73K83ZB53903
 
 
         Get Report

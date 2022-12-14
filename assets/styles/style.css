@@ -124,9 +124,46 @@ input::-webkit-inner-spin-button {
 }
 
 :root {
-  --robotobold: RobotoBold;
-  --robotomedium: RobotoMedium;
-  --robotolight: RobotoLight;
+  --montbold: MontserratBold;
+  --montmedium: MontserratMedium;
+  --montlight: MontserratLight;
+}
+
+@media (max-width: 576px) {
+  #header {
+    font-size: 14px !important;
+  }
+  #header .all div:nth-child(2) a:hover::before {
+    content: '';
+    width: 0 !important;
+  }
+  #main .all .resultsContainer {
+    font-size: 14px !important;
+  }
+  #main .all .resultsContainer .resultContainer {
+    border-radius: 5px !important;
+    padding: 7px !important;
+    margin-bottom: 15px !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki {
+    border-radius: 5px !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement,
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement {
+    font-size: 13px !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
+    font-family: var(--montlight) !important;
+    font-size: 12px !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom {
+    padding: 10px !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom a {
+    padding: 7px 40px !important;
+    font-size: 14px !important;
+  }
 }
 
 .col-1 {
@@ -281,6 +318,13 @@ input::-webkit-inner-spin-button {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: 66.66666667%;
+}
+
+.col-8-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 70.83333%;
 }
 
 .col-9 {
@@ -524,7 +568,7 @@ input::-webkit-inner-spin-button {
   top: 0%;
   -webkit-box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.9);
           box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.9);
-  background-color: rgba(0, 85, 176, 0.5);
+  background-color: #3383da;
 }
 
 #header .all {
@@ -821,7 +865,7 @@ input::-webkit-inner-spin-button {
 #main .all .resultsContainer .resultContainer .icindeki .top .toptop,
 #main .all .resultsContainer .resultContainer .icindeki .top .topbottom {
   padding: 10px;
-  border-bottom: 1px solid #0055b0;
+  border-bottom: 0.5px solid #0055b0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
