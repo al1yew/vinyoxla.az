@@ -50,6 +50,7 @@
                     font-size: 14px !important;
                     left: 50% !important;
                     transform: translateX(-50%) !important;
+                    text-align: center;
                 }
 
                 .hideerrorp {
@@ -61,6 +62,14 @@
                     top: 40% !important;
                     left: 50% !important;
                     transform: translateX(-50%) !important;
+
+                    &:hover {
+                        box-shadow: 0px 0px 5px 1px #04226846 !important;
+                    }
+
+                    &:focus {
+                        box-shadow: 0px 0px 5px 1px #04226846 !important;
+                    }
 
                     input {
                         font-size: 14px !important;
@@ -76,6 +85,15 @@
                     button {
                         font-size: 14px !important;
                         padding: 10px 5px !important;
+
+                        &:hover {
+                            color: #0055b0 !important;
+                            background-color: white !important;
+                        }
+
+                        &:focus {
+                            box-shadow: none;
+                        }
                     }
                 }
             }

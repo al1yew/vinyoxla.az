@@ -20,19 +20,21 @@ if ($(document).width() < 576) {
 
 $(document).ready(function () {
 
+    // navigator.clipboard.readText().then(text => alert(text))
+
     //input toUpperCase
 
-    $(document).on('keyup', '#vincodeinput', function () {
+    $(document).on('input keyup', '#vincodeinput', function () {
         let value = $(this).val();
         $(this).val(value.toUpperCase());
 
         let regex = /\b[(A-H|J-N|P|R-Z|0-9)]{17}\b/
 
         if (regex.test(value.toUpperCase())) {
-            $('#vincodebutton').removeAttr('disabled')
+            $('#vincodebutton').removeClass('noClick')
         }
         else {
-            $('#vincodebutton').prop('disabled', 'disabled')
+            $('#vincodebutton').addClass('noClick')
         }
     });
 
@@ -71,6 +73,10 @@ $(document).ready(function () {
                     $('#yearCarfax').html(res?.data?.carfax?.year);
                     $('#carfaxContainer').removeClass('d-none');
                 }
+                else {
+                    $('.errorp').removeClass('hideerrorp');
+                    $('.errorp').html("Daxil edilən VİN kod tapılmadı!");
+                }
 
                 if (res?.data?.autocheck?.records > 0) {
                     $('#autoNameAutocheck').html(res?.data?.autocheck?.vehicle);
@@ -79,11 +85,16 @@ $(document).ready(function () {
                     $('#yearAutocheck').html(res?.data?.autocheck?.year);
                     $('#autocheckContainer').removeClass('d-none');
                 }
+                else {
+                    $('.errorp').removeClass('hideerrorp');
+                    $('.errorp').html("Daxil edilən VİN kod tapılmadı!");
+                }
 
                 $('#photosApiResult').removeClass('d-none');
                 $('.preloaderdiv').addClass('d-none');
 
                 $(document).scrollTop(1000);
+
             })
 
     })

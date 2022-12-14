@@ -159,6 +159,7 @@ input::-webkit-inner-spin-button {
     left: 50% !important;
     -webkit-transform: translateX(-50%) !important;
             transform: translateX(-50%) !important;
+    text-align: center;
   }
   #main .all form .hideerrorp {
     opacity: 0 !important;
@@ -169,6 +170,14 @@ input::-webkit-inner-spin-button {
     left: 50% !important;
     -webkit-transform: translateX(-50%) !important;
             transform: translateX(-50%) !important;
+  }
+  #main .all form .inputbox:hover {
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846 !important;
+            box-shadow: 0px 0px 5px 1px #04226846 !important;
+  }
+  #main .all form .inputbox:focus {
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846 !important;
+            box-shadow: 0px 0px 5px 1px #04226846 !important;
   }
   #main .all form .inputbox input {
     font-size: 14px !important;
@@ -194,6 +203,14 @@ input::-webkit-inner-spin-button {
   #main .all form .inputbox button {
     font-size: 14px !important;
     padding: 10px 5px !important;
+  }
+  #main .all form .inputbox button:hover {
+    color: #0055b0 !important;
+    background-color: white !important;
+  }
+  #main .all form .inputbox button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   #main .all .resultsContainer {
     font-size: 14px !important;
@@ -768,6 +785,9 @@ input::-webkit-inner-spin-button {
   border: 0.5px solid red;
   border-radius: 5px;
   padding: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #main .all form .hideerrorp {
@@ -798,11 +818,6 @@ input::-webkit-inner-spin-button {
   background-color: #2F70CE;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-#main .all form .inputbox:hover {
-  -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-          box-shadow: 0px 0px 10px 1px #04226870;
 }
 
 #main .all form .inputbox:focus {
@@ -845,6 +860,10 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
 }
 
+#main .all form .inputbox .noClick {
+  pointer-events: none;
+}
+
 #main .all form .inputbox button {
   color: #0055b0;
   background-color: white;
@@ -862,11 +881,6 @@ input::-webkit-inner-spin-button {
 #main .all form .inputbox button:hover {
   color: white;
   background-color: #042268;
-}
-
-#main .all form .inputbox button:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px #042268;
-          box-shadow: 0px 0px 5px 1px #042268;
 }
 
 #main .all .resultsContainer {
