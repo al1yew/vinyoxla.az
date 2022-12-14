@@ -63,18 +63,18 @@
                     transform: translateX(-50%) !important;
 
                     input {
-                        font-size: 15px !important;
-                        letter-spacing: 2px !important;
-                        background-color: rgb(108, 139, 224);
-                        padding: 6px 10px !important;
+                        font-size: 14px !important;
+                        letter-spacing: 1px !important;
+                        padding: 6px 5px !important;
 
                         &::placeholder {
-                            font-size: 15px !important;
+                            font-size: 14px !important;
+                            letter-spacing: 4px !important;
                         }
                     }
 
                     button {
-                        font-size: 15px !important;
+                        font-size: 14px !important;
                         padding: 10px 5px !important;
                     }
                 }

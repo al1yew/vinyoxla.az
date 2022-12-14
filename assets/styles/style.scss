@@ -244,6 +244,11 @@ input::-webkit-inner-spin-button {
     width: 75%;
 }
 
+.col-9-5 {
+    flex: 0 0 auto;
+    width: 79.166666%;
+}
+
 .col-10 {
     flex: 0 0 auto;
     width: 83.33333333%;
@@ -570,7 +575,7 @@ input::-webkit-inner-spin-button {
                 padding: 0;
                 overflow: hidden;
                 box-shadow: 0px 0px 5px 1px #0055b0;
-                background-color: rgb(108, 139, 224);
+                background-color: #2F70CE;
                 transition: 0.2s;
 
                 &:hover {
@@ -587,7 +592,7 @@ input::-webkit-inner-spin-button {
                     letter-spacing: 4px;
                     outline: none;
                     border: none;
-                    background-color: rgb(108, 139, 224);
+                    background-color: #2F70CE;
                     border-bottom-left-radius: 5px;
                     border-top-left-radius: 5px;
                     transition: 0.2s;
