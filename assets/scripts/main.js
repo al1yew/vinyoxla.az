@@ -51,12 +51,10 @@ $(document).ready(function () {
             return;
         }
 
-        $('.preloader').removeClass('d-none');
+        $('.preloaderdiv').removeClass('d-none');
         $('#carfaxContainer').addClass('d-none');
         $('#autocheckContainer').addClass('d-none');
         $('#photosApiResult').addClass('d-none');
-
-        $(document).scrollTop(1000)
 
         //WAUDG74F25N111998
         //4T1BG22K9YU930834
@@ -78,7 +76,10 @@ $(document).ready(function () {
                 $('#autocheckContainer').removeClass('d-none')
                 $('#photosApiResult').removeClass('d-none')
 
-                $('.preloader').addClass('d-none');
+                $('.preloaderdiv').addClass('d-none');
+                
+                $(document).scrollTop(1000)
+
             })
 
     })
