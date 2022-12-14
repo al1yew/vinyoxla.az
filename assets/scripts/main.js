@@ -26,6 +26,15 @@ $(document).ready(function () {
         let value = $(this).val();
         $(this).val(value.toUpperCase());
 
+        if (value.length > 0) {
+            $('.copyspan').hide();
+            $('.deleteinp').show();
+        }
+        else {
+            $('.copyspan').show();
+            $('.deleteinp').hide();
+        }
+
         let regex = /\b[(A-H|J-N|P|R-Z|0-9)]{17}\b/
 
         if (regex.test(value.toUpperCase())) {
@@ -36,9 +45,19 @@ $(document).ready(function () {
         }
     });
 
+    //delete input value
+
+    $(document).on('click', '.deleteinp', function () {
+        $('#vincodeinput').val("");
+        $('#vincodebutton').addClass('noClick');
+        $('.copyspan').show();
+        $('.deleteinp').hide();
+    })
+
+
     //copy paste
 
-    $(document).on('click pointerdown pointerup', '.salamspan', function () {
+    $(document).on('click pointerdown pointerup', '.copyspan', function () {
 
         navigator.clipboard.readText()
             .then((text) => {
@@ -47,12 +66,11 @@ $(document).ready(function () {
 
                 if (regex.test(text.trim().toUpperCase())) {
                     $('#vincodeinput').val(text.trim().toUpperCase())
+                    $('#vincodebutton').removeClass('noClick')
+                    $('.copyspan').hide();
+                    $('.deleteinp').show();
                 }
-
-                alert(text)
-
             });
-
     })
 
     //fetch

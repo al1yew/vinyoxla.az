@@ -200,6 +200,10 @@ input::-webkit-inner-spin-button {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
+  #main .all form .inputbox .copyspan,
+  #main .all form .inputbox .deleteinp {
+    left: 70% !important;
+  }
   #main .all form .inputbox button {
     font-size: 14px !important;
     padding: 10px 5px !important;
@@ -829,10 +833,22 @@ input::-webkit-inner-spin-button {
           box-shadow: 0px 0px 10px 1px #04226870;
 }
 
+#main .all form .inputbox .copyspan,
+#main .all form .inputbox .deleteinp {
+  position: absolute;
+  top: 50%;
+  left: 72%;
+  font-size: 25px;
+  color: #042268;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 #main .all form .inputbox input {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   outline: none;
   border: none;
   background-color: #2F70CE;
@@ -840,28 +856,28 @@ input::-webkit-inner-spin-button {
   border-top-left-radius: 5px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  padding: 6px 20px;
+  padding: 6px 10px;
   transition: 0.2s;
 }
 
 #main .all form .inputbox input::-webkit-input-placeholder {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #main .all form .inputbox input:-ms-input-placeholder {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #main .all form .inputbox input::-ms-input-placeholder {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #main .all form .inputbox input::placeholder {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #main .all form .inputbox .noClick {
