@@ -793,21 +793,21 @@ input::-webkit-inner-spin-button {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  -webkit-box-shadow: 0px 0px 5px 1px #0838A7;
-          box-shadow: 0px 0px 5px 1px #0838A7;
+  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+          box-shadow: 0px 0px 5px 1px #04226846;
   background-color: #2F70CE;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 #main .all form .inputbox:hover {
-  -webkit-box-shadow: 0px 0px 10px 1px #042268;
-          box-shadow: 0px 0px 10px 1px #042268;
+  -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+          box-shadow: 0px 0px 10px 1px #04226870;
 }
 
 #main .all form .inputbox:focus {
-  -webkit-box-shadow: 0px 0px 10px 1px #042268;
-          box-shadow: 0px 0px 10px 1px #042268;
+  -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+          box-shadow: 0px 0px 10px 1px #04226870;
 }
 
 #main .all form .inputbox input {
