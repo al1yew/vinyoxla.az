@@ -512,7 +512,7 @@ input::-webkit-inner-spin-button {
 
         form {
             border-radius: 15px;
-            box-shadow: 0px 0px 5px 1px #0055b0;
+            box-shadow: 0px 0px 5px 1px #0422686c;
             padding: 0;
             margin: 0;
             overflow: hidden;
@@ -528,7 +528,6 @@ input::-webkit-inner-spin-button {
                 font-size: 40px;
                 color: #0055b0;
                 font-family: var(--montmedium);
-                text-shadow: 1px 1px 1px black;
             }
 
             .secondp {
@@ -571,16 +570,16 @@ input::-webkit-inner-spin-button {
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                box-shadow: 0px 0px 5px 1px #0055b0;
+                box-shadow: 0px 0px 5px 1px #0838A7;
                 background-color: #2F70CE;
                 transition: 0.2s;
 
                 &:hover {
-                    box-shadow: 0px 0px 10px 1px #0055b0;
+                    box-shadow: 0px 0px 10px 1px #042268;
                 }
 
                 &:focus {
-                    box-shadow: 0px 0px 10px 1px #0055b0;
+                    box-shadow: 0px 0px 10px 1px #042268;
                 }
 
                 input {
@@ -616,11 +615,11 @@ input::-webkit-inner-spin-button {
 
                     &:hover {
                         color: white;
-                        background-color: #0055b0;
+                        background-color: #042268;
                     }
 
                     &:focus {
-                        box-shadow: 0px 0px 5px 1px #0055b075;
+                        box-shadow: 0px 0px 5px 1px #042268;
                     }
                 }
             }
@@ -707,11 +706,11 @@ input::-webkit-inner-spin-button {
                             transition: 0.2s;
 
                             &:hover {
-                                box-shadow: 0px 0px 5px 1px #0055b075;
+                                box-shadow: 0px 0px 5px 1px #042268;
                             }
 
                             &:focus {
-                                box-shadow: 0px 0px 5px 1px #0055b075;
+                                box-shadow: 0px 0px 5px 1px #042268;
                             }
                         }
                     }
