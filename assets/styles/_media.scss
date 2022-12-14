@@ -26,8 +26,59 @@
     }
 
     #main {
+        margin-top: 60px !important;
 
         .all {
+
+            form {
+
+                .firstp {
+                    font-size: 24px !important;
+                    top: 7% !important;
+                    left: 50% !important;
+                    transform: translateX(-50%) !important;
+                }
+
+                .secondp {
+                    top: 24% !important;
+                    left: 50% !important;
+                    transform: translateX(-50%) !important;
+                    font-size: 15px !important;
+                }
+
+                .errorp {
+                    font-size: 14px !important;
+                    left: 50% !important;
+                    transform: translateX(-50%) !important;
+                }
+
+                .hideerrorp {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                }
+
+                .inputbox {
+                    top: 40% !important;
+                    left: 50% !important;
+                    transform: translateX(-50%) !important;
+
+                    input {
+                        font-size: 15px !important;
+                        letter-spacing: 2px !important;
+                        background-color: rgb(108, 139, 224);
+                        padding: 6px 10px !important;
+
+                        &::placeholder {
+                            font-size: 15px !important;
+                        }
+                    }
+
+                    button {
+                        font-size: 15px !important;
+                        padding: 10px 5px !important;
+                    }
+                }
+            }
 
             .resultsContainer {
                 font-size: 14px !important;

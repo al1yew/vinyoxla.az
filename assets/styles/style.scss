@@ -517,8 +517,6 @@ input::-webkit-inner-spin-button {
             flex-wrap: wrap;
             font-family: var(--montlight);
             position: relative;
-            top: 0;
-            left: 0;
 
             .firstp {
                 position: absolute;
@@ -537,7 +535,7 @@ input::-webkit-inner-spin-button {
                 left: 3%;
                 text-align: start;
                 font-size: 21px;
-                color: rgb(87, 87, 87);
+                color: #0064cf;
             }
 
             .errorp {
@@ -549,9 +547,9 @@ input::-webkit-inner-spin-button {
                 opacity: 1;
                 visibility: visible;
                 transition: 0.2s;
-                border: 1px solid red;
+                border: 0.5px solid red;
                 border-radius: 5px;
-                padding: 2px;
+                padding: 4px;
             }
 
             .hideerrorp {
@@ -636,96 +634,6 @@ input::-webkit-inner-spin-button {
             margin-top: 20px;
             font-family: var(--montmedium);
             font-size: 15px;
-
-            // .resultContainer {
-            //     box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-            //     border-radius: 8px;
-            //     padding: 8px;
-            //     background-color: white;
-
-            //     .icindeki {
-            //         display: flex;
-            //         justify-content: space-between;
-            //         flex-wrap: wrap;
-            //         border: 0.5px solid #0055b0;
-            //         border-radius: 8px;
-            //         background-color: white;
-
-            //         div {
-
-            //             &:nth-child(1) {
-            //                 padding: 20px;
-            //                 display: flex;
-            //                 flex-direction: column;
-            //                 justify-content: space-between;
-            //                 align-items: center;
-
-            //                 a {
-            //                     padding: 10px;
-            //                     font-size: 16px;
-            //                     background-color: #0055b0;
-            //                     text-align: center;
-            //                     border-radius: 5px;
-            //                     color: white;
-            //                     font-family: var(--montmedium);
-            //                     width: 100%;
-            //                     transition: 0.2s;
-
-            //                     &:hover {
-            //                         box-shadow: 0px 0px 5px 1px #0055b075;
-            //                     }
-
-            //                     &:focus {
-            //                         box-shadow: 0px 0px 5px 1px #0055b075;
-            //                     }
-            //                 }
-            //             }
-
-            //             &:nth-child(2) {
-            //                 padding: 10px;
-            //                 border-left: 0.5px solid #0055b0;
-
-            //                 ul {
-            //                     margin: 0;
-            //                     padding: 0;
-            //                     list-style: none;
-
-            //                     li {
-            //                         display: flex;
-            //                         justify-content: space-between;
-            //                         align-items: center;
-            //                         padding: 5px 0;
-            //                         border-bottom: 0.5px solid #0055b0;
-
-            //                         &:first-child {
-            //                             padding-top: 0;
-            //                         }
-
-            //                         &:last-child {
-            //                             border: none;
-            //                             padding-bottom: 0;
-            //                         }
-
-            //                         span {
-
-            //                             &:nth-child(1) {
-            //                                 font-size: 16px;
-            //                                 text-align: start;
-            //                                 font-family: var(--montmedium);
-            //                             }
-
-            //                             &:nth-child(2) {
-            //                                 text-align: end;
-            //                                 font-size: 14px;
-            //                                 color: #0055b0;
-            //                             }
-            //                         }
-            //                     }
-            //                 }
-            //             }
-            //         }
-            //     }
-            // }
 
             .resultContainer {
                 box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);

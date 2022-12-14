@@ -137,6 +137,61 @@ input::-webkit-inner-spin-button {
     content: '';
     width: 0 !important;
   }
+  #main {
+    margin-top: 60px !important;
+  }
+  #main .all form .firstp {
+    font-size: 24px !important;
+    top: 7% !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+  }
+  #main .all form .secondp {
+    top: 24% !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+    font-size: 15px !important;
+  }
+  #main .all form .errorp {
+    font-size: 14px !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+  }
+  #main .all form .hideerrorp {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+  #main .all form .inputbox {
+    top: 40% !important;
+    left: 50% !important;
+    -webkit-transform: translateX(-50%) !important;
+            transform: translateX(-50%) !important;
+  }
+  #main .all form .inputbox input {
+    font-size: 15px !important;
+    letter-spacing: 2px !important;
+    background-color: #6c8be0;
+    padding: 6px 10px !important;
+  }
+  #main .all form .inputbox input::-webkit-input-placeholder {
+    font-size: 15px !important;
+  }
+  #main .all form .inputbox input:-ms-input-placeholder {
+    font-size: 15px !important;
+  }
+  #main .all form .inputbox input::-ms-input-placeholder {
+    font-size: 15px !important;
+  }
+  #main .all form .inputbox input::placeholder {
+    font-size: 15px !important;
+  }
+  #main .all form .inputbox button {
+    font-size: 15px !important;
+    padding: 10px 5px !important;
+  }
   #main .all .resultsContainer {
     font-size: 14px !important;
   }
@@ -669,8 +724,6 @@ input::-webkit-inner-spin-button {
       flex-wrap: wrap;
   font-family: var(--montlight);
   position: relative;
-  top: 0;
-  left: 0;
 }
 
 #main .all form .firstp {
@@ -690,7 +743,7 @@ input::-webkit-inner-spin-button {
   left: 3%;
   text-align: start;
   font-size: 21px;
-  color: #575757;
+  color: #0064cf;
 }
 
 #main .all form .errorp {
@@ -703,9 +756,9 @@ input::-webkit-inner-spin-button {
   visibility: visible;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  border: 1px solid red;
+  border: 0.5px solid red;
   border-radius: 5px;
-  padding: 2px;
+  padding: 4px;
 }
 
 #main .all form .hideerrorp {
