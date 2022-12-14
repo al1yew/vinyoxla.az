@@ -962,7 +962,8 @@ input::-webkit-inner-spin-button {
 
 #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
 #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
-  text-align: end;
+  text-align: start;
+  padding-left: 5px;
 }
 
 #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),

@@ -676,7 +676,8 @@ input::-webkit-inner-spin-button {
                                 flex-wrap: wrap;
 
                                 &:nth-child(2) {
-                                    text-align: end;
+                                    text-align: start;
+                                    padding-left: 5px;
                                 }
 
                                 span {
