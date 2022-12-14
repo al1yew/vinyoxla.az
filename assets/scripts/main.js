@@ -14,8 +14,6 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
-
-
 $(document).ready(function () {
 
     if ($(document).width() < 576) {
