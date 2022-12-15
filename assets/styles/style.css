@@ -1026,6 +1026,12 @@ input::-webkit-inner-spin-button {
   padding: 15px 10px;
 }
 
+#main .all .resultsContainer .resultContainer .icindeki .bottom .price {
+  font-size: 30px;
+  font-family: var(--montbold);
+  color: red;
+}
+
 #main .all .resultsContainer .resultContainer .icindeki .bottom a {
   padding: 10px 50px;
   font-size: 16px;
