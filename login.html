@@ -68,13 +68,17 @@
                             id="phoneno">
                     </div>
 
-                    <label for="code" class="col-lg-12 col-12">Göndərilən kod:</label>
-                    <div class="inputkeeper col-lg-12 col-12">
-                        <input inputmode="numeric" autocomplete="off" name="code" placeholder="1234" type="text"
-                            required maxlength="4" minlength="4" class="code col-lg-12 col-12" id="code">
-                    </div>
+                    <button class="btn" type="button" id="sendcode">Kodu göndər</button>
 
-                    <button class="btn" type="submit">Daxil ol</button>
+                    <div class="col-lg-12 col-12 d-none" id="kodgelennensonra">
+                        <label for="code" class="col-lg-12 col-12">Göndərilən kod:</label>
+                        <div class="inputkeeper col-lg-12 col-12">
+                            <input inputmode="numeric" autocomplete="off" name="code" placeholder="1234" type="text"
+                                maxlength="4" minlength="4" class="code col-lg-12 col-12" id="code">
+                        </div>
+
+                        <button class="btn" type="submit">Daxil ol</button>
+                    </div>
                 </form>
             </div>
         </div>

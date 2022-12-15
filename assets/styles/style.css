@@ -425,7 +425,7 @@ input::-webkit-inner-spin-button {
   }
   #loginmain .all form .inputkeeper input {
     font-size: 14px !important;
-    letter-spacing: 2px !important;
+    letter-spacing: 3px !important;
   }
   #loginmain .all form .inputkeeper input::-webkit-input-placeholder {
     font-size: 14px !important;

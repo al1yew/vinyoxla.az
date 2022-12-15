@@ -24,6 +24,7 @@ $(document).ready(function () {
 
     if ($(document).width() > 576) {
         $('#vincodeinput').focus()
+        $('#phoneno').focus()
     }
 
     // -------------------------- main page
@@ -168,16 +169,46 @@ $(document).ready(function () {
 
     $(document).on('submit', '#loginform', function (e) {
         e.preventDefault();
-        const formData = new FormData(e.target)
+        const formData = new FormData(e.target);
 
         let phoneno = formData.get('phoneno');
         let code = formData.get('code');
 
-        console.log({ phoneno, code })
+        if (phoneno.length && code.length) {
+            console.log({ phoneno, code })
 
+            //fetch or continue
+        }
+    })
+
+    //open code input
+
+    $(document).on('click', '#sendcode', function () {
+        $('#sendcode').addClass('d-none');
+        $('#kodgelennensonra').removeClass('d-none');
+        $('#phoneno').prop('readonly', 'true');
     })
 
     //#endregion login input submit
+
+    //#region login input prevent entering of nonnumeric
+
+    $(document).on('input', '#phoneno, #code', function (e) {
+
+        if (!/^[0-9]+$/.test($(this).val())) {
+            $(this).val($(this).val().slice(0, -1))
+        }
+    })
+
+    //#endregion login input prevent entering of nonnumeric
+
+    //#region 
+
+    $(document).on('input', '#phoneno, #code', function (e) {
+
+    })
+
+    //#endregion 
 
 
     // -------------------------- login page
