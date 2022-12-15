@@ -42,7 +42,7 @@ a:hover {
   height: 100vh;
   width: 100%;
   position: fixed;
-  z-index: 9999999;
+  z-index: 9999999999999;
   top: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.9) !important;
@@ -261,6 +261,8 @@ input::-webkit-inner-spin-button {
 #loginmain {
   font-family: var(--montlight);
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 #loginmain .all {
@@ -273,7 +275,7 @@ input::-webkit-inner-spin-button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -403,6 +405,20 @@ input::-webkit-inner-spin-button {
           box-shadow: 0px 0px 5px 1px #0422686c;
 }
 
+#loginmain .all #kodgelennensonra {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 576px) {
   #loginmain .all form {
     border-radius: 10px !important;
@@ -451,6 +467,7 @@ input::-webkit-inner-spin-button {
   #loginmain .all form button {
     font-size: 14px !important;
     margin: 0 auto !important;
+    margin-top: 30px !important;
   }
   #loginmain .all form button:hover {
     -webkit-box-shadow: none !important;

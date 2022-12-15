@@ -28,7 +28,6 @@ a {
     }
 }
 
-
 //preloader
 .preloaderdiv {
     display: flex;
@@ -37,7 +36,7 @@ a {
     height: 100vh;
     width: 100%;
     position: fixed;
-    z-index: 9999999;
+    z-index: 9999999999999;
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.9) !important;

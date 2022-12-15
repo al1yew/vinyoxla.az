@@ -15,7 +15,9 @@ toastr.options = {
 }
 
 if ($(document).width() < 576) {
+    $('.mainbanner').hide();
     $('.mainbanner').attr('src', './assets/images/bannertel.jpg')
+    $('.mainbanner').show();
 }
 
 $(document).ready(function () {
@@ -177,7 +179,7 @@ $(document).ready(function () {
         if (phoneno.length && code.length) {
             console.log({ phoneno, code })
 
-            //fetch or continue
+            //fetch to the action of controller where we send sms
         }
     })
 
