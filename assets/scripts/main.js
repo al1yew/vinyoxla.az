@@ -17,7 +17,6 @@ toastr.options = {
 $(document).ready(function () {
 
     $('.preloaderdiv').addClass('d-none')
-    $('.preloaderdiv').removeClass('backgroundclass')
 
     if ($(document).width() < 576) {
         $('.mainbanner').attr('src', './assets/images/bannertel.jpg')
