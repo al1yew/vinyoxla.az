@@ -407,10 +407,12 @@ input::-webkit-inner-spin-button {
   #loginmain .all form {
     border-radius: 10px !important;
     padding: 20px !important;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c !important;
+            box-shadow: 0px 0px 5px 1px #0422686c !important;
   }
   #loginmain .all form:hover {
-    -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c !important;
+            box-shadow: 0px 0px 5px 1px #0422686c !important;
   }
   #loginmain .all form .loginp {
     font-size: 16px !important;
@@ -448,6 +450,7 @@ input::-webkit-inner-spin-button {
   }
   #loginmain .all form button {
     font-size: 14px !important;
+    margin: 0 auto !important;
   }
   #loginmain .all form button:hover {
     -webkit-box-shadow: none !important;
