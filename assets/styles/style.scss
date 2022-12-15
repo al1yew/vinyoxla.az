@@ -54,6 +54,10 @@ a {
     }
 }
 
+.backgroundclass {
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
 /* Safari */
 @-webkit-keyframes spin {
     0% {
@@ -711,7 +715,7 @@ input::-webkit-inner-spin-button {
                         flex-wrap: wrap;
                         padding: 15px 10px;
 
-                        .price{
+                        .price {
                             font-size: 30px;
                             font-family: var(--montbold);
                             color: red;

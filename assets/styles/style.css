@@ -59,6 +59,10 @@ a:hover {
   animation: spin 2s linear infinite;
 }
 
+.backgroundclass {
+  background-color: white !important;
+}
+
 /* Safari */
 @-webkit-keyframes spin {
   0% {
