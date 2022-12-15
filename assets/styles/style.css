@@ -140,6 +140,13 @@ input::-webkit-inner-spin-button {
   #main {
     margin-top: 60px !important;
   }
+  #main .all form {
+    background-image: url(../images/bannertel.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 80vh !important;
+  }
   #main .all form .firstp {
     font-size: 24px !important;
     top: 7% !important;
@@ -983,6 +990,11 @@ input::-webkit-inner-spin-button {
   margin: 0;
   overflow: hidden;
   position: relative;
+  background-image: url(../images/mashina-i-fon-vmeste.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
 }
 
 #main .all form .firstp {

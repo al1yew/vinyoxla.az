@@ -14,11 +14,11 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
-if ($(document).width() < 576) {
-    $('.mainbanner').attr('src', './assets/images/bannertel.jpg')
-} else {
-    $('.mainbanner').attr('src', './assets/images/mashina-i-fon-vmeste.jpg')
-}
+// if ($(document).width() < 576) {
+//     $('.mainbanner').attr('src', './assets/images/bannertel.jpg')
+// } else {
+//     $('.mainbanner').attr('src', './assets/images/mashina-i-fon-vmeste.jpg')
+// }
 
 $(document).ready(function () {
 
