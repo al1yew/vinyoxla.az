@@ -225,6 +225,7 @@ input::-webkit-inner-spin-button {
   }
   #main .all .resultsContainer {
     font-size: 14px !important;
+    padding-bottom: 10px !important;
   }
   #main .all .resultsContainer .resultContainer {
     border-radius: 5px !important;
@@ -256,6 +257,9 @@ input::-webkit-inner-spin-button {
   #main .all .resultsContainer .resultContainer .icindeki .bottom a {
     padding: 7px 50px !important;
     font-size: 14px !important;
+  }
+  #main .all .resultsContainer .reklam {
+    margin-bottom: 0 !important;
   }
 }
 
@@ -1139,14 +1143,6 @@ input::-webkit-inner-spin-button {
   background-color: #042268;
 }
 
-#main .all .reklam {
-  margin: 0;
-  padding: 0;
-  border-radius: 10px;
-  margin: 10px 0;
-  overflow: hidden;
-}
-
 #main .all .resultsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1295,5 +1291,16 @@ input::-webkit-inner-spin-button {
 #main .all .resultsContainer .resultContainer .icindeki .bottom a:focus {
   -webkit-box-shadow: 0px 0px 5px 1px #042268;
           box-shadow: 0px 0px 5px 1px #042268;
+}
+
+#main .all .resultsContainer .reklam {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+          box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+  margin-top: 15px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

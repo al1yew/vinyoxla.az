@@ -149,7 +149,7 @@ $(document).ready(function () {
                 $('#photosApiResult').removeClass('d-none');
                 $('.preloaderdiv').addClass('d-none');
 
-                $(document).scrollTop(500);
+                $(document).width < 576 ? $(document).scrollTop(1000) : $(document).scrollTop(500);
             })
     })
 

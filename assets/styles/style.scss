@@ -637,14 +637,6 @@ input::-webkit-inner-spin-button {
             }
         }
 
-        .reklam {
-            margin: 0;
-            padding: 0;
-            border-radius: 10px;
-            margin: 10px 0;
-            overflow: hidden;
-        }
-
         .resultsContainer {
             display: flex;
             justify-content: space-between;
@@ -752,8 +744,15 @@ input::-webkit-inner-spin-button {
                 }
             }
 
-
-
+            .reklam {
+                margin: 0;
+                padding: 0;
+                border-radius: 10px;
+                box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+                margin-top: 15px;
+                margin-bottom: 10px;
+                overflow: hidden;
+            }
         }
     }
 }

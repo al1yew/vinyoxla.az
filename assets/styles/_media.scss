@@ -110,6 +110,7 @@
 
             .resultsContainer {
                 font-size: 14px !important;
+                padding-bottom: 10px !important;
 
                 .resultContainer {
                     border-radius: 5px !important;
@@ -159,6 +160,10 @@
                             }
                         }
                     }
+                }
+
+                .reklam {
+                    margin-bottom: 0 !important;
                 }
             }
         }
