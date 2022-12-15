@@ -15,9 +15,9 @@ toastr.options = {
 }
 
 if ($(document).width() < 576) {
-    $('.mainbanner').hide();
     $('.mainbanner').attr('src', './assets/images/bannertel.jpg')
-    $('.mainbanner').show();
+} else {
+    $('.mainbanner').attr('src', './assets/images/mashina-i-fon-vmeste.jpg')
 }
 
 $(document).ready(function () {
