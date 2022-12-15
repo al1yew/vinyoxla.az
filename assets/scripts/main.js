@@ -14,13 +14,13 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
+if ($(document).width() < 576) {
+    $('.mainbanner').attr('src', './assets/images/bannertel.jpg')
+}
+
 $(document).ready(function () {
 
     $('.preloaderdiv').addClass('d-none')
-
-    if ($(document).width() < 576) {
-        $('.mainbanner').attr('src', './assets/images/bannertel.jpg')
-    }
 
     if ($(document).width() > 576) {
         $('#vincodeinput').focus()
