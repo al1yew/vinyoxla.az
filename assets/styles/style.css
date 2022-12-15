@@ -243,6 +243,9 @@ input::-webkit-inner-spin-button {
   #main .all .resultsContainer .resultContainer .icindeki .bottom {
     padding: 10px !important;
   }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom .price {
+    font-size: 24px !important;
+  }
   #main .all .resultsContainer .resultContainer .icindeki .bottom a {
     padding: 7px 50px !important;
     font-size: 14px !important;
