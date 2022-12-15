@@ -26,7 +26,9 @@ $(document).ready(function () {
         $('#vincodeinput').focus()
     }
 
-    //input toUpperCase
+    // -------------------------- main page
+
+    //#region input toUpperCase
 
     $(document).on('input keyup', '#vincodeinput', function () {
         let value = $(this).val();
@@ -51,7 +53,9 @@ $(document).ready(function () {
         }
     });
 
-    //delete input value
+    //#endregion input toUpperCase
+
+    //#region delete input value
 
     $(document).on('click', '.deleteinp', function () {
         $('#vincodeinput').val("");
@@ -60,8 +64,9 @@ $(document).ready(function () {
         $('.deleteinp').hide();
     })
 
+    //#endregion delete input value
 
-    //copy paste
+    //#region copy paste
 
     $(document).on('click pointerdown pointerup', '.copyspan', function () {
 
@@ -79,7 +84,9 @@ $(document).ready(function () {
             });
     })
 
-    //fetch
+    //#endregion copy paste
+
+    //#region fetch
 
     $(document).on('submit', '#vincodeform', function (e) {
         e.preventDefault();
@@ -97,6 +104,7 @@ $(document).ready(function () {
         }
 
         $('.preloaderdiv').removeClass('d-none');
+        $('.resultsContainer').addClass('d-none');
         $('#carfaxContainer').addClass('d-none');
         $('#autocheckContainer').addClass('d-none');
         $('#photosApiResult').addClass('d-none');
@@ -106,6 +114,8 @@ $(document).ready(function () {
 
         axios.get(`https://api.allreports.tools/wp-json/v1/get_report_check/${vinCode}`)
             .then(function (res) {
+
+                $('.resultsContainer').removeClass('d-none')
 
                 if (res?.data?.carfax?.records > 0) {
                     $('#autoNameCarfax').html(res?.data?.carfax?.vehicle);
@@ -135,10 +145,42 @@ $(document).ready(function () {
                 $('.preloaderdiv').addClass('d-none');
 
                 $(document).scrollTop(1000);
-
             })
+    })
+
+    //#endregion fetch
+
+    // -------------------------- main page
+
+    // --------------------------
+
+    // -------------------------- login page
+
+    //#region login input focus on click on span
+
+    $(document).on('click', '.kodstrani', function () {
+        $('#phoneno').focus();
+    })
+
+    //#endregion login input focus on click on span
+
+    //#region login input submit
+
+    $(document).on('submit', '#loginform', function (e) {
+        e.preventDefault();
+        const formData = new FormData(e.target)
+
+        let phoneno = formData.get('phoneno');
+        let code = formData.get('code');
+
+        console.log({ phoneno, code })
 
     })
+
+    //#endregion login input submit
+
+
+    // -------------------------- login page
 
 });
 
