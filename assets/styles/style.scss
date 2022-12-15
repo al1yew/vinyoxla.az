@@ -715,13 +715,16 @@ input::-webkit-inner-spin-button {
                         padding: 15px 10px;
 
                         .price {
-                            font-size: 30px;
+                            font-size: 20px;
+                            padding: 6px 32px;
+                            border-radius: 5px;
+                            border: 0.5px solid #0055b0;
                             font-family: var(--montbold);
-                            color: red;
+                            color: #0055b0;
                         }
 
                         a {
-                            padding: 10px 50px;
+                            padding: 10px 55px;
                             font-size: 16px;
                             background-color: #0055b0;
                             text-align: center;
