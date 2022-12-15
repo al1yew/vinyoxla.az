@@ -1139,6 +1139,14 @@ input::-webkit-inner-spin-button {
   background-color: #042268;
 }
 
+#main .all .reklam {
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
 #main .all .resultsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1154,7 +1162,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
   padding: 0;
   margin-top: 30px;
-  margin-bottom: 20px;
   font-family: var(--montmedium);
   font-size: 15px;
 }

@@ -27,6 +27,8 @@ $(document).ready(function () {
     if ($(document).width() > 576) {
         $('#vincodeinput').focus()
         $('#phoneno').focus()
+    } else {
+        $('.reklamhref').attr('href', 'https://www.instagram.com/garantauto.az/?hl=en')
     }
 
     // -------------------------- main page
@@ -147,7 +149,7 @@ $(document).ready(function () {
                 $('#photosApiResult').removeClass('d-none');
                 $('.preloaderdiv').addClass('d-none');
 
-                $(document).scrollTop(1000);
+                $(document).scrollTop(500);
             })
     })
 
