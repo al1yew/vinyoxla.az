@@ -544,6 +544,7 @@ input::-webkit-inner-spin-button {
   margin-top: 70px;
   font-family: var(--montlight);
   font-size: 16px;
+  height: 120vh;
 }
 
 #aboutusmain .all {
