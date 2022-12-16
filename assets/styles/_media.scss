@@ -170,4 +170,53 @@
             }
         }
     }
+
+    #footer {
+        margin-top: 20px !important;
+
+        .all {
+            padding: 6px 0 !important;
+
+            .left {
+                order: 1 !important;
+
+                .garantautolink {
+                    width: 30% !important;
+                }
+
+                .fblink {
+                    i {
+                        font-size: 25px !important;
+                    }
+                }
+
+                .instalink {
+                    i {
+                        font-size: 25px !important;
+                    }
+                }
+            }
+
+            .middle {
+                order: 3 !important;
+                margin-top: 20px !important;
+
+                p {
+                    font-size: 12px !important;
+                }
+
+                a {
+                    font-size: 12px !important;
+                }
+            }
+
+            .right {
+                order: 2 !important;
+
+                img {
+                    width: 25% !important;
+                }
+            }
+        }
+    }
 }
