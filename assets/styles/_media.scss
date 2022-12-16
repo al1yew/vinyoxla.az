@@ -10,14 +10,20 @@
 
         .all {
             div {
+
                 &:nth-child(2) {
                     a {
+                        margin: 0 7px !important;
 
                         &:hover {
                             &::before {
                                 content: '';
                                 width: 0 !important;
                             }
+                        }
+
+                        &:last-child {
+                            margin: 0 !important;
                         }
                     }
                 }

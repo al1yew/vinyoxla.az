@@ -8,7 +8,6 @@
     margin-top: 70px;
     font-family: var(--montlight);
     font-size: 16px;
-    height: 100vh;
 
     .all {
         display: flex;
@@ -27,5 +26,123 @@
             }
         }
 
+        .abouttext {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .firsttext {
+                text-align: center;
+                font-family: var(--montbold);
+                font-size: 20px;
+                margin-top: 20px;
+            }
+
+            .secondtext {
+                text-align: center;
+                font-family: var(--montmedium);
+                font-size: 18px;
+                margin-top: 10px;
+            }
+
+            .voen {
+                text-align: center;
+                font-family: var(--montmedium);
+                font-size: 16px;
+                margin-top: 10px;
+
+                span {
+                    color: #042268;
+                }
+            }
+
+            .huquqiadres {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 16px;
+                font-family: var(--montmedium);
+            }
+
+            .faktikiadres {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 16px;
+                font-family: var(--montmedium);
+            }
+
+            .telnomer {
+                text-align: center;
+                margin-top: 10px;
+                font-size: 16px;
+                font-family: var(--montmedium);
+
+                a {
+                    color: #042268;
+                }
+            }
+
+            .maintext {
+                text-align: center;
+                margin-top: 20px;
+                font-size: 16px;
+                font-family: var(--montmedium);
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    #aboutusmain {
+        margin-top: 60px !important;
+
+        .all {
+
+            .mapdiv {
+
+                iframe {
+                    border-radius: 7px !important;
+                    height: 250px !important;
+                }
+            }
+
+            .abouttext {
+
+                .firsttext {
+                    font-size: 18px !important;
+                    margin-top: 15px !important;
+                }
+
+                .secondtext {
+                    font-size: 16px !important;
+                    margin-top: 7px !important;
+                }
+
+                .voen {
+                    font-size: 14px !important;
+                    margin-top: 7px !important;
+                }
+
+                .huquqiadres {
+                    margin-top: 7px !important;
+                    font-size: 14px !important;
+                }
+
+                .faktikiadres {
+                    margin-top: 7px !important;
+                    font-size: 14px !important;
+                }
+
+                .telnomer {
+                    margin-top: 7px !important;
+                    font-size: 14px !important;
+                }
+
+                .maintext {
+                    margin-top: 15px !important;
+                    font-size: 14px !important;
+                }
+            }
+        }
     }
 }

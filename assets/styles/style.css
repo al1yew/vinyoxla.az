@@ -133,9 +133,15 @@ input::-webkit-inner-spin-button {
   #header {
     font-size: 14px !important;
   }
+  #header .all div:nth-child(2) a {
+    margin: 0 7px !important;
+  }
   #header .all div:nth-child(2) a:hover::before {
     content: '';
     width: 0 !important;
+  }
+  #header .all div:nth-child(2) a:last-child {
+    margin: 0 !important;
   }
   #main {
     margin-top: 60px !important;
@@ -538,7 +544,6 @@ input::-webkit-inner-spin-button {
   margin-top: 70px;
   font-family: var(--montlight);
   font-size: 16px;
-  height: 100vh;
 }
 
 #aboutusmain .all {
@@ -561,6 +566,115 @@ input::-webkit-inner-spin-button {
   border-radius: 10px;
   width: 100%;
   height: 200px;
+}
+
+#aboutusmain .all .abouttext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#aboutusmain .all .abouttext .firsttext {
+  text-align: center;
+  font-family: var(--montbold);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#aboutusmain .all .abouttext .secondtext {
+  text-align: center;
+  font-family: var(--montmedium);
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#aboutusmain .all .abouttext .voen {
+  text-align: center;
+  font-family: var(--montmedium);
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#aboutusmain .all .abouttext .voen span {
+  color: #042268;
+}
+
+#aboutusmain .all .abouttext .huquqiadres {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: var(--montmedium);
+}
+
+#aboutusmain .all .abouttext .faktikiadres {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: var(--montmedium);
+}
+
+#aboutusmain .all .abouttext .telnomer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: var(--montmedium);
+}
+
+#aboutusmain .all .abouttext .telnomer a {
+  color: #042268;
+}
+
+#aboutusmain .all .abouttext .maintext {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: var(--montmedium);
+}
+
+@media (max-width: 576px) {
+  #aboutusmain {
+    margin-top: 60px !important;
+  }
+  #aboutusmain .all .mapdiv iframe {
+    border-radius: 7px !important;
+    height: 250px !important;
+  }
+  #aboutusmain .all .abouttext .firsttext {
+    font-size: 18px !important;
+    margin-top: 15px !important;
+  }
+  #aboutusmain .all .abouttext .secondtext {
+    font-size: 16px !important;
+    margin-top: 7px !important;
+  }
+  #aboutusmain .all .abouttext .voen {
+    font-size: 14px !important;
+    margin-top: 7px !important;
+  }
+  #aboutusmain .all .abouttext .huquqiadres {
+    margin-top: 7px !important;
+    font-size: 14px !important;
+  }
+  #aboutusmain .all .abouttext .faktikiadres {
+    margin-top: 7px !important;
+    font-size: 14px !important;
+  }
+  #aboutusmain .all .abouttext .telnomer {
+    margin-top: 7px !important;
+    font-size: 14px !important;
+  }
+  #aboutusmain .all .abouttext .maintext {
+    margin-top: 15px !important;
+    font-size: 14px !important;
+  }
 }
 
 .col-1 {
@@ -988,6 +1102,11 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+#header .all div {
+  padding: 0;
+  margin: 0;
 }
 
 #header .all div:nth-child(2) {
