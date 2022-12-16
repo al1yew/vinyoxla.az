@@ -185,7 +185,7 @@ $(document).ready(function () {
         }
     })
 
-    //open code input
+    //open code input on ENTER press and on button click 
 
     $(document).on('click', '#sendcode', function () {
         if ($('#phoneno').val().length == 9) {
@@ -206,7 +206,6 @@ $(document).ready(function () {
             }
         }
     })
-
 
     //#endregion login input submit
 
