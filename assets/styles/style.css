@@ -287,7 +287,7 @@ input::-webkit-inner-spin-button {
     -webkit-box-ordinal-group: 4 !important;
         -ms-flex-order: 3 !important;
             order: 3 !important;
-    margin-top: 20px !important;
+    margin-top: 10px !important;
   }
   #footer .all .middle p {
     font-size: 12px !important;
