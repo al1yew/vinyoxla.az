@@ -674,6 +674,18 @@ input::-webkit-inner-spin-button {
   }
 }
 
+:root {
+  --montbold: MontserratBold;
+  --montmedium: MontserratMedium;
+  --montlight: MontserratLight;
+}
+
+#purchasemain {
+  margin-top: 70px;
+  font-family: var(--montlight);
+  font-size: 16px;
+}
+
 .col-1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
