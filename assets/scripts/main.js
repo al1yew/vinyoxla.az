@@ -188,10 +188,25 @@ $(document).ready(function () {
     //open code input
 
     $(document).on('click', '#sendcode', function () {
-        $('#sendcode').addClass('d-none');
-        $('#kodgelennensonra').removeClass('d-none');
-        $('#phoneno').prop('readonly', 'true');
+        if ($('#phoneno').val().length == 9) {
+            $('#sendcode').addClass('d-none');
+            $('#kodgelennensonra').removeClass('d-none');
+            $('#phoneno').prop('readonly', 'true');
+            $('#code').focus();
+        }
     })
+
+    $(document).on('keypress', function (e) {
+        if (e.keyCode == 13) {
+            if ($('#phoneno').val().length == 9) {
+                $('#sendcode').addClass('d-none');
+                $('#kodgelennensonra').removeClass('d-none');
+                $('#phoneno').prop('readonly', 'true');
+                $('#code').focus();
+            }
+        }
+    })
+
 
     //#endregion login input submit
 
@@ -205,15 +220,6 @@ $(document).ready(function () {
     })
 
     //#endregion login input prevent entering of nonnumeric
-
-    //#region 
-
-    $(document).on('input', '#phoneno, #code', function (e) {
-
-    })
-
-    //#endregion 
-
 
     // -------------------------- login page
 
