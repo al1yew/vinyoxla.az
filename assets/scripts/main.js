@@ -114,9 +114,6 @@ $(document).ready(function () {
         $('#autocheckContainer').addClass('d-none');
         $('#photosApiResult').addClass('d-none');
 
-        //WAUDG74F25N111998
-        //4T1BG22K9YU930834
-
         axios.get(`https://api.allreports.tools/wp-json/v1/get_report_check/${vinCode}`)
             .then(function (res) {
 
@@ -222,5 +219,35 @@ $(document).ready(function () {
 
     // -------------------------- login page
 
+    // -------------------------- 
+
+    // -------------------------- purchase page
+
+    //#region purchase form
+
+    $(document).on('submit', '#purchaseForm', function (e) {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+
+        let cardno = formData.get('cardno');
+        let cardholder = formData.get('cardholder');
+        let year = formData.get('year');
+        let month = formData.get('month');
+        let cvv = formData.get('cvv');
+
+        console.log({ cardholder, cardno, year, month, cvv })
+
+    })
+
+    //#endregion purchase form
+
+
+
+
+
+
+
 });
 
+    //WAUDG74F25N111998
+    //4T1BG22K9YU930834
