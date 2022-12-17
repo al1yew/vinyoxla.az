@@ -322,5 +322,155 @@ $(document).ready(function () {
 
 });
 
-    //WAUDG74F25N111998
-    //4T1BG22K9YU930834
+//WAUDG74F25N111998
+//4T1BG22K9YU930834
+
+
+
+var objArr = [
+    {
+        "win_amount": 1425,
+        "currency": "USD",
+        "date": "2021-02-12T07:40:50+00:00",
+        "sold": false,
+        "auction_lot_number": 29589213,
+        "auction": "iaai",
+        "odometer": {
+            "value": 149163,
+            "unit_of_measure": "mi",
+            "status": "not_actual"
+        },
+        "status": "notsold",
+        "primary_damage": "Left Front",
+        "secondary_damage": "Left Side",
+        "seller": {
+            "name": "CA  Auto Sales",
+            "insurance": false
+        },
+        "images": {
+            "thumbs": [
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_thumb.jpg"
+            ],
+            "previews": [
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_preview.jpg"
+            ]
+        },
+        "loss_type": "Collision"
+    },
+    {
+        "win_amount": 1625,
+        "currency": "USD",
+        "date": "2021-02-19T07:40:50+00:00",
+        "sold": false,
+        "auction_lot_number": 29589213,
+        "auction": "iaai",
+        "odometer": {
+            "value": 149163,
+            "unit_of_measure": "mi",
+            "status": "not_actual"
+        },
+        "status": "notsold",
+        "primary_damage": "Left Front",
+        "secondary_damage": "Left Side",
+        "seller": {
+            "name": "CA  Auto Sales",
+            "insurance": false
+        },
+        "images": {
+            "thumbs": [
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_thumb.jpg", "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_thumb.jpg"
+            ],
+            "previews": [
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_preview.jpg"
+            ]
+        },
+        "loss_type": "Collision"
+    },
+    {
+        "win_amount": 1750,
+        "currency": "USD",
+        "date": "2021-02-26T07:40:50+00:00",
+        "sold": true,
+        "auction_lot_number": 29589213,
+        "auction": "iaai",
+        "odometer": {
+            "value": 149163,
+            "unit_of_measure": "mi",
+            "status": "not_actual"
+        },
+        "status": "sold",
+        "primary_damage": "Left Front",
+        "secondary_damage": "Left Side",
+        "seller": {
+            "name": "CA  Auto Sales",
+            "insurance": false
+        },
+        "images": {
+            "thumbs": [
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_thumb.jpg", "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_thumb.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_thumb.jpg"
+            ],
+            "previews": [
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_preview.jpg",
+                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_preview.jpg"
+            ]
+        },
+        "loss_type": "Collision"
+    }
+]

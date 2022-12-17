@@ -524,7 +524,7 @@
                 }
 
                 .below {
-                    height: 56% !important;
+                    height: 68% !important;
                     transform: translateY(0) !important;
                     top: 5% !important;
 
@@ -549,6 +549,7 @@
                     margin-top: 50px !important;
 
                     .inputkeeper {
+                        width: 47% !important;
 
                         span {
                             letter-spacing: 2px !important;
@@ -571,8 +572,8 @@
                     }
 
                     button {
-                        padding: 9px 55px !important;
-                        margin-top: 20px !important;
+                        padding: 5px 55px !important;
+                        width: 47% !important;
                     }
                 }
             }
@@ -635,46 +636,17 @@
         .all {
 
             .resultContainer {
-                box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-                border-radius: 8px;
-                padding: 8px;
-                background-color: white;
 
                 .icindeki {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    border: 0.5px solid #0055b0;
-                    border-radius: 8px;
-                    background-color: white;
 
                     .top {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
 
                         .toptop,
                         .topbottom {
-                            padding: 10px;
-                            border-bottom: 0.5px solid #0055b0;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
 
                             .topelement {
-                                font-size: 14px;
-                                color: #0055b0;
-                                font-family: var(--montbold);
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                flex-wrap: wrap;
 
                                 &:nth-child(2) {
-                                    text-align: start;
-                                    padding-left: 5px;
 
                                     span {
                                         &:nth-child(2) {
@@ -682,243 +654,46 @@
                                         }
                                     }
                                 }
-
-                                span {
-                                    &:nth-child(2) {
-                                        font-family: var(--montmedium);
-                                        font-size: 15px;
-                                    }
-                                }
                             }
-                        }
-                    }
-
-                    .bottom {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        padding: 15px 10px;
-
-                        .price {
-                            font-size: 20px;
-                            padding: 6px 70px;
-                            border-radius: 5px;
-                            border: 0.5px solid #0055b0;
-                            font-family: var(--montbold);
-                            color: #0055b0;
                         }
                     }
                 }
             }
 
             form {
-                margin: 0;
-                padding: 0;
-                margin-top: 30px;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                flex-wrap: wrap;
-                position: relative;
 
                 .above {
-                    z-index: 4;
-                    border: 0.5px solid grey;
-                    border-radius: 5px;
-                    padding: 20px;
-                    background-color: #f8edd5;
-                    padding-top: 30px;
-                    padding-bottom: 10px;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-
-                    .validthru {
-                        margin-bottom: 10px;
-                        font-size: 14px;
-                    }
 
                     input {
-                        font-size: 18px;
-                        color: black;
-                        border-radius: 5px;
-                        border: 0.5px solid #0055b0;
-                        box-shadow: 0px 0px 5px 1px #04226846;
-                        outline: none;
-                        border: none;
-                        padding: 2px 6px;
-                        margin-bottom: 20px;
-
-                        &:focus {
-                            box-shadow: 0px 0px 10px 1px #04226870;
-                        }
-
-                        &::placeholder {
-                            color: black;
-                            font-family: var(--montlight);
-                            font-size: 18px;
-                        }
-                    }
-
-                    .ikisi {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-
-                        .leftside {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
-                            margin-bottom: 10px;
-
-                            input {
-                                margin: 0;
-                            }
-
-                            span {
-                                font-size: 30px;
-                                color: black;
-                                font-family: var(--montlight);
-                            }
-                        }
-
-                        .rightside {
-                            display: flex;
-                            justify-content: end;
-                            align-items: center;
-                            margin-bottom: 10px;
-                            flex-wrap: wrap;
-
-                            .cardbox {
-                                margin-left: 5px;
-                            }
-                        }
-                    }
-
-                    #year,
-                    #cvv,
-                    #month {
-                        text-align: center;
+                        padding: 10px !important;
                     }
                 }
 
                 .below {
-                    position: absolute;
-                    height: 63% !important;
-                    top: 40%;
-                    transform: translateY(-50%);
-                    right: 0%;
-                    border: 0.5px solid grey;
-                    border-radius: 5px;
-                    background-color: #e0ddd7;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    display: flex;
-                    align-items: flex-end;
-                    flex-wrap: wrap;
-                    justify-content: end;
-                    z-index: 2;
+                    height: 68% !important;
+                    top: 38% !important;
+                    transform: translateY(-50%) !important;
 
                     &::before {
                         content: '';
-                        width: 100%;
                         height: 70px;
-                        background-color: rgb(63, 63, 63);
-                    }
-
-                    input {
-                        font-size: 18px;
-                        color: black;
-                        border-radius: 5px;
-                        border: 0.5px solid #0055b0;
-                        box-shadow: 0px 0px 5px 1px #04226846;
-                        outline: none;
-                        border: none;
-                        padding: 2px 6px;
-                        margin-bottom: 50px;
-                        margin-right: 20px;
-
-                        &:focus {
-                            box-shadow: 0px 0px 10px 1px #04226870;
-                        }
-
-                        &::placeholder {
-                            color: black;
-                            font-family: var(--montlight);
-                            font-size: 18px;
-                        }
-                    }
-
-                    #cvv {
-                        text-align: center;
                     }
                 }
 
                 .buttonandtelkeeper {
-                    margin: 0;
-                    padding: 0;
                     margin-top: 50px !important;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    margin-bottom: 40px;
+                    margin-bottom: 40px !important;
 
                     .inputkeeper {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        overflow: hidden;
-                        border-radius: 5px;
-                        box-shadow: 0px 0px 5px 1px #0422686c;
                         width: 47% !important;
 
                         span {
-                            letter-spacing: 3px;
-                            padding: 6px 5px;
                             padding-left: 15px !important;
-                            font-size: 18px;
-                            color: #042268;
-                            transition: 0.2s;
-                            text-align: end;
-                        }
-
-                        input {
-                            font-size: 18px;
-                            letter-spacing: 2px;
-                            outline: none;
-                            border: none;
-                            transition: 0.2s;
-                            padding: 6px 0px;
-                            transition: 0.2s;
-                            color: #042268;
-
-                            &::placeholder {
-                                color: grey;
-                                font-size: 18px;
-                            }
-                        }
-
-                        .code {
-                            padding: 6px 20px;
                         }
                     }
 
                     button {
-                        padding: 7px 55px;
-                        font-size: 16px;
-                        background-color: #0055b0;
-                        text-align: center;
-                        box-shadow: 0px 0px 5px 1px #0422686c;
-                        border-radius: 5px;
                         width: 47% !important;
-                        color: white;
-                        font-family: var(--montmedium);
                     }
                 }
             }
@@ -928,306 +703,48 @@
 
 @media(min-width: 992px) and (max-width: 1200px) {
     #purchasemain {
-        font-family: var(--montmedium);
-        font-size: 16px;
-        margin-top: 80px;
-        min-height: 90vh;
 
         .all {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: center;
-            flex-wrap: wrap;
 
             form {
-                margin: 0;
-                padding: 0;
-                margin-top: 30px;
-                display: flex;
-                justify-content: start;
-                align-items: center;
                 width: 60% !important;
-                flex-wrap: wrap;
-                position: relative;
-
-                .above {
-                    z-index: 4;
-                    border: 0.5px solid grey;
-                    border-radius: 5px;
-                    padding: 20px;
-                    background-color: #f8edd5;
-                    padding-top: 30px;
-                    padding-bottom: 10px;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-
-                    .validthru {
-                        margin-bottom: 10px;
-                        font-size: 14px;
-                    }
-
-                    input {
-                        font-size: 18px;
-                        color: black;
-                        border-radius: 5px;
-                        border: 0.5px solid #0055b0;
-                        box-shadow: 0px 0px 5px 1px #04226846;
-                        outline: none;
-                        border: none;
-                        padding: 2px 6px;
-                        margin-bottom: 20px;
-
-                        &:focus {
-                            box-shadow: 0px 0px 10px 1px #04226870;
-                        }
-
-                        &::placeholder {
-                            color: black;
-                            font-family: var(--montlight);
-                            font-size: 18px;
-                        }
-                    }
-
-                    .ikisi {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-
-                        .leftside {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
-                            margin-bottom: 10px;
-
-                            input {
-                                margin: 0;
-                            }
-
-                            span {
-                                font-size: 30px;
-                                color: black;
-                                font-family: var(--montlight);
-                            }
-                        }
-
-                        .rightside {
-                            display: flex;
-                            justify-content: end;
-                            align-items: center;
-                            margin-bottom: 10px;
-                            flex-wrap: wrap;
-
-                            .cardbox {
-                                margin-left: 5px;
-                            }
-                        }
-                    }
-
-                    #year,
-                    #cvv,
-                    #month {
-                        text-align: center;
-                    }
-                }
 
                 .below {
-                    position: absolute;
                     height: 64% !important;
                     top: 40%;
                     transform: translateY(-50%);
-                    right: 0%;
-                    border: 0.5px solid grey;
-                    border-radius: 5px;
-                    background-color: #e0ddd7;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    display: flex;
-                    align-items: flex-end;
-                    flex-wrap: wrap;
-                    justify-content: end;
-                    z-index: 2;
-
-                    &::before {
-                        content: '';
-                        width: 100%;
-                        height: 70px;
-                        background-color: rgb(63, 63, 63);
-                    }
-
-                    input {
-                        font-size: 18px;
-                        color: black;
-                        border-radius: 5px;
-                        border: 0.5px solid #0055b0;
-                        box-shadow: 0px 0px 5px 1px #04226846;
-                        outline: none;
-                        border: none;
-                        padding: 2px 6px;
-                        margin-bottom: 50px;
-                        margin-right: 20px;
-
-                        &:focus {
-                            box-shadow: 0px 0px 10px 1px #04226870;
-                        }
-
-                        &::placeholder {
-                            color: black;
-                            font-family: var(--montlight);
-                            font-size: 18px;
-                        }
-                    }
-
-                    #cvv {
-                        text-align: center;
-                    }
                 }
 
                 .buttonandtelkeeper {
-                    margin: 0;
-                    padding: 0;
                     margin-top: 50px !important;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
                     margin-bottom: 40px !important;
 
                     .inputkeeper {
-                        display: flex;
                         justify-content: start !important;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        overflow: hidden;
-                        border-radius: 5px;
-                        box-shadow: 0px 0px 5px 1px #0422686c;
                         width: 47% !important;
 
                         span {
-                            letter-spacing: 3px;
-                            padding: 6px 5px;
                             font-size: 16px !important;
-                            color: #042268;
-                            transition: 0.2s;
-                            text-align: end;
                         }
 
                         input {
                             font-size: 16px !important;
-                            letter-spacing: 2px;
-                            outline: none;
-                            border: none;
-                            transition: 0.2s;
-                            padding: 6px 0px;
-                            transition: 0.2s;
-                            color: #042268;
 
                             &::placeholder {
-                                color: grey;
                                 font-size: 16px !important;
                             }
-                        }
-
-                        .code {
-                            padding: 6px 20px;
                         }
                     }
 
                     button {
-                        padding: 7px 55px;
                         font-size: 16px !important;
                         width: 47% !important;
-                        background-color: #0055b0;
-                        text-align: center;
-                        box-shadow: 0px 0px 5px 1px #0422686c;
-                        border-radius: 5px;
-                        color: white;
-                        font-family: var(--montmedium);
                     }
                 }
             }
 
             .resultContainer {
-                box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-                border-radius: 8px;
-                padding: 8px;
-                background-color: white;
                 width: 60% !important;
-
-                .icindeki {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    border: 0.5px solid #0055b0;
-                    border-radius: 8px;
-                    background-color: white;
-
-                    .top {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-
-                        .toptop,
-                        .topbottom {
-                            padding: 10px;
-                            border-bottom: 0.5px solid #0055b0;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
-
-                            .topelement {
-                                font-size: 14px;
-                                color: #0055b0;
-                                font-family: var(--montbold);
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                flex-wrap: wrap;
-
-                                &:nth-child(2) {
-                                    text-align: start;
-                                    padding-left: 5px;
-
-                                    span {
-                                        &:nth-child(2) {
-                                            text-align: end;
-                                        }
-                                    }
-                                }
-
-                                span {
-                                    &:nth-child(2) {
-                                        font-family: var(--montmedium);
-                                        font-size: 15px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .bottom {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        padding: 15px 10px;
-
-                        .price {
-                            font-size: 20px;
-                            padding: 6px 70px;
-                            border-radius: 5px;
-                            border: 0.5px solid #0055b0;
-                            font-family: var(--montbold);
-                            color: #0055b0;
-                        }
-                    }
-                }
             }
         }
     }
@@ -1235,212 +752,36 @@
 
 @media(min-width: 1200px) and (max-width: 1280px) {
     #purchasemain {
-        font-family: var(--montmedium);
-        font-size: 16px;
-        margin-top: 80px;
-        min-height: 90vh;
 
         .all {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            align-items: center;
-            flex-wrap: wrap;
 
             form {
-                margin: 0;
-                padding: 0;
-                margin-top: 30px;
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                width: 60% !important;
-                flex-wrap: wrap;
-                position: relative;
-
-                .above {
-                    z-index: 4;
-                    border: 0.5px solid grey;
-                    border-radius: 5px;
-                    padding: 20px;
-                    background-color: #f8edd5;
-                    padding-top: 30px;
-                    padding-bottom: 10px;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    display: flex;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-
-                    .validthru {
-                        margin-bottom: 10px;
-                        font-size: 14px;
-                    }
-
-                    input {
-                        font-size: 18px;
-                        color: black;
-                        border-radius: 5px;
-                        border: 0.5px solid #0055b0;
-                        box-shadow: 0px 0px 5px 1px #04226846;
-                        outline: none;
-                        border: none;
-                        padding: 2px 6px;
-                        margin-bottom: 20px;
-
-                        &:focus {
-                            box-shadow: 0px 0px 10px 1px #04226870;
-                        }
-
-                        &::placeholder {
-                            color: black;
-                            font-family: var(--montlight);
-                            font-size: 18px;
-                        }
-                    }
-
-                    .ikisi {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-
-                        .leftside {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
-                            margin-bottom: 10px;
-
-                            input {
-                                margin: 0;
-                            }
-
-                            span {
-                                font-size: 30px;
-                                color: black;
-                                font-family: var(--montlight);
-                            }
-                        }
-
-                        .rightside {
-                            display: flex;
-                            justify-content: end;
-                            align-items: center;
-                            margin-bottom: 10px;
-                            flex-wrap: wrap;
-
-                            .cardbox {
-                                margin-left: 5px;
-                            }
-                        }
-                    }
-
-                    #year,
-                    #cvv,
-                    #month {
-                        text-align: center;
-                    }
-                }
+                width: 55% !important;
 
                 .below {
-                    position: absolute;
                     height: 64% !important;
                     top: 40%;
                     transform: translateY(-50%);
-                    right: 0%;
-                    border: 0.5px solid grey;
-                    border-radius: 5px;
-                    background-color: #e0ddd7;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    display: flex;
-                    align-items: flex-end;
-                    flex-wrap: wrap;
-                    justify-content: end;
-                    z-index: 2;
-
-                    &::before {
-                        content: '';
-                        width: 100%;
-                        height: 70px;
-                        background-color: rgb(63, 63, 63);
-                    }
-
-                    input {
-                        font-size: 18px;
-                        color: black;
-                        border-radius: 5px;
-                        border: 0.5px solid #0055b0;
-                        box-shadow: 0px 0px 5px 1px #04226846;
-                        outline: none;
-                        border: none;
-                        padding: 2px 6px;
-                        margin-bottom: 50px;
-                        margin-right: 20px;
-
-                        &:focus {
-                            box-shadow: 0px 0px 10px 1px #04226870;
-                        }
-
-                        &::placeholder {
-                            color: black;
-                            font-family: var(--montlight);
-                            font-size: 18px;
-                        }
-                    }
-
-                    #cvv {
-                        text-align: center;
-                    }
                 }
 
                 .buttonandtelkeeper {
-                    margin: 0;
-                    padding: 0;
                     margin-top: 50px !important;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
                     margin-bottom: 40px !important;
 
                     .inputkeeper {
-                        display: flex;
                         justify-content: start !important;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        overflow: hidden;
-                        border-radius: 5px;
-                        box-shadow: 0px 0px 5px 1px #0422686c;
                         width: 47% !important;
 
                         span {
-                            letter-spacing: 3px;
-                            padding: 6px 5px;
                             font-size: 16px !important;
-                            color: #042268;
-                            transition: 0.2s;
-                            text-align: end;
                         }
 
                         input {
                             font-size: 16px !important;
-                            letter-spacing: 2px;
-                            outline: none;
-                            border: none;
-                            transition: 0.2s;
-                            padding: 6px 0px;
-                            transition: 0.2s;
-                            color: #042268;
 
                             &::placeholder {
-                                color: grey;
                                 font-size: 16px !important;
                             }
-                        }
-
-                        .code {
-                            padding: 6px 20px;
                         }
                     }
 
@@ -1448,93 +789,12 @@
                         padding: 7px 55px;
                         font-size: 16px !important;
                         width: 47% !important;
-                        background-color: #0055b0;
-                        text-align: center;
-                        box-shadow: 0px 0px 5px 1px #0422686c;
-                        border-radius: 5px;
-                        color: white;
-                        font-family: var(--montmedium);
                     }
                 }
             }
 
             .resultContainer {
-                box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-                border-radius: 8px;
-                padding: 8px;
-                background-color: white;
-                width: 60% !important;
-
-                .icindeki {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-wrap: wrap;
-                    border: 0.5px solid #0055b0;
-                    border-radius: 8px;
-                    background-color: white;
-
-                    .top {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-
-                        .toptop,
-                        .topbottom {
-                            padding: 10px;
-                            border-bottom: 0.5px solid #0055b0;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
-
-                            .topelement {
-                                font-size: 14px;
-                                color: #0055b0;
-                                font-family: var(--montbold);
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                flex-wrap: wrap;
-
-                                &:nth-child(2) {
-                                    text-align: start;
-                                    padding-left: 5px;
-
-                                    span {
-                                        &:nth-child(2) {
-                                            text-align: end;
-                                        }
-                                    }
-                                }
-
-                                span {
-                                    &:nth-child(2) {
-                                        font-family: var(--montmedium);
-                                        font-size: 15px;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .bottom {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        padding: 15px 10px;
-
-                        .price {
-                            font-size: 20px;
-                            padding: 6px 70px;
-                            border-radius: 5px;
-                            border: 0.5px solid #0055b0;
-                            font-family: var(--montbold);
-                            color: #0055b0;
-                        }
-                    }
-                }
+                width: 55% !important;
             }
         }
     }

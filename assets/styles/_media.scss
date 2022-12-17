@@ -182,6 +182,7 @@
 
             .left {
                 width: 15% !important;
+                flex-direction: column;
 
                 .fblink {
                     i {
@@ -206,15 +207,15 @@
 
                 a {
                     font-size: 12px !important;
-                    margin-top: 8px !important;
                 }
             }
 
             .right {
                 width: 12% !important;
+                flex-direction: column;
 
                 img {
-                    width: 25% !important;
+                    width: 70% !important;
                 }
             }
         }

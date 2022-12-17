@@ -273,6 +273,10 @@ input::-webkit-inner-spin-button {
   }
   #footer .all .left {
     width: 15% !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #footer .all .left .fblink i {
     font-size: 25px !important;
@@ -289,13 +293,16 @@ input::-webkit-inner-spin-button {
   }
   #footer .all .middle a {
     font-size: 12px !important;
-    margin-top: 8px !important;
   }
   #footer .all .right {
     width: 12% !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   #footer .all .right img {
-    width: 25% !important;
+    width: 70% !important;
   }
 }
 
@@ -1569,7 +1576,7 @@ input::-webkit-inner-spin-button {
     text-align: center;
   }
   #purchasemain .all form .below {
-    height: 56% !important;
+    height: 68% !important;
     -webkit-transform: translateY(0) !important;
             transform: translateY(0) !important;
     top: 5% !important;
@@ -1599,6 +1606,9 @@ input::-webkit-inner-spin-button {
   #purchasemain .all form .buttonandtelkeeper {
     margin-top: 50px !important;
   }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper {
+    width: 47% !important;
+  }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
     letter-spacing: 2px !important;
     font-size: 14px !important;
@@ -1627,8 +1637,8 @@ input::-webkit-inner-spin-button {
     padding: 6px 10px !important;
   }
   #purchasemain .all form .buttonandtelkeeper button {
-    padding: 9px 55px !important;
-    margin-top: 20px !important;
+    padding: 5px 55px !important;
+    width: 47% !important;
   }
   #purchasemain .all .resultContainer {
     border-radius: 5px !important;
@@ -1666,1247 +1676,130 @@ input::-webkit-inner-spin-button {
     margin-top: 80px !important;
     min-height: 79vh !important;
   }
-  #purchasemain .all .resultContainer {
-    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-    border-radius: 8px;
-    padding: 8px;
-    background-color: white;
-  }
-  #purchasemain .all .resultContainer .icindeki {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    border: 0.5px solid #0055b0;
-    border-radius: 8px;
-    background-color: white;
-  }
-  #purchasemain .all .resultContainer .icindeki .top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop,
-  #purchasemain .all .resultContainer .icindeki .top .topbottom {
-    padding: 10px;
-    border-bottom: 0.5px solid #0055b0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
-    font-size: 14px;
-    color: #0055b0;
-    font-family: var(--montbold);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
-    text-align: start;
-    padding-left: 5px;
-  }
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     text-align: start !important;
   }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
-    font-family: var(--montmedium);
-    font-size: 15px;
-  }
-  #purchasemain .all .resultContainer .icindeki .bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 15px 10px;
-  }
-  #purchasemain .all .resultContainer .icindeki .bottom .price {
-    font-size: 20px;
-    padding: 6px 70px;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    font-family: var(--montbold);
-    color: #0055b0;
-  }
-  #purchasemain .all form {
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    position: relative;
-  }
-  #purchasemain .all form .above {
-    z-index: 4;
-    border: 0.5px solid grey;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: #f8edd5;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #purchasemain .all form .above .validthru {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
   #purchasemain .all form .above input {
-    font-size: 18px;
-    color: black;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    outline: none;
-    border: none;
-    padding: 2px 6px;
-    margin-bottom: 20px;
-  }
-  #purchasemain .all form .above input:focus {
-    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-            box-shadow: 0px 0px 10px 1px #04226870;
-  }
-  #purchasemain .all form .above input::-webkit-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input:-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input::-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input::placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above .ikisi {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all form .above .ikisi .leftside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-  #purchasemain .all form .above .ikisi .leftside input {
-    margin: 0;
-  }
-  #purchasemain .all form .above .ikisi .leftside span {
-    font-size: 30px;
-    color: black;
-    font-family: var(--montlight);
-  }
-  #purchasemain .all form .above .ikisi .rightside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 10px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all form .above .ikisi .rightside .cardbox {
-    margin-left: 5px;
-  }
-  #purchasemain .all form .above #year,
-  #purchasemain .all form .above #cvv,
-  #purchasemain .all form .above #month {
-    text-align: center;
+    padding: 10px !important;
   }
   #purchasemain .all form .below {
-    position: absolute;
-    height: 63% !important;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    right: 0%;
-    border: 0.5px solid grey;
-    border-radius: 5px;
-    background-color: #e0ddd7;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    z-index: 2;
+    height: 68% !important;
+    top: 38% !important;
+    -webkit-transform: translateY(-50%) !important;
+            transform: translateY(-50%) !important;
   }
   #purchasemain .all form .below::before {
     content: '';
-    width: 100%;
     height: 70px;
-    background-color: #3f3f3f;
-  }
-  #purchasemain .all form .below input {
-    font-size: 18px;
-    color: black;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    outline: none;
-    border: none;
-    padding: 2px 6px;
-    margin-bottom: 50px;
-    margin-right: 20px;
-  }
-  #purchasemain .all form .below input:focus {
-    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-            box-shadow: 0px 0px 10px 1px #04226870;
-  }
-  #purchasemain .all form .below input::-webkit-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input:-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input::-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input::placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below #cvv {
-    text-align: center;
   }
   #purchasemain .all form .buttonandtelkeeper {
-    margin: 0;
-    padding: 0;
     margin-top: 50px !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    overflow: hidden;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-            box-shadow: 0px 0px 5px 1px #0422686c;
     width: 47% !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
-    letter-spacing: 3px;
-    padding: 6px 5px;
     padding-left: 15px !important;
-    font-size: 18px;
-    color: #042268;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    text-align: end;
-  }
-  #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
-    font-size: 18px;
-    letter-spacing: 2px;
-    outline: none;
-    border: none;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    padding: 6px 0px;
-    transition: 0.2s;
-    color: #042268;
-  }
-  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
-    color: grey;
-    font-size: 18px;
-  }
-  #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
-    color: grey;
-    font-size: 18px;
-  }
-  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
-    color: grey;
-    font-size: 18px;
-  }
-  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
-    color: grey;
-    font-size: 18px;
-  }
-  #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
-    padding: 6px 20px;
   }
   #purchasemain .all form .buttonandtelkeeper button {
-    padding: 7px 55px;
-    font-size: 16px;
-    background-color: #0055b0;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-            box-shadow: 0px 0px 5px 1px #0422686c;
-    border-radius: 5px;
     width: 47% !important;
-    color: white;
-    font-family: var(--montmedium);
   }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  #purchasemain {
-    font-family: var(--montmedium);
-    font-size: 16px;
-    margin-top: 80px;
-    min-height: 90vh;
-  }
-  #purchasemain .all {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   #purchasemain .all form {
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     width: 60% !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    position: relative;
-  }
-  #purchasemain .all form .above {
-    z-index: 4;
-    border: 0.5px solid grey;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: #f8edd5;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #purchasemain .all form .above .validthru {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  #purchasemain .all form .above input {
-    font-size: 18px;
-    color: black;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    outline: none;
-    border: none;
-    padding: 2px 6px;
-    margin-bottom: 20px;
-  }
-  #purchasemain .all form .above input:focus {
-    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-            box-shadow: 0px 0px 10px 1px #04226870;
-  }
-  #purchasemain .all form .above input::-webkit-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input:-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input::-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input::placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above .ikisi {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all form .above .ikisi .leftside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-  #purchasemain .all form .above .ikisi .leftside input {
-    margin: 0;
-  }
-  #purchasemain .all form .above .ikisi .leftside span {
-    font-size: 30px;
-    color: black;
-    font-family: var(--montlight);
-  }
-  #purchasemain .all form .above .ikisi .rightside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 10px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all form .above .ikisi .rightside .cardbox {
-    margin-left: 5px;
-  }
-  #purchasemain .all form .above #year,
-  #purchasemain .all form .above #cvv,
-  #purchasemain .all form .above #month {
-    text-align: center;
   }
   #purchasemain .all form .below {
-    position: absolute;
     height: 64% !important;
     top: 40%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: 0%;
-    border: 0.5px solid grey;
-    border-radius: 5px;
-    background-color: #e0ddd7;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    z-index: 2;
-  }
-  #purchasemain .all form .below::before {
-    content: '';
-    width: 100%;
-    height: 70px;
-    background-color: #3f3f3f;
-  }
-  #purchasemain .all form .below input {
-    font-size: 18px;
-    color: black;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    outline: none;
-    border: none;
-    padding: 2px 6px;
-    margin-bottom: 50px;
-    margin-right: 20px;
-  }
-  #purchasemain .all form .below input:focus {
-    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-            box-shadow: 0px 0px 10px 1px #04226870;
-  }
-  #purchasemain .all form .below input::-webkit-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input:-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input::-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input::placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below #cvv {
-    text-align: center;
   }
   #purchasemain .all form .buttonandtelkeeper {
-    margin: 0;
-    padding: 0;
     margin-top: 50px !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-bottom: 40px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: start !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    overflow: hidden;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-            box-shadow: 0px 0px 5px 1px #0422686c;
     width: 47% !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
-    letter-spacing: 3px;
-    padding: 6px 5px;
     font-size: 16px !important;
-    color: #042268;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    text-align: end;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
     font-size: 16px !important;
-    letter-spacing: 2px;
-    outline: none;
-    border: none;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    padding: 6px 0px;
-    transition: 0.2s;
-    color: #042268;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
-    color: grey;
     font-size: 16px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
-    color: grey;
     font-size: 16px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
-    color: grey;
     font-size: 16px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
-    color: grey;
     font-size: 16px !important;
-  }
-  #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
-    padding: 6px 20px;
   }
   #purchasemain .all form .buttonandtelkeeper button {
-    padding: 7px 55px;
     font-size: 16px !important;
     width: 47% !important;
-    background-color: #0055b0;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-            box-shadow: 0px 0px 5px 1px #0422686c;
-    border-radius: 5px;
-    color: white;
-    font-family: var(--montmedium);
   }
   #purchasemain .all .resultContainer {
-    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-    border-radius: 8px;
-    padding: 8px;
-    background-color: white;
     width: 60% !important;
-  }
-  #purchasemain .all .resultContainer .icindeki {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    border: 0.5px solid #0055b0;
-    border-radius: 8px;
-    background-color: white;
-  }
-  #purchasemain .all .resultContainer .icindeki .top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop,
-  #purchasemain .all .resultContainer .icindeki .top .topbottom {
-    padding: 10px;
-    border-bottom: 0.5px solid #0055b0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
-    font-size: 14px;
-    color: #0055b0;
-    font-family: var(--montbold);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
-    text-align: start;
-    padding-left: 5px;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
-    text-align: end;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
-    font-family: var(--montmedium);
-    font-size: 15px;
-  }
-  #purchasemain .all .resultContainer .icindeki .bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 15px 10px;
-  }
-  #purchasemain .all .resultContainer .icindeki .bottom .price {
-    font-size: 20px;
-    padding: 6px 70px;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    font-family: var(--montbold);
-    color: #0055b0;
   }
 }
 
 @media (min-width: 1200px) and (max-width: 1280px) {
-  #purchasemain {
-    font-family: var(--montmedium);
-    font-size: 16px;
-    margin-top: 80px;
-    min-height: 90vh;
-  }
-  #purchasemain .all {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
   #purchasemain .all form {
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 60% !important;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    position: relative;
-  }
-  #purchasemain .all form .above {
-    z-index: 4;
-    border: 0.5px solid grey;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: #f8edd5;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #purchasemain .all form .above .validthru {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-  #purchasemain .all form .above input {
-    font-size: 18px;
-    color: black;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    outline: none;
-    border: none;
-    padding: 2px 6px;
-    margin-bottom: 20px;
-  }
-  #purchasemain .all form .above input:focus {
-    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-            box-shadow: 0px 0px 10px 1px #04226870;
-  }
-  #purchasemain .all form .above input::-webkit-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input:-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input::-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above input::placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .above .ikisi {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all form .above .ikisi .leftside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-  #purchasemain .all form .above .ikisi .leftside input {
-    margin: 0;
-  }
-  #purchasemain .all form .above .ikisi .leftside span {
-    font-size: 30px;
-    color: black;
-    font-family: var(--montlight);
-  }
-  #purchasemain .all form .above .ikisi .rightside {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 10px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all form .above .ikisi .rightside .cardbox {
-    margin-left: 5px;
-  }
-  #purchasemain .all form .above #year,
-  #purchasemain .all form .above #cvv,
-  #purchasemain .all form .above #month {
-    text-align: center;
+    width: 55% !important;
   }
   #purchasemain .all form .below {
-    position: absolute;
     height: 64% !important;
     top: 40%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: 0%;
-    border: 0.5px solid grey;
-    border-radius: 5px;
-    background-color: #e0ddd7;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    z-index: 2;
-  }
-  #purchasemain .all form .below::before {
-    content: '';
-    width: 100%;
-    height: 70px;
-    background-color: #3f3f3f;
-  }
-  #purchasemain .all form .below input {
-    font-size: 18px;
-    color: black;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-            box-shadow: 0px 0px 5px 1px #04226846;
-    outline: none;
-    border: none;
-    padding: 2px 6px;
-    margin-bottom: 50px;
-    margin-right: 20px;
-  }
-  #purchasemain .all form .below input:focus {
-    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-            box-shadow: 0px 0px 10px 1px #04226870;
-  }
-  #purchasemain .all form .below input::-webkit-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input:-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input::-ms-input-placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below input::placeholder {
-    color: black;
-    font-family: var(--montlight);
-    font-size: 18px;
-  }
-  #purchasemain .all form .below #cvv {
-    text-align: center;
   }
   #purchasemain .all form .buttonandtelkeeper {
-    margin: 0;
-    padding: 0;
     margin-top: 50px !important;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin-bottom: 40px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: start !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    overflow: hidden;
-    border-radius: 5px;
-    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-            box-shadow: 0px 0px 5px 1px #0422686c;
     width: 47% !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
-    letter-spacing: 3px;
-    padding: 6px 5px;
     font-size: 16px !important;
-    color: #042268;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    text-align: end;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
     font-size: 16px !important;
-    letter-spacing: 2px;
-    outline: none;
-    border: none;
-    -webkit-transition: 0.2s;
-    transition: 0.2s;
-    padding: 6px 0px;
-    transition: 0.2s;
-    color: #042268;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
-    color: grey;
     font-size: 16px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
-    color: grey;
     font-size: 16px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
-    color: grey;
     font-size: 16px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
-    color: grey;
     font-size: 16px !important;
-  }
-  #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
-    padding: 6px 20px;
   }
   #purchasemain .all form .buttonandtelkeeper button {
     padding: 7px 55px;
     font-size: 16px !important;
     width: 47% !important;
-    background-color: #0055b0;
-    text-align: center;
-    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-            box-shadow: 0px 0px 5px 1px #0422686c;
-    border-radius: 5px;
-    color: white;
-    font-family: var(--montmedium);
   }
   #purchasemain .all .resultContainer {
-    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-    border-radius: 8px;
-    padding: 8px;
-    background-color: white;
-    width: 60% !important;
-  }
-  #purchasemain .all .resultContainer .icindeki {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    border: 0.5px solid #0055b0;
-    border-radius: 8px;
-    background-color: white;
-  }
-  #purchasemain .all .resultContainer .icindeki .top {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop,
-  #purchasemain .all .resultContainer .icindeki .top .topbottom {
-    padding: 10px;
-    border-bottom: 0.5px solid #0055b0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
-    font-size: 14px;
-    color: #0055b0;
-    font-family: var(--montbold);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
-    text-align: start;
-    padding-left: 5px;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
-    text-align: end;
-  }
-  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
-  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
-    font-family: var(--montmedium);
-    font-size: 15px;
-  }
-  #purchasemain .all .resultContainer .icindeki .bottom {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 15px 10px;
-  }
-  #purchasemain .all .resultContainer .icindeki .bottom .price {
-    font-size: 20px;
-    padding: 6px 70px;
-    border-radius: 5px;
-    border: 0.5px solid #0055b0;
-    font-family: var(--montbold);
-    color: #0055b0;
+    width: 55% !important;
   }
 }
 
