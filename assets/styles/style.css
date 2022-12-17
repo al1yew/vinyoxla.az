@@ -144,14 +144,14 @@ input::-webkit-inner-spin-button {
     margin: 0 !important;
   }
   #main {
-    margin-top: 60px !important;
+    padding-top: 60px !important;
   }
   #main .all form {
     background-image: url(../images/bannertel.jpg) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    height: 80vh !important;
+    height: 70vh !important;
   }
   #main .all form .firstp {
     font-size: 24px !important;
