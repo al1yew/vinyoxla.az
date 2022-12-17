@@ -1177,6 +1177,7 @@ input::-webkit-inner-spin-button {
 @media (max-width: 576px) {
   #purchasemain {
     margin-top: 80px !important;
+    min-height: 79vh !important;
   }
   #purchasemain .all form {
     margin-top: 20px !important;
