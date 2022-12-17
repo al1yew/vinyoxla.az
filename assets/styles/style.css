@@ -144,7 +144,8 @@ input::-webkit-inner-spin-button {
     margin: 0 !important;
   }
   #main {
-    padding-top: 60px !important;
+    padding-top: 70px !important;
+    min-height: 70vh !important;
   }
   #main .all form {
     background-image: url(../images/bannertel.jpg) !important;

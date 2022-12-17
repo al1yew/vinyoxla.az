@@ -32,7 +32,8 @@
     }
 
     #main {
-        padding-top: 60px !important;
+        padding-top: 70px !important;
+        min-height: 70vh !important;
 
         .all {
 
@@ -173,7 +174,7 @@
                 .reklam {
                     margin-bottom: 0 !important;
 
-                    &:nth-child(1){
+                    &:nth-child(1) {
                         margin-bottom: 15px !important;
                     }
                 }
