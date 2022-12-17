@@ -272,12 +272,7 @@ input::-webkit-inner-spin-button {
     padding: 6px 0 !important;
   }
   #footer .all .left {
-    -webkit-box-ordinal-group: 2 !important;
-        -ms-flex-order: 1 !important;
-            order: 1 !important;
-  }
-  #footer .all .left .garantautolink {
-    width: 30% !important;
+    width: 15% !important;
   }
   #footer .all .left .fblink i {
     font-size: 25px !important;
@@ -286,22 +281,18 @@ input::-webkit-inner-spin-button {
     font-size: 25px !important;
   }
   #footer .all .middle {
-    -webkit-box-ordinal-group: 4 !important;
-        -ms-flex-order: 3 !important;
-            order: 3 !important;
-    margin-top: 10px !important;
     padding-left: 0 !important;
+    width: 72% !important;
   }
   #footer .all .middle p {
     font-size: 12px !important;
   }
   #footer .all .middle a {
     font-size: 12px !important;
+    margin-top: 8px !important;
   }
   #footer .all .right {
-    -webkit-box-ordinal-group: 3 !important;
-        -ms-flex-order: 2 !important;
-            order: 2 !important;
+    width: 12% !important;
   }
   #footer .all .right img {
     width: 25% !important;
@@ -396,12 +387,7 @@ input::-webkit-inner-spin-button {
     padding: 6px 0 !important;
   }
   #footer .all .left {
-    -webkit-box-ordinal-group: 2 !important;
-        -ms-flex-order: 1 !important;
-            order: 1 !important;
-  }
-  #footer .all .left .garantautolink {
-    width: 30% !important;
+    width: 15% !important;
   }
   #footer .all .left .fblink i {
     font-size: 25px !important;
@@ -410,11 +396,8 @@ input::-webkit-inner-spin-button {
     font-size: 25px !important;
   }
   #footer .all .middle {
-    -webkit-box-ordinal-group: 4 !important;
-        -ms-flex-order: 3 !important;
-            order: 3 !important;
-    margin-top: 10px !important;
     padding-left: 0 !important;
+    width: 68% !important;
   }
   #footer .all .middle p {
     font-size: 12px !important;
@@ -423,9 +406,7 @@ input::-webkit-inner-spin-button {
     font-size: 12px !important;
   }
   #footer .all .right {
-    -webkit-box-ordinal-group: 3 !important;
-        -ms-flex-order: 2 !important;
-            order: 2 !important;
+    width: 15% !important;
   }
   #footer .all .right img {
     width: 25% !important;
@@ -2927,6 +2908,12 @@ input::-webkit-inner-spin-button {
     font-family: var(--montbold);
     color: #0055b0;
   }
+}
+
+:root {
+  --montbold: MontserratBold;
+  --montmedium: MontserratMedium;
+  --montlight: MontserratLight;
 }
 
 .col-1 {

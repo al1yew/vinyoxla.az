@@ -181,11 +181,7 @@
             padding: 6px 0 !important;
 
             .left {
-                order: 1 !important;
-
-                .garantautolink {
-                    width: 30% !important;
-                }
+                width: 15% !important;
 
                 .fblink {
                     i {
@@ -201,9 +197,8 @@
             }
 
             .middle {
-                order: 3 !important;
-                margin-top: 10px !important;
                 padding-left: 0 !important;
+                width: 72% !important;
 
                 p {
                     font-size: 12px !important;
@@ -211,11 +206,12 @@
 
                 a {
                     font-size: 12px !important;
+                    margin-top: 8px !important;
                 }
             }
 
             .right {
-                order: 2 !important;
+                width: 12% !important;
 
                 img {
                     width: 25% !important;
@@ -356,11 +352,7 @@
             padding: 6px 0 !important;
 
             .left {
-                order: 1 !important;
-
-                .garantautolink {
-                    width: 30% !important;
-                }
+                width: 15% !important;
 
                 .fblink {
                     i {
@@ -376,9 +368,8 @@
             }
 
             .middle {
-                order: 3 !important;
-                margin-top: 10px !important;
                 padding-left: 0 !important;
+                width: 68% !important;
 
                 p {
                     font-size: 12px !important;
@@ -390,7 +381,7 @@
             }
 
             .right {
-                order: 2 !important;
+                width: 15% !important;
 
                 img {
                     width: 25% !important;
