@@ -152,7 +152,7 @@ input::-webkit-inner-spin-button {
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-    height: 70vh !important;
+    height: 77vh !important;
   }
   #main .all form .firstp {
     font-size: 24px !important;
@@ -3774,11 +3774,11 @@ input::-webkit-inner-spin-button {
   margin: 0;
   overflow: hidden;
   position: relative;
-  background-image: url(../images/indexbanner.jpg);
+  background-image: url(../images/mashina-i-fon-vmeste.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80vh;
+  height: 85vh;
 }
 
 #main .all form .firstp {
