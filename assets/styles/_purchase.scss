@@ -99,6 +99,12 @@
                         margin-bottom: 10px;
                         flex-wrap: wrap;
 
+                        .odu {
+                            img {
+                                filter: brightness(0.2) !important;
+                            }
+                        }
+
                         .cardbox {
                             margin-left: 5px;
                         }

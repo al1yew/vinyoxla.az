@@ -1423,6 +1423,11 @@ input::-webkit-inner-spin-button {
       flex-wrap: wrap;
 }
 
+#purchasemain .all form .above .ikisi .rightside .odu img {
+  -webkit-filter: brightness(0.2) !important;
+          filter: brightness(0.2) !important;
+}
+
 #purchasemain .all form .above .ikisi .rightside .cardbox {
   margin-left: 5px;
 }

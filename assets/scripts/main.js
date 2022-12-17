@@ -235,15 +235,93 @@ $(document).ready(function () {
         let month = formData.get('month');
         let cvv = formData.get('cvv');
 
+        let date = new Date;
+
+        let cardDate = '01/' + month.trim() + '/' + year.trim();
+
+        let convertedDate = new Date(cardDate)
+
+        if (month.length > 2 || year.length > 4 || cvv.length > 3) {
+            toastr.error('Məlumatlar səhvdir.');
+            return;
+        }
+
+        if (!/^[a-zA-Z\s]*$/.test(cardholder)) {
+            toastr.error('Ad soyad səhvdir.');
+            return;
+        }
+
+        if (!/^[0-9]+$/.test(cardno) ||
+            !/^[0-9]+$/.test(year) ||
+            !/^[0-9]+$/.test(month) ||
+            !/^[0-9]+$/.test(cvv)) {
+            toastr.error('Xahiş olunur məlumatları düz qeyd edin.');
+            return;
+        }
+
+        if (month > 12) {
+            toastr.error('Ay səhvdir.');
+            return;
+        }
+
+        if (convertedDate.getTime() < date.getTime()) {
+            toastr.error('Kartın son tarixi səhvdir.');
+            return;
+        }
+
         console.log({ cardholder, cardno, year, month, cvv })
 
     })
 
     //#endregion purchase form
 
+    //#region prevent non numeric in purchase page
 
+    $(document).on('input', '#cardno, #year, #month, #cvv', function (e) {
+        if (!/^[0-9]+$/.test($(this).val())) {
+            $(this).val($(this).val().slice(0, -1))
+        }
+    })
 
+    //#endregion prevent non numeric in purchase page
 
+    //#region input toUpperCase
+
+    $(document).on('input keyup', '#cardholder', function () {
+        let value = $(this).val();
+        $(this).val(value.toUpperCase());
+
+        let regex = /^[a-zA-Z\s]*$/;
+
+        if (!regex.test(value)) {
+            $(this).val($(this).val().slice(0, -1))
+        }
+    });
+
+    //#endregion input toUpperCase
+
+    //#region visa or mastercard
+
+    $(document).on('input keyup', '#cardno', function () {
+        let value = $(this).val();
+
+        if (value.charAt(0) == 4) {
+            $('.visabox').addClass('odu');
+            $('.mastercardbox').removeClass('odu');
+        }
+
+        if (value.charAt(0) == 2 || value.charAt(0) == 5) {
+            $('.mastercardbox').addClass('odu');
+            $('.visabox').removeClass('odu');
+        }
+
+        if (value.length == 0) {
+            $('.visabox').removeClass('odu');
+            $('.mastercardbox').removeClass('odu');
+        }
+    });
+
+    //#endregion visa or mastercard
 
 
 
