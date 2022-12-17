@@ -14,12 +14,6 @@ toastr.options = {
     "hideMethod": "fadeOut"
 }
 
-// if ($(document).width() < 576) {
-//     $('.mainbanner').attr('src', './assets/images/bannertel.jpg')
-// } else {
-//     $('.mainbanner').attr('src', './assets/images/mashina-i-fon-vmeste.jpg')
-// }
-
 $(document).ready(function () {
 
     $('.preloaderdiv').addClass('d-none')
@@ -33,7 +27,7 @@ $(document).ready(function () {
 
     // -------------------------- main page
 
-    //#region input toUpperCase
+    //#region input toUpperCase in vincode input
 
     $(document).on('input keyup', '#vincodeinput', function () {
         let value = $(this).val();
@@ -58,7 +52,7 @@ $(document).ready(function () {
         }
     });
 
-    //#endregion input toUpperCase
+    //#endregion input toUpperCase in vincode input
 
     //#region delete input value
 
@@ -95,7 +89,6 @@ $(document).ready(function () {
 
     $(document).on('submit', '#vincodeform', function (e) {
         e.preventDefault();
-
         const formData = new FormData(e.target);
 
         let vinCode = formData.get('vincodeinput');
@@ -103,8 +96,7 @@ $(document).ready(function () {
         let regex = /\b[(A-H|J-N|P|R-Z|0-9)]{17}\b/
 
         if (!regex.test(vinCode.trim().toUpperCase())) {
-            $('.errorp').removeClass('hideerrorp');
-            $('.errorp').html("Daxil edilən VİN kodun strukturu səhvdir!");
+            toastr.error('Daxil edilən VİN kodun strukturu səhvdir!')
             return;
         }
 
@@ -127,8 +119,7 @@ $(document).ready(function () {
                     $('#carfaxContainer').removeClass('d-none');
                 }
                 else {
-                    $('.errorp').removeClass('hideerrorp');
-                    $('.errorp').html("Daxil edilən VİN kod tapılmadı!");
+                    toastr.error('Daxil edilən VİN kod tapılmadı!')
                 }
 
                 if (res?.data?.autocheck?.records > 0) {
@@ -139,14 +130,13 @@ $(document).ready(function () {
                     $('#autocheckContainer').removeClass('d-none');
                 }
                 else {
-                    $('.errorp').removeClass('hideerrorp');
-                    $('.errorp').html("Daxil edilən VİN kod tapılmadı!");
+                    toastr.error('Daxil edilən VİN kod tapılmadı!')
                 }
 
                 $('#photosApiResult').removeClass('d-none');
                 $('.preloaderdiv').addClass('d-none');
 
-                $(document).width < 576 ? $(document).scrollTop(1000) : $(document).scrollTop(500);
+                $(document).scrollTop(1000);
             })
     })
 
@@ -175,7 +165,7 @@ $(document).ready(function () {
         let phoneno = formData.get('phoneno');
         let code = formData.get('code');
 
-        if (phoneno.length && code.length) {
+        if (phoneno.length == 9 && code.length == 4) {
             console.log({ phoneno, code })
 
             //fetch to the action of controller where we send sms
@@ -255,7 +245,7 @@ $(document).ready(function () {
             !/^[0-9]+$/.test(year) ||
             !/^[0-9]+$/.test(month) ||
             !/^[0-9]+$/.test(cvv)) {
-            toastr.error('Xahiş olunur məlumatları düz qeyd edin.');
+            toastr.error('Məlumatlar səhvdir.');
             return;
         }
 
@@ -269,13 +259,12 @@ $(document).ready(function () {
             return;
         }
 
-        console.log({ cardholder, cardno, year, month, cvv })
-
-    })
+        // burda uje vse, backend gebul edecek datalari ve birde yoxlayacag
+    });
 
     //#endregion purchase form
 
-    //#region prevent non numeric in purchase page
+    //#region prevent numeric in purchase page
 
     $(document).on('input', '#cardno, #year, #month, #cvv', function (e) {
         if (!/^[0-9]+$/.test($(this).val())) {
@@ -283,7 +272,7 @@ $(document).ready(function () {
         }
     })
 
-    //#endregion prevent non numeric in purchase page
+    //#endregion prevent numeric in purchase page
 
     //#region input toUpperCase
 
@@ -322,8 +311,6 @@ $(document).ready(function () {
     });
 
     //#endregion visa or mastercard
-
-
 
 });
 

@@ -627,7 +627,7 @@
     }
 }
 
-@media(min-width: 769px) and (max-width: 992px) {
+@media(min-width: 768px) and (max-width: 992px) {
     #purchasemain {
         margin-top: 80px !important;
         min-height: 79vh !important;
@@ -926,7 +926,7 @@
     }
 }
 
-@media(min-width: 993px) and (max-width: 1200px) {
+@media(min-width: 992px) and (max-width: 1200px) {
     #purchasemain {
         font-family: var(--montmedium);
         font-size: 16px;
@@ -1038,8 +1038,8 @@
 
                 .below {
                     position: absolute;
-                    height: 56% !important;
-                    top: 30%;
+                    height: 64% !important;
+                    top: 40%;
                     transform: translateY(-50%);
                     right: 0%;
                     border: 0.5px solid grey;
@@ -1105,7 +1105,7 @@
                         overflow: hidden;
                         border-radius: 5px;
                         box-shadow: 0px 0px 5px 1px #0422686c;
-                        width: 100% !important;
+                        width: 47% !important;
 
                         span {
                             letter-spacing: 3px;
@@ -1140,8 +1140,7 @@
                     button {
                         padding: 7px 55px;
                         font-size: 16px !important;
-                        width: 100% !important;
-                        margin-top: 20px !important;
+                        width: 47% !important;
                         background-color: #0055b0;
                         text-align: center;
                         box-shadow: 0px 0px 5px 1px #0422686c;
@@ -1234,7 +1233,7 @@
     }
 }
 
-@media(min-width: 1201px) and (max-width: 1280px) {
+@media(min-width: 1200px) and (max-width: 1280px) {
     #purchasemain {
         font-family: var(--montmedium);
         font-size: 16px;
@@ -1346,8 +1345,8 @@
 
                 .below {
                     position: absolute;
-                    height: 56% !important;
-                    top: 30%;
+                    height: 64% !important;
+                    top: 40%;
                     transform: translateY(-50%);
                     right: 0%;
                     border: 0.5px solid grey;
@@ -1413,7 +1412,7 @@
                         overflow: hidden;
                         border-radius: 5px;
                         box-shadow: 0px 0px 5px 1px #0422686c;
-                        width: 100% !important;
+                        width: 47% !important;
 
                         span {
                             letter-spacing: 3px;
@@ -1448,8 +1447,7 @@
                     button {
                         padding: 7px 55px;
                         font-size: 16px !important;
-                        width: 100% !important;
-                        margin-top: 20px !important;
+                        width: 47% !important;
                         background-color: #0055b0;
                         text-align: center;
                         box-shadow: 0px 0px 5px 1px #0422686c;
