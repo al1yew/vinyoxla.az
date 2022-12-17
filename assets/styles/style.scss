@@ -550,26 +550,6 @@ input::-webkit-inner-spin-button {
                 color: #0064cf;
             }
 
-            .errorp {
-                font-size: 18px;
-                bottom: 5%;
-                left: 3%;
-                position: absolute;
-                color: white;
-                opacity: 1;
-                visibility: visible;
-                transition: 0.2s;
-                border: 0.5px solid red;
-                border-radius: 5px;
-                padding: 4px;
-                width: fit-content;
-            }
-
-            .hideerrorp {
-                opacity: 0 !important;
-                visibility: hidden !important;
-            }
-
             .inputbox {
                 position: absolute;
                 top: 75%;

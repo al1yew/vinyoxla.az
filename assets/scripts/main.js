@@ -136,7 +136,15 @@ $(document).ready(function () {
                 $('#photosApiResult').removeClass('d-none');
                 $('.preloaderdiv').addClass('d-none');
 
-                $(document).scrollTop(1000);
+                if ($(document).width() < 576) {
+                    $(document).scrollTop(500)
+                }
+                else if ($(document).width() > 1200) {
+                    $(document).scrollTop(1000);
+                }
+                else {
+                    $('#resultscontainer')[0].scrollIntoView()
+                }
             })
     })
 

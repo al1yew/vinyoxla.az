@@ -58,18 +58,6 @@
                     font-size: 15px !important;
                 }
 
-                .errorp {
-                    font-size: 14px !important;
-                    left: 50% !important;
-                    transform: translateX(-50%) !important;
-                    text-align: center;
-                }
-
-                .hideerrorp {
-                    opacity: 0 !important;
-                    visibility: hidden !important;
-                }
-
                 .inputbox {
                     top: 40% !important;
                     left: 50% !important;
@@ -239,6 +227,128 @@
 
 @media(min-width: 577px) and (max-width: 768px) {
 
+    #main {
+        padding-top: 80px !important;
+
+        .all {
+
+            form {
+                height: 80vh !important;
+
+                .firstp {
+                    font-size: 26px !important;
+                }
+
+                .secondp {
+                    top: 30% !important;
+                    width: 55% !important;
+                    color: #0055b0 !important;
+                    font-size: 18px !important;
+                }
+
+                .inputbox {
+                    width: 80% !important;
+
+                    .copyspan,
+                    .deleteinp {
+                        left: 70% !important;
+                        font-size: 25px !important;
+                    }
+
+                    input {
+                        font-size: 16px !important;
+                        letter-spacing: 2px !important;
+                        padding: 6px !important;
+
+                        &::placeholder {
+                            font-size: 16px !important;
+                        }
+                    }
+
+                    button {
+                        font-size: 16px !important;
+                        padding: 6px 5px !important;
+                    }
+                }
+            }
+
+            .resultsContainer {
+
+                .resultContainer {
+                    &:nth-child(2) {
+                        margin-top: 15px !important;
+                    }
+
+                    .icindeki {
+
+                        .top {
+
+                            .toptop,
+                            .topbottom {
+
+                                .topelement {
+
+                                    &:nth-child(1) {
+                                        span {
+                                            &:nth-child(1) {
+                                                width: 30%;
+                                            }
+
+                                            &:nth-child(2) {
+                                                width: 95%;
+                                            }
+                                        }
+                                    }
+
+                                    &:nth-child(2) {
+                                        text-align: start;
+                                        padding-left: 5px;
+
+                                        span {
+                                            &:nth-child(1) {
+                                                width: 78% !important;
+                                            }
+
+                                            &:nth-child(2) {
+                                                text-align: end;
+                                                width: 20% !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .toptop {
+
+                                .topelement {
+
+                                    &:nth-child(2) {
+
+                                        span {
+                                            &:nth-child(1) {
+                                                width: 68% !important;
+                                            }
+
+                                            &:nth-child(2) {
+                                                text-align: end;
+                                                width: 30% !important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .reklam {
+                    width: 47% !important;
+                    margin-top: 20px !important;
+                }
+            }
+        }
+    }
+
     #footer {
         margin-top: 20px !important;
 
@@ -293,196 +403,65 @@
 @media(min-width: 769px) and (max-width: 992px) {
 
     #main {
-        padding-top: 70px;
-        font-family: var(--montlight);
-        font-size: 16px;
-        padding-bottom: 30px;
-        min-height: 92vh;
+        padding-top: 80px !important;
 
         .all {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            padding: 0;
 
             form {
-                border-radius: 15px;
-                box-shadow: 0px 0px 5px 1px #0422686c;
-                font-family: var(--montlight);
-                padding: 0;
-                margin: 0;
-                overflow: hidden;
-                position: relative;
-                background-image: url(../images/indexbanner.jpg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                height: 80vh;
+                height: 80vh !important;
 
                 .firstp {
-                    position: absolute;
-                    top: 5%;
-                    left: 3%;
-                    text-align: start;
                     font-size: 26px !important;
-                    color: #0055b0;
-                    font-family: var(--montmedium);
                 }
 
                 .secondp {
-                    position: absolute;
                     top: 24% !important;
                     width: 55% !important;
                     color: #0055b0 !important;
-                    left: 3%;
-                    text-align: start;
                     font-size: 18px !important;
                 }
 
-                .errorp {
-                    font-size: 18px;
-                    bottom: 0% !important;
-                    left: 3%;
-                    position: absolute;
-                    color: white;
-                    opacity: 1;
-                    visibility: visible;
-                    transition: 0.2s;
-                    border: 0.5px solid red;
-                    border-radius: 5px;
-                    padding: 4px;
-                    width: fit-content;
-                }
-
-                .hideerrorp {
-                    opacity: 0 !important;
-                    visibility: hidden !important;
-                }
-
                 .inputbox {
-                    position: absolute;
-                    top: 75%;
-                    left: 3%;
-                    width: 60% !important;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    border: 0.5px solid #0055b0;
-                    border-radius: 8px;
-                    margin: 0;
-                    padding: 0;
-                    overflow: hidden;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    background-color: #2F70CE;
-                    transition: 0.2s;
-
-                    &:focus {
-                        box-shadow: 0px 0px 10px 1px #04226870;
-                    }
+                    width: 55% !important;
 
                     .copyspan,
                     .deleteinp {
-                        position: absolute;
-                        top: 50%;
                         left: 70% !important;
-                        font-size: 25px;
-                        color: #042268;
-                        cursor: pointer;
-                        transform: translateY(-50%);
+                        font-size: 25px !important;
                     }
 
                     input {
-                        font-size: 18px;
-                        color: white;
+                        font-size: 16px !important;
                         letter-spacing: 2px !important;
-                        outline: none;
-                        border: none;
-                        background-color: #2F70CE;
-                        border-bottom-left-radius: 5px;
-                        border-top-left-radius: 5px;
-                        transition: 0.2s;
-                        padding: 6px 10px;
-                        transition: 0.2s;
+                        padding: 6px !important;
 
                         &::placeholder {
-                            color: white;
-                            font-size: 18px;
+                            font-size: 16px !important;
                         }
-                    }
-
-                    .noClick {
-                        pointer-events: none;
                     }
 
                     button {
-                        color: #0055b0;
-                        background-color: white;
-                        font-family: var(--montmedium);
-                        font-size: 18px;
-                        padding: 10px 5px;
-                        border-bottom-right-radius: 5px;
-                        border-top-right-radius: 5px;
-                        border-bottom-left-radius: 0px;
-                        border-top-left-radius: 0px;
-                        transition: 0.2s;
-
-                        &:hover {
-                            color: white;
-                            background-color: #042268;
-                        }
+                        font-size: 16px !important;
+                        padding: 6px 5px !important;
                     }
                 }
             }
 
             .resultsContainer {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                margin: 0;
-                padding: 0;
-                margin-top: 30px;
-                font-family: var(--montmedium);
-                font-size: 15px;
 
                 .resultContainer {
-                    box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-                    border-radius: 8px;
-                    padding: 8px;
-                    background-color: white;
+                    &:nth-child(2) {
+                        margin-top: 15px !important;
+                    }
 
                     .icindeki {
-                        display: flex;
-                        justify-content: space-between;
-                        flex-wrap: wrap;
-                        border: 0.5px solid #0055b0;
-                        border-radius: 8px;
-                        background-color: white;
 
                         .top {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
 
                             .toptop,
                             .topbottom {
-                                padding: 10px;
-                                border-bottom: 0.5px solid #0055b0;
-                                display: flex;
-                                justify-content: space-between;
-                                align-items: center;
-                                flex-wrap: wrap;
 
                                 .topelement {
-                                    font-size: 14px;
-                                    color: #0055b0;
-                                    font-family: var(--montbold);
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    flex-wrap: wrap;
 
                                     span {
                                         &:nth-child(1) {
@@ -495,8 +474,6 @@
                                     }
 
                                     &:nth-child(2) {
-                                        text-align: start;
-                                        padding-left: 5px;
 
                                         span {
                                             &:nth-child(1) {
@@ -506,55 +483,8 @@
                                             &:nth-child(2) {
                                                 width: 40% !important;
                                             }
-
-                                            &:nth-child(2) {
-                                                text-align: end;
-                                            }
                                         }
                                     }
-
-                                    span {
-                                        &:nth-child(2) {
-                                            font-family: var(--montmedium);
-                                            font-size: 15px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-
-                        .bottom {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
-                            padding: 15px 10px;
-
-                            .price {
-                                font-size: 20px;
-                                padding: 6px 32px;
-                                border-radius: 5px;
-                                border: 0.5px solid #0055b0;
-                                font-family: var(--montbold);
-                                color: #0055b0;
-                            }
-
-                            a {
-                                padding: 10px 55px;
-                                font-size: 16px;
-                                background-color: #0055b0;
-                                text-align: center;
-                                border-radius: 5px;
-                                color: white;
-                                font-family: var(--montmedium);
-                                transition: 0.2s;
-
-                                &:hover {
-                                    box-shadow: 0px 0px 5px 1px #042268;
-                                }
-
-                                &:focus {
-                                    box-shadow: 0px 0px 5px 1px #042268;
                                 }
                             }
                         }
@@ -562,45 +492,19 @@
                 }
 
                 .reklam {
-                    margin: 0;
-                    padding: 0;
-                    border-radius: 10px;
-                    box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-                    margin-top: 30px;
-                    margin-bottom: 10px;
-                    overflow: hidden;
+                    width: 47% !important;
+                    margin-top: 20px !important;
                 }
             }
         }
     }
 
     #footer {
-        margin: 0;
-        padding: 0;
-        font-family: var(--montmedium);
-        font-size: 16px;
-        box-shadow: 0px -1px 20px 1px #0838a781;
-        background-color: rgb(233, 233, 233);
 
         .all {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            margin: 0;
-            padding: 0;
-            padding: 4px 0;
 
             .left {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 0;
-                padding: 0;
-
-                .garantautolink {
-                    width: 28%;
-                }
+                width: 12% !important;
 
                 .fblink {
                     i {
@@ -618,35 +522,12 @@
             }
 
             .middle {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                flex-wrap: wrap;
-                margin: 0;
-                padding: 0;
-                padding-left: 20px;
-                order: 3 !important;
-
-                p {
-                    text-align: center;
-                    font-size: 14px;
-                    color: #042268;
-                }
-
-                a {
-                    text-align: center;
-                    font-size: 14px;
-                    color: #042268;
-                    width: 100%;
-                }
+                padding-left: 0px !important;
+                width: 70% !important;
             }
 
             .right {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                margin: 0;
-                padding: 0;
+                width: 15% !important;
 
                 img {
                     width: 25% !important;
@@ -673,13 +554,6 @@
                             .topbottom {
 
                                 .topelement {
-                                    font-size: 14px;
-                                    color: #0055b0;
-                                    font-family: var(--montbold);
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    flex-wrap: wrap;
 
                                     &:nth-child(1) {
                                         span {
@@ -698,68 +572,40 @@
                                         padding-left: 5px;
 
                                         span {
+                                            &:nth-child(1) {
+                                                width: 78% !important;
+                                            }
+
                                             &:nth-child(2) {
                                                 text-align: end;
+                                                width: 20% !important;
                                             }
                                         }
                                     }
+                                }
+                            }
 
-                                    span {
-                                        &:nth-child(2) {
-                                            font-family: var(--montmedium);
-                                            font-size: 15px;
+                            .toptop {
+
+                                .topelement {
+
+                                    &:nth-child(2) {
+
+                                        span {
+                                            &:nth-child(1) {
+                                                width: 68% !important;
+                                            }
+
+                                            &:nth-child(2) {
+                                                text-align: end;
+                                                width: 30% !important;
+                                            }
                                         }
                                     }
-                                }
-                            }
-                        }
-
-                        .bottom {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
-                            padding: 15px 10px;
-
-                            .price {
-                                font-size: 20px;
-                                padding: 6px 32px;
-                                border-radius: 5px;
-                                border: 0.5px solid #0055b0;
-                                font-family: var(--montbold);
-                                color: #0055b0;
-                            }
-
-                            a {
-                                padding: 10px 55px;
-                                font-size: 16px;
-                                background-color: #0055b0;
-                                text-align: center;
-                                border-radius: 5px;
-                                color: white;
-                                font-family: var(--montmedium);
-                                transition: 0.2s;
-
-                                &:hover {
-                                    box-shadow: 0px 0px 5px 1px #042268;
-                                }
-
-                                &:focus {
-                                    box-shadow: 0px 0px 5px 1px #042268;
                                 }
                             }
                         }
                     }
-                }
-
-                .reklam {
-                    margin: 0;
-                    padding: 0;
-                    border-radius: 10px;
-                    box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-                    margin-top: 30px;
-                    margin-bottom: 10px;
-                    overflow: hidden;
                 }
             }
         }
