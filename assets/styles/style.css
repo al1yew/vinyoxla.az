@@ -319,6 +319,570 @@ input::-webkit-inner-spin-button {
   }
 }
 
+@media (min-width: 577px) and (max-width: 768px) {
+  #footer {
+    margin-top: 20px !important;
+  }
+  #footer .all {
+    padding: 6px 0 !important;
+  }
+  #footer .all .left {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+  }
+  #footer .all .left .garantautolink {
+    width: 30% !important;
+  }
+  #footer .all .left .fblink i {
+    font-size: 25px !important;
+  }
+  #footer .all .left .instalink i {
+    font-size: 25px !important;
+  }
+  #footer .all .middle {
+    -webkit-box-ordinal-group: 4 !important;
+        -ms-flex-order: 3 !important;
+            order: 3 !important;
+    margin-top: 10px !important;
+    padding-left: 0 !important;
+  }
+  #footer .all .middle p {
+    font-size: 12px !important;
+  }
+  #footer .all .middle a {
+    font-size: 12px !important;
+  }
+  #footer .all .right {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+  #footer .all .right img {
+    width: 25% !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #main {
+    padding-top: 70px;
+    font-family: var(--montlight);
+    font-size: 16px;
+    padding-bottom: 30px;
+    min-height: 92vh;
+  }
+  #main .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #main .all form {
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+            box-shadow: 0px 0px 5px 1px #0422686c;
+    font-family: var(--montlight);
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../images/indexbanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+  }
+  #main .all form .firstp {
+    position: absolute;
+    top: 5%;
+    left: 3%;
+    text-align: start;
+    font-size: 26px !important;
+    color: #0055b0;
+    font-family: var(--montmedium);
+  }
+  #main .all form .secondp {
+    position: absolute;
+    top: 24% !important;
+    width: 55% !important;
+    color: #0055b0 !important;
+    left: 3%;
+    text-align: start;
+    font-size: 18px !important;
+  }
+  #main .all form .errorp {
+    font-size: 18px;
+    bottom: 0% !important;
+    left: 3%;
+    position: absolute;
+    color: white;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    border: 0.5px solid red;
+    border-radius: 5px;
+    padding: 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #main .all form .hideerrorp {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+  #main .all form .inputbox {
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    width: 60% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.5px solid #0055b0;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    background-color: #2F70CE;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #main .all form .inputbox:focus {
+    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+            box-shadow: 0px 0px 10px 1px #04226870;
+  }
+  #main .all form .inputbox .copyspan,
+  #main .all form .inputbox .deleteinp {
+    position: absolute;
+    top: 50%;
+    left: 70% !important;
+    font-size: 25px;
+    color: #042268;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  #main .all form .inputbox input {
+    font-size: 18px;
+    color: white;
+    letter-spacing: 2px !important;
+    outline: none;
+    border: none;
+    background-color: #2F70CE;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    padding: 6px 10px;
+    transition: 0.2s;
+  }
+  #main .all form .inputbox input::-webkit-input-placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  #main .all form .inputbox input:-ms-input-placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  #main .all form .inputbox input::-ms-input-placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  #main .all form .inputbox input::placeholder {
+    color: white;
+    font-size: 18px;
+  }
+  #main .all form .inputbox .noClick {
+    pointer-events: none;
+  }
+  #main .all form .inputbox button {
+    color: #0055b0;
+    background-color: white;
+    font-family: var(--montmedium);
+    font-size: 18px;
+    padding: 10px 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #main .all form .inputbox button:hover {
+    color: white;
+    background-color: #042268;
+  }
+  #main .all .resultsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    font-family: var(--montmedium);
+    font-size: 15px;
+  }
+  #main .all .resultsContainer .resultContainer {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 0.5px solid #0055b0;
+    border-radius: 8px;
+    background-color: white;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop,
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom {
+    padding: 10px;
+    border-bottom: 0.5px solid #0055b0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement,
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement {
+    font-size: 14px;
+    color: #0055b0;
+    font-family: var(--montbold);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(1),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(1) {
+    width: 25% !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
+    width: 74% !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
+    text-align: start;
+    padding-left: 5px;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(1),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(1) {
+    width: 55% !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+    width: 40% !important;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+    text-align: end;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
+    font-family: var(--montmedium);
+    font-size: 15px;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px 10px;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom .price {
+    font-size: 20px;
+    padding: 6px 32px;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    font-family: var(--montbold);
+    color: #0055b0;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom a {
+    padding: 10px 55px;
+    font-size: 16px;
+    background-color: #0055b0;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-family: var(--montmedium);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom a:hover {
+    -webkit-box-shadow: 0px 0px 5px 1px #042268;
+            box-shadow: 0px 0px 5px 1px #042268;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom a:focus {
+    -webkit-box-shadow: 0px 0px 5px 1px #042268;
+            box-shadow: 0px 0px 5px 1px #042268;
+  }
+  #main .all .resultsContainer .reklam {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  #footer {
+    margin: 0;
+    padding: 0;
+    font-family: var(--montmedium);
+    font-size: 16px;
+    -webkit-box-shadow: 0px -1px 20px 1px #0838a781;
+            box-shadow: 0px -1px 20px 1px #0838a781;
+    background-color: #e9e9e9;
+  }
+  #footer .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding: 4px 0;
+  }
+  #footer .all .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #footer .all .left .garantautolink {
+    width: 28%;
+  }
+  #footer .all .left .fblink i {
+    font-size: 30px;
+    color: #042268;
+  }
+  #footer .all .left .instalink i {
+    font-size: 30px;
+    color: #C13584;
+  }
+  #footer .all .middle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    -webkit-box-ordinal-group: 4 !important;
+        -ms-flex-order: 3 !important;
+            order: 3 !important;
+  }
+  #footer .all .middle p {
+    text-align: center;
+    font-size: 14px;
+    color: #042268;
+  }
+  #footer .all .middle a {
+    text-align: center;
+    font-size: 14px;
+    color: #042268;
+    width: 100%;
+  }
+  #footer .all .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #footer .all .right img {
+    width: 25% !important;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement,
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement {
+    font-size: 14px;
+    color: #0055b0;
+    font-family: var(--montbold);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(1) span:nth-child(1),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(1) span:nth-child(1) {
+    width: 30%;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(1) span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(1) span:nth-child(2) {
+    width: 95%;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
+    text-align: start;
+    padding-left: 5px;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+    text-align: end;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
+  #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
+    font-family: var(--montmedium);
+    font-size: 15px;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px 10px;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom .price {
+    font-size: 20px;
+    padding: 6px 32px;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    font-family: var(--montbold);
+    color: #0055b0;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom a {
+    padding: 10px 55px;
+    font-size: 16px;
+    background-color: #0055b0;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-family: var(--montmedium);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom a:hover {
+    -webkit-box-shadow: 0px 0px 5px 1px #042268;
+            box-shadow: 0px 0px 5px 1px #042268;
+  }
+  #main .all .resultsContainer .resultContainer .icindeki .bottom a:focus {
+    -webkit-box-shadow: 0px 0px 5px 1px #042268;
+            box-shadow: 0px 0px 5px 1px #042268;
+  }
+  #main .all .resultsContainer .reklam {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+}
+
 :root {
   --montbold: MontserratBold;
   --montmedium: MontserratMedium;
@@ -395,9 +959,9 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -414,6 +978,7 @@ input::-webkit-inner-spin-button {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   padding: 6px 5px;
+  padding-left: 15px;
   font-size: 18px;
   color: #042268;
   transition: 0.2s;
@@ -508,6 +1073,7 @@ input::-webkit-inner-spin-button {
   #loginmain .all form .inputkeeper span {
     letter-spacing: 2px !important;
     font-size: 14px !important;
+    padding-bottom: 5px !important;
   }
   #loginmain .all form .inputkeeper input {
     font-size: 14px !important;
@@ -530,7 +1096,7 @@ input::-webkit-inner-spin-button {
     letter-spacing: 2px !important;
   }
   #loginmain .all form .inputkeeper .code {
-    padding: 6px 10px !important;
+    padding: 6px 15px !important;
   }
   #loginmain .all form button {
     font-size: 14px !important;
@@ -869,8 +1435,8 @@ input::-webkit-inner-spin-button {
 
 #purchasemain .all form .below {
   position: absolute;
-  height: 77%;
-  top: 40%;
+  height: 75%;
+  top: 45%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 0%;
@@ -950,7 +1516,7 @@ input::-webkit-inner-spin-button {
 #purchasemain .all form .buttonandtelkeeper {
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -968,9 +1534,9 @@ input::-webkit-inner-spin-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -985,7 +1551,7 @@ input::-webkit-inner-spin-button {
 #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
   letter-spacing: 3px;
   padding: 6px 5px;
-  font-size: 18px;
+  font-size: 16px;
   color: #042268;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -993,7 +1559,7 @@ input::-webkit-inner-spin-button {
 }
 
 #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
   outline: none;
   border: none;
@@ -1006,22 +1572,22 @@ input::-webkit-inner-spin-button {
 
 #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
   color: grey;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
   color: grey;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
   color: grey;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
   color: grey;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
@@ -1029,7 +1595,7 @@ input::-webkit-inner-spin-button {
 }
 
 #purchasemain .all form .buttonandtelkeeper button {
-  padding: 7px 55px;
+  padding: 6px 55px;
   font-size: 16px;
   background-color: #0055b0;
   text-align: center;
@@ -1150,28 +1716,6 @@ input::-webkit-inner-spin-button {
   border: 0.5px solid #0055b0;
   font-family: var(--montbold);
   color: #0055b0;
-}
-
-#purchasemain .all .resultContainer .icindeki .bottom a {
-  padding: 10px 55px;
-  font-size: 16px;
-  background-color: #0055b0;
-  text-align: center;
-  border-radius: 5px;
-  color: white;
-  font-family: var(--montmedium);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-#purchasemain .all .resultContainer .icindeki .bottom a:hover {
-  -webkit-box-shadow: 0px 0px 5px 1px #042268;
-          box-shadow: 0px 0px 5px 1px #042268;
-}
-
-#purchasemain .all .resultContainer .icindeki .bottom a:focus {
-  -webkit-box-shadow: 0px 0px 5px 1px #042268;
-          box-shadow: 0px 0px 5px 1px #042268;
 }
 
 @media (max-width: 576px) {
@@ -1314,9 +1858,1398 @@ input::-webkit-inner-spin-button {
     padding: 6px 40px !important;
     border-radius: 5px !important;
   }
-  #purchasemain .all .resultContainer .icindeki .bottom a {
-    padding: 7px 40px !important;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #purchasemain {
+    margin-top: 80px !important;
+    min-height: 79vh !important;
+  }
+  #purchasemain .all form {
+    margin-top: 20px !important;
+  }
+  #purchasemain .all form .above {
+    padding: 15px !important;
+  }
+  #purchasemain .all form .above .validthru {
+    font-size: 10px !important;
+    margin-bottom: 10px !important;
+  }
+  #purchasemain .all form .above input {
     font-size: 14px !important;
+    padding: 5px !important;
+    margin-bottom: 15px !important;
+  }
+  #purchasemain .all form .above input::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .above input:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .above input::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .above input::placeholder {
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .above .ikisi .leftside {
+    margin-bottom: 0 !important;
+  }
+  #purchasemain .all form .above .ikisi .leftside input {
+    margin: 0 !important;
+  }
+  #purchasemain .all form .above .ikisi .leftside span {
+    font-size: 25px !important;
+  }
+  #purchasemain .all form .above .ikisi .rightside {
+    margin-bottom: 0 !important;
+  }
+  #purchasemain .all form .above #year,
+  #purchasemain .all form .above #cvv,
+  #purchasemain .all form .above #month {
+    text-align: center;
+  }
+  #purchasemain .all form .below {
+    height: 56% !important;
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
+    top: 5% !important;
+  }
+  #purchasemain .all form .below::before {
+    content: '';
+    height: 50px !important;
+  }
+  #purchasemain .all form .below input {
+    font-size: 14px !important;
+    padding: 5px !important;
+    margin-bottom: 40px !important;
+    margin-right: 15px !important;
+  }
+  #purchasemain .all form .below input::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .below input:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .below input::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .below input::placeholder {
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper {
+    margin-top: 50px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
+    letter-spacing: 2px !important;
+    font-size: 14px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
+    font-size: 14px !important;
+    letter-spacing: 3px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
+    padding: 6px 10px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper button {
+    padding: 9px 55px !important;
+    margin-top: 20px !important;
+  }
+  #purchasemain .all .resultContainer {
+    border-radius: 5px !important;
+    padding: 7px !important;
+    margin-bottom: 15px !important;
+  }
+  #purchasemain .all .resultContainer .icindeki {
+    border-radius: 5px !important;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
+    font-size: 13px !important;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+    text-align: start !important;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
+    font-family: var(--montlight) !important;
+    font-size: 12px !important;
+  }
+  #purchasemain .all .resultContainer .icindeki .bottom {
+    padding: 10px !important;
+  }
+  #purchasemain .all .resultContainer .icindeki .bottom .price {
+    font-size: 14px !important;
+    padding: 6px 40px !important;
+    border-radius: 5px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  #purchasemain {
+    margin-top: 80px !important;
+    min-height: 79vh !important;
+  }
+  #purchasemain .all .resultContainer {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+  }
+  #purchasemain .all .resultContainer .icindeki {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 0.5px solid #0055b0;
+    border-radius: 8px;
+    background-color: white;
+  }
+  #purchasemain .all .resultContainer .icindeki .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom {
+    padding: 10px;
+    border-bottom: 0.5px solid #0055b0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
+    font-size: 14px;
+    color: #0055b0;
+    font-family: var(--montbold);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
+    text-align: start;
+    padding-left: 5px;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+    text-align: start !important;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
+    font-family: var(--montmedium);
+    font-size: 15px;
+  }
+  #purchasemain .all .resultContainer .icindeki .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px 10px;
+  }
+  #purchasemain .all .resultContainer .icindeki .bottom .price {
+    font-size: 20px;
+    padding: 6px 70px;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    font-family: var(--montbold);
+    color: #0055b0;
+  }
+  #purchasemain .all form {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  #purchasemain .all form .above {
+    z-index: 4;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8edd5;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #purchasemain .all form .above .validthru {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #purchasemain .all form .above input {
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    outline: none;
+    border: none;
+    padding: 2px 6px;
+    margin-bottom: 20px;
+  }
+  #purchasemain .all form .above input:focus {
+    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+            box-shadow: 0px 0px 10px 1px #04226870;
+  }
+  #purchasemain .all form .above input::-webkit-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input:-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input::-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input::placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above .ikisi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all form .above .ikisi .leftside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  #purchasemain .all form .above .ikisi .leftside input {
+    margin: 0;
+  }
+  #purchasemain .all form .above .ikisi .leftside span {
+    font-size: 30px;
+    color: black;
+    font-family: var(--montlight);
+  }
+  #purchasemain .all form .above .ikisi .rightside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all form .above .ikisi .rightside .cardbox {
+    margin-left: 5px;
+  }
+  #purchasemain .all form .above #year,
+  #purchasemain .all form .above #cvv,
+  #purchasemain .all form .above #month {
+    text-align: center;
+  }
+  #purchasemain .all form .below {
+    position: absolute;
+    height: 63% !important;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 0%;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    background-color: #e0ddd7;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    z-index: 2;
+  }
+  #purchasemain .all form .below::before {
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: #3f3f3f;
+  }
+  #purchasemain .all form .below input {
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    outline: none;
+    border: none;
+    padding: 2px 6px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+  #purchasemain .all form .below input:focus {
+    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+            box-shadow: 0px 0px 10px 1px #04226870;
+  }
+  #purchasemain .all form .below input::-webkit-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input:-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input::-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input::placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below #cvv {
+    text-align: center;
+  }
+  #purchasemain .all form .buttonandtelkeeper {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+            box-shadow: 0px 0px 5px 1px #0422686c;
+    width: 47% !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
+    letter-spacing: 3px;
+    padding: 6px 5px;
+    padding-left: 15px !important;
+    font-size: 18px;
+    color: #042268;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-align: end;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    padding: 6px 0px;
+    transition: 0.2s;
+    color: #042268;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
+    color: grey;
+    font-size: 18px;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
+    color: grey;
+    font-size: 18px;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
+    color: grey;
+    font-size: 18px;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
+    color: grey;
+    font-size: 18px;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
+    padding: 6px 20px;
+  }
+  #purchasemain .all form .buttonandtelkeeper button {
+    padding: 7px 55px;
+    font-size: 16px;
+    background-color: #0055b0;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+            box-shadow: 0px 0px 5px 1px #0422686c;
+    border-radius: 5px;
+    width: 47% !important;
+    color: white;
+    font-family: var(--montmedium);
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  #purchasemain {
+    font-family: var(--montmedium);
+    font-size: 16px;
+    margin-top: 80px;
+    min-height: 90vh;
+  }
+  #purchasemain .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all form {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  #purchasemain .all form .above {
+    z-index: 4;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8edd5;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #purchasemain .all form .above .validthru {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #purchasemain .all form .above input {
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    outline: none;
+    border: none;
+    padding: 2px 6px;
+    margin-bottom: 20px;
+  }
+  #purchasemain .all form .above input:focus {
+    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+            box-shadow: 0px 0px 10px 1px #04226870;
+  }
+  #purchasemain .all form .above input::-webkit-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input:-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input::-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input::placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above .ikisi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all form .above .ikisi .leftside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  #purchasemain .all form .above .ikisi .leftside input {
+    margin: 0;
+  }
+  #purchasemain .all form .above .ikisi .leftside span {
+    font-size: 30px;
+    color: black;
+    font-family: var(--montlight);
+  }
+  #purchasemain .all form .above .ikisi .rightside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all form .above .ikisi .rightside .cardbox {
+    margin-left: 5px;
+  }
+  #purchasemain .all form .above #year,
+  #purchasemain .all form .above #cvv,
+  #purchasemain .all form .above #month {
+    text-align: center;
+  }
+  #purchasemain .all form .below {
+    position: absolute;
+    height: 56% !important;
+    top: 30%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 0%;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    background-color: #e0ddd7;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    z-index: 2;
+  }
+  #purchasemain .all form .below::before {
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: #3f3f3f;
+  }
+  #purchasemain .all form .below input {
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    outline: none;
+    border: none;
+    padding: 2px 6px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+  #purchasemain .all form .below input:focus {
+    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+            box-shadow: 0px 0px 10px 1px #04226870;
+  }
+  #purchasemain .all form .below input::-webkit-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input:-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input::-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input::placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below #cvv {
+    text-align: center;
+  }
+  #purchasemain .all form .buttonandtelkeeper {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+            box-shadow: 0px 0px 5px 1px #0422686c;
+    width: 100% !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
+    letter-spacing: 3px;
+    padding: 6px 5px;
+    font-size: 16px !important;
+    color: #042268;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-align: end;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
+    font-size: 16px !important;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    padding: 6px 0px;
+    transition: 0.2s;
+    color: #042268;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
+    color: grey;
+    font-size: 16px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
+    color: grey;
+    font-size: 16px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
+    color: grey;
+    font-size: 16px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
+    color: grey;
+    font-size: 16px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
+    padding: 6px 20px;
+  }
+  #purchasemain .all form .buttonandtelkeeper button {
+    padding: 7px 55px;
+    font-size: 16px !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    background-color: #0055b0;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+            box-shadow: 0px 0px 5px 1px #0422686c;
+    border-radius: 5px;
+    color: white;
+    font-family: var(--montmedium);
+  }
+  #purchasemain .all .resultContainer {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+    width: 60% !important;
+  }
+  #purchasemain .all .resultContainer .icindeki {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 0.5px solid #0055b0;
+    border-radius: 8px;
+    background-color: white;
+  }
+  #purchasemain .all .resultContainer .icindeki .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom {
+    padding: 10px;
+    border-bottom: 0.5px solid #0055b0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
+    font-size: 14px;
+    color: #0055b0;
+    font-family: var(--montbold);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
+    text-align: start;
+    padding-left: 5px;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+    text-align: end;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
+    font-family: var(--montmedium);
+    font-size: 15px;
+  }
+  #purchasemain .all .resultContainer .icindeki .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px 10px;
+  }
+  #purchasemain .all .resultContainer .icindeki .bottom .price {
+    font-size: 20px;
+    padding: 6px 70px;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    font-family: var(--montbold);
+    color: #0055b0;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1280px) {
+  #purchasemain {
+    font-family: var(--montmedium);
+    font-size: 16px;
+    margin-top: 80px;
+    min-height: 90vh;
+  }
+  #purchasemain .all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all form {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60% !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    position: relative;
+  }
+  #purchasemain .all form .above {
+    z-index: 4;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f8edd5;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #purchasemain .all form .above .validthru {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  #purchasemain .all form .above input {
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    outline: none;
+    border: none;
+    padding: 2px 6px;
+    margin-bottom: 20px;
+  }
+  #purchasemain .all form .above input:focus {
+    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+            box-shadow: 0px 0px 10px 1px #04226870;
+  }
+  #purchasemain .all form .above input::-webkit-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input:-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input::-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above input::placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .above .ikisi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all form .above .ikisi .leftside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  #purchasemain .all form .above .ikisi .leftside input {
+    margin: 0;
+  }
+  #purchasemain .all form .above .ikisi .leftside span {
+    font-size: 30px;
+    color: black;
+    font-family: var(--montlight);
+  }
+  #purchasemain .all form .above .ikisi .rightside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 10px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all form .above .ikisi .rightside .cardbox {
+    margin-left: 5px;
+  }
+  #purchasemain .all form .above #year,
+  #purchasemain .all form .above #cvv,
+  #purchasemain .all form .above #month {
+    text-align: center;
+  }
+  #purchasemain .all form .below {
+    position: absolute;
+    height: 56% !important;
+    top: 30%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 0%;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    background-color: #e0ddd7;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    z-index: 2;
+  }
+  #purchasemain .all form .below::before {
+    content: '';
+    width: 100%;
+    height: 70px;
+    background-color: #3f3f3f;
+  }
+  #purchasemain .all form .below input {
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+            box-shadow: 0px 0px 5px 1px #04226846;
+    outline: none;
+    border: none;
+    padding: 2px 6px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+  #purchasemain .all form .below input:focus {
+    -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+            box-shadow: 0px 0px 10px 1px #04226870;
+  }
+  #purchasemain .all form .below input::-webkit-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input:-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input::-ms-input-placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below input::placeholder {
+    color: black;
+    font-family: var(--montlight);
+    font-size: 18px;
+  }
+  #purchasemain .all form .below #cvv {
+    text-align: center;
+  }
+  #purchasemain .all form .buttonandtelkeeper {
+    margin: 0;
+    padding: 0;
+    margin-top: 50px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+            box-shadow: 0px 0px 5px 1px #0422686c;
+    width: 100% !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
+    letter-spacing: 3px;
+    padding: 6px 5px;
+    font-size: 16px !important;
+    color: #042268;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    text-align: end;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
+    font-size: 16px !important;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    padding: 6px 0px;
+    transition: 0.2s;
+    color: #042268;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
+    color: grey;
+    font-size: 16px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
+    color: grey;
+    font-size: 16px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
+    color: grey;
+    font-size: 16px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
+    color: grey;
+    font-size: 16px !important;
+  }
+  #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
+    padding: 6px 20px;
+  }
+  #purchasemain .all form .buttonandtelkeeper button {
+    padding: 7px 55px;
+    font-size: 16px !important;
+    width: 100% !important;
+    margin-top: 20px !important;
+    background-color: #0055b0;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+            box-shadow: 0px 0px 5px 1px #0422686c;
+    border-radius: 5px;
+    color: white;
+    font-family: var(--montmedium);
+  }
+  #purchasemain .all .resultContainer {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+    border-radius: 8px;
+    padding: 8px;
+    background-color: white;
+    width: 60% !important;
+  }
+  #purchasemain .all .resultContainer .icindeki {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border: 0.5px solid #0055b0;
+    border-radius: 8px;
+    background-color: white;
+  }
+  #purchasemain .all .resultContainer .icindeki .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom {
+    padding: 10px;
+    border-bottom: 0.5px solid #0055b0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
+    font-size: 14px;
+    color: #0055b0;
+    font-family: var(--montbold);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
+    text-align: start;
+    padding-left: 5px;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
+    text-align: end;
+  }
+  #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
+  #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
+    font-family: var(--montmedium);
+    font-size: 15px;
+  }
+  #purchasemain .all .resultContainer .icindeki .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px 10px;
+  }
+  #purchasemain .all .resultContainer .icindeki .bottom .price {
+    font-size: 20px;
+    padding: 6px 70px;
+    border-radius: 5px;
+    border: 0.5px solid #0055b0;
+    font-family: var(--montbold);
+    color: #0055b0;
   }
 }
 
