@@ -1810,7 +1810,185 @@ input::-webkit-inner-spin-button {
 }
 
 #myaccountmain {
-  margin-top: 60px;
+  margin-top: 70px;
+  font-family: var(--montmedium);
+  font-size: 16px;
+  padding-bottom: 30px;
+  min-height: 92vh;
+}
+
+#myaccountmain .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+#myaccountmain .all .userinfo {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+
+#myaccountmain .all .userinfo .balanceamount {
+  font-size: 22px;
+  color: #042268;
+  font-family: var(--montbold);
+}
+
+#myaccountmain .all .userinfo .balance {
+  color: black;
+  font-size: 18px;
+}
+
+#myaccountmain .all .userinfo a {
+  padding: 10px 50px;
+  background-color: #042268;
+  color: white;
+  border-radius: 5px;
+}
+
+#myaccountmain .all .sortform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin: 10px 0;
+}
+
+#myaccountmain .all .sortform select {
+  font-size: 16px;
+  color: black;
+  border-radius: 5px;
+  padding: 6px 10px;
+  margin-right: 10px;
+}
+
+#myaccountmain .all .searchform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 0.5px solid #b8b8b8;
+  border-radius: 8px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+          box-shadow: 0px 0px 5px 1px #04226846;
+  background-color: white;
+  margin-right: 10px;
+}
+
+#myaccountmain .all .searchform input {
+  font-size: 16px;
+  color: black;
+  letter-spacing: 2px;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 6px 10px;
+  transition: 0.2s;
+  border-right: 1px solid #b8b8b8;
+  width: 90%;
+}
+
+#myaccountmain .all .searchform input::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+#myaccountmain .all .searchform input:-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+#myaccountmain .all .searchform input::-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+#myaccountmain .all .searchform input::placeholder {
+  color: black;
+  font-size: 16px;
+}
+
+#myaccountmain .all .searchform button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 0px;
+  width: 8%;
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+#myaccountmain .all .searchform button i {
+  color: #042268;
+  font-size: 20px;
+}
+
+#myaccountmain .all table td,
+#myaccountmain .all table th {
+  text-align: center;
+  padding: 20px 5px;
+}
+
+#myaccountmain .all table td a,
+#myaccountmain .all table th a {
+  padding: 10px;
+  background-color: #042268;
+  color: white;
+  border-radius: 5px;
+}
+
+#myaccountmain .all nav {
+  margin-top: 30px;
 }
 
 .col-1 {

@@ -320,6 +320,41 @@ $(document).ready(function () {
 
     //#endregion visa or mastercard
 
+    // -------------------------- purchase page
+
+    // -------------------------- 
+
+    // -------------------------- account page
+
+    //#region input to uppercase
+
+    $(document).on('input keyup', '#search', function () {
+        let value = $(this).val();
+        $(this).val(value.toUpperCase());
+    });
+
+    //#endregion input to uppercase
+
+    //#region search submit
+
+    $(document).on('submit', '#searchform', function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(e.target)
+
+        let search = formData.get('search')
+
+        console.log(search);
+    });
+
+    //#endregion search submit
+
+
+    // -------------------------- account page
+
+    // -------------------------- 
+
+
 });
 
 //WAUDG74F25N111998
