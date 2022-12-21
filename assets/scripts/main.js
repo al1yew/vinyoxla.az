@@ -21,6 +21,7 @@ $(document).ready(function () {
     if ($(document).width() > 576) {
         $('#vincodeinput').focus()
         $('#phoneno').focus()
+        $('#cardholder').focus()
     } else {
         $('.reklamhref').attr('href', 'https://www.instagram.com/garantauto.az/?hl=en')
     }
@@ -206,7 +207,7 @@ $(document).ready(function () {
 
     //#region login input prevent entering of nonnumeric
 
-    $(document).on('input', '#phoneno, #code', function (e) {
+    $(document).on('input', '#phoneno, #code, #phonenumber', function (e) {
 
         if (!/^[0-9]+$/.test($(this).val())) {
             $(this).val($(this).val().slice(0, -1))
@@ -232,6 +233,7 @@ $(document).ready(function () {
         let year = formData.get('year');
         let month = formData.get('month');
         let cvv = formData.get('cvv');
+        let phonenumber = formData.get('phonenumber');
 
         let date = new Date;
 
@@ -266,6 +268,8 @@ $(document).ready(function () {
             toastr.error('Kartın son tarixi səhvdir.');
             return;
         }
+
+        console.log({ phonenumber, cvv, cardno, cardholder, year, month });
 
         // burda uje vse, backend gebul edecek datalari ve birde yoxlayacag
     });
