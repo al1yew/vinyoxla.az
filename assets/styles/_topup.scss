@@ -4,7 +4,7 @@
     --montlight: MontserratLight;
 }
 
-#purchasemain {
+#topupmain {
     font-family: var(--montmedium);
     font-size: 16px;
     margin-top: 80px;
@@ -121,9 +121,8 @@
 
             .below {
                 position: absolute;
-                height: 75%;
-                top: 45%;
-                transform: translateY(-50%);
+                height: 65%;
+                top: 5%;
                 right: 0%;
                 border: 0.5px solid grey;
                 border-radius: 5px;
@@ -178,43 +177,23 @@
                 justify-content: space-between;
                 align-items: center;
                 flex-wrap: wrap;
+                padding-top: 50px;
 
-                .inputkeeper {
-                    display: flex;
-                    justify-content: start;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    overflow: hidden;
-                    border-radius: 5px;
+                input {
+                    font-size: 16px;
+                    letter-spacing: 2px;
                     box-shadow: 0px 0px 5px 1px #0422686c;
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                    transition: 0.2s;
+                    padding: 6px;
+                    transition: 0.2s;
+                    color: #042268;
 
-                    span {
-                        letter-spacing: 3px;
-                        padding: 6px 5px;
+                    &::placeholder {
+                        color: grey;
                         font-size: 16px;
-                        color: #042268;
-                        transition: 0.2s;
-                        text-align: end;
-                    }
-
-                    input {
-                        font-size: 16px;
-                        letter-spacing: 2px;
-                        outline: none;
-                        border: none;
-                        transition: 0.2s;
-                        padding: 6px 0px;
-                        transition: 0.2s;
-                        color: #042268;
-
-                        &::placeholder {
-                            color: grey;
-                            font-size: 16px;
-                        }
-                    }
-
-                    .code {
-                        padding: 6px 20px;
                     }
                 }
 
@@ -230,89 +209,11 @@
                 }
             }
         }
-
-        .resultContainer {
-            box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-            border-radius: 8px;
-            padding: 8px;
-            background-color: white;
-
-            .icindeki {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                border: 0.5px solid #0055b0;
-                border-radius: 8px;
-                background-color: white;
-
-                .top {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-
-                    .toptop,
-                    .topbottom {
-                        padding: 10px;
-                        border-bottom: 0.5px solid #0055b0;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-
-                        .topelement {
-                            font-size: 14px;
-                            color: #0055b0;
-                            font-family: var(--montbold);
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            flex-wrap: wrap;
-
-                            &:nth-child(2) {
-                                text-align: start;
-                                padding-left: 5px;
-
-                                span {
-                                    &:nth-child(2) {
-                                        text-align: end;
-                                    }
-                                }
-                            }
-
-                            span {
-                                &:nth-child(2) {
-                                    font-family: var(--montmedium);
-                                    font-size: 15px;
-                                }
-                            }
-                        }
-                    }
-                }
-
-                .bottom {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    padding: 15px 10px;
-
-                    .price {
-                        font-size: 20px;
-                        padding: 6px 70px;
-                        border-radius: 5px;
-                        border: 0.5px solid #0055b0;
-                        font-family: var(--montbold);
-                        color: #0055b0;
-                    }
-                }
-            }
-        }
     }
 }
 
 @media(max-width: 576px) {
-    #purchasemain {
+    #topupmain {
         margin-top: 80px !important;
         min-height: 79vh !important;
 
@@ -366,8 +267,7 @@
                 }
 
                 .below {
-                    height: 56% !important;
-                    transform: translateY(0) !important;
+                    height: 48% !important;
                     top: 5% !important;
 
                     &::before {
@@ -390,25 +290,13 @@
                 .buttonandtelkeeper {
                     margin-top: 50px !important;
 
-                    .inputkeeper {
+                    input {
+                        font-size: 14px !important;
+                        letter-spacing: 3px !important;
 
-                        span {
+                        &::placeholder {
+                            font-size: 14px !important;
                             letter-spacing: 2px !important;
-                            font-size: 14px !important;
-                        }
-
-                        input {
-                            font-size: 14px !important;
-                            letter-spacing: 3px !important;
-
-                            &::placeholder {
-                                font-size: 14px !important;
-                                letter-spacing: 2px !important;
-                            }
-                        }
-
-                        .code {
-                            padding: 6px 10px !important;
                         }
                     }
 
@@ -418,64 +306,16 @@
                     }
                 }
             }
-
-            .resultContainer {
-                border-radius: 5px !important;
-                padding: 7px !important;
-                margin-bottom: 15px !important;
-
-                .icindeki {
-                    border-radius: 5px !important;
-
-                    .top {
-
-                        .toptop,
-                        .topbottom {
-
-                            .topelement {
-                                font-size: 13px !important;
-
-                                &:nth-child(2) {
-
-                                    span {
-                                        &:nth-child(2) {
-                                            text-align: start !important;
-                                        }
-                                    }
-                                }
-
-                                span {
-                                    &:nth-child(2) {
-                                        font-family: var(--montlight) !important;
-                                        font-size: 12px !important;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .bottom {
-                        padding: 10px !important;
-
-                        .price {
-                            font-size: 14px !important;
-                            padding: 6px 40px !important;
-                            border-radius: 5px !important;
-                        }
-                    }
-                }
-            }
         }
     }
 }
 
 @media(min-width: 577px) and (max-width: 768px) {
-    #purchasemain {
+    #topupmain {
         margin-top: 80px !important;
         min-height: 79vh !important;
 
         .all {
-
             form {
                 margin-top: 20px !important;
 
@@ -524,8 +364,7 @@
                 }
 
                 .below {
-                    height: 68% !important;
-                    transform: translateY(0) !important;
+                    height: 58% !important;
                     top: 5% !important;
 
                     &::before {
@@ -548,26 +387,14 @@
                 .buttonandtelkeeper {
                     margin-top: 50px !important;
 
-                    .inputkeeper {
+                    input {
+                        font-size: 14px !important;
+                        letter-spacing: 3px !important;
                         width: 47% !important;
 
-                        span {
+                        &::placeholder {
+                            font-size: 14px !important;
                             letter-spacing: 2px !important;
-                            font-size: 14px !important;
-                        }
-
-                        input {
-                            font-size: 14px !important;
-                            letter-spacing: 3px !important;
-
-                            &::placeholder {
-                                font-size: 14px !important;
-                                letter-spacing: 2px !important;
-                            }
-                        }
-
-                        .code {
-                            padding: 6px 10px !important;
                         }
                     }
 
@@ -577,89 +404,16 @@
                     }
                 }
             }
-
-            .resultContainer {
-                border-radius: 5px !important;
-                padding: 7px !important;
-                margin-bottom: 15px !important;
-
-                .icindeki {
-                    border-radius: 5px !important;
-
-                    .top {
-
-                        .toptop,
-                        .topbottom {
-
-                            .topelement {
-                                font-size: 13px !important;
-
-                                &:nth-child(2) {
-
-                                    span {
-                                        &:nth-child(2) {
-                                            text-align: start !important;
-                                        }
-                                    }
-                                }
-
-                                span {
-                                    &:nth-child(2) {
-                                        font-family: var(--montlight) !important;
-                                        font-size: 12px !important;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .bottom {
-                        padding: 10px !important;
-
-                        .price {
-                            font-size: 14px !important;
-                            padding: 6px 40px !important;
-                            border-radius: 5px !important;
-                        }
-                    }
-                }
-            }
         }
     }
 }
 
 @media(min-width: 768px) and (max-width: 992px) {
-    #purchasemain {
+    #topupmain {
         margin-top: 80px !important;
         min-height: 79vh !important;
 
         .all {
-
-            .resultContainer {
-
-                .icindeki {
-
-                    .top {
-
-                        .toptop,
-                        .topbottom {
-
-                            .topelement {
-
-                                &:nth-child(2) {
-
-                                    span {
-                                        &:nth-child(2) {
-                                            text-align: start !important;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
             form {
 
                 .above {
@@ -670,9 +424,8 @@
                 }
 
                 .below {
-                    height: 68% !important;
-                    top: 38% !important;
-                    transform: translateY(-50%) !important;
+                    height: 60% !important;
+                    top: 5% !important;
 
                     input {
                         padding: 10px !important;
@@ -688,12 +441,8 @@
                     margin-top: 50px !important;
                     margin-bottom: 40px !important;
 
-                    .inputkeeper {
+                    input {
                         width: 47% !important;
-
-                        span {
-                            padding-left: 15px !important;
-                        }
                     }
 
                     button {
@@ -706,37 +455,27 @@
 }
 
 @media(min-width: 992px) and (max-width: 1200px) {
-    #purchasemain {
+    #topupmain {
 
         .all {
-
             form {
                 width: 60% !important;
 
                 .below {
-                    height: 64% !important;
-                    top: 40%;
-                    transform: translateY(-50%);
+                    height: 57% !important;
+                    top: 5%;
                 }
 
                 .buttonandtelkeeper {
                     margin-top: 50px !important;
                     margin-bottom: 40px !important;
 
-                    .inputkeeper {
-                        justify-content: start !important;
+                    input {
+                        font-size: 16px !important;
                         width: 47% !important;
 
-                        span {
+                        &::placeholder {
                             font-size: 16px !important;
-                        }
-
-                        input {
-                            font-size: 16px !important;
-
-                            &::placeholder {
-                                font-size: 16px !important;
-                            }
                         }
                     }
 
@@ -746,46 +485,32 @@
                     }
                 }
             }
-
-            .resultContainer {
-                width: 60% !important;
-            }
         }
     }
 }
 
 @media(min-width: 1200px) and (max-width: 1280px) {
-    #purchasemain {
+    #topupmain {
 
         .all {
-
             form {
                 width: 55% !important;
 
                 .below {
-                    height: 64% !important;
-                    top: 40%;
-                    transform: translateY(-50%);
+                    height: 57% !important;
+                    top: 5%;
                 }
 
                 .buttonandtelkeeper {
                     margin-top: 50px !important;
                     margin-bottom: 40px !important;
 
-                    .inputkeeper {
-                        justify-content: start !important;
+                    input {
+                        font-size: 16px !important;
                         width: 47% !important;
 
-                        span {
+                        &::placeholder {
                             font-size: 16px !important;
-                        }
-
-                        input {
-                            font-size: 16px !important;
-
-                            &::placeholder {
-                                font-size: 16px !important;
-                            }
                         }
                     }
 
@@ -795,10 +520,6 @@
                         width: 47% !important;
                     }
                 }
-            }
-
-            .resultContainer {
-                width: 55% !important;
             }
         }
     }

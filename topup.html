@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Avtomobillərin VİN kodunun yoxlanışı">
+
+    <link rel="stylesheet" href="./assets/styles/plugins/bootstrap-5.0.2-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="./assets/images/garantautologoCROP.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+        integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- written by Vasif Aliyev  -->
+    <!-- https://www.linkedin.com/in/vasif-aliyev/ -->
+    <title>Avtomobillərin VİN kodunun yoxlanışı</title>
+</head>
+
+<body class="body">
+
+    <div class="preloaderdiv col-lg-12 col-12 ">
+        <div class="preloader"></div>
+    </div>
+
+    <header id="header">
+        <div class="container">
+            <div class="row all">
+                <div class="col-lg-1-8 col-3-5">
+                    <a href="index.html">
+                        <img class="img-fluid" src="./assets/images/logowhite.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-4 col-8-5">
+                    <a href="login.html" class="">
+                        Daxil ol
+                    </a>
+                    <a href="aboutus.html" class="">
+                        Haqqımızda
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="topupmain">
+        <div class="container">
+            <div class="row all">
+
+                <form id="topupform" class="col-lg-6 col-12 ">
+                    <div class="col-lg-9 col-9 above">
+
+                        <input autocomplete="off" type="text" id="cardholder" class="cardholder col-lg-12 col-12"
+                            placeholder="Ad Soyad" pattern="[A-Za-z, ]{2,}" name="cardholder" required>
+
+                        <input autocomplete="off" type="text" inputmode="numeric" id="cardno"
+                            class="cardno col-lg-12 col-12" placeholder="Kartın nömrəsi" pattern="[0-9]{16}"
+                            name="cardno" maxlength="16" minlength="16" required>
+
+                        <p class="validthru col-lg-12 col-12">VALID THRU:</p>
+
+                        <div class="col-lg-12 col-12 ikisi">
+                            <div class="col-lg-6 col-7 leftside">
+
+                                <input autocomplete="off" type="text" id="month" class="month col-lg-5 col-5"
+                                    placeholder="MM" pattern="[0-9]{2}" inputmode="numeric" maxlength="2" minlength="2"
+                                    name="month" required>
+
+                                <span class="slash">/</span>
+
+                                <input autocomplete="off" type="text" id="year" class="year col-lg-5 col-5"
+                                    placeholder="YYYY" pattern="[0-9]{4}" inputmode="numeric" maxlength="4"
+                                    minlength="4" name="year" required>
+
+                            </div>
+
+                            <div class="col-lg-5 col-5 rightside">
+                                <div class="col-lg-5 col-4-5 cardbox visabox">
+                                    <img src="./assets/images/mastercard-logo-png-transparent-svg-vector-bie-supply-0.png"
+                                        class="img-fluid" alt="">
+                                </div>
+
+                                <div class="col-lg-5 col-4-5 cardbox mastercardbox">
+                                    <img class="img-fluid" src="./assets/images/visa-card-logo-9.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 col-9 below">
+                        <input autocomplete="off" type="text" id="cvv" class="cvv col-lg-3 col-3" placeholder="CVV"
+                            pattern="[0-9]{3}" maxlength="3" inputmode="numeric" minlength="3" name="cvv" required>
+                    </div>
+
+                    <div class="col-lg-12 col-12 buttonandtelkeeper">
+                        <input inputmode="numeric" numeric autocomplete="off" name="amount" placeholder="Məbləğ"
+                            type="text" required class="amount col-lg-5-9 col-12" id="amount">
+                        <button type="submit" id="purchaseformbutton" class="btn col-lg-5-9 col-12">Almaq</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row all">
+                <div class="col-lg-1 col-2 left">
+                    <a target="_blank" href="https://www.facebook.com/garantauto.az" class="fblink">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/garantauto.az/" class="instalink">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="col-lg-6 col-12 middle">
+                    <p class="col-lg-12 col-12">
+                        vinyoxla.az <a target="_blank" href="https://garantauto.az/">"Garant Auto"</a> MMC-nin
+                        məhsuludur.
+                    </p>
+                    <a target="_blank" href="https://www.linkedin.com/in/vasif-aliyev/" class="col-lg-12 col-12">
+                        Build by Vasif Aliyev
+                    </a>
+                </div>
+
+                <div class="col-lg-2 col-4 right">
+                    <img src="./assets/images/American-Express-PNG-Transparent-Image.png" alt="">
+                    <img src="./assets/images/visa-card-logo-9.png" alt="">
+                    <img src="./assets/images/mastercard-logo-png-transparent-svg-vector-bie-supply-1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JQUERY  -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="./assets/styles/plugins/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Toastr -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+        integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"
+        integrity="sha512-zJYu9ICC+mWF3+dJ4QC34N9RA0OVS1XtPbnf6oXlvGrLGNB8egsEzu/5wgG90I61hOOKvcywoLzwNmPqGAdATA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- My JS -->
+    <script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>

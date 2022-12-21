@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 div {
@@ -34,11 +34,11 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -64,6 +64,7 @@ a:hover {
   0% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
   }
@@ -72,11 +73,12 @@ a:hover {
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -133,20 +135,25 @@ input::-webkit-inner-spin-button {
   #header {
     font-size: 14px !important;
   }
+
   #header .all div:nth-child(2) a {
     margin: 0 15px !important;
   }
+
   #header .all div:nth-child(2) a:hover::before {
     content: '';
     width: 0 !important;
   }
+
   #header .all div:nth-child(2) a:last-child {
     margin: 0 !important;
   }
+
   #main {
     padding-top: 70px !important;
     min-height: 70vh !important;
   }
+
   #main .all form {
     background-image: url(../images/bannertel.jpg) !important;
     background-position: center !important;
@@ -154,153 +161,189 @@ input::-webkit-inner-spin-button {
     background-size: cover !important;
     height: 77vh !important;
   }
+
   #main .all form .firstp {
     font-size: 24px !important;
     top: 7% !important;
     left: 50% !important;
     -webkit-transform: translateX(-50%) !important;
-            transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
   }
+
   #main .all form .secondp {
     top: 24% !important;
     left: 50% !important;
     -webkit-transform: translateX(-50%) !important;
-            transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
     font-size: 15px !important;
   }
+
   #main .all form .inputbox {
     top: 40% !important;
     left: 50% !important;
     -webkit-transform: translateX(-50%) !important;
-            transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
   }
+
   #main .all form .inputbox:hover {
     -webkit-box-shadow: 0px 0px 5px 1px #04226846 !important;
-            box-shadow: 0px 0px 5px 1px #04226846 !important;
+    box-shadow: 0px 0px 5px 1px #04226846 !important;
   }
+
   #main .all form .inputbox:focus {
     -webkit-box-shadow: 0px 0px 5px 1px #04226846 !important;
-            box-shadow: 0px 0px 5px 1px #04226846 !important;
+    box-shadow: 0px 0px 5px 1px #04226846 !important;
   }
+
   #main .all form .inputbox input {
     font-size: 14px !important;
     letter-spacing: 1px !important;
     padding: 6px 5px !important;
   }
+
   #main .all form .inputbox input::-webkit-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
+
   #main .all form .inputbox input:-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
+
   #main .all form .inputbox input::-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
+
   #main .all form .inputbox input::placeholder {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
+
   #main .all form .inputbox .copyspan,
   #main .all form .inputbox .deleteinp {
     left: 70% !important;
   }
+
   #main .all form .inputbox button {
     font-size: 14px !important;
     padding: 10px 5px !important;
   }
+
   #main .all form .inputbox button:hover {
     color: #0055b0 !important;
     background-color: white !important;
   }
+
   #main .all form .inputbox button:focus {
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
   }
+
   #main .all .resultsContainer {
     font-size: 14px !important;
     padding-bottom: 10px !important;
   }
+
   #main .all .resultsContainer .resultContainer {
     border-radius: 5px !important;
     padding: 7px !important;
     margin-bottom: 15px !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki {
     border-radius: 5px !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement,
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement {
     font-size: 13px !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     text-align: start !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
     font-family: var(--montlight) !important;
     font-size: 12px !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .bottom {
     padding: 10px !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .bottom .price {
     font-size: 14px !important;
     padding: 6px 12px !important;
     border-radius: 5px !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .bottom a {
     padding: 7px 40px !important;
     font-size: 14px !important;
   }
+
   #main .all .resultsContainer .reklam {
     margin-bottom: 0 !important;
   }
+
   #main .all .resultsContainer .reklam:nth-child(1) {
     margin-bottom: 15px !important;
   }
+
   #main .all .resultsContainer .autocheckContainer {
     margin-bottom: 0 !important;
   }
+
   #footer {
     margin-top: 20px !important;
   }
+
   #footer .all {
     padding: 6px 0 !important;
   }
+
   #footer .all .left {
     width: 15% !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   #footer .all .left .fblink i {
     font-size: 25px !important;
   }
+
   #footer .all .left .instalink i {
     font-size: 25px !important;
   }
+
   #footer .all .middle {
     padding-left: 0 !important;
     width: 72% !important;
   }
+
   #footer .all .middle p {
     font-size: 12px !important;
   }
+
   #footer .all .middle a {
     font-size: 12px !important;
   }
+
   #footer .all .right {
     width: 12% !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   #footer .all .right img {
     width: 70% !important;
   }
@@ -310,111 +353,141 @@ input::-webkit-inner-spin-button {
   #main {
     padding-top: 80px !important;
   }
+
   #main .all form {
     height: 80vh !important;
   }
+
   #main .all form .firstp {
     font-size: 26px !important;
   }
+
   #main .all form .secondp {
     top: 30% !important;
     width: 55% !important;
     color: #0055b0 !important;
     font-size: 18px !important;
   }
+
   #main .all form .inputbox {
     width: 80% !important;
   }
+
   #main .all form .inputbox .copyspan,
   #main .all form .inputbox .deleteinp {
     left: 70% !important;
     font-size: 25px !important;
   }
+
   #main .all form .inputbox input {
     font-size: 16px !important;
     letter-spacing: 2px !important;
     padding: 6px !important;
   }
+
   #main .all form .inputbox input::-webkit-input-placeholder {
     font-size: 16px !important;
   }
+
   #main .all form .inputbox input:-ms-input-placeholder {
     font-size: 16px !important;
   }
+
   #main .all form .inputbox input::-ms-input-placeholder {
     font-size: 16px !important;
   }
+
   #main .all form .inputbox input::placeholder {
     font-size: 16px !important;
   }
+
   #main .all form .inputbox button {
     font-size: 16px !important;
     padding: 6px 5px !important;
   }
+
   #main .all .resultsContainer .resultContainer:nth-child(2) {
     margin-top: 15px !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(1) span:nth-child(1),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(1) span:nth-child(1) {
     width: 30%;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(1) span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(1) span:nth-child(2) {
     width: 95%;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
     text-align: start;
     padding-left: 5px;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(1),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(1) {
     width: 78% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     text-align: end;
     width: 20% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(1) {
     width: 68% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2) {
     text-align: end;
     width: 30% !important;
   }
+
   #main .all .resultsContainer .reklam {
     width: 47% !important;
     margin-top: 20px !important;
   }
+
   #footer {
     margin-top: 20px !important;
   }
+
   #footer .all {
     padding: 6px 0 !important;
   }
+
   #footer .all .left {
     width: 15% !important;
   }
+
   #footer .all .left .fblink i {
     font-size: 25px !important;
   }
+
   #footer .all .left .instalink i {
     font-size: 25px !important;
   }
+
   #footer .all .middle {
     padding-left: 0 !important;
     width: 68% !important;
   }
+
   #footer .all .middle p {
     font-size: 12px !important;
   }
+
   #footer .all .middle a {
     font-size: 12px !important;
   }
+
   #footer .all .right {
     width: 15% !important;
   }
+
   #footer .all .right img {
     width: 25% !important;
   }
@@ -424,119 +497,149 @@ input::-webkit-inner-spin-button {
   #main {
     padding-top: 80px !important;
   }
+
   #main .all form {
     height: 80vh !important;
   }
+
   #main .all form .firstp {
     font-size: 26px !important;
   }
+
   #main .all form .secondp {
     top: 24% !important;
     width: 55% !important;
     color: #0055b0 !important;
     font-size: 18px !important;
   }
+
   #main .all form .inputbox {
     width: 55% !important;
   }
+
   #main .all form .inputbox .copyspan,
   #main .all form .inputbox .deleteinp {
     left: 70% !important;
     font-size: 25px !important;
   }
+
   #main .all form .inputbox input {
     font-size: 16px !important;
     letter-spacing: 2px !important;
     padding: 6px !important;
   }
+
   #main .all form .inputbox input::-webkit-input-placeholder {
     font-size: 16px !important;
   }
+
   #main .all form .inputbox input:-ms-input-placeholder {
     font-size: 16px !important;
   }
+
   #main .all form .inputbox input::-ms-input-placeholder {
     font-size: 16px !important;
   }
+
   #main .all form .inputbox input::placeholder {
     font-size: 16px !important;
   }
+
   #main .all form .inputbox button {
     font-size: 16px !important;
     padding: 6px 5px !important;
   }
+
   #main .all .resultsContainer .resultContainer:nth-child(2) {
     margin-top: 15px !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(1),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(1) {
     width: 25% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
     width: 74% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(1),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(1) {
     width: 55% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     width: 40% !important;
   }
+
   #main .all .resultsContainer .reklam {
     width: 47% !important;
     margin-top: 20px !important;
   }
+
   #footer .all .left {
     width: 12% !important;
   }
+
   #footer .all .left .fblink i {
     font-size: 30px;
     color: #042268;
   }
+
   #footer .all .left .instalink i {
     font-size: 30px;
     color: #C13584;
   }
+
   #footer .all .middle {
     padding-left: 0px !important;
     width: 70% !important;
   }
+
   #footer .all .right {
     width: 15% !important;
   }
+
   #footer .all .right img {
     width: 25% !important;
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(1) span:nth-child(1),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(1) span:nth-child(1) {
     width: 30%;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(1) span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(1) span:nth-child(2) {
     width: 95%;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) {
     text-align: start;
     padding-left: 5px;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(1),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(1) {
     width: 78% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     text-align: end;
     width: 20% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(1) {
     width: 68% !important;
   }
+
   #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2) {
     text-align: end;
     width: 30% !important;
@@ -562,11 +665,11 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 89vh;
   width: 100%;
   margin: 0;
@@ -578,18 +681,18 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-          box-shadow: 0px 0px 5px 1px #0422686c;
+  box-shadow: 0px 0px 5px 1px #0422686c;
   padding: 30px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -598,7 +701,7 @@ input::-webkit-inner-spin-button {
 
 #loginmain .all form:hover {
   -webkit-box-shadow: 0px 0px 5px 1px #02184b9f;
-          box-shadow: 0px 0px 5px 1px #02184b9f;
+  box-shadow: 0px 0px 5px 1px #02184b9f;
 }
 
 #loginmain .all form .loginp {
@@ -620,17 +723,17 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   overflow: hidden;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-          box-shadow: 0px 0px 5px 1px #0422686c;
+  box-shadow: 0px 0px 5px 1px #0422686c;
 }
 
 #loginmain .all form .inputkeeper span {
@@ -695,7 +798,7 @@ input::-webkit-inner-spin-button {
 
 #loginmain .all form button:hover {
   -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-          box-shadow: 0px 0px 5px 1px #0422686c;
+  box-shadow: 0px 0px 5px 1px #0422686c;
 }
 
 #loginmain .all #kodgelennensonra {
@@ -703,13 +806,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media (max-width: 576px) {
@@ -717,55 +820,67 @@ input::-webkit-inner-spin-button {
     border-radius: 10px !important;
     padding: 20px !important;
     -webkit-box-shadow: 0px 0px 5px 1px #0422686c !important;
-            box-shadow: 0px 0px 5px 1px #0422686c !important;
+    box-shadow: 0px 0px 5px 1px #0422686c !important;
   }
+
   #loginmain .all form:hover {
     -webkit-box-shadow: 0px 0px 5px 1px #0422686c !important;
-            box-shadow: 0px 0px 5px 1px #0422686c !important;
+    box-shadow: 0px 0px 5px 1px #0422686c !important;
   }
+
   #loginmain .all form .loginp {
     font-size: 16px !important;
   }
+
   #loginmain .all form label {
     margin-top: 20px !important;
     font-size: 14px !important;
   }
+
   #loginmain .all form .inputkeeper span {
     letter-spacing: 2px !important;
     font-size: 14px !important;
     padding-bottom: 5px !important;
   }
+
   #loginmain .all form .inputkeeper input {
     font-size: 14px !important;
     letter-spacing: 3px !important;
   }
+
   #loginmain .all form .inputkeeper input::-webkit-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #loginmain .all form .inputkeeper input:-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #loginmain .all form .inputkeeper input::-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #loginmain .all form .inputkeeper input::placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #loginmain .all form .inputkeeper .code {
     padding: 6px 15px !important;
   }
+
   #loginmain .all form button {
     font-size: 14px !important;
     margin: 0 auto !important;
     margin-top: 30px !important;
   }
+
   #loginmain .all form button:hover {
     -webkit-box-shadow: none !important;
-            box-shadow: none !important;
+    box-shadow: none !important;
   }
 }
 
@@ -787,13 +902,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -810,13 +925,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #aboutusmain .all .abouttext .firsttext {
@@ -880,30 +995,37 @@ input::-webkit-inner-spin-button {
   #aboutusmain {
     margin-top: 60px !important;
   }
+
   #aboutusmain .all .mapdiv iframe {
     border-radius: 7px !important;
     height: 400px !important;
   }
+
   #aboutusmain .all .abouttext .secondtext {
     font-size: 16px !important;
     margin-top: 7px !important;
   }
+
   #aboutusmain .all .abouttext .voen {
     font-size: 14px !important;
     margin-top: 7px !important;
   }
+
   #aboutusmain .all .abouttext .huquqiadres {
     margin-top: 7px !important;
     font-size: 14px !important;
   }
+
   #aboutusmain .all .abouttext .faktikiadres {
     margin-top: 7px !important;
     font-size: 14px !important;
   }
+
   #aboutusmain .all .abouttext .telnomer {
     margin-top: 7px !important;
     font-size: 14px !important;
   }
+
   #aboutusmain .all .abouttext .maintext {
     margin-top: 15px !important;
     font-size: 14px !important;
@@ -928,17 +1050,17 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #purchasemain .all form {
@@ -949,13 +1071,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -968,18 +1090,18 @@ input::-webkit-inner-spin-button {
   padding-top: 30px;
   padding-bottom: 10px;
   -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 #purchasemain .all form .above .validthru {
@@ -993,7 +1115,7 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   border: 0.5px solid #0055b0;
   -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
   outline: none;
   border: none;
   padding: 2px 6px;
@@ -1003,7 +1125,7 @@ input::-webkit-inner-spin-button {
 
 #purchasemain .all form .above input:focus {
   -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-          box-shadow: 0px 0px 10px 1px #04226870;
+  box-shadow: 0px 0px 10px 1px #04226870;
 }
 
 #purchasemain .all form .above input::-webkit-input-placeholder {
@@ -1035,13 +1157,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #purchasemain .all form .above .ikisi .leftside {
@@ -1049,13 +1171,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
@@ -1074,19 +1196,19 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 10px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #purchasemain .all form .above .ikisi .rightside .odu img {
   -webkit-filter: brightness(0.2) !important;
-          filter: brightness(0.2) !important;
+  filter: brightness(0.2) !important;
 }
 
 #purchasemain .all form .above .ikisi .rightside .cardbox {
@@ -1104,24 +1226,24 @@ input::-webkit-inner-spin-button {
   height: 75%;
   top: 45%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0%;
   border: 0.5px solid grey;
   border-radius: 5px;
   background-color: #e0ddd7;
   -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   z-index: 2;
 }
 
@@ -1138,7 +1260,7 @@ input::-webkit-inner-spin-button {
   border-radius: 5px;
   border: 0.5px solid #0055b0;
   -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
   outline: none;
   border: none;
   padding: 2px 6px;
@@ -1148,7 +1270,7 @@ input::-webkit-inner-spin-button {
 
 #purchasemain .all form .below input:focus {
   -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-          box-shadow: 0px 0px 10px 1px #04226870;
+  box-shadow: 0px 0px 10px 1px #04226870;
 }
 
 #purchasemain .all form .below input::-webkit-input-placeholder {
@@ -1187,13 +1309,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #purchasemain .all form .buttonandtelkeeper .inputkeeper {
@@ -1201,17 +1323,17 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   overflow: hidden;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-          box-shadow: 0px 0px 5px 1px #0422686c;
+  box-shadow: 0px 0px 5px 1px #0422686c;
 }
 
 #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
@@ -1266,7 +1388,7 @@ input::-webkit-inner-spin-button {
   background-color: #0055b0;
   text-align: center;
   -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-          box-shadow: 0px 0px 5px 1px #0422686c;
+  box-shadow: 0px 0px 5px 1px #0422686c;
   border-radius: 5px;
   color: white;
   font-family: var(--montmedium);
@@ -1274,7 +1396,7 @@ input::-webkit-inner-spin-button {
 
 #purchasemain .all .resultContainer {
   -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-          box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+  box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
   border-radius: 8px;
   padding: 8px;
   background-color: white;
@@ -1285,10 +1407,10 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   border: 0.5px solid #0055b0;
   border-radius: 8px;
   background-color: white;
@@ -1299,13 +1421,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #purchasemain .all .resultContainer .icindeki .top .toptop,
@@ -1316,13 +1438,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
@@ -1334,13 +1456,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
@@ -1365,13 +1487,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 15px 10px;
 }
 
@@ -1389,136 +1511,172 @@ input::-webkit-inner-spin-button {
     margin-top: 80px !important;
     min-height: 79vh !important;
   }
+
   #purchasemain .all form {
     margin-top: 20px !important;
   }
+
   #purchasemain .all form .above {
     padding: 15px !important;
   }
+
   #purchasemain .all form .above .validthru {
     font-size: 10px !important;
     margin-bottom: 10px !important;
   }
+
   #purchasemain .all form .above input {
     font-size: 14px !important;
     padding: 5px !important;
     margin-bottom: 15px !important;
   }
+
   #purchasemain .all form .above input::-webkit-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .above input:-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .above input::-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .above input::placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .above .ikisi .leftside {
     margin-bottom: 0 !important;
   }
+
   #purchasemain .all form .above .ikisi .leftside input {
     margin: 0 !important;
   }
+
   #purchasemain .all form .above .ikisi .leftside span {
     font-size: 25px !important;
   }
+
   #purchasemain .all form .above .ikisi .rightside {
     margin-bottom: 0 !important;
   }
+
   #purchasemain .all form .above #year,
   #purchasemain .all form .above #cvv,
   #purchasemain .all form .above #month {
     text-align: center;
   }
+
   #purchasemain .all form .below {
     height: 56% !important;
     -webkit-transform: translateY(0) !important;
-            transform: translateY(0) !important;
+    transform: translateY(0) !important;
     top: 5% !important;
   }
+
   #purchasemain .all form .below::before {
     content: '';
     height: 50px !important;
   }
+
   #purchasemain .all form .below input {
     font-size: 14px !important;
     padding: 5px !important;
     margin-bottom: 40px !important;
     margin-right: 15px !important;
   }
+
   #purchasemain .all form .below input::-webkit-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .below input:-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .below input::-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .below input::placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper {
     margin-top: 50px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
     letter-spacing: 2px !important;
     font-size: 14px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
     font-size: 14px !important;
     letter-spacing: 3px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
     padding: 6px 10px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper button {
     padding: 9px 55px !important;
     margin-top: 20px !important;
   }
+
   #purchasemain .all .resultContainer {
     border-radius: 5px !important;
     padding: 7px !important;
     margin-bottom: 15px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki {
     border-radius: 5px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
     font-size: 13px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     text-align: start !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
     font-family: var(--montlight) !important;
     font-size: 12px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .bottom {
     padding: 10px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .bottom .price {
     font-size: 14px !important;
     padding: 6px 40px !important;
@@ -1531,139 +1689,176 @@ input::-webkit-inner-spin-button {
     margin-top: 80px !important;
     min-height: 79vh !important;
   }
+
   #purchasemain .all form {
     margin-top: 20px !important;
   }
+
   #purchasemain .all form .above {
     padding: 15px !important;
   }
+
   #purchasemain .all form .above .validthru {
     font-size: 10px !important;
     margin-bottom: 10px !important;
   }
+
   #purchasemain .all form .above input {
     font-size: 14px !important;
     padding: 5px !important;
     margin-bottom: 15px !important;
   }
+
   #purchasemain .all form .above input::-webkit-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .above input:-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .above input::-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .above input::placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .above .ikisi .leftside {
     margin-bottom: 0 !important;
   }
+
   #purchasemain .all form .above .ikisi .leftside input {
     margin: 0 !important;
   }
+
   #purchasemain .all form .above .ikisi .leftside span {
     font-size: 25px !important;
   }
+
   #purchasemain .all form .above .ikisi .rightside {
     margin-bottom: 0 !important;
   }
+
   #purchasemain .all form .above #year,
   #purchasemain .all form .above #cvv,
   #purchasemain .all form .above #month {
     text-align: center;
   }
+
   #purchasemain .all form .below {
     height: 68% !important;
     -webkit-transform: translateY(0) !important;
-            transform: translateY(0) !important;
+    transform: translateY(0) !important;
     top: 5% !important;
   }
+
   #purchasemain .all form .below::before {
     content: '';
     height: 50px !important;
   }
+
   #purchasemain .all form .below input {
     font-size: 14px !important;
     padding: 5px !important;
     margin-bottom: 40px !important;
     margin-right: 15px !important;
   }
+
   #purchasemain .all form .below input::-webkit-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .below input:-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .below input::-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .below input::placeholder {
     font-size: 14px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper {
     margin-top: 50px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
     width: 47% !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
     letter-spacing: 2px !important;
     font-size: 14px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
     font-size: 14px !important;
     letter-spacing: 3px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
     font-size: 14px !important;
     letter-spacing: 2px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper .code {
     padding: 6px 10px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper button {
     padding: 5px 55px !important;
     width: 47% !important;
   }
+
   #purchasemain .all .resultContainer {
     border-radius: 5px !important;
     padding: 7px !important;
     margin-bottom: 15px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki {
     border-radius: 5px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
     font-size: 13px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     text-align: start !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement span:nth-child(2),
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement span:nth-child(2) {
     font-family: var(--montlight) !important;
     font-size: 12px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .bottom {
     padding: 10px !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .bottom .price {
     font-size: 14px !important;
     padding: 6px 40px !important;
@@ -1676,33 +1871,45 @@ input::-webkit-inner-spin-button {
     margin-top: 80px !important;
     min-height: 79vh !important;
   }
+
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     text-align: start !important;
   }
+
   #purchasemain .all form .above input {
     padding: 10px !important;
   }
+
   #purchasemain .all form .below {
     height: 68% !important;
     top: 38% !important;
     -webkit-transform: translateY(-50%) !important;
-            transform: translateY(-50%) !important;
+    transform: translateY(-50%) !important;
   }
+
+  #purchasemain .all form .below input {
+    padding: 10px !important;
+  }
+
   #purchasemain .all form .below::before {
     content: '';
     height: 70px;
   }
+
   #purchasemain .all form .buttonandtelkeeper {
     margin-top: 50px !important;
     margin-bottom: 40px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
     width: 47% !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
     padding-left: 15px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper button {
     width: 47% !important;
   }
@@ -1712,44 +1919,55 @@ input::-webkit-inner-spin-button {
   #purchasemain .all form {
     width: 60% !important;
   }
+
   #purchasemain .all form .below {
     height: 64% !important;
     top: 40%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
+
   #purchasemain .all form .buttonandtelkeeper {
     margin-top: 50px !important;
     margin-bottom: 40px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
     -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: start !important;
     width: 47% !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper button {
     font-size: 16px !important;
     width: 47% !important;
   }
+
   #purchasemain .all .resultContainer {
     width: 60% !important;
   }
@@ -1759,45 +1977,56 @@ input::-webkit-inner-spin-button {
   #purchasemain .all form {
     width: 55% !important;
   }
+
   #purchasemain .all form .below {
     height: 64% !important;
     top: 40%;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
   }
+
   #purchasemain .all form .buttonandtelkeeper {
     margin-top: 50px !important;
     margin-bottom: 40px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
     -webkit-box-pack: start !important;
-        -ms-flex-pack: start !important;
-            justify-content: start !important;
+    -ms-flex-pack: start !important;
+    justify-content: start !important;
     width: 47% !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-webkit-input-placeholder {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input:-ms-input-placeholder {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::-ms-input-placeholder {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper .inputkeeper input::placeholder {
     font-size: 16px !important;
   }
+
   #purchasemain .all form .buttonandtelkeeper button {
     padding: 7px 55px;
     font-size: 16px !important;
     width: 47% !important;
   }
+
   #purchasemain .all .resultContainer {
     width: 55% !important;
   }
@@ -1829,13 +2058,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
@@ -1847,11 +2076,11 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
 }
@@ -1879,13 +2108,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   border-bottom: 1px solid #000;
   padding: 0;
@@ -1896,13 +2125,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin: 10px 0;
@@ -1914,7 +2143,7 @@ input::-webkit-inner-spin-button {
   color: black;
   cursor: pointer;
   -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
   border-radius: 5px;
   padding: 6px 10px;
   background-color: white;
@@ -1925,7 +2154,7 @@ input::-webkit-inner-spin-button {
   font-size: 16px;
   border: 0.5px solid #b8b8b8;
   -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
   color: black;
   letter-spacing: 2px;
   border-radius: 5px;
@@ -1977,11 +2206,11 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #myaccountmain .all table td:last-child .slash {
@@ -2010,77 +2239,95 @@ input::-webkit-inner-spin-button {
     font-size: 14px !important;
     padding-bottom: 20px !important;
   }
+
   #myaccountmain .ifnopurchases p {
     font-size: 20px !important;
   }
+
   #myaccountmain .all {
     overflow-x: scroll;
   }
+
   #myaccountmain .all .userinfo {
     border-bottom: 0.5px solid grey !important;
   }
+
   #myaccountmain .all .userinfo .balanceamount {
     font-size: 18px !important;
     font-family: var(--montmedium) !important;
   }
+
   #myaccountmain .all .userinfo .balance {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .userinfo a {
     padding: 5px 10px !important;
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort {
     -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
     margin-top: 10px !important;
     -ms-flex-wrap: wrap !important;
-        flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
     padding-bottom: 10px !important;
   }
+
   #myaccountmain .all .forsort .sortform {
     -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
     margin: 0 !important;
     margin-top: 10px !important;
   }
+
   #myaccountmain .all .forsort .sortform select {
     font-size: 14px !important;
     margin: 0 !important;
     padding: 5px !important;
   }
+
   #myaccountmain .all .forsort input {
     font-size: 14px !important;
     letter-spacing: 2px !important;
     margin: 0 !important;
     padding: 5px !important;
   }
+
   #myaccountmain .all .forsort input::-webkit-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input:-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input::-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input::placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all table th {
     font-size: 14px !important;
   }
+
   #myaccountmain .all table td {
     padding: 5px 0 !important;
     font-size: 12px !important;
   }
+
   #myaccountmain .all table td:last-child .slash {
     font-size: 20px !important;
     font-family: var(--montlight) !important;
     margin: 0 3px !important;
   }
+
   #myaccountmain .all table td a {
     font-size: 12px !important;
     padding: 8px 3px !important;
@@ -2091,37 +2338,46 @@ input::-webkit-inner-spin-button {
   #myaccountmain .ifnopurchases p {
     font-size: 30px !important;
   }
+
   #myaccountmain .all .userinfo .balanceamount {
     font-size: 20px !important;
     font-family: var(--montmedium) !important;
   }
+
   #myaccountmain .all .userinfo .balance {
     font-size: 16px !important;
   }
+
   #myaccountmain .all .userinfo a {
     padding: 10px 30px !important;
   }
+
   #myaccountmain .all .forsort {
     -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
   }
+
   #myaccountmain .all .forsort .sortform {
     width: 38% !important;
     -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
   }
+
   #myaccountmain .all .forsort .sortform select {
     font-size: 14px !important;
     margin-right: 0px !important;
   }
+
   #myaccountmain .all .forsort .sortform select:nth-child(1) {
     width: 24% !important;
   }
+
   #myaccountmain .all .forsort .sortform select:nth-child(2) {
     width: 72% !important;
   }
+
   #myaccountmain .all .forsort input {
     font-size: 14px !important;
     letter-spacing: 1px !important;
@@ -2129,21 +2385,27 @@ input::-webkit-inner-spin-button {
     padding: 2px 10px !important;
     width: 60% !important;
   }
+
   #myaccountmain .all .forsort input::-webkit-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input:-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input::-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input::placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all table td {
     padding: 7px 0 !important;
   }
+
   #myaccountmain .all table td:last-child .slash {
     font-size: 20px !important;
     font-family: var(--montlight) !important;
@@ -2154,37 +2416,46 @@ input::-webkit-inner-spin-button {
   #myaccountmain .ifnopurchases p {
     font-size: 30px !important;
   }
+
   #myaccountmain .all .userinfo .balanceamount {
     font-size: 20px !important;
     font-family: var(--montmedium) !important;
   }
+
   #myaccountmain .all .userinfo .balance {
     font-size: 16px !important;
   }
+
   #myaccountmain .all .userinfo a {
     padding: 10px 30px !important;
   }
+
   #myaccountmain .all .forsort {
     -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
   }
+
   #myaccountmain .all .forsort .sortform {
     width: 38% !important;
     -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
   }
+
   #myaccountmain .all .forsort .sortform select {
     font-size: 14px !important;
     margin-right: 0px !important;
   }
+
   #myaccountmain .all .forsort .sortform select:nth-child(1) {
     width: 24% !important;
   }
+
   #myaccountmain .all .forsort .sortform select:nth-child(2) {
     width: 72% !important;
   }
+
   #myaccountmain .all .forsort input {
     font-size: 14px !important;
     letter-spacing: 1px !important;
@@ -2192,422 +2463,1176 @@ input::-webkit-inner-spin-button {
     padding: 5px 10px !important;
     width: 60% !important;
   }
+
   #myaccountmain .all .forsort input::-webkit-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input:-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input::-ms-input-placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all .forsort input::placeholder {
     font-size: 14px !important;
   }
+
   #myaccountmain .all table td {
     padding: 7px 0 !important;
   }
+
   #myaccountmain .all table td:last-child .slash {
     font-size: 20px !important;
     font-family: var(--montlight) !important;
   }
 }
 
+:root {
+  --montbold: MontserratBold;
+  --montmedium: MontserratMedium;
+  --montlight: MontserratLight;
+}
+
+#topupmain {
+  font-family: var(--montmedium);
+  font-size: 16px;
+  margin-top: 80px;
+  min-height: 90vh;
+}
+
+#topupmain .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#topupmain .all form {
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+#topupmain .all form .above {
+  z-index: 4;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f8edd5;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#topupmain .all form .above .validthru {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+#topupmain .all form .above input {
+  font-size: 18px;
+  color: black;
+  border-radius: 5px;
+  border: 0.5px solid #0055b0;
+  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
+  outline: none;
+  border: none;
+  padding: 2px 6px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+#topupmain .all form .above input:focus {
+  -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+  box-shadow: 0px 0px 10px 1px #04226870;
+}
+
+#topupmain .all form .above input::-webkit-input-placeholder {
+  color: black;
+  font-family: var(--montlight);
+  font-size: 18px;
+}
+
+#topupmain .all form .above input:-ms-input-placeholder {
+  color: black;
+  font-family: var(--montlight);
+  font-size: 18px;
+}
+
+#topupmain .all form .above input::-ms-input-placeholder {
+  color: black;
+  font-family: var(--montlight);
+  font-size: 18px;
+}
+
+#topupmain .all form .above input::placeholder {
+  color: black;
+  font-family: var(--montlight);
+  font-size: 18px;
+}
+
+#topupmain .all form .above .ikisi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#topupmain .all form .above .ikisi .leftside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+#topupmain .all form .above .ikisi .leftside input {
+  margin: 0;
+}
+
+#topupmain .all form .above .ikisi .leftside span {
+  font-size: 30px;
+  color: black;
+  font-family: var(--montlight);
+}
+
+#topupmain .all form .above .ikisi .rightside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#topupmain .all form .above .ikisi .rightside .odu img {
+  -webkit-filter: brightness(0.2) !important;
+  filter: brightness(0.2) !important;
+}
+
+#topupmain .all form .above .ikisi .rightside .cardbox {
+  margin-left: 5px;
+}
+
+#topupmain .all form .above #year,
+#topupmain .all form .above #cvv,
+#topupmain .all form .above #month {
+  text-align: center;
+}
+
+#topupmain .all form .below {
+  position: absolute;
+  height: 65%;
+  top: 5%;
+  right: 0%;
+  border: 0.5px solid grey;
+  border-radius: 5px;
+  background-color: #e0ddd7;
+  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  z-index: 2;
+}
+
+#topupmain .all form .below::before {
+  content: '';
+  width: 100%;
+  height: 70px;
+  background-color: #3f3f3f;
+}
+
+#topupmain .all form .below input {
+  font-size: 18px;
+  color: black;
+  border-radius: 5px;
+  border: 0.5px solid #0055b0;
+  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
+  outline: none;
+  border: none;
+  padding: 2px 6px;
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
+
+#topupmain .all form .below input:focus {
+  -webkit-box-shadow: 0px 0px 10px 1px #04226870;
+  box-shadow: 0px 0px 10px 1px #04226870;
+}
+
+#topupmain .all form .below input::-webkit-input-placeholder {
+  color: black;
+  font-family: var(--montlight);
+  font-size: 18px;
+}
+
+#topupmain .all form .below input:-ms-input-placeholder {
+  color: black;
+  font-family: var(--montlight);
+  font-size: 18px;
+}
+
+#topupmain .all form .below input::-ms-input-placeholder {
+  color: black;
+  font-family: var(--montlight);
+  font-size: 18px;
+}
+
+#topupmain .all form .below input::placeholder {
+  color: black;
+  font-family: var(--montlight);
+  font-size: 18px;
+}
+
+#topupmain .all form .below #cvv {
+  text-align: center;
+}
+
+#topupmain .all form .buttonandtelkeeper {
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+#topupmain .all form .buttonandtelkeeper input {
+  font-size: 16px;
+  letter-spacing: 2px;
+  -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+  box-shadow: 0px 0px 5px 1px #0422686c;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 6px;
+  transition: 0.2s;
+  color: #042268;
+}
+
+#topupmain .all form .buttonandtelkeeper input::-webkit-input-placeholder {
+  color: grey;
+  font-size: 16px;
+}
+
+#topupmain .all form .buttonandtelkeeper input:-ms-input-placeholder {
+  color: grey;
+  font-size: 16px;
+}
+
+#topupmain .all form .buttonandtelkeeper input::-ms-input-placeholder {
+  color: grey;
+  font-size: 16px;
+}
+
+#topupmain .all form .buttonandtelkeeper input::placeholder {
+  color: grey;
+  font-size: 16px;
+}
+
+#topupmain .all form .buttonandtelkeeper button {
+  padding: 6px 55px;
+  font-size: 16px;
+  background-color: #0055b0;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
+  box-shadow: 0px 0px 5px 1px #0422686c;
+  border-radius: 5px;
+  color: white;
+  font-family: var(--montmedium);
+}
+
+@media (max-width: 576px) {
+  #topupmain {
+    margin-top: 80px !important;
+    min-height: 79vh !important;
+  }
+
+  #topupmain .all form {
+    margin-top: 20px !important;
+  }
+
+  #topupmain .all form .above {
+    padding: 15px !important;
+  }
+
+  #topupmain .all form .above .validthru {
+    font-size: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  #topupmain .all form .above input {
+    font-size: 14px !important;
+    padding: 5px !important;
+    margin-bottom: 15px !important;
+  }
+
+  #topupmain .all form .above input::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .above input:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .above input::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .above input::placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .above .ikisi .leftside {
+    margin-bottom: 0 !important;
+  }
+
+  #topupmain .all form .above .ikisi .leftside input {
+    margin: 0 !important;
+  }
+
+  #topupmain .all form .above .ikisi .leftside span {
+    font-size: 25px !important;
+  }
+
+  #topupmain .all form .above .ikisi .rightside {
+    margin-bottom: 0 !important;
+  }
+
+  #topupmain .all form .above #year,
+  #topupmain .all form .above #cvv,
+  #topupmain .all form .above #month {
+    text-align: center;
+  }
+
+  #topupmain .all form .below {
+    height: 48% !important;
+    top: 5% !important;
+  }
+
+  #topupmain .all form .below::before {
+    content: '';
+    height: 50px !important;
+  }
+
+  #topupmain .all form .below input {
+    font-size: 14px !important;
+    padding: 5px !important;
+    margin-bottom: 40px !important;
+    margin-right: 15px !important;
+  }
+
+  #topupmain .all form .below input::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .below input:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .below input::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .below input::placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper {
+    margin-top: 50px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input {
+    font-size: 14px !important;
+    letter-spacing: 3px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::-webkit-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input:-ms-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::-ms-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper button {
+    padding: 9px 55px !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  #topupmain {
+    margin-top: 80px !important;
+    min-height: 79vh !important;
+  }
+
+  #topupmain .all form {
+    margin-top: 20px !important;
+  }
+
+  #topupmain .all form .above {
+    padding: 15px !important;
+  }
+
+  #topupmain .all form .above .validthru {
+    font-size: 10px !important;
+    margin-bottom: 10px !important;
+  }
+
+  #topupmain .all form .above input {
+    font-size: 14px !important;
+    padding: 5px !important;
+    margin-bottom: 15px !important;
+  }
+
+  #topupmain .all form .above input::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .above input:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .above input::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .above input::placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .above .ikisi .leftside {
+    margin-bottom: 0 !important;
+  }
+
+  #topupmain .all form .above .ikisi .leftside input {
+    margin: 0 !important;
+  }
+
+  #topupmain .all form .above .ikisi .leftside span {
+    font-size: 25px !important;
+  }
+
+  #topupmain .all form .above .ikisi .rightside {
+    margin-bottom: 0 !important;
+  }
+
+  #topupmain .all form .above #year,
+  #topupmain .all form .above #cvv,
+  #topupmain .all form .above #month {
+    text-align: center;
+  }
+
+  #topupmain .all form .below {
+    height: 58% !important;
+    top: 5% !important;
+  }
+
+  #topupmain .all form .below::before {
+    content: '';
+    height: 50px !important;
+  }
+
+  #topupmain .all form .below input {
+    font-size: 14px !important;
+    padding: 5px !important;
+    margin-bottom: 40px !important;
+    margin-right: 15px !important;
+  }
+
+  #topupmain .all form .below input::-webkit-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .below input:-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .below input::-ms-input-placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .below input::placeholder {
+    font-size: 14px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper {
+    margin-top: 50px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input {
+    font-size: 14px !important;
+    letter-spacing: 3px !important;
+    width: 47% !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::-webkit-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input:-ms-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::-ms-input-placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::placeholder {
+    font-size: 14px !important;
+    letter-spacing: 2px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper button {
+    padding: 5px 55px !important;
+    width: 47% !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #topupmain {
+    margin-top: 80px !important;
+    min-height: 79vh !important;
+  }
+
+  #topupmain .all form .above input {
+    padding: 10px !important;
+  }
+
+  #topupmain .all form .below {
+    height: 60% !important;
+    top: 5% !important;
+  }
+
+  #topupmain .all form .below input {
+    padding: 10px !important;
+  }
+
+  #topupmain .all form .below::before {
+    content: '';
+    height: 70px;
+  }
+
+  #topupmain .all form .buttonandtelkeeper {
+    margin-top: 50px !important;
+    margin-bottom: 40px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input {
+    width: 47% !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper button {
+    width: 47% !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #topupmain .all form {
+    width: 60% !important;
+  }
+
+  #topupmain .all form .below {
+    height: 57% !important;
+    top: 5%;
+  }
+
+  #topupmain .all form .buttonandtelkeeper {
+    margin-top: 50px !important;
+    margin-bottom: 40px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input {
+    font-size: 16px !important;
+    width: 47% !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::-webkit-input-placeholder {
+    font-size: 16px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input:-ms-input-placeholder {
+    font-size: 16px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::-ms-input-placeholder {
+    font-size: 16px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::placeholder {
+    font-size: 16px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper button {
+    font-size: 16px !important;
+    width: 47% !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1280px) {
+  #topupmain .all form {
+    width: 55% !important;
+  }
+
+  #topupmain .all form .below {
+    height: 57% !important;
+    top: 5%;
+  }
+
+  #topupmain .all form .buttonandtelkeeper {
+    margin-top: 50px !important;
+    margin-bottom: 40px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input {
+    font-size: 16px !important;
+    width: 47% !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::-webkit-input-placeholder {
+    font-size: 16px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input:-ms-input-placeholder {
+    font-size: 16px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::-ms-input-placeholder {
+    font-size: 16px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper input::placeholder {
+    font-size: 16px !important;
+  }
+
+  #topupmain .all form .buttonandtelkeeper button {
+    padding: 7px 55px;
+    font-size: 16px !important;
+    width: 47% !important;
+  }
+}
+
 .col-1 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 8.33333333%;
 }
 
 .col-1-2 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 10%;
 }
 
 .col-1-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 12.5%;
 }
 
 .col-1-8 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 15%;
 }
 
 .col-2 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 16.66666667%;
 }
 
 .col-2-1 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 17.5%;
 }
 
 .col-2-3 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 19.166%;
 }
 
 .col-2-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 20.83333%;
 }
 
 .col-2-8 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 23.3333333%;
 }
 
 .col-3 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 25%;
 }
 
 .col-3-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 29.1666%;
 }
 
 .col-3-8 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 31.666666%;
 }
 
 .col-3-9 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 32.5%;
 }
 
 .col-4 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 33.33333333%;
 }
 
 .col-4-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 37.5%;
 }
 
 .col-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 41.66666667%;
 }
 
 .col-5-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 45.833333%;
 }
 
 .col-5-8 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 48.333333%;
 }
 
 .col-6 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 50%;
 }
 
 .col-6-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 54.166666%;
 }
 
 .col-7 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 58.33333333%;
 }
 
 .col-8 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 66.66666667%;
 }
 
 .col-8-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 70.83333%;
 }
 
 .col-9 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 75%;
 }
 
 .col-9-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 79.166666%;
 }
 
 .col-10 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 83.33333333%;
 }
 
 .col-10-5 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 87.5%;
 }
 
 .col-11 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 91.66666667%;
 }
 
 .col-12 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 100%;
 }
 
 .col-1-8 {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
   width: 15%;
 }
 
 @media (min-width: 992px) {
   .col-lg-1 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 8.33333333%;
   }
+
   .col-lg-2 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 16.66666667%;
   }
+
   .col-lg-3 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 25%;
   }
+
   .col-lg-4 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 33.33333333%;
   }
+
   .col-lg-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 41.66666667%;
   }
+
   .col-lg-6 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 50%;
   }
+
   .col-lg-7 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 58.33333333%;
   }
+
   .col-lg-7-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 62.5%;
   }
+
   .col-lg-8 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 66.66666667%;
   }
+
   .col-lg-9 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 75%;
   }
+
   .col-lg-10 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 83.33333333%;
   }
+
   .col-lg-11 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 91.66666667%;
   }
+
   .col-lg-12 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 100%;
   }
+
   .col-lg-0-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 4.16666666%;
   }
+
   .col-lg-0-8 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 6.6666%;
   }
+
   .col-lg-0-7 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 5.83333%;
   }
+
   .col-lg-1-2 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 10%;
   }
+
   .col-lg-1-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 12.5%;
   }
+
   .col-lg-1-8 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 15%;
   }
+
   .col-lg-2-2 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 18.333333%;
   }
+
   .col-lg-2-4 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 20%;
   }
+
   .col-lg-2-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 20.8333333%;
   }
+
   .col-lg-2-8 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 23.3333333%;
   }
+
   .col-lg-3-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 29.16666666%;
   }
+
   .col-lg-3-8 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 31.6666%;
   }
+
   .col-lg-4-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 37.5%;
   }
+
   .col-lg-5-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 45.8333%;
   }
+
   .col-lg-5-8 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 48.3333333%;
   }
+
   .col-lg-5-9 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 49.1666%;
   }
+
   .col-lg-6-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 54.16666666%;
   }
+
   .col-lg-9-5 {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 79.16666%;
   }
 }
@@ -2621,7 +3646,7 @@ input::-webkit-inner-spin-button {
   left: 0%;
   top: 0%;
   -webkit-box-shadow: 0px 1px 20px 1px #0838a781;
-          box-shadow: 0px 1px 20px 1px #0838a781;
+  box-shadow: 0px 1px 20px 1px #0838a781;
   background-color: #0838A7;
 }
 
@@ -2631,13 +3656,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #header .all div {
@@ -2650,13 +3675,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #header .all div:nth-child(2) a {
@@ -2710,11 +3735,11 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -2722,7 +3747,7 @@ input::-webkit-inner-spin-button {
 #main .all form {
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
-          box-shadow: 0px 0px 5px 1px #0422686c;
+  box-shadow: 0px 0px 5px 1px #0422686c;
   font-family: var(--montlight);
   padding: 0;
   margin: 0;
@@ -2762,18 +3787,18 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border: 0.5px solid #0055b0;
   border-radius: 8px;
   margin: 0;
   padding: 0;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
+  box-shadow: 0px 0px 5px 1px #04226846;
   background-color: #2F70CE;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -2781,7 +3806,7 @@ input::-webkit-inner-spin-button {
 
 #main .all form .inputbox:focus {
   -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-          box-shadow: 0px 0px 10px 1px #04226870;
+  box-shadow: 0px 0px 10px 1px #04226870;
 }
 
 #main .all form .inputbox .copyspan,
@@ -2793,7 +3818,7 @@ input::-webkit-inner-spin-button {
   color: #042268;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 #main .all form .inputbox input {
@@ -2859,13 +3884,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-top: 30px;
@@ -2875,7 +3900,7 @@ input::-webkit-inner-spin-button {
 
 #main .all .resultsContainer .resultContainer {
   -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-          box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+  box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
   border-radius: 8px;
   padding: 8px;
   background-color: white;
@@ -2886,10 +3911,10 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   border: 0.5px solid #0055b0;
   border-radius: 8px;
   background-color: white;
@@ -2900,13 +3925,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #main .all .resultsContainer .resultContainer .icindeki .top .toptop,
@@ -2917,13 +3942,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement,
@@ -2935,13 +3960,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 #main .all .resultsContainer .resultContainer .icindeki .top .toptop .topelement:nth-child(2),
@@ -2966,13 +3991,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding: 15px 10px;
 }
 
@@ -2999,12 +4024,12 @@ input::-webkit-inner-spin-button {
 
 #main .all .resultsContainer .resultContainer .icindeki .bottom a:hover {
   -webkit-box-shadow: 0px 0px 5px 1px #042268;
-          box-shadow: 0px 0px 5px 1px #042268;
+  box-shadow: 0px 0px 5px 1px #042268;
 }
 
 #main .all .resultsContainer .resultContainer .icindeki .bottom a:focus {
   -webkit-box-shadow: 0px 0px 5px 1px #042268;
-          box-shadow: 0px 0px 5px 1px #042268;
+  box-shadow: 0px 0px 5px 1px #042268;
 }
 
 #main .all .resultsContainer .reklam {
@@ -3012,7 +4037,7 @@ input::-webkit-inner-spin-button {
   padding: 0;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
-          box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+  box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
   margin-top: 30px;
   margin-bottom: 10px;
   overflow: hidden;
@@ -3024,7 +4049,7 @@ input::-webkit-inner-spin-button {
   font-family: var(--montmedium);
   font-size: 16px;
   -webkit-box-shadow: 0px -1px 20px 1px #0838a781;
-          box-shadow: 0px -1px 20px 1px #0838a781;
+  box-shadow: 0px -1px 20px 1px #0838a781;
   background-color: #e9e9e9;
 }
 
@@ -3033,11 +4058,11 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   padding: 4px 0;
@@ -3048,11 +4073,11 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -3076,13 +4101,13 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   padding-left: 20px;
@@ -3106,11 +4131,11 @@ input::-webkit-inner-spin-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -3118,4 +4143,5 @@ input::-webkit-inner-spin-button {
 #footer .all .right img {
   width: 30%;
 }
+
 /*# sourceMappingURL=style.css.map */
