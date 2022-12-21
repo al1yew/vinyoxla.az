@@ -58,73 +58,79 @@
                     <span class="balance">Balansınız: <span class="balanceamount">20</span> azn</span>
                     <a href="topup.html">Balansı artirmaq</a>
                 </div>
-                <form class="searchform col-lg-4 col-4" id="searchform">
+                <div class="forsort col-lg-12 col-12">
                     <input autocomplete="off" name="search" maxlength="17" minlength="17" required
-                        placeholder="Axtardığınız vin kod:" type="text" class="col-lg-9-5 col-9-5 search"
-                        id="search">
-                    <button type="submit" class="srchbtn">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                <form action="" class="sortform col-lg-7 col-7">
-                    <select name="showcount" id="showcount" class="showcount col-lg-4 col-4">
-                        <option value="10">10</option>
-                        <option value="20">20</option>
-                        <option value="30">30</option>
-                        <option value="40">40</option>
-                        <option value="50">50</option>
-                    </select>
-                    <select name="sortbydate" id="sortbydate" class="col-lg-4 col-4 sortbydate">
-                        <option value="1">Əvvəlcə yeni</option>
-                        <option value="2">Əvvəlcə köhnə</option>
-                    </select>
-                </form>
+                        placeholder="Axtardığınız vin kod:" type="text" class="col-lg-7 col-12 search" id="search">
+                    <form action="" class="sortform col-lg-4-5 col-12">
+                        <select name="showcount" id="showcount" class="showcount col-lg-4 col-4">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                        <select name="sortbydate" id="sortbydate" class="col-lg-7-5 col-7 sortbydate">
+                            <option value="1">Əvvəlcə yeni</option>
+                            <option value="2">Əvvəlcə köhnə</option>
+                        </select>
+                    </form>
+                </div>
                 <table class="table table-striped col-lg-12 col-12">
                     <thead>
                         <tr>
                             <th scope="col">#</th>
+                            <th scope="col">Tarix</th>
                             <th scope="col">Vin Kod</th>
                             <th scope="col">Yükləmək</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">1</th>
-                            <td>4T1BG22K9YU930834</td>
-                            <td><a href="./assets/files/Vasif Aliyev CV korotko.pdf" attributes-list
-                                    download>Yükləmək</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
+                            <td scope="row">1</td>
+                            <td>20.12.2022</td>
                             <td>4T1BG22K9YU930834</td>
                             <td>
+                                <a class="disabledhref" href="./assets/files/Vasif Aliyev CV korotko.pdf"
+                                    attributes-list download>Carfax</a>
+                                <span class="slash">
+                                    /
+                                </span>
                                 <a href="./assets/files/Vasif Aliyev CV korotko.pdf" attributes-list
-                                    download>Yükləmək</a>
+                                    download>Autocheck</a>
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">3</th>
+                            <td scope="row">2</td>
+                            <td>19.12.2022</td>
                             <td>4T1BG22K9YU930834</td>
                             <td>
-                                <a href="./assets/files/Vasif Aliyev CV korotko.pdf" attributes-list
-                                    download>Yükləmək</a>
+                                <a href="./assets/files/Vasif Aliyev CV korotko.pdf" attributes-list download>Carfax</a>
+                                <span class="slash">
+                                    /
+                                </span>
+                                <a class="disabledhref" href="./assets/files/Vasif Aliyev CV korotko.pdf"
+                                    attributes-list download>Autocheck</a>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-                <nav aria-label="Page navigation example">
+                <nav>
                     <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            <a class="page-link" href="#" tabindex="-1">Geri</a>
                         </li>
                         <li class="page-item"><a class="page-link" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
+                            <a class="page-link" href="#">Növbəti</a>
                         </li>
                     </ul>
                 </nav>
+            </div>
+
+            <div class="row ifnopurchases d-none">
+                <p class="col-lg-12 col-12">Sizin aldığınız VİN kod mövcud deyil.</p>
             </div>
         </div>
     </main>
