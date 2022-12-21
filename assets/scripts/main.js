@@ -422,10 +422,8 @@ $(document).ready(function () {
 });
 
 
-
 //WAUDG74F25N111998
 //4T1BG22K9YU930834
-
 
 
 const btn = document.getElementById('downloadImage');
