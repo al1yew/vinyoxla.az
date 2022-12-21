@@ -1996,6 +1996,7 @@ input::-webkit-inner-spin-button {
   background-color: #042268;
   color: white;
   border-radius: 5px;
+  margin-left: 5px;
 }
 
 #myaccountmain .all nav {
