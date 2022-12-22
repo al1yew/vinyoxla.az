@@ -1,0 +1,222 @@
+:root {
+    --montbold: MontserratBold;
+    --montmedium: MontserratMedium;
+    --montlight: MontserratLight;
+}
+
+#imagesmain {
+    font-family: var(--montmedium);
+    font-size: 16px;
+    margin-top: 80px;
+    min-height: 90vh;
+    padding-bottom: 30px;
+
+    .all {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+
+        .infokeeper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-bottom: 60px;
+
+            .sliderkeeper {
+                position: relative;
+                margin: 0;
+                padding: 0;
+                padding: 5px 25px;
+
+                .sliderimages {
+                    margin: 0;
+                    padding: 0;
+
+                    div {
+                        margin: 0;
+                        padding: 0;
+                        padding: 5px;
+
+                        img {
+                            width: 90%;
+                            box-shadow: 0px 0px 5px 1px #04226870;
+                            margin: 0 auto;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+
+                .prevbtn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 2%;
+                    font-size: 28px;
+                    padding: 6px 8px;
+                    border-radius: 100%;
+                    border: 0.5px solid #042268;
+                    cursor: pointer;
+                    color: #042268;
+                    display: flex;
+                    justify-content: center;
+                    box-shadow: 0px 0px 5px 1px #04226870;
+                    align-items: center;
+                }
+
+                .nextbtn {
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: 0%;
+                    cursor: pointer;
+                    font-size: 28px;
+                    padding: 6px 8px;
+                    border-radius: 100%;
+                    color: #042268;
+                    box-shadow: 0px 0px 5px 1px #04226870;
+                    border: 0.5px solid #042268;
+                }
+            }
+
+            .auctiondata {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin: 0;
+                padding: 0;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px 1px #04226870;
+                padding: 15px;
+
+                .downloadall {
+                    padding: 10px 15px;
+                    background-color: #042268;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 5px 1px #04226870;
+                    margin: 0 auto;
+                    margin-top: 22px;
+                    color: white;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 25px;
+                    color: #042268;
+                }
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 20px;
+                    font-size: 20px;
+                    font-family: var(--montmedium);
+                    list-style: none;
+
+                    li {
+                        border-bottom: 0.5px solid #042268;
+                        padding: 3px 0;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        span {
+                            &:nth-child(1) {
+                                font-size: 16px;
+                                font-family: var(--montmedium);
+                            }
+
+                            &:nth-child(2) {
+                                font-family: var(--montbold);
+                                font-size: 20px;
+                                color: #042268;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    #imagesmain {
+        margin-top: 50px !important;
+        min-height: 92vh !important;
+
+        .all {
+
+            .infokeeper {
+                margin-bottom: 40px !important;
+
+                .sliderkeeper {
+                    padding: 0px !important;
+
+                    .sliderimages {
+
+                        div {
+                            padding: 5px 0 !important;
+                            
+                            img {
+                                padding: 0 !important;
+                                width: 97% !important;
+                            }
+                        }
+                    }
+
+                    .prevbtn {
+                        display: none !important;
+                    }
+
+                    .nextbtn {
+                        display: none !important;
+                    }
+                }
+
+                .auctiondata {
+                    padding: 10px !important;
+
+                    .downloadall {
+                        padding: 10px !important;
+                        margin-top: 15px !important;
+                        font-size: 15px !important;
+                    }
+
+                    p {
+                        font-size: 18px !important;
+                    }
+
+                    ul {
+                        margin-top: 10px !important;
+                        font-size: 15px !important;
+
+                        li {
+                            padding: 2px 0 !important;
+
+                            span {
+                                &:nth-child(1) {
+                                    font-size: 14px !important;
+                                }
+
+                                &:nth-child(2) {
+                                    font-size: 17px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

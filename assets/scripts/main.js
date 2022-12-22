@@ -419,6 +419,113 @@ $(document).ready(function () {
     //#endregion topup form submit
 
     // -------------------------- topup page
+
+    // -------------------------- 
+
+    // -------------------------- images page
+
+    //#region slider in images page
+
+    // $('.sliderimages').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     arrows: true,
+    //     fade: true,
+    //     prevArrow: $('.prevbtn'),
+    //     nextArrow: $('.nextbtn'),
+    //     asNavFor: '.miniimages'
+    // });
+    // $('.miniimages').slick({
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     asNavFor: '.sliderimages',
+    //     dots: false,
+    //     centerMode: true,
+    //     focusOnSelect: true
+    // });
+
+    $('.sliderimages1').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        prevArrow: $('.prevbtn1'),
+        nextArrow: $('.nextbtn1'),
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    $('.sliderimages2').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        prevArrow: $('.prevbtn2'),
+        nextArrow: $('.nextbtn2'),
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    //#endregion slider in images page
+
+    // -------------------------- images page
+
 });
 
 
@@ -429,10 +536,10 @@ $(document).ready(function () {
 const btn = document.getElementById('downloadImage');
 const url = "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_thumb.jpg";
 
-btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    downloadImage(url);
-})
+// btn.addEventListener('click', (e) => {
+//     e.preventDefault();
+//     downloadImage(url);
+// })
 
 function downloadImage(url) {
     fetch(url, {
