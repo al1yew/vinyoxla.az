@@ -3068,8 +3068,10 @@ input::-webkit-inner-spin-button {
     padding: 5px 0 !important;
   }
   #imagesmain .all .infokeeper .sliderkeeper .sliderimages div img {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
     padding: 0 !important;
-    width: 97% !important;
+    width: 100% !important;
   }
   #imagesmain .all .infokeeper .sliderkeeper .prevbtn {
     display: none !important;
