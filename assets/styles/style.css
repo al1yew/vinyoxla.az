@@ -2866,7 +2866,7 @@ input::-webkit-inner-spin-button {
 #imagesmain {
   font-family: var(--montmedium);
   font-size: 16px;
-  margin-top: 80px;
+  margin-top: 70px;
   min-height: 90vh;
   padding-bottom: 30px;
 }
@@ -2904,10 +2904,9 @@ input::-webkit-inner-spin-button {
 }
 
 #imagesmain .all .infokeeper .sliderkeeper {
-  position: relative;
   margin: 0;
   padding: 0;
-  padding: 5px 25px;
+  padding: 5px;
 }
 
 #imagesmain .all .infokeeper .sliderkeeper .sliderimages {
@@ -2922,64 +2921,61 @@ input::-webkit-inner-spin-button {
 }
 
 #imagesmain .all .infokeeper .sliderkeeper .sliderimages div img {
-  width: 90%;
+  width: 96%;
   -webkit-box-shadow: 0px 0px 5px 1px #04226870;
           box-shadow: 0px 0px 5px 1px #04226870;
   margin: 0 auto;
   border-radius: 5px;
 }
 
-#imagesmain .all .infokeeper .sliderkeeper .prevbtn {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 2%;
-  font-size: 28px;
-  padding: 6px 8px;
-  border-radius: 100%;
-  border: 0.5px solid #042268;
-  cursor: pointer;
-  color: #042268;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-shadow: 0px 0px 5px 1px #04226870;
-          box-shadow: 0px 0px 5px 1px #04226870;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#imagesmain .all .infokeeper .sliderkeeper .nextbtn {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 0%;
-  cursor: pointer;
-  font-size: 28px;
-  padding: 6px 8px;
-  border-radius: 100%;
-  color: #042268;
-  -webkit-box-shadow: 0px 0px 5px 1px #04226870;
-          box-shadow: 0px 0px 5px 1px #04226870;
-  border: 0.5px solid #042268;
-}
-
 #imagesmain .all .infokeeper .auctiondata {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+#imagesmain .all .infokeeper .auctiondata .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-shadow: 0px 0px 5px 1px #04226870;
+          box-shadow: 0px 0px 5px 1px #04226870;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#imagesmain .all .infokeeper .auctiondata .bottom .prevbtn {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#imagesmain .all .infokeeper .auctiondata .bottom .nextbtn {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  margin-top: 1px;
+}
+
+#imagesmain .all .infokeeper .auctiondata .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2999,7 +2995,7 @@ input::-webkit-inner-spin-button {
   padding: 15px;
 }
 
-#imagesmain .all .infokeeper .auctiondata .downloadall {
+#imagesmain .all .infokeeper .auctiondata .top .downloadall {
   padding: 10px 15px;
   background-color: #042268;
   border-radius: 5px;
@@ -3012,14 +3008,14 @@ input::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-#imagesmain .all .infokeeper .auctiondata p {
+#imagesmain .all .infokeeper .auctiondata .top p {
   margin: 0;
   padding: 0;
-  font-size: 25px;
+  font-size: 20px;
   color: #042268;
 }
 
-#imagesmain .all .infokeeper .auctiondata ul {
+#imagesmain .all .infokeeper .auctiondata .top ul {
   margin: 0;
   padding: 0;
   margin-top: 20px;
@@ -3028,7 +3024,7 @@ input::-webkit-inner-spin-button {
   list-style: none;
 }
 
-#imagesmain .all .infokeeper .auctiondata ul li {
+#imagesmain .all .infokeeper .auctiondata .top ul li {
   border-bottom: 0.5px solid #042268;
   padding: 3px 0;
   display: -webkit-box;
@@ -3042,12 +3038,12 @@ input::-webkit-inner-spin-button {
           align-items: center;
 }
 
-#imagesmain .all .infokeeper .auctiondata ul li span:nth-child(1) {
+#imagesmain .all .infokeeper .auctiondata .top ul li span:nth-child(1) {
   font-size: 16px;
   font-family: var(--montmedium);
 }
 
-#imagesmain .all .infokeeper .auctiondata ul li span:nth-child(2) {
+#imagesmain .all .infokeeper .auctiondata .top ul li span:nth-child(2) {
   font-family: var(--montbold);
   font-size: 20px;
   color: #042268;
@@ -3055,53 +3051,49 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 576px) {
   #imagesmain {
-    margin-top: 50px !important;
+    margin-top: 60px !important;
     min-height: 92vh !important;
+    padding-bottom: 20px !important;
   }
   #imagesmain .all .infokeeper {
-    margin-bottom: 40px !important;
+    margin-bottom: 30px !important;
   }
   #imagesmain .all .infokeeper .sliderkeeper {
-    padding: 0px !important;
+    padding: 0 !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper .sliderimages {
+    margin-bottom: 10px !important;
   }
   #imagesmain .all .infokeeper .sliderkeeper .sliderimages div {
-    padding: 5px 0 !important;
+    padding: 0 !important;
   }
   #imagesmain .all .infokeeper .sliderkeeper .sliderimages div img {
+    width: 100% !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    padding: 0 !important;
-    width: 99% !important;
   }
-  #imagesmain .all .infokeeper .sliderkeeper .prevbtn {
-    display: none !important;
+  #imagesmain .all .infokeeper .auctiondata .bottom {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
   }
-  #imagesmain .all .infokeeper .sliderkeeper .nextbtn {
-    display: none !important;
+  #imagesmain .all .infokeeper .auctiondata .top {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
   }
-  #imagesmain .all .infokeeper .auctiondata {
+  #imagesmain .all .infokeeper .auctiondata .top .downloadall {
     padding: 10px !important;
+    margin-top: 10px !important;
+    font-size: 16px !important;
   }
-  #imagesmain .all .infokeeper .auctiondata .downloadall {
-    padding: 10px !important;
-    margin-top: 15px !important;
-    font-size: 15px !important;
-  }
-  #imagesmain .all .infokeeper .auctiondata p {
+  #imagesmain .all .infokeeper .auctiondata .top p {
     font-size: 18px !important;
   }
-  #imagesmain .all .infokeeper .auctiondata ul {
-    margin-top: 10px !important;
-    font-size: 15px !important;
-  }
-  #imagesmain .all .infokeeper .auctiondata ul li {
-    padding: 2px 0 !important;
-  }
-  #imagesmain .all .infokeeper .auctiondata ul li span:nth-child(1) {
-    font-size: 14px !important;
-  }
-  #imagesmain .all .infokeeper .auctiondata ul li span:nth-child(2) {
-    font-size: 17px !important;
+  #imagesmain .all .infokeeper .auctiondata .top ul {
+    margin-top: 15px !important;
   }
 }
 
