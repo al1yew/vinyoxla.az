@@ -2900,7 +2900,7 @@ input::-webkit-inner-spin-button {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 #imagesmain .all .infokeeper .sliderkeeper {
@@ -3091,6 +3091,90 @@ input::-webkit-inner-spin-button {
   }
   #imagesmain .all .infokeeper .auctiondata .top p {
     font-size: 18px !important;
+  }
+  #imagesmain .all .infokeeper .auctiondata .top ul {
+    margin-top: 15px !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  #imagesmain {
+    margin-top: 60px !important;
+    min-height: 92vh !important;
+    padding-bottom: 20px !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper {
+    padding: 0 !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper .sliderimages {
+    margin-bottom: 10px !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper .sliderimages div {
+    padding: 0px !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper .sliderimages div img {
+    width: 100% !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  #imagesmain .all .infokeeper .auctiondata .bottom {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
+  }
+  #imagesmain .all .infokeeper .auctiondata .top {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+  #imagesmain .all .infokeeper .auctiondata .top .downloadall {
+    padding: 10px !important;
+    margin-top: 15px !important;
+    font-size: 16px !important;
+  }
+  #imagesmain .all .infokeeper .auctiondata .top ul {
+    margin-top: 15px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #imagesmain {
+    margin-top: 80px !important;
+    min-height: 92vh !important;
+    padding-bottom: 20px !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper {
+    padding: 0 !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper .sliderimages {
+    margin-bottom: 10px !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper .sliderimages div {
+    padding: 0px !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper .sliderimages div img {
+    width: 100% !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+  }
+  #imagesmain .all .infokeeper .auctiondata .bottom {
+    -webkit-box-ordinal-group: 2 !important;
+        -ms-flex-order: 1 !important;
+            order: 1 !important;
+    margin-bottom: 10px !important;
+    margin-top: 0 !important;
+  }
+  #imagesmain .all .infokeeper .auctiondata .top {
+    -webkit-box-ordinal-group: 3 !important;
+        -ms-flex-order: 2 !important;
+            order: 2 !important;
+  }
+  #imagesmain .all .infokeeper .auctiondata .top .downloadall {
+    padding: 10px !important;
+    margin-top: 15px !important;
+    font-size: 16px !important;
   }
   #imagesmain .all .infokeeper .auctiondata .top ul {
     margin-top: 15px !important;
