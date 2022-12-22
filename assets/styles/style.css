@@ -3071,7 +3071,7 @@ input::-webkit-inner-spin-button {
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
     padding: 0 !important;
-    width: 100% !important;
+    width: 99% !important;
   }
   #imagesmain .all .infokeeper .sliderkeeper .prevbtn {
     display: none !important;
