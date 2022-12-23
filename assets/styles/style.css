@@ -2629,6 +2629,9 @@ input::-webkit-inner-spin-button {
   #topupmain .all form .buttonandtelkeeper input {
     font-size: 14px !important;
     letter-spacing: 3px !important;
+    -webkit-box-shadow: 0px 0px 5px 1px #0422686c !important;
+            box-shadow: 0px 0px 5px 1px #0422686c !important;
+    border: 0.5px solid #04226841 !important;
   }
   #topupmain .all form .buttonandtelkeeper input::-webkit-input-placeholder {
     font-size: 14px !important;
