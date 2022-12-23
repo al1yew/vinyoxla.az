@@ -706,31 +706,8 @@ var objArr = [
             "insurance": false
         },
         "images": {
-            "thumbs": [
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_thumb.jpg", "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_thumb.jpg"
-            ],
-            "previews": [
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_preview.jpg"
-            ]
+            "thumbs": [],
+            "previews": []
         },
         "loss_type": "Collision"
     },
@@ -754,31 +731,8 @@ var objArr = [
             "insurance": false
         },
         "images": {
-            "thumbs": [
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_thumb.jpg", "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_thumb.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_thumb.jpg"
-            ],
-            "previews": [
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/2-847b85-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/3-801361-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/4-466418-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/5-2012f2-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/6-75a1ea-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/7-412ba3-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/8-c7dae5-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/9-6f6715-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/10-7394b9-lot_preview.jpg",
-                "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/11-9b5d99-lot_preview.jpg"
-            ]
+            "thumbs": [],
+            "previews": []
         },
         "loss_type": "Collision"
     }
