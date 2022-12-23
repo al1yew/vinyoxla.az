@@ -46,6 +46,24 @@
                         margin: 0;
                         padding: 0;
                         padding: 5px;
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            bottom: 4%;
+                            padding: 5px 10px;
+                            left: 5%;
+                            font-size: 14px;
+                            color: #042268;
+                            background-color: rgba(255, 255, 255, 0.5);
+                            border-radius: 5px;
+                            transition: 0.2s;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: white;
+                            }
+                        }
 
                         img {
                             width: 96%;
@@ -156,6 +174,11 @@
                             justify-content: space-between;
                             align-items: center;
 
+                            &:last-child {
+                                border-bottom: none;
+                                padding-bottom: 0;
+                            }
+
                             span {
                                 &:nth-child(1) {
                                     font-size: 16px;
@@ -196,6 +219,10 @@
 
                         div {
                             padding: 0 !important;
+
+                            span {
+                                left: 3% !important;
+                            }
 
                             img {
                                 width: 100% !important;

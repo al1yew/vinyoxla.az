@@ -2934,6 +2934,25 @@ input::-webkit-inner-spin-button {
   margin: 0;
   padding: 0;
   padding: 5px;
+  position: relative;
+}
+
+#imagesmain .all .infokeeper .sliderkeeper .sliderimages div span {
+  position: absolute;
+  bottom: 4%;
+  padding: 5px 10px;
+  left: 5%;
+  font-size: 14px;
+  color: #042268;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#imagesmain .all .infokeeper .sliderkeeper .sliderimages div span:hover {
+  background-color: white;
 }
 
 #imagesmain .all .infokeeper .sliderkeeper .sliderimages div img {
@@ -3079,6 +3098,11 @@ input::-webkit-inner-spin-button {
           align-items: center;
 }
 
+#imagesmain .all .infokeeper .auctiondata .top ul li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 #imagesmain .all .infokeeper .auctiondata .top ul li span:nth-child(1) {
   font-size: 16px;
   font-family: var(--montmedium);
@@ -3107,6 +3131,9 @@ input::-webkit-inner-spin-button {
   }
   #imagesmain .all .infokeeper .sliderkeeper .sliderimages div {
     padding: 0 !important;
+  }
+  #imagesmain .all .infokeeper .sliderkeeper .sliderimages div span {
+    left: 3% !important;
   }
   #imagesmain .all .infokeeper .sliderkeeper .sliderimages div img {
     width: 100% !important;

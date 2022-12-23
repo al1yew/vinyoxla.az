@@ -607,39 +607,34 @@ $(document).ready(function () {
 
     //#endregion slider in images page
 
+    //#region download image
+
+    $(document).on('click', '.downloadimg', function (e) {
+        let url = $(this).data('url')
+
+        fetch(url, {
+            mode: 'cors',
+        })
+            .then(response => response.blob())
+            .then(blob => {
+                let blobUrl = window.URL.createObjectURL(blob);
+                let a = document.createElement('a');
+                a.download = url.replace(/^.*[\\\/]/, '');
+                a.href = blobUrl;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            })
+    })
+
+    //#endregion download image
+
     // -------------------------- images page
 
 });
 
-
 //WAUDG74F25N111998
 //4T1BG22K9YU930834
-
-
-const btn = document.getElementById('downloadImage');
-const url = "https://s.autoastat.com/images/iaai/2021/2/12/1HGCM56127A182028/1-7145a6-lot_thumb.jpg";
-
-// btn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     downloadImage(url);
-// })
-
-function downloadImage(url) {
-    fetch(url, {
-        mode: 'cors',
-    })
-        .then(response => response.blob())
-        .then(blob => {
-            let blobUrl = window.URL.createObjectURL(blob);
-            let a = document.createElement('a');
-            a.download = url.replace(/^.*[\\\/]/, '');
-            a.href = blobUrl;
-            document.body.appendChild(a);
-            a.click();
-            a.remove();
-        })
-}
-
 
 var objArr = [
     {
