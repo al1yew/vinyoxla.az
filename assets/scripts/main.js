@@ -447,6 +447,7 @@ $(document).ready(function () {
     $('.sliderimages1').slick({
         dots: false,
         infinite: true,
+        asNavFor: '.miniimages1',
         speed: 500,
         prevArrow: $('.prevbtn1'),
         nextArrow: $('.nextbtn1'),
@@ -475,6 +476,47 @@ $(document).ready(function () {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    $('.miniimages1').slick({
+        dots: false,
+        infinite: true,
+        focusOnSelect: true,
+        asNavFor: '.sliderimages1',
+        speed: 500,
+        prevArrow: $('.prevbtn1'),
+        nextArrow: $('.nextbtn1'),
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 7,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false
@@ -514,6 +556,47 @@ $(document).ready(function () {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]
+    });
+
+    $('.miniimages2').slick({
+        dots: false,
+        infinite: true,
+        focusOnSelect: true,
+        asNavFor: '.sliderimages2',
+        speed: 500,
+        prevArrow: $('.prevbtn2'),
+        nextArrow: $('.nextbtn2'),
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 7,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 4,
                     slidesToScroll: 1,
                     infinite: true,
                     dots: false

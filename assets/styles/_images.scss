@@ -7,7 +7,7 @@
 #imagesmain {
     font-family: var(--montmedium);
     font-size: 16px;
-    margin-top: 70px;
+    margin-top: 60px;
     min-height: 90vh;
     padding-bottom: 30px;
 
@@ -23,6 +23,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin: 0;
+            padding: 0;
             flex-wrap: wrap;
             width: 100%;
             margin-bottom: 30px;
@@ -31,6 +33,10 @@
                 margin: 0;
                 padding: 0;
                 padding: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
 
                 .sliderimages {
                     margin: 0;
@@ -50,6 +56,29 @@
                     }
                 }
 
+                .dragkeeper {
+                    margin: 0;
+                    border-radius: 5px;
+                    padding-left: 16px;
+
+                    .miniimages {
+                        margin: 0;
+                        padding: 2px;
+                        border-radius: 5px;
+                        box-shadow: 0px 0px 5px 1px #04226870;
+
+                        div {
+                            margin: 0;
+                            padding: 0;
+                            cursor: pointer;
+                            padding-right: 5px;
+
+                            img {
+                                width: 97%;
+                            }
+                        }
+                    }
+                }
             }
 
             .auctiondata {
@@ -122,7 +151,7 @@
 
                         li {
                             border-bottom: 0.5px solid #042268;
-                            padding: 3px 0;
+                            padding: 4px 0;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
@@ -148,6 +177,7 @@
 }
 
 @media(max-width: 576px) {
+
     #imagesmain {
         margin-top: 60px !important;
         min-height: 92vh !important;
@@ -174,11 +204,27 @@
                         }
                     }
 
+                    .dragkeeper {
+                        padding-left: 0 !important;
+                        margin-bottom: 10px !important;
+
+                        .miniimages {
+
+                            div {
+
+                                img {
+                                    width: 100% !important;
+                                    border-radius: 3px !important;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .auctiondata {
 
                     .bottom {
+                        display: none !important;
                         order: 1 !important;
                         margin-bottom: 10px !important;
                         margin-top: 0 !important;
@@ -216,6 +262,7 @@
         .all {
 
             .infokeeper {
+                margin-bottom: 30px !important;
 
                 .sliderkeeper {
                     padding: 0 !important;
@@ -224,7 +271,7 @@
                         margin-bottom: 10px !important;
 
                         div {
-                            padding: 0px !important;
+                            padding: 0 !important;
 
                             img {
                                 width: 100% !important;
@@ -233,6 +280,21 @@
                         }
                     }
 
+                    .dragkeeper {
+                        padding-left: 0 !important;
+                        margin-bottom: 10px !important;
+
+                        .miniimages {
+
+                            div {
+
+                                img {
+                                    width: 100% !important;
+                                    border-radius: 3px !important;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .auctiondata {
@@ -271,6 +333,7 @@
         .all {
 
             .infokeeper {
+                margin-bottom: 30px !important;
 
                 .sliderkeeper {
                     padding: 0 !important;
@@ -279,7 +342,7 @@
                         margin-bottom: 10px !important;
 
                         div {
-                            padding: 0px !important;
+                            padding: 0 !important;
 
                             img {
                                 width: 100% !important;
@@ -288,6 +351,21 @@
                         }
                     }
 
+                    .dragkeeper {
+                        padding-left: 0 !important;
+                        margin-bottom: 10px !important;
+
+                        .miniimages {
+
+                            div {
+
+                                img {
+                                    width: 100% !important;
+                                    border-radius: 3px !important;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .auctiondata {
