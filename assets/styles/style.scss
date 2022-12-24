@@ -520,7 +520,7 @@ input::-webkit-inner-spin-button {
         margin: 0;
         padding: 0;
 
-        form {
+        .maincontainer {
             border-radius: 15px;
             box-shadow: 0px 0px 5px 1px #0422686c;
             font-family: var(--montlight);
@@ -634,7 +634,7 @@ input::-webkit-inner-spin-button {
             flex-wrap: wrap;
             margin: 0;
             padding: 0;
-            margin-top: 30px;
+            margin-top: 20px;
             font-family: var(--montmedium);
             font-size: 15px;
 
@@ -713,9 +713,11 @@ input::-webkit-inner-spin-button {
                             color: #0055b0;
                         }
 
-                        a {
+                        button {
                             padding: 10px 55px;
                             font-size: 16px;
+                            border: none;
+                            outline: none;
                             background-color: #0055b0;
                             text-align: center;
                             border-radius: 5px;
@@ -732,8 +734,38 @@ input::-webkit-inner-spin-button {
                             }
                         }
                     }
+                }
+            }
 
+            .photosApiResult {
+                box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+                border-radius: 8px;
+                padding: 8px;
+                background-color: white;
+                font-size: 18px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 15px;
 
+                a {
+                    padding: 10px;
+                    font-size: 15px;
+                    background-color: #0055b0;
+                    text-align: center;
+                    border-radius: 5px;
+                    color: white;
+                    font-family: var(--montmedium);
+                    transition: 0.2s;
+
+                    &:hover {
+                        box-shadow: 0px 0px 5px 1px #042268;
+                    }
+
+                    &:focus {
+                        box-shadow: 0px 0px 5px 1px #042268;
+                    }
                 }
             }
 

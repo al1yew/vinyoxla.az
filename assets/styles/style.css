@@ -147,80 +147,80 @@ input::-webkit-inner-spin-button {
     padding-top: 70px !important;
     min-height: 70vh !important;
   }
-  #main .all form {
+  #main .all .maincontainer {
     background-image: url(../images/bannertel.jpg) !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     height: 77vh !important;
   }
-  #main .all form .firstp {
+  #main .all .maincontainer .firstp {
     font-size: 24px !important;
     top: 7% !important;
     left: 50% !important;
     -webkit-transform: translateX(-50%) !important;
             transform: translateX(-50%) !important;
   }
-  #main .all form .secondp {
+  #main .all .maincontainer .secondp {
     top: 24% !important;
     left: 50% !important;
     -webkit-transform: translateX(-50%) !important;
             transform: translateX(-50%) !important;
     font-size: 15px !important;
   }
-  #main .all form .inputbox {
+  #main .all .maincontainer .inputbox {
     top: 40% !important;
     left: 50% !important;
     -webkit-transform: translateX(-50%) !important;
             transform: translateX(-50%) !important;
   }
-  #main .all form .inputbox:hover {
+  #main .all .maincontainer .inputbox:hover {
     -webkit-box-shadow: 0px 0px 5px 1px #04226846 !important;
             box-shadow: 0px 0px 5px 1px #04226846 !important;
   }
-  #main .all form .inputbox:focus {
+  #main .all .maincontainer .inputbox:focus {
     -webkit-box-shadow: 0px 0px 5px 1px #04226846 !important;
             box-shadow: 0px 0px 5px 1px #04226846 !important;
   }
-  #main .all form .inputbox input {
+  #main .all .maincontainer .inputbox input {
     font-size: 14px !important;
     letter-spacing: 1px !important;
     padding: 6px 5px !important;
   }
-  #main .all form .inputbox input::-webkit-input-placeholder {
+  #main .all .maincontainer .inputbox input::-webkit-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
-  #main .all form .inputbox input:-ms-input-placeholder {
+  #main .all .maincontainer .inputbox input:-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
-  #main .all form .inputbox input::-ms-input-placeholder {
+  #main .all .maincontainer .inputbox input::-ms-input-placeholder {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
-  #main .all form .inputbox input::placeholder {
+  #main .all .maincontainer .inputbox input::placeholder {
     font-size: 14px !important;
     letter-spacing: 4px !important;
   }
-  #main .all form .inputbox .copyspan,
-  #main .all form .inputbox .deleteinp {
+  #main .all .maincontainer .inputbox .copyspan,
+  #main .all .maincontainer .inputbox .deleteinp {
     left: 70% !important;
   }
-  #main .all form .inputbox button {
+  #main .all .maincontainer .inputbox button {
     font-size: 14px !important;
     padding: 10px 5px !important;
   }
-  #main .all form .inputbox button:hover {
+  #main .all .maincontainer .inputbox button:hover {
     color: #0055b0 !important;
     background-color: white !important;
   }
-  #main .all form .inputbox button:focus {
+  #main .all .maincontainer .inputbox button:focus {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
   #main .all .resultsContainer {
-    font-size: 14px !important;
+    font-size: 13px !important;
     padding-bottom: 10px !important;
   }
   #main .all .resultsContainer .resultContainer {
@@ -252,9 +252,19 @@ input::-webkit-inner-spin-button {
     padding: 6px 12px !important;
     border-radius: 5px !important;
   }
-  #main .all .resultsContainer .resultContainer .icindeki .bottom a {
+  #main .all .resultsContainer .resultContainer .icindeki .bottom button {
     padding: 7px 40px !important;
     font-size: 14px !important;
+  }
+  #main .all .resultsContainer .photosApiResult {
+    font-size: 14px !important;
+    margin-top: 15px !important;
+  }
+  #main .all .resultsContainer .photosApiResult a {
+    padding: 8px !important;
+    font-size: 13px !important;
+    -webkit-transition: 0 !important;
+    transition: 0 !important;
   }
   #main .all .resultsContainer .reklam {
     margin-bottom: 0 !important;
@@ -310,44 +320,44 @@ input::-webkit-inner-spin-button {
   #main {
     padding-top: 80px !important;
   }
-  #main .all form {
+  #main .all .maincontainer {
     height: 80vh !important;
   }
-  #main .all form .firstp {
+  #main .all .maincontainer .firstp {
     font-size: 26px !important;
   }
-  #main .all form .secondp {
+  #main .all .maincontainer .secondp {
     top: 30% !important;
     width: 55% !important;
     color: #0055b0 !important;
     font-size: 18px !important;
   }
-  #main .all form .inputbox {
+  #main .all .maincontainer .inputbox {
     width: 80% !important;
   }
-  #main .all form .inputbox .copyspan,
-  #main .all form .inputbox .deleteinp {
+  #main .all .maincontainer .inputbox .copyspan,
+  #main .all .maincontainer .inputbox .deleteinp {
     left: 70% !important;
     font-size: 25px !important;
   }
-  #main .all form .inputbox input {
+  #main .all .maincontainer .inputbox input {
     font-size: 16px !important;
     letter-spacing: 2px !important;
     padding: 6px !important;
   }
-  #main .all form .inputbox input::-webkit-input-placeholder {
+  #main .all .maincontainer .inputbox input::-webkit-input-placeholder {
     font-size: 16px !important;
   }
-  #main .all form .inputbox input:-ms-input-placeholder {
+  #main .all .maincontainer .inputbox input:-ms-input-placeholder {
     font-size: 16px !important;
   }
-  #main .all form .inputbox input::-ms-input-placeholder {
+  #main .all .maincontainer .inputbox input::-ms-input-placeholder {
     font-size: 16px !important;
   }
-  #main .all form .inputbox input::placeholder {
+  #main .all .maincontainer .inputbox input::placeholder {
     font-size: 16px !important;
   }
-  #main .all form .inputbox button {
+  #main .all .maincontainer .inputbox button {
     font-size: 16px !important;
     padding: 6px 5px !important;
   }
@@ -383,8 +393,18 @@ input::-webkit-inner-spin-button {
     text-align: end;
     width: 30% !important;
   }
+  #main .all .resultsContainer .photosApiResult {
+    font-size: 16px !important;
+    margin-top: 15px !important;
+  }
+  #main .all .resultsContainer .photosApiResult a {
+    padding: 8px !important;
+    font-size: 16px !important;
+    -webkit-transition: 0 !important;
+    transition: 0 !important;
+  }
   #main .all .resultsContainer .reklam {
-    width: 47% !important;
+    width: 100% !important;
     margin-top: 20px !important;
   }
   #footer {
@@ -424,44 +444,44 @@ input::-webkit-inner-spin-button {
   #main {
     padding-top: 80px !important;
   }
-  #main .all form {
+  #main .all .maincontainer {
     height: 80vh !important;
   }
-  #main .all form .firstp {
+  #main .all .maincontainer .firstp {
     font-size: 26px !important;
   }
-  #main .all form .secondp {
+  #main .all .maincontainer .secondp {
     top: 24% !important;
     width: 55% !important;
     color: #0055b0 !important;
     font-size: 18px !important;
   }
-  #main .all form .inputbox {
+  #main .all .maincontainer .inputbox {
     width: 55% !important;
   }
-  #main .all form .inputbox .copyspan,
-  #main .all form .inputbox .deleteinp {
+  #main .all .maincontainer .inputbox .copyspan,
+  #main .all .maincontainer .inputbox .deleteinp {
     left: 70% !important;
     font-size: 25px !important;
   }
-  #main .all form .inputbox input {
+  #main .all .maincontainer .inputbox input {
     font-size: 16px !important;
     letter-spacing: 2px !important;
     padding: 6px !important;
   }
-  #main .all form .inputbox input::-webkit-input-placeholder {
+  #main .all .maincontainer .inputbox input::-webkit-input-placeholder {
     font-size: 16px !important;
   }
-  #main .all form .inputbox input:-ms-input-placeholder {
+  #main .all .maincontainer .inputbox input:-ms-input-placeholder {
     font-size: 16px !important;
   }
-  #main .all form .inputbox input::-ms-input-placeholder {
+  #main .all .maincontainer .inputbox input::-ms-input-placeholder {
     font-size: 16px !important;
   }
-  #main .all form .inputbox input::placeholder {
+  #main .all .maincontainer .inputbox input::placeholder {
     font-size: 16px !important;
   }
-  #main .all form .inputbox button {
+  #main .all .maincontainer .inputbox button {
     font-size: 16px !important;
     padding: 6px 5px !important;
   }
@@ -484,8 +504,18 @@ input::-webkit-inner-spin-button {
   #main .all .resultsContainer .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     width: 40% !important;
   }
+  #main .all .resultsContainer .photosApiResult {
+    font-size: 18px !important;
+    margin-top: 15px !important;
+  }
+  #main .all .resultsContainer .photosApiResult a {
+    padding: 8px !important;
+    font-size: 18px !important;
+    -webkit-transition: 0 !important;
+    transition: 0 !important;
+  }
   #main .all .resultsContainer .reklam {
-    width: 47% !important;
+    width: 100% !important;
     margin-top: 20px !important;
   }
   #footer .all .left {
@@ -3786,7 +3816,7 @@ input::-webkit-inner-spin-button {
   padding: 0;
 }
 
-#main .all form {
+#main .all .maincontainer {
   border-radius: 15px;
   -webkit-box-shadow: 0px 0px 5px 1px #0422686c;
           box-shadow: 0px 0px 5px 1px #0422686c;
@@ -3802,7 +3832,7 @@ input::-webkit-inner-spin-button {
   height: 85vh;
 }
 
-#main .all form .firstp {
+#main .all .maincontainer .firstp {
   position: absolute;
   top: 5%;
   left: 3%;
@@ -3812,7 +3842,7 @@ input::-webkit-inner-spin-button {
   font-family: var(--montmedium);
 }
 
-#main .all form .secondp {
+#main .all .maincontainer .secondp {
   position: absolute;
   top: 32%;
   left: 3%;
@@ -3821,7 +3851,7 @@ input::-webkit-inner-spin-button {
   color: #0064cf;
 }
 
-#main .all form .inputbox {
+#main .all .maincontainer .inputbox {
   position: absolute;
   top: 75%;
   left: 3%;
@@ -3846,13 +3876,13 @@ input::-webkit-inner-spin-button {
   transition: 0.2s;
 }
 
-#main .all form .inputbox:focus {
+#main .all .maincontainer .inputbox:focus {
   -webkit-box-shadow: 0px 0px 10px 1px #04226870;
           box-shadow: 0px 0px 10px 1px #04226870;
 }
 
-#main .all form .inputbox .copyspan,
-#main .all form .inputbox .deleteinp {
+#main .all .maincontainer .inputbox .copyspan,
+#main .all .maincontainer .inputbox .deleteinp {
   position: absolute;
   top: 50%;
   left: 72%;
@@ -3863,7 +3893,7 @@ input::-webkit-inner-spin-button {
           transform: translateY(-50%);
 }
 
-#main .all form .inputbox input {
+#main .all .maincontainer .inputbox input {
   font-size: 18px;
   color: white;
   letter-spacing: 3px;
@@ -3878,31 +3908,31 @@ input::-webkit-inner-spin-button {
   transition: 0.2s;
 }
 
-#main .all form .inputbox input::-webkit-input-placeholder {
+#main .all .maincontainer .inputbox input::-webkit-input-placeholder {
   color: white;
   font-size: 18px;
 }
 
-#main .all form .inputbox input:-ms-input-placeholder {
+#main .all .maincontainer .inputbox input:-ms-input-placeholder {
   color: white;
   font-size: 18px;
 }
 
-#main .all form .inputbox input::-ms-input-placeholder {
+#main .all .maincontainer .inputbox input::-ms-input-placeholder {
   color: white;
   font-size: 18px;
 }
 
-#main .all form .inputbox input::placeholder {
+#main .all .maincontainer .inputbox input::placeholder {
   color: white;
   font-size: 18px;
 }
 
-#main .all form .inputbox .noClick {
+#main .all .maincontainer .inputbox .noClick {
   pointer-events: none;
 }
 
-#main .all form .inputbox button {
+#main .all .maincontainer .inputbox button {
   color: #0055b0;
   background-color: white;
   font-family: var(--montmedium);
@@ -3916,7 +3946,7 @@ input::-webkit-inner-spin-button {
   transition: 0.2s;
 }
 
-#main .all form .inputbox button:hover {
+#main .all .maincontainer .inputbox button:hover {
   color: white;
   background-color: #042268;
 }
@@ -3935,7 +3965,7 @@ input::-webkit-inner-spin-button {
       flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  margin-top: 30px;
+  margin-top: 20px;
   font-family: var(--montmedium);
   font-size: 15px;
 }
@@ -4052,9 +4082,11 @@ input::-webkit-inner-spin-button {
   color: #0055b0;
 }
 
-#main .all .resultsContainer .resultContainer .icindeki .bottom a {
+#main .all .resultsContainer .resultContainer .icindeki .bottom button {
   padding: 10px 55px;
   font-size: 16px;
+  border: none;
+  outline: none;
   background-color: #0055b0;
   text-align: center;
   border-radius: 5px;
@@ -4064,12 +4096,55 @@ input::-webkit-inner-spin-button {
   transition: 0.2s;
 }
 
-#main .all .resultsContainer .resultContainer .icindeki .bottom a:hover {
+#main .all .resultsContainer .resultContainer .icindeki .bottom button:hover {
   -webkit-box-shadow: 0px 0px 5px 1px #042268;
           box-shadow: 0px 0px 5px 1px #042268;
 }
 
-#main .all .resultsContainer .resultContainer .icindeki .bottom a:focus {
+#main .all .resultsContainer .resultContainer .icindeki .bottom button:focus {
+  -webkit-box-shadow: 0px 0px 5px 1px #042268;
+          box-shadow: 0px 0px 5px 1px #042268;
+}
+
+#main .all .resultsContainer .photosApiResult {
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+          box-shadow: 0px 0px 15px 1px rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+  padding: 8px;
+  background-color: white;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+#main .all .resultsContainer .photosApiResult a {
+  padding: 10px;
+  font-size: 15px;
+  background-color: #0055b0;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-family: var(--montmedium);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#main .all .resultsContainer .photosApiResult a:hover {
+  -webkit-box-shadow: 0px 0px 5px 1px #042268;
+          box-shadow: 0px 0px 5px 1px #042268;
+}
+
+#main .all .resultsContainer .photosApiResult a:focus {
   -webkit-box-shadow: 0px 0px 5px 1px #042268;
           box-shadow: 0px 0px 5px 1px #042268;
 }
