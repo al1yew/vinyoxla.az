@@ -121,6 +121,7 @@ $(document).ready(function () {
                 }
                 else {
                     toastr.error('Daxil edilən VİN kod tapılmadı!')
+                    return;
                 }
 
                 if (res?.data?.autocheck?.records > 0) {
@@ -132,6 +133,7 @@ $(document).ready(function () {
                 }
                 else {
                     toastr.error('Daxil edilən VİN kod tapılmadı!')
+                    return;
                 }
 
                 $('#photosApiResult').removeClass('d-none');
@@ -193,12 +195,14 @@ $(document).ready(function () {
     })
 
     $(document).on('keypress', function (e) {
-        if (e.keyCode == 13) {
-            if ($('#phoneno').val().length == 9) {
-                $('#sendcode').addClass('d-none');
-                $('#kodgelennensonra').removeClass('d-none');
-                $('#phoneno').prop('readonly', 'true');
-                $('#code').focus();
+        if (window.location.href.indexOf('login') != -1) {
+            if (e.keyCode == 13) {
+                if ($('#phoneno').val().length == 9) {
+                    $('#sendcode').addClass('d-none');
+                    $('#kodgelennensonra').removeClass('d-none');
+                    $('#phoneno').prop('readonly', 'true');
+                    $('#code').focus();
+                }
             }
         }
     })
@@ -424,25 +428,29 @@ $(document).ready(function () {
 
     // -------------------------- images page
 
-    //#region slider in images page
+    //#region download image
 
-    // $('.sliderimages').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     arrows: true,
-    //     fade: true,
-    //     prevArrow: $('.prevbtn'),
-    //     nextArrow: $('.nextbtn'),
-    //     asNavFor: '.miniimages'
-    // });
-    // $('.miniimages').slick({
-    //     slidesToShow: 3,
-    //     slidesToScroll: 1,
-    //     asNavFor: '.sliderimages',
-    //     dots: false,
-    //     centerMode: true,
-    //     focusOnSelect: true
-    // });
+    $(document).on('click', '.downloadimg', function (e) {
+        let url = $(this).data('url')
+
+        fetch(url, {
+            mode: 'cors',
+        })
+            .then(response => response.blob())
+            .then(blob => {
+                let blobUrl = window.URL.createObjectURL(blob);
+                let a = document.createElement('a');
+                a.download = url.replace(/^.*[\\\/]/, '');
+                a.href = blobUrl;
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            })
+    })
+
+    //#endregion download image
+
+    //#region slider in images page
 
     $('.sliderimages1').slick({
         dots: false,
@@ -606,28 +614,6 @@ $(document).ready(function () {
     });
 
     //#endregion slider in images page
-
-    //#region download image
-
-    $(document).on('click', '.downloadimg', function (e) {
-        let url = $(this).data('url')
-
-        fetch(url, {
-            mode: 'cors',
-        })
-            .then(response => response.blob())
-            .then(blob => {
-                let blobUrl = window.URL.createObjectURL(blob);
-                let a = document.createElement('a');
-                a.download = url.replace(/^.*[\\\/]/, '');
-                a.href = blobUrl;
-                document.body.appendChild(a);
-                a.click();
-                a.remove();
-            })
-    })
-
-    //#endregion download image
 
     // -------------------------- images page
 
