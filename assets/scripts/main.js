@@ -242,42 +242,38 @@ $(document).ready(function () {
         let cvv = formData.get('cvv');
         let phonenumber = formData.get('phonenumber');
 
-        let date = new Date;
-
-        let cardDate = '01/' + month.trim() + '/' + year.trim();
-
-        let convertedDate = new Date(cardDate)
-
         if (month.length > 2 || year.length > 4 || cvv.length > 3) {
             toastr.error('Məlumatlar səhvdir.');
             return;
         }
 
-        if (!/^[a-zA-Z\s]*$/.test(cardholder)) {
-            toastr.error('Ad soyad səhvdir.');
-            return;
-        }
-
-        if (!/^[0-9]+$/.test(cardno) ||
-            !/^[0-9]+$/.test(year) ||
-            !/^[0-9]+$/.test(month) ||
+        if (!/^[0-9]+$/.test(cardno) &&
+            !/^[0-9]+$/.test(year) &&
+            !/^[0-9]+$/.test(month) &&
             !/^[0-9]+$/.test(cvv)) {
             toastr.error('Məlumatlar səhvdir.');
             return;
         }
 
         if (phonenumber != null) {
-            if (!phonenumber.startsWith("50") ||
-                !phonenumber.startsWith("10") ||
-                !phonenumber.startsWith("51") ||
-                !phonenumber.startsWith("70") ||
-                !phonenumber.startsWith("77") ||
-                !phonenumber.startsWith("99") ||
-                !phonenumber.startsWith("55")) {
+            if (!(phonenumber.startsWith("50") ||
+                phonenumber.startsWith("10") ||
+                phonenumber.startsWith("51") ||
+                phonenumber.startsWith("70") ||
+                phonenumber.startsWith("77") ||
+                phonenumber.startsWith("99") ||
+                phonenumber.startsWith("55"))) {
                 toastr.error('Nömrə səhvdir.');
-                e.preventDefault();
                 return;
             }
+        }
+
+        if (!(cardno.startsWith("2") ||
+            cardno.startsWith("3") ||
+            cardno.startsWith("4") ||
+            cardno.startsWith("5"))) {
+            toastr.error('Karın nömrəsi səhvdir.');
+            return;
         }
 
         if (month > 12) {
@@ -285,8 +281,21 @@ $(document).ready(function () {
             return;
         }
 
+        if (!/^[a-zA-Z\s]*$/.test(cardholder)) {
+            toastr.error('Ad soyad səhvdir.');
+            e.preventDefault();
+            return;
+        }
+
+        let date = new Date;
+
+        let cardDate = '01/' + month.trim() + '/' + year.trim();
+
+        let convertedDate = new Date(cardDate)
+
         if (convertedDate.getTime() < date.getTime()) {
             toastr.error('Kartın son tarixi səhvdir.');
+            e.preventDefault();
             return;
         }
 
@@ -344,6 +353,46 @@ $(document).ready(function () {
     });
 
     //#endregion visa or mastercard
+
+    //#region change input on input complete
+
+    $(document).on('input', '#cardno', function () {
+
+        if ($(this).val().length == 16) {
+            if ($('#month').val().length != 2) {
+                $('#month').focus()
+            }
+        }
+    })
+
+    $(document).on('input', '#month', function () {
+
+        if ($(this).val().length == 2) {
+            if ($('#year').val().length != 4) {
+                $('#year').focus()
+            }
+        }
+    })
+
+    $(document).on('input', '#year', function () {
+
+        if ($(this).val().length == 4) {
+            if ($('#cvv').val().length != 3) {
+                $('#cvv').focus()
+            }
+        }
+    })
+
+    $(document).on('input', '#cvv', function () {
+
+        if ($(this).val().length == 3) {
+            if ($('#phonenumber').val().length != 9) {
+                $('#phonenumber').focus()
+            }
+        }
+    })
+
+    //#endregion change input on input complete
 
     // -------------------------- purchase page
 
