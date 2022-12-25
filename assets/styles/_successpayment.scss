@@ -1,0 +1,40 @@
+:root {
+    --montbold: MontserratBold;
+    --montmedium: MontserratMedium;
+    --montlight: MontserratLight;
+}
+
+#successmain {
+    font-family: var(--montmedium);
+    min-height: 92vh;
+
+    .all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 92vh;
+
+        p {
+            font-size: 25px;
+            color: green;
+            text-align: center;
+
+            a {
+                color: blue;
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    #successmain {
+
+        .all {
+
+            p {
+                font-size: 17px !important;
+            }
+        }
+    }
+
+}

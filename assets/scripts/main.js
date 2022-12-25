@@ -103,7 +103,7 @@ $(document).ready(function () {
 
         //WAUDG74F25N111998
         //4T1BG22K9YU930834
-        
+
         $('.preloaderdiv').removeClass('d-none');
         $('.resultsContainer').addClass('d-none');
         $('#carfaxContainer').addClass('d-none');
@@ -264,6 +264,20 @@ $(document).ready(function () {
             !/^[0-9]+$/.test(cvv)) {
             toastr.error('Məlumatlar səhvdir.');
             return;
+        }
+
+        if (phonenumber != null) {
+            if (!phonenumber.startsWith("50") ||
+                !phonenumber.startsWith("10") ||
+                !phonenumber.startsWith("51") ||
+                !phonenumber.startsWith("70") ||
+                !phonenumber.startsWith("77") ||
+                !phonenumber.startsWith("99") ||
+                !phonenumber.startsWith("55")) {
+                toastr.error('Nömrə səhvdir.');
+                e.preventDefault();
+                return;
+            }
         }
 
         if (month > 12) {
