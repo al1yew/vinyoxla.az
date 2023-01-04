@@ -15,7 +15,7 @@ toastr.options = {
 }
 
 $(document).ready(function () {
-
+    $('#backToTopBody').prop("id", "")
     $('.preloaderdiv').addClass('d-none')
 
     if ($(document).width() > 576) {
@@ -107,7 +107,7 @@ $(document).ready(function () {
         $('.preloaderdiv').removeClass('d-none');
         $('.resultsContainer').addClass('d-none');
         $('#carfaxContainer').addClass('d-none');
-        $('#autocheckContainer').addClass('d-none');
+        // $('#autocheckContainer').addClass('d-none');
         $('#photosApiResult').addClass('d-none');
 
         axios.get(`https://api.allreports.tools/wp-json/v1/get_report_check/${vinCode}`)
@@ -124,20 +124,21 @@ $(document).ready(function () {
                 }
                 else {
                     toastr.error('Daxil edilən VİN kod tapılmadı!')
+                    $('.preloaderdiv').addClass('d-none');
                     return;
                 }
 
-                if (res?.data?.autocheck?.records > 0) {
-                    $('#autoNameAutocheck').html(res?.data?.autocheck?.vehicle);
-                    $('#recordsCountAutocheck').html(res?.data?.autocheck?.records);
-                    $('#vinCodeAutocheck').html(res?.data?.autocheck?.vin);
-                    $('#yearAutocheck').html(res?.data?.autocheck?.year);
-                    $('#autocheckContainer').removeClass('d-none');
-                }
-                else {
-                    toastr.error('Daxil edilən VİN kod tapılmadı!')
-                    return;
-                }
+                // if (res?.data?.autocheck?.records > 0) {
+                //     $('#autoNameAutocheck').html(res?.data?.autocheck?.vehicle);
+                //     $('#recordsCountAutocheck').html(res?.data?.autocheck?.records);
+                //     $('#vinCodeAutocheck').html(res?.data?.autocheck?.vin);
+                //     $('#yearAutocheck').html(res?.data?.autocheck?.year);
+                //     $('#autocheckContainer').removeClass('d-none');
+                // }
+                // else {
+                //     toastr.error('Daxil edilən VİN kod tapılmadı!')
+                //     return;
+                // } ego teper net, u nas teper tolko imagecontainer
 
                 $('#photosApiResult').removeClass('d-none');
                 $('.preloaderdiv').addClass('d-none');
@@ -682,6 +683,34 @@ $(document).ready(function () {
     //#endregion slider in images page
 
     // -------------------------- images page
+
+    // -------------------------- 
+
+    // -------------------------- report page
+
+    //#region download report
+
+    // $(document).on('click', '.downloadreport', function (e) {
+    //     let url = $(this).data('url')
+
+    //     fetch(url, {
+    //         mode: 'cors',
+    //     })
+    //         .then(response => response.blob())
+    //         .then(blob => {
+    //             let blobUrl = window.URL.createObjectURL(blob);
+    //             let a = document.createElement('a');
+    //             a.download = url.replace(/^.*[\\\/]/, '');
+    //             a.href = blobUrl;
+    //             document.body.appendChild(a);
+    //             a.click();
+    //             a.remove();
+    //         })
+    // })
+
+    //#endregion download report
+
+    // -------------------------- report page
 
 });
 

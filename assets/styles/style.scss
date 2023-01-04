@@ -126,6 +126,7 @@ input::-webkit-inner-spin-button {
 @import 'topup';
 @import 'images';
 @import 'successpayment';
+@import 'report';
 //#endregion imports
 
 //#region custom cols
@@ -748,7 +749,6 @@ input::-webkit-inner-spin-button {
                 justify-content: space-between;
                 align-items: center;
                 flex-wrap: wrap;
-                margin-top: 15px;
 
                 a {
                     padding: 10px;

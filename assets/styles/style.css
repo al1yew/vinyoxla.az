@@ -258,7 +258,6 @@ input::-webkit-inner-spin-button {
   }
   #main .all .resultsContainer .photosApiResult {
     font-size: 14px !important;
-    margin-top: 15px !important;
   }
   #main .all .resultsContainer .photosApiResult a {
     padding: 8px !important;
@@ -395,7 +394,6 @@ input::-webkit-inner-spin-button {
   }
   #main .all .resultsContainer .photosApiResult {
     font-size: 16px !important;
-    margin-top: 15px !important;
   }
   #main .all .resultsContainer .photosApiResult a {
     padding: 8px !important;
@@ -506,7 +504,6 @@ input::-webkit-inner-spin-button {
   }
   #main .all .resultsContainer .photosApiResult {
     font-size: 18px !important;
-    margin-top: 15px !important;
   }
   #main .all .resultsContainer .photosApiResult a {
     padding: 8px !important;
@@ -3350,6 +3347,68 @@ input::-webkit-inner-spin-button {
   }
 }
 
+#reportmain {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#reportmain .klassdlacssdownloadreport {
+  position: fixed;
+  right: 4%;
+  bottom: 2%;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#reportmain .klassdlacssdownloadreport:hover {
+  background-color: blue;
+  -webkit-box-shadow: 0px 0px 5px 1px darkblue;
+          box-shadow: 0px 0px 5px 1px darkblue;
+}
+
+#reportmain .returntoindex {
+  position: fixed;
+  left: 4%;
+  bottom: 2%;
+  padding: 10px;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  border-radius: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#reportmain .returntoindex:hover {
+  background-color: blue;
+  -webkit-box-shadow: 0px 0px 5px 1px darkblue;
+          box-shadow: 0px 0px 5px 1px darkblue;
+}
+
+@media (max-width: 576px) {
+  #reportmain .klassdlacssdownloadreport {
+    right: 1% !important;
+    bottom: 2% !important;
+    padding: 15px !important;
+    font-size: 14px !important;
+  }
+  #reportmain .returntoindex {
+    left: 1% !important;
+    bottom: 2% !important;
+    padding: 15px !important;
+    font-size: 14px !important;
+  }
+}
+
 .col-1 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
@@ -4164,7 +4223,6 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 15px;
 }
 
 #main .all .resultsContainer .photosApiResult a {
