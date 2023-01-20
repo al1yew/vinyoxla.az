@@ -417,6 +417,18 @@ $(document).ready(function () {
 
     //#endregion search input
 
+    //#region balance form
+
+    $(document).on('click', '#animatetopup', function () {
+
+        $(this).addClass('animatetopupbtn');
+        $(this).html("Balans");
+        $('.topupbalanceform').removeClass('animatetopupbtn');
+    });
+
+    //#endregion balance form
+
+
     // -------------------------- account page
 
     // -------------------------- 
