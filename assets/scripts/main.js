@@ -20,6 +20,7 @@ $(document).ready(function () {
 
     if ($(document).width() > 576) {
         $('#vincodeinput').focus()
+        $('#phonenumber').focus()
         $('#phoneno').focus()
         $('#cardholder').focus()
     } else {
@@ -229,166 +230,166 @@ $(document).ready(function () {
 
     //#region purchase form
 
-    $(document).on('submit', '#purchaseForm', function (e) {
-        e.preventDefault();
-        const formData = new FormData(e.target);
+    // $(document).on('submit', '#purchaseForm', function (e) {
+    //     e.preventDefault();
+    //     const formData = new FormData(e.target);
 
-        let cardno = formData.get('cardno');
-        let cardholder = formData.get('cardholder');
-        let year = formData.get('year');
-        let month = formData.get('month');
-        let cvv = formData.get('cvv');
-        let phonenumber = formData.get('phonenumber');
+    //     let cardno = formData.get('cardno');
+    //     let cardholder = formData.get('cardholder');
+    //     let year = formData.get('year');
+    //     let month = formData.get('month');
+    //     let cvv = formData.get('cvv');
+    //     let phonenumber = formData.get('phonenumber');
 
-        if (month.length > 2 || year.length > 4 || cvv.length > 3) {
-            toastr.error('Məlumatlar səhvdir.');
-            return;
-        }
+    //     if (month.length > 2 || year.length > 4 || cvv.length > 3) {
+    //         toastr.error('Məlumatlar səhvdir.');
+    //         return;
+    //     }
 
-        if (!/^[0-9]+$/.test(cardno) &&
-            !/^[0-9]+$/.test(year) &&
-            !/^[0-9]+$/.test(month) &&
-            !/^[0-9]+$/.test(cvv)) {
-            toastr.error('Məlumatlar səhvdir.');
-            return;
-        }
+    //     if (!/^[0-9]+$/.test(cardno) &&
+    //         !/^[0-9]+$/.test(year) &&
+    //         !/^[0-9]+$/.test(month) &&
+    //         !/^[0-9]+$/.test(cvv)) {
+    //         toastr.error('Məlumatlar səhvdir.');
+    //         return;
+    //     }
 
-        if (phonenumber != null) {
-            if (!(phonenumber.startsWith("50") ||
-                phonenumber.startsWith("10") ||
-                phonenumber.startsWith("51") ||
-                phonenumber.startsWith("70") ||
-                phonenumber.startsWith("77") ||
-                phonenumber.startsWith("99") ||
-                phonenumber.startsWith("55"))) {
-                toastr.error('Nömrə səhvdir.');
-                return;
-            }
-        }
+    //     if (phonenumber != null) {
+    //         if (!(phonenumber.startsWith("50") ||
+    //             phonenumber.startsWith("10") ||
+    //             phonenumber.startsWith("51") ||
+    //             phonenumber.startsWith("70") ||
+    //             phonenumber.startsWith("77") ||
+    //             phonenumber.startsWith("99") ||
+    //             phonenumber.startsWith("55"))) {
+    //             toastr.error('Nömrə səhvdir.');
+    //             return;
+    //         }
+    //     }
 
-        if (!(cardno.startsWith("2") ||
-            cardno.startsWith("3") ||
-            cardno.startsWith("4") ||
-            cardno.startsWith("5"))) {
-            toastr.error('Karın nömrəsi səhvdir.');
-            return;
-        }
+    //     if (!(cardno.startsWith("2") ||
+    //         cardno.startsWith("3") ||
+    //         cardno.startsWith("4") ||
+    //         cardno.startsWith("5"))) {
+    //         toastr.error('Karın nömrəsi səhvdir.');
+    //         return;
+    //     }
 
-        if (month > 12) {
-            toastr.error('Ay səhvdir.');
-            return;
-        }
+    //     if (month > 12) {
+    //         toastr.error('Ay səhvdir.');
+    //         return;
+    //     }
 
-        if (!/^[a-zA-Z\s]*$/.test(cardholder)) {
-            toastr.error('Ad soyad səhvdir.');
-            e.preventDefault();
-            return;
-        }
+    //     if (!/^[a-zA-Z\s]*$/.test(cardholder)) {
+    //         toastr.error('Ad soyad səhvdir.');
+    //         e.preventDefault();
+    //         return;
+    //     }
 
-        let date = new Date;
+    //     let date = new Date;
 
-        let cardDate = '01/' + month.trim() + '/' + year.trim();
+    //     let cardDate = '01/' + month.trim() + '/' + year.trim();
 
-        let convertedDate = new Date(cardDate)
+    //     let convertedDate = new Date(cardDate)
 
-        if (convertedDate.getTime() < date.getTime()) {
-            toastr.error('Kartın son tarixi səhvdir.');
-            e.preventDefault();
-            return;
-        }
+    //     if (convertedDate.getTime() < date.getTime()) {
+    //         toastr.error('Kartın son tarixi səhvdir.');
+    //         e.preventDefault();
+    //         return;
+    //     }
 
-        console.log({ phonenumber, cvv, cardno, cardholder, year, month });
+    //     console.log({ phonenumber, cvv, cardno, cardholder, year, month });
 
-        // burda uje vse, backend gebul edecek datalari ve birde yoxlayacag
-    });
+    //     // burda uje vse, backend gebul edecek datalari ve birde yoxlayacag
+    // });
 
     //#endregion purchase form
 
     //#region prevent numeric in purchase page
 
-    $(document).on('input', '#cardno, #year, #month, #cvv', function (e) {
-        if (!/^[0-9]+$/.test($(this).val())) {
-            $(this).val($(this).val().slice(0, -1))
-        }
-    })
+    // $(document).on('input', '#cardno, #year, #month, #cvv', function (e) {
+    //     if (!/^[0-9]+$/.test($(this).val())) {
+    //         $(this).val($(this).val().slice(0, -1))
+    //     }
+    // })
 
     //#endregion prevent numeric in purchase page
 
     //#region input toUpperCase
 
-    $(document).on('input keyup', '#cardholder', function () {
-        let value = $(this).val();
-        $(this).val(value.toUpperCase());
+    // $(document).on('input keyup', '#cardholder', function () {
+    //     let value = $(this).val();
+    //     $(this).val(value.toUpperCase());
 
-        let regex = /^[a-zA-Z\s]*$/;
+    //     let regex = /^[a-zA-Z\s]*$/;
 
-        if (!regex.test(value)) {
-            $(this).val($(this).val().slice(0, -1))
-        }
-    });
+    //     if (!regex.test(value)) {
+    //         $(this).val($(this).val().slice(0, -1))
+    //     }
+    // });
 
     //#endregion input toUpperCase
 
     //#region visa or mastercard
 
-    $(document).on('input keyup', '#cardno', function () {
-        let value = $(this).val();
+    // $(document).on('input keyup', '#cardno', function () {
+    //     let value = $(this).val();
 
-        if (value.charAt(0) == 4) {
-            $('.visabox').addClass('odu');
-            $('.mastercardbox').removeClass('odu');
-        }
+    //     if (value.charAt(0) == 4) {
+    //         $('.visabox').addClass('odu');
+    //         $('.mastercardbox').removeClass('odu');
+    //     }
 
-        if (value.charAt(0) == 2 || value.charAt(0) == 5) {
-            $('.mastercardbox').addClass('odu');
-            $('.visabox').removeClass('odu');
-        }
+    //     if (value.charAt(0) == 2 || value.charAt(0) == 5) {
+    //         $('.mastercardbox').addClass('odu');
+    //         $('.visabox').removeClass('odu');
+    //     }
 
-        if (value.length == 0) {
-            $('.visabox').removeClass('odu');
-            $('.mastercardbox').removeClass('odu');
-        }
-    });
+    //     if (value.length == 0) {
+    //         $('.visabox').removeClass('odu');
+    //         $('.mastercardbox').removeClass('odu');
+    //     }
+    // });
 
     //#endregion visa or mastercard
 
     //#region change input on input complete
 
-    $(document).on('input', '#cardno', function () {
+    // $(document).on('input', '#cardno', function () {
 
-        if ($(this).val().length == 16) {
-            if ($('#month').val().length != 2) {
-                $('#month').focus()
-            }
-        }
-    })
+    //     if ($(this).val().length == 16) {
+    //         if ($('#month').val().length != 2) {
+    //             $('#month').focus()
+    //         }
+    //     }
+    // })
 
-    $(document).on('input', '#month', function () {
+    // $(document).on('input', '#month', function () {
 
-        if ($(this).val().length == 2) {
-            if ($('#year').val().length != 4) {
-                $('#year').focus()
-            }
-        }
-    })
+    //     if ($(this).val().length == 2) {
+    //         if ($('#year').val().length != 4) {
+    //             $('#year').focus()
+    //         }
+    //     }
+    // })
 
-    $(document).on('input', '#year', function () {
+    // $(document).on('input', '#year', function () {
 
-        if ($(this).val().length == 4) {
-            if ($('#cvv').val().length != 3) {
-                $('#cvv').focus()
-            }
-        }
-    })
+    //     if ($(this).val().length == 4) {
+    //         if ($('#cvv').val().length != 3) {
+    //             $('#cvv').focus()
+    //         }
+    //     }
+    // })
 
-    $(document).on('input', '#cvv', function () {
+    // $(document).on('input', '#cvv', function () {
 
-        if ($(this).val().length == 3) {
-            if ($('#phonenumber').val().length != 9) {
-                $('#phonenumber').focus()
-            }
-        }
-    })
+    //     if ($(this).val().length == 3) {
+    //         if ($('#phonenumber').val().length != 9) {
+    //             $('#phonenumber').focus()
+    //         }
+    //     }
+    // })
 
     //#endregion change input on input complete
 

@@ -7,173 +7,171 @@
 #purchasemain {
     font-family: var(--montmedium);
     font-size: 16px;
-    margin-top: 80px;
-    min-height: 90vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .all {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
+        padding-top: 80px;
+        height: 100%;
 
         form {
             margin: 0;
             padding: 0;
-            margin-top: 30px;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            flex-wrap: wrap;
-            position: relative;
 
-            .above {
-                z-index: 4;
-                border: 0.5px solid grey;
-                border-radius: 5px;
-                padding: 20px;
-                background-color: #f8edd5;
-                padding-top: 30px;
-                padding-bottom: 10px;
-                box-shadow: 0px 0px 5px 1px #04226846;
-                display: flex;
-                align-items: center;
-                flex-wrap: wrap;
-                justify-content: space-between;
+            // .above {
+            //     z-index: 4;
+            //     border: 0.5px solid grey;
+            //     border-radius: 5px;
+            //     padding: 20px;
+            //     background-color: #f8edd5;
+            //     padding-top: 30px;
+            //     padding-bottom: 10px;
+            //     box-shadow: 0px 0px 5px 1px #04226846;
+            //     display: flex;
+            //     align-items: center;
+            //     flex-wrap: wrap;
+            //     justify-content: space-between;
 
-                .validthru {
-                    margin-bottom: 10px;
-                    font-size: 14px;
-                }
+            //     .validthru {
+            //         margin-bottom: 10px;
+            //         font-size: 14px;
+            //     }
 
-                input {
-                    font-size: 18px;
-                    color: black;
-                    border-radius: 5px;
-                    border: 0.5px solid #0055b0;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    outline: none;
-                    border: none;
-                    padding: 2px 6px;
-                    margin-bottom: 20px;
-                    letter-spacing: 2px;
+            //     input {
+            //         font-size: 18px;
+            //         color: black;
+            //         border-radius: 5px;
+            //         border: 0.5px solid #0055b0;
+            //         box-shadow: 0px 0px 5px 1px #04226846;
+            //         outline: none;
+            //         border: none;
+            //         padding: 2px 6px;
+            //         margin-bottom: 20px;
+            //         letter-spacing: 2px;
 
-                    &:focus {
-                        box-shadow: 0px 0px 10px 1px #04226870;
-                    }
+            //         &:focus {
+            //             box-shadow: 0px 0px 10px 1px #04226870;
+            //         }
 
-                    &::placeholder {
-                        color: black;
-                        font-family: var(--montlight);
-                        font-size: 18px;
-                    }
-                }
+            //         &::placeholder {
+            //             color: black;
+            //             font-family: var(--montlight);
+            //             font-size: 18px;
+            //         }
+            //     }
 
-                .ikisi {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    flex-wrap: wrap;
+            //     .ikisi {
+            //         display: flex;
+            //         justify-content: space-between;
+            //         align-items: center;
+            //         flex-wrap: wrap;
 
-                    .leftside {
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        margin-bottom: 10px;
+            //         .leftside {
+            //             display: flex;
+            //             justify-content: space-between;
+            //             align-items: center;
+            //             flex-wrap: wrap;
+            //             margin-bottom: 10px;
 
-                        input {
-                            margin: 0;
-                        }
+            //             input {
+            //                 margin: 0;
+            //             }
 
-                        span {
-                            font-size: 30px;
-                            color: black;
-                            font-family: var(--montlight);
-                        }
-                    }
+            //             span {
+            //                 font-size: 30px;
+            //                 color: black;
+            //                 font-family: var(--montlight);
+            //             }
+            //         }
 
-                    .rightside {
-                        display: flex;
-                        justify-content: end;
-                        align-items: center;
-                        margin-bottom: 10px;
-                        flex-wrap: wrap;
+            //         .rightside {
+            //             display: flex;
+            //             justify-content: end;
+            //             align-items: center;
+            //             margin-bottom: 10px;
+            //             flex-wrap: wrap;
 
-                        .odu {
-                            img {
-                                filter: brightness(0.2) !important;
-                            }
-                        }
+            //             .odu {
+            //                 img {
+            //                     filter: brightness(0.2) !important;
+            //                 }
+            //             }
 
-                        .cardbox {
-                            margin-left: 5px;
-                        }
-                    }
-                }
+            //             .cardbox {
+            //                 margin-left: 5px;
+            //             }
+            //         }
+            //     }
 
-                #year,
-                #cvv,
-                #month {
-                    text-align: center;
-                }
-            }
+            //     #year,
+            //     #cvv,
+            //     #month {
+            //         text-align: center;
+            //     }
+            // }
 
-            .below {
-                position: absolute;
-                height: 75%;
-                top: 45%;
-                transform: translateY(-50%);
-                right: 0%;
-                border: 0.5px solid grey;
-                border-radius: 5px;
-                background-color: #e0ddd7;
-                box-shadow: 0px 0px 5px 1px #04226846;
-                display: flex;
-                align-items: flex-end;
-                flex-wrap: wrap;
-                justify-content: end;
-                z-index: 2;
+            // .below {
+            //     position: absolute;
+            //     height: 75%;
+            //     top: 45%;
+            //     transform: translateY(-50%);
+            //     right: 0%;
+            //     border: 0.5px solid grey;
+            //     border-radius: 5px;
+            //     background-color: #e0ddd7;
+            //     box-shadow: 0px 0px 5px 1px #04226846;
+            //     display: flex;
+            //     align-items: flex-end;
+            //     flex-wrap: wrap;
+            //     justify-content: end;
+            //     z-index: 2;
 
-                &::before {
-                    content: '';
-                    width: 100%;
-                    height: 70px;
-                    background-color: rgb(63, 63, 63);
-                }
+            //     &::before {
+            //         content: '';
+            //         width: 100%;
+            //         height: 70px;
+            //         background-color: rgb(63, 63, 63);
+            //     }
 
-                input {
-                    font-size: 18px;
-                    color: black;
-                    border-radius: 5px;
-                    border: 0.5px solid #0055b0;
-                    box-shadow: 0px 0px 5px 1px #04226846;
-                    outline: none;
-                    border: none;
-                    padding: 2px 6px;
-                    margin-bottom: 50px;
-                    margin-right: 20px;
+            //     input {
+            //         font-size: 18px;
+            //         color: black;
+            //         border-radius: 5px;
+            //         border: 0.5px solid #0055b0;
+            //         box-shadow: 0px 0px 5px 1px #04226846;
+            //         outline: none;
+            //         border: none;
+            //         padding: 2px 6px;
+            //         margin-bottom: 50px;
+            //         margin-right: 20px;
 
-                    &:focus {
-                        box-shadow: 0px 0px 10px 1px #04226870;
-                    }
+            //         &:focus {
+            //             box-shadow: 0px 0px 10px 1px #04226870;
+            //         }
 
-                    &::placeholder {
-                        color: black;
-                        font-family: var(--montlight);
-                        font-size: 18px;
-                    }
-                }
+            //         &::placeholder {
+            //             color: black;
+            //             font-family: var(--montlight);
+            //             font-size: 18px;
+            //         }
+            //     }
 
-                #cvv {
-                    text-align: center;
-                }
-            }
+            //     #cvv {
+            //         text-align: center;
+            //     }
+            // }
 
             .buttonandtelkeeper {
                 margin: 0;
                 padding: 0;
-                margin-top: 40px;
+                margin-top: 30px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -253,7 +251,7 @@
 
                     .toptop,
                     .topbottom {
-                        padding: 10px;
+                        padding: 15px;
                         border-bottom: 0.5px solid #0055b0;
                         display: flex;
                         justify-content: space-between;
@@ -313,82 +311,81 @@
 
 @media(max-width: 576px) {
     #purchasemain {
-        margin-top: 80px !important;
-        min-height: 79vh !important;
+        min-height: 90vh !important;
+        padding-bottom: 80px !important;
 
         .all {
 
             form {
-                margin-top: 20px !important;
 
-                .above {
-                    padding: 15px !important;
+                // .above {
+                //     padding: 15px !important;
 
-                    .validthru {
-                        font-size: 10px !important;
-                        margin-bottom: 10px !important;
-                    }
+                //     .validthru {
+                //         font-size: 10px !important;
+                //         margin-bottom: 10px !important;
+                //     }
 
-                    input {
-                        font-size: 14px !important;
-                        padding: 5px !important;
-                        margin-bottom: 15px !important;
+                //     input {
+                //         font-size: 14px !important;
+                //         padding: 5px !important;
+                //         margin-bottom: 15px !important;
 
-                        &::placeholder {
-                            font-size: 14px !important;
-                        }
-                    }
+                //         &::placeholder {
+                //             font-size: 14px !important;
+                //         }
+                //     }
 
-                    .ikisi {
+                //     .ikisi {
 
-                        .leftside {
-                            margin-bottom: 0 !important;
+                //         .leftside {
+                //             margin-bottom: 0 !important;
 
-                            input {
-                                margin: 0 !important;
-                            }
+                //             input {
+                //                 margin: 0 !important;
+                //             }
 
-                            span {
-                                font-size: 25px !important;
-                            }
-                        }
+                //             span {
+                //                 font-size: 25px !important;
+                //             }
+                //         }
 
-                        .rightside {
-                            margin-bottom: 0 !important;
-                        }
-                    }
+                //         .rightside {
+                //             margin-bottom: 0 !important;
+                //         }
+                //     }
 
-                    #year,
-                    #cvv,
-                    #month {
-                        text-align: center;
-                    }
-                }
+                //     #year,
+                //     #cvv,
+                //     #month {
+                //         text-align: center;
+                //     }
+                // }
 
-                .below {
-                    height: 56% !important;
-                    transform: translateY(0) !important;
-                    top: 5% !important;
+                // .below {
+                //     height: 56% !important;
+                //     transform: translateY(0) !important;
+                //     top: 5% !important;
 
-                    &::before {
-                        content: '';
-                        height: 50px !important;
-                    }
+                //     &::before {
+                //         content: '';
+                //         height: 50px !important;
+                //     }
 
-                    input {
-                        font-size: 14px !important;
-                        padding: 5px !important;
-                        margin-bottom: 40px !important;
-                        margin-right: 15px !important;
+                //     input {
+                //         font-size: 14px !important;
+                //         padding: 5px !important;
+                //         margin-bottom: 40px !important;
+                //         margin-right: 15px !important;
 
-                        &::placeholder {
-                            font-size: 14px !important;
-                        }
-                    }
-                }
+                //         &::placeholder {
+                //             font-size: 14px !important;
+                //         }
+                //     }
+                // }
 
                 .buttonandtelkeeper {
-                    margin-top: 50px !important;
+                    margin-top: 20px !important;
 
                     .inputkeeper {
 
@@ -431,6 +428,7 @@
 
                         .toptop,
                         .topbottom {
+                            padding: 8px !important;
 
                             .topelement {
                                 font-size: 13px !important;
@@ -471,82 +469,80 @@
 
 @media(min-width: 577px) and (max-width: 768px) {
     #purchasemain {
-        margin-top: 80px !important;
-        min-height: 79vh !important;
+        min-height: 90vh !important;
 
         .all {
 
             form {
-                margin-top: 20px !important;
 
-                .above {
-                    padding: 15px !important;
+                // .above {
+                //     padding: 15px !important;
 
-                    .validthru {
-                        font-size: 10px !important;
-                        margin-bottom: 10px !important;
-                    }
+                //     .validthru {
+                //         font-size: 10px !important;
+                //         margin-bottom: 10px !important;
+                //     }
 
-                    input {
-                        font-size: 14px !important;
-                        padding: 5px !important;
-                        margin-bottom: 15px !important;
+                //     input {
+                //         font-size: 14px !important;
+                //         padding: 5px !important;
+                //         margin-bottom: 15px !important;
 
-                        &::placeholder {
-                            font-size: 14px !important;
-                        }
-                    }
+                //         &::placeholder {
+                //             font-size: 14px !important;
+                //         }
+                //     }
 
-                    .ikisi {
+                //     .ikisi {
 
-                        .leftside {
-                            margin-bottom: 0 !important;
+                //         .leftside {
+                //             margin-bottom: 0 !important;
 
-                            input {
-                                margin: 0 !important;
-                            }
+                //             input {
+                //                 margin: 0 !important;
+                //             }
 
-                            span {
-                                font-size: 25px !important;
-                            }
-                        }
+                //             span {
+                //                 font-size: 25px !important;
+                //             }
+                //         }
 
-                        .rightside {
-                            margin-bottom: 0 !important;
-                        }
-                    }
+                //         .rightside {
+                //             margin-bottom: 0 !important;
+                //         }
+                //     }
 
-                    #year,
-                    #cvv,
-                    #month {
-                        text-align: center;
-                    }
-                }
+                //     #year,
+                //     #cvv,
+                //     #month {
+                //         text-align: center;
+                //     }
+                // }
 
-                .below {
-                    height: 68% !important;
-                    transform: translateY(0) !important;
-                    top: 5% !important;
+                // .below {
+                //     height: 68% !important;
+                //     transform: translateY(0) !important;
+                //     top: 5% !important;
 
-                    &::before {
-                        content: '';
-                        height: 50px !important;
-                    }
+                //     &::before {
+                //         content: '';
+                //         height: 50px !important;
+                //     }
 
-                    input {
-                        font-size: 14px !important;
-                        padding: 5px !important;
-                        margin-bottom: 40px !important;
-                        margin-right: 15px !important;
+                //     input {
+                //         font-size: 14px !important;
+                //         padding: 5px !important;
+                //         margin-bottom: 40px !important;
+                //         margin-right: 15px !important;
 
-                        &::placeholder {
-                            font-size: 14px !important;
-                        }
-                    }
-                }
+                //         &::placeholder {
+                //             font-size: 14px !important;
+                //         }
+                //     }
+                // }
 
                 .buttonandtelkeeper {
-                    margin-top: 50px !important;
+                    margin-top: 30px !important;
 
                     .inputkeeper {
                         width: 47% !important;
@@ -590,6 +586,7 @@
 
                         .toptop,
                         .topbottom {
+                            padding: 12px !important;
 
                             .topelement {
                                 font-size: 13px !important;
@@ -630,8 +627,7 @@
 
 @media(min-width: 768px) and (max-width: 992px) {
     #purchasemain {
-        margin-top: 80px !important;
-        min-height: 79vh !important;
+        min-height: 92vh !important;
 
         .all {
 
@@ -662,30 +658,30 @@
 
             form {
 
-                .above {
+                // .above {
 
-                    input {
-                        padding: 10px !important;
-                    }
-                }
+                //     input {
+                //         padding: 10px !important;
+                //     }
+                // }
 
-                .below {
-                    height: 68% !important;
-                    top: 38% !important;
-                    transform: translateY(-50%) !important;
+                // .below {
+                //     height: 68% !important;
+                //     top: 38% !important;
+                //     transform: translateY(-50%) !important;
 
-                    input {
-                        padding: 10px !important;
-                    }
+                //     input {
+                //         padding: 10px !important;
+                //     }
 
-                    &::before {
-                        content: '';
-                        height: 70px;
-                    }
-                }
+                //     &::before {
+                //         content: '';
+                //         height: 70px;
+                //     }
+                // }
 
                 .buttonandtelkeeper {
-                    margin-top: 50px !important;
+                    margin-top: 30px !important;
                     margin-bottom: 40px !important;
 
                     .inputkeeper {
@@ -713,14 +709,14 @@
             form {
                 width: 60% !important;
 
-                .below {
-                    height: 64% !important;
-                    top: 40%;
-                    transform: translateY(-50%);
-                }
+                // .below {
+                //     height: 64% !important;
+                //     top: 40%;
+                //     transform: translateY(-50%);
+                // }
 
                 .buttonandtelkeeper {
-                    margin-top: 50px !important;
+                    margin-top: 30px !important;
                     margin-bottom: 40px !important;
 
                     .inputkeeper {

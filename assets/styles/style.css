@@ -946,17 +946,25 @@ input::-webkit-inner-spin-button {
 #purchasemain {
   font-family: var(--montmedium);
   font-size: 16px;
-  margin-top: 80px;
-  min-height: 90vh;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #purchasemain .all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -966,250 +974,19 @@ input::-webkit-inner-spin-button {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-top: 80px;
+  height: 100%;
 }
 
 #purchasemain .all form {
   margin: 0;
   padding: 0;
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  position: relative;
-}
-
-#purchasemain .all form .above {
-  z-index: 4;
-  border: 0.5px solid grey;
-  border-radius: 5px;
-  padding: 20px;
-  background-color: #f8edd5;
-  padding-top: 30px;
-  padding-bottom: 10px;
-  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#purchasemain .all form .above .validthru {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-#purchasemain .all form .above input {
-  font-size: 18px;
-  color: black;
-  border-radius: 5px;
-  border: 0.5px solid #0055b0;
-  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
-  outline: none;
-  border: none;
-  padding: 2px 6px;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
-
-#purchasemain .all form .above input:focus {
-  -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-          box-shadow: 0px 0px 10px 1px #04226870;
-}
-
-#purchasemain .all form .above input::-webkit-input-placeholder {
-  color: black;
-  font-family: var(--montlight);
-  font-size: 18px;
-}
-
-#purchasemain .all form .above input:-ms-input-placeholder {
-  color: black;
-  font-family: var(--montlight);
-  font-size: 18px;
-}
-
-#purchasemain .all form .above input::-ms-input-placeholder {
-  color: black;
-  font-family: var(--montlight);
-  font-size: 18px;
-}
-
-#purchasemain .all form .above input::placeholder {
-  color: black;
-  font-family: var(--montlight);
-  font-size: 18px;
-}
-
-#purchasemain .all form .above .ikisi {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#purchasemain .all form .above .ikisi .leftside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 10px;
-}
-
-#purchasemain .all form .above .ikisi .leftside input {
-  margin: 0;
-}
-
-#purchasemain .all form .above .ikisi .leftside span {
-  font-size: 30px;
-  color: black;
-  font-family: var(--montlight);
-}
-
-#purchasemain .all form .above .ikisi .rightside {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 10px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#purchasemain .all form .above .ikisi .rightside .odu img {
-  -webkit-filter: brightness(0.2) !important;
-          filter: brightness(0.2) !important;
-}
-
-#purchasemain .all form .above .ikisi .rightside .cardbox {
-  margin-left: 5px;
-}
-
-#purchasemain .all form .above #year,
-#purchasemain .all form .above #cvv,
-#purchasemain .all form .above #month {
-  text-align: center;
-}
-
-#purchasemain .all form .below {
-  position: absolute;
-  height: 75%;
-  top: 45%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 0%;
-  border: 0.5px solid grey;
-  border-radius: 5px;
-  background-color: #e0ddd7;
-  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  z-index: 2;
-}
-
-#purchasemain .all form .below::before {
-  content: '';
-  width: 100%;
-  height: 70px;
-  background-color: #3f3f3f;
-}
-
-#purchasemain .all form .below input {
-  font-size: 18px;
-  color: black;
-  border-radius: 5px;
-  border: 0.5px solid #0055b0;
-  -webkit-box-shadow: 0px 0px 5px 1px #04226846;
-          box-shadow: 0px 0px 5px 1px #04226846;
-  outline: none;
-  border: none;
-  padding: 2px 6px;
-  margin-bottom: 50px;
-  margin-right: 20px;
-}
-
-#purchasemain .all form .below input:focus {
-  -webkit-box-shadow: 0px 0px 10px 1px #04226870;
-          box-shadow: 0px 0px 10px 1px #04226870;
-}
-
-#purchasemain .all form .below input::-webkit-input-placeholder {
-  color: black;
-  font-family: var(--montlight);
-  font-size: 18px;
-}
-
-#purchasemain .all form .below input:-ms-input-placeholder {
-  color: black;
-  font-family: var(--montlight);
-  font-size: 18px;
-}
-
-#purchasemain .all form .below input::-ms-input-placeholder {
-  color: black;
-  font-family: var(--montlight);
-  font-size: 18px;
-}
-
-#purchasemain .all form .below input::placeholder {
-  color: black;
-  font-family: var(--montlight);
-  font-size: 18px;
-}
-
-#purchasemain .all form .below #cvv {
-  text-align: center;
 }
 
 #purchasemain .all form .buttonandtelkeeper {
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1337,7 +1114,7 @@ input::-webkit-inner-spin-button {
 
 #purchasemain .all .resultContainer .icindeki .top .toptop,
 #purchasemain .all .resultContainer .icindeki .top .topbottom {
-  padding: 10px;
+  padding: 15px;
   border-bottom: 0.5px solid #0055b0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1413,83 +1190,11 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 576px) {
   #purchasemain {
-    margin-top: 80px !important;
-    min-height: 79vh !important;
-  }
-  #purchasemain .all form {
-    margin-top: 20px !important;
-  }
-  #purchasemain .all form .above {
-    padding: 15px !important;
-  }
-  #purchasemain .all form .above .validthru {
-    font-size: 10px !important;
-    margin-bottom: 10px !important;
-  }
-  #purchasemain .all form .above input {
-    font-size: 14px !important;
-    padding: 5px !important;
-    margin-bottom: 15px !important;
-  }
-  #purchasemain .all form .above input::-webkit-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .above input:-ms-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .above input::-ms-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .above input::placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .above .ikisi .leftside {
-    margin-bottom: 0 !important;
-  }
-  #purchasemain .all form .above .ikisi .leftside input {
-    margin: 0 !important;
-  }
-  #purchasemain .all form .above .ikisi .leftside span {
-    font-size: 25px !important;
-  }
-  #purchasemain .all form .above .ikisi .rightside {
-    margin-bottom: 0 !important;
-  }
-  #purchasemain .all form .above #year,
-  #purchasemain .all form .above #cvv,
-  #purchasemain .all form .above #month {
-    text-align: center;
-  }
-  #purchasemain .all form .below {
-    height: 56% !important;
-    -webkit-transform: translateY(0) !important;
-            transform: translateY(0) !important;
-    top: 5% !important;
-  }
-  #purchasemain .all form .below::before {
-    content: '';
-    height: 50px !important;
-  }
-  #purchasemain .all form .below input {
-    font-size: 14px !important;
-    padding: 5px !important;
-    margin-bottom: 40px !important;
-    margin-right: 15px !important;
-  }
-  #purchasemain .all form .below input::-webkit-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .below input:-ms-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .below input::-ms-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .below input::placeholder {
-    font-size: 14px !important;
+    min-height: 90vh !important;
+    padding-bottom: 80px !important;
   }
   #purchasemain .all form .buttonandtelkeeper {
-    margin-top: 50px !important;
+    margin-top: 20px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper span {
     letter-spacing: 2px !important;
@@ -1530,6 +1235,10 @@ input::-webkit-inner-spin-button {
   #purchasemain .all .resultContainer .icindeki {
     border-radius: 5px !important;
   }
+  #purchasemain .all .resultContainer .icindeki .top .toptop,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom {
+    padding: 8px !important;
+  }
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
     font-size: 13px !important;
@@ -1555,83 +1264,10 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 577px) and (max-width: 768px) {
   #purchasemain {
-    margin-top: 80px !important;
-    min-height: 79vh !important;
-  }
-  #purchasemain .all form {
-    margin-top: 20px !important;
-  }
-  #purchasemain .all form .above {
-    padding: 15px !important;
-  }
-  #purchasemain .all form .above .validthru {
-    font-size: 10px !important;
-    margin-bottom: 10px !important;
-  }
-  #purchasemain .all form .above input {
-    font-size: 14px !important;
-    padding: 5px !important;
-    margin-bottom: 15px !important;
-  }
-  #purchasemain .all form .above input::-webkit-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .above input:-ms-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .above input::-ms-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .above input::placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .above .ikisi .leftside {
-    margin-bottom: 0 !important;
-  }
-  #purchasemain .all form .above .ikisi .leftside input {
-    margin: 0 !important;
-  }
-  #purchasemain .all form .above .ikisi .leftside span {
-    font-size: 25px !important;
-  }
-  #purchasemain .all form .above .ikisi .rightside {
-    margin-bottom: 0 !important;
-  }
-  #purchasemain .all form .above #year,
-  #purchasemain .all form .above #cvv,
-  #purchasemain .all form .above #month {
-    text-align: center;
-  }
-  #purchasemain .all form .below {
-    height: 68% !important;
-    -webkit-transform: translateY(0) !important;
-            transform: translateY(0) !important;
-    top: 5% !important;
-  }
-  #purchasemain .all form .below::before {
-    content: '';
-    height: 50px !important;
-  }
-  #purchasemain .all form .below input {
-    font-size: 14px !important;
-    padding: 5px !important;
-    margin-bottom: 40px !important;
-    margin-right: 15px !important;
-  }
-  #purchasemain .all form .below input::-webkit-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .below input:-ms-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .below input::-ms-input-placeholder {
-    font-size: 14px !important;
-  }
-  #purchasemain .all form .below input::placeholder {
-    font-size: 14px !important;
+    min-height: 90vh !important;
   }
   #purchasemain .all form .buttonandtelkeeper {
-    margin-top: 50px !important;
+    margin-top: 30px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
     width: 47% !important;
@@ -1675,6 +1311,10 @@ input::-webkit-inner-spin-button {
   #purchasemain .all .resultContainer .icindeki {
     border-radius: 5px !important;
   }
+  #purchasemain .all .resultContainer .icindeki .top .toptop,
+  #purchasemain .all .resultContainer .icindeki .top .topbottom {
+    padding: 12px !important;
+  }
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement,
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement {
     font-size: 13px !important;
@@ -1700,31 +1340,14 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 768px) and (max-width: 992px) {
   #purchasemain {
-    margin-top: 80px !important;
-    min-height: 79vh !important;
+    min-height: 92vh !important;
   }
   #purchasemain .all .resultContainer .icindeki .top .toptop .topelement:nth-child(2) span:nth-child(2),
   #purchasemain .all .resultContainer .icindeki .top .topbottom .topelement:nth-child(2) span:nth-child(2) {
     text-align: start !important;
   }
-  #purchasemain .all form .above input {
-    padding: 10px !important;
-  }
-  #purchasemain .all form .below {
-    height: 68% !important;
-    top: 38% !important;
-    -webkit-transform: translateY(-50%) !important;
-            transform: translateY(-50%) !important;
-  }
-  #purchasemain .all form .below input {
-    padding: 10px !important;
-  }
-  #purchasemain .all form .below::before {
-    content: '';
-    height: 70px;
-  }
   #purchasemain .all form .buttonandtelkeeper {
-    margin-top: 50px !important;
+    margin-top: 30px !important;
     margin-bottom: 40px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
@@ -1742,14 +1365,8 @@ input::-webkit-inner-spin-button {
   #purchasemain .all form {
     width: 60% !important;
   }
-  #purchasemain .all form .below {
-    height: 64% !important;
-    top: 40%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
   #purchasemain .all form .buttonandtelkeeper {
-    margin-top: 50px !important;
+    margin-top: 30px !important;
     margin-bottom: 40px !important;
   }
   #purchasemain .all form .buttonandtelkeeper .inputkeeper {
