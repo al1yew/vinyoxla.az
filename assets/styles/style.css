@@ -275,43 +275,41 @@ input::-webkit-inner-spin-button {
     margin-bottom: 0 !important;
   }
   #footer {
-    margin-top: 20px !important;
+    margin: 0 !important;
   }
   #footer .all {
-    padding: 6px 0 !important;
+    padding: 4px 10px !important;
+    margin: 0 !important;
   }
   #footer .all .left {
-    width: 15% !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
   #footer .all .left .fblink i {
-    font-size: 25px !important;
+    font-size: 22px !important;
   }
   #footer .all .left .instalink i {
-    font-size: 25px !important;
+    font-size: 22px !important;
   }
   #footer .all .middle {
-    padding-left: 0 !important;
-    width: 72% !important;
-  }
-  #footer .all .middle p {
-    font-size: 12px !important;
-  }
-  #footer .all .middle a {
-    font-size: 12px !important;
+    margin: 0 !important;
   }
   #footer .all .right {
-    width: 12% !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
-  #footer .all .right img {
-    width: 70% !important;
+  #footer .all .right img:nth-child(1) {
+    margin-bottom: 10px !important;
   }
 }
 
@@ -409,10 +407,11 @@ input::-webkit-inner-spin-button {
     margin-top: 20px !important;
   }
   #footer .all {
-    padding: 6px 0 !important;
+    padding: 10px !important;
+    margin: 0 !important;
   }
   #footer .all .left {
-    width: 15% !important;
+    width: 12% !important;
   }
   #footer .all .left .fblink i {
     font-size: 25px !important;
@@ -421,20 +420,7 @@ input::-webkit-inner-spin-button {
     font-size: 25px !important;
   }
   #footer .all .middle {
-    padding-left: 0 !important;
-    width: 68% !important;
-  }
-  #footer .all .middle p {
-    font-size: 12px !important;
-  }
-  #footer .all .middle a {
-    font-size: 12px !important;
-  }
-  #footer .all .right {
-    width: 15% !important;
-  }
-  #footer .all .right img {
-    width: 25% !important;
+    margin: 0 !important;
   }
 }
 
@@ -515,26 +501,24 @@ input::-webkit-inner-spin-button {
     width: 100% !important;
     margin-top: 20px !important;
   }
+  #footer .all {
+    padding: 10px !important;
+    margin: 0 !important;
+  }
   #footer .all .left {
-    width: 12% !important;
+    width: 8% !important;
   }
   #footer .all .left .fblink i {
-    font-size: 30px;
-    color: #042268;
+    font-size: 25px !important;
   }
   #footer .all .left .instalink i {
-    font-size: 30px;
-    color: #C13584;
+    font-size: 25px !important;
   }
   #footer .all .middle {
-    padding-left: 0px !important;
-    width: 70% !important;
+    margin: 0 !important;
   }
   #footer .all .right {
-    width: 15% !important;
-  }
-  #footer .all .right img {
-    width: 25% !important;
+    width: 10% !important;
   }
 }
 
@@ -760,7 +744,7 @@ input::-webkit-inner-spin-button {
   #loginmain .all form .inputkeeper span {
     letter-spacing: 2px !important;
     font-size: 14px !important;
-    padding-bottom: 5px !important;
+    padding-bottom: 6px !important;
   }
   #loginmain .all form .inputkeeper input {
     font-size: 14px !important;
@@ -1685,26 +1669,8 @@ input::-webkit-inner-spin-button {
   background-color: grey;
 }
 
-#myaccountmain .all table td:last-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#myaccountmain .all table td:last-child .slash {
-  font-size: 25px;
-  font-family: var(--montmedium);
-  margin: 0 5px;
-}
-
 #myaccountmain .all table td a {
-  padding: 5px;
+  padding: 10px;
   font-size: 14px;
   background-color: #042268;
   color: white;
@@ -1801,11 +1767,6 @@ input::-webkit-inner-spin-button {
     padding: 5px 0 !important;
     font-size: 12px !important;
   }
-  #myaccountmain .all table td:last-child .slash {
-    font-size: 20px !important;
-    font-family: var(--montlight) !important;
-    margin: 0 3px !important;
-  }
   #myaccountmain .all table td a {
     font-size: 12px !important;
     padding: 8px 3px !important;
@@ -1877,10 +1838,6 @@ input::-webkit-inner-spin-button {
   }
   #myaccountmain .all table td {
     padding: 7px 0 !important;
-  }
-  #myaccountmain .all table td:last-child .slash {
-    font-size: 20px !important;
-    font-family: var(--montlight) !important;
   }
 }
 
@@ -1978,10 +1935,6 @@ input::-webkit-inner-spin-button {
   }
   #myaccountmain .all table td {
     padding: 7px 0 !important;
-  }
-  #myaccountmain .all table td:last-child .slash {
-    font-size: 20px !important;
-    font-family: var(--montlight) !important;
   }
 }
 
@@ -4010,6 +3963,19 @@ input::-webkit-inner-spin-button {
   background-color: #e9e9e9;
 }
 
+#footer .creator {
+  text-align: center;
+  font-size: 12px;
+  color: #042268;
+  border-top: 0.5px solid #0838a781;
+}
+
+#footer .creator a {
+  text-align: center;
+  font-size: 14px;
+  color: #042268;
+}
+
 #footer .all {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4022,7 +3988,7 @@ input::-webkit-inner-spin-button {
           align-items: center;
   margin: 0;
   padding: 0;
-  padding: 4px 0;
+  padding: 10px 20px;
 }
 
 #footer .all .left {
@@ -4054,33 +4020,10 @@ input::-webkit-inner-spin-button {
 }
 
 #footer .all .middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0;
   padding: 0;
-  padding-left: 20px;
-}
-
-#footer .all .middle p {
   text-align: center;
   font-size: 14px;
   color: #042268;
-}
-
-#footer .all .middle a {
-  text-align: center;
-  font-size: 14px;
-  color: #042268;
-  width: 100%;
 }
 
 #footer .all .right {
@@ -4098,6 +4041,6 @@ input::-webkit-inner-spin-button {
 }
 
 #footer .all .right img {
-  width: 30%;
+  width: 40%;
 }
 /*# sourceMappingURL=style.css.map */

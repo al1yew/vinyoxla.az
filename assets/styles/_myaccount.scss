@@ -177,20 +177,8 @@
                     background-color: grey;
                 }
 
-                &:last-child {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    .slash {
-                        font-size: 25px;
-                        font-family: var(--montmedium);
-                        margin: 0 5px;
-                    }
-                }
-
                 a {
-                    padding: 5px;
+                    padding: 10px;
                     font-size: 14px;
                     background-color: #042268;
                     color: white;
@@ -300,15 +288,6 @@
                     padding: 5px 0 !important;
                     font-size: 12px !important;
 
-                    &:last-child {
-
-                        .slash {
-                            font-size: 20px !important;
-                            font-family: var(--montlight) !important;
-                            margin: 0 3px !important;
-                        }
-                    }
-
                     a {
                         font-size: 12px !important;
                         padding: 8px 3px !important;
@@ -400,14 +379,6 @@
             table {
                 td {
                     padding: 7px 0 !important;
-
-                    &:last-child {
-
-                        .slash {
-                            font-size: 20px !important;
-                            font-family: var(--montlight) !important;
-                        }
-                    }
                 }
             }
         }
@@ -507,14 +478,6 @@
             table {
                 td {
                     padding: 7px 0 !important;
-
-                    &:last-child {
-
-                        .slash {
-                            font-size: 20px !important;
-                            font-family: var(--montlight) !important;
-                        }
-                    }
                 }
             }
         }

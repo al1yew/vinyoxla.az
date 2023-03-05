@@ -185,47 +185,41 @@
     }
 
     #footer {
-        margin-top: 20px !important;
+        margin: 0 !important;
 
         .all {
-            padding: 6px 0 !important;
+            padding: 4px 10px !important;
+            margin: 0 !important;
 
             .left {
-                width: 15% !important;
-                flex-direction: column;
+                display: flex !important;
+                flex-direction: column !important;
 
                 .fblink {
                     i {
-                        font-size: 25px !important;
+                        font-size: 22px !important;
                     }
                 }
 
                 .instalink {
                     i {
-                        font-size: 25px !important;
+                        font-size: 22px !important;
                     }
                 }
             }
 
             .middle {
-                padding-left: 0 !important;
-                width: 72% !important;
-
-                p {
-                    font-size: 12px !important;
-                }
-
-                a {
-                    font-size: 12px !important;
-                }
+                margin: 0 !important;
             }
 
             .right {
-                width: 12% !important;
-                flex-direction: column;
+                display: flex !important;
+                flex-direction: column !important;
 
                 img {
-                    width: 70% !important;
+                    &:nth-child(1) {
+                        margin-bottom: 10px !important;
+                    }
                 }
             }
         }
@@ -370,10 +364,11 @@
         margin-top: 20px !important;
 
         .all {
-            padding: 6px 0 !important;
+            padding: 10px !important;
+            margin: 0 !important;
 
             .left {
-                width: 15% !important;
+                width: 12% !important;
 
                 .fblink {
                     i {
@@ -389,24 +384,7 @@
             }
 
             .middle {
-                padding-left: 0 !important;
-                width: 68% !important;
-
-                p {
-                    font-size: 12px !important;
-                }
-
-                a {
-                    font-size: 12px !important;
-                }
-            }
-
-            .right {
-                width: 15% !important;
-
-                img {
-                    width: 25% !important;
-                }
+                margin: 0 !important;
             }
         }
     }
@@ -524,36 +502,31 @@
     #footer {
 
         .all {
+            padding: 10px !important;
+            margin: 0 !important;
 
             .left {
-                width: 12% !important;
+                width: 8% !important;
 
                 .fblink {
                     i {
-                        font-size: 30px;
-                        color: #042268;
+                        font-size: 25px !important;
                     }
                 }
 
                 .instalink {
                     i {
-                        font-size: 30px;
-                        color: #C13584;
+                        font-size: 25px !important;
                     }
                 }
             }
 
             .middle {
-                padding-left: 0px !important;
-                width: 70% !important;
+                margin: 0 !important;
             }
 
             .right {
-                width: 15% !important;
-
-                img {
-                    width: 25% !important;
-                }
+                width: 10% !important;
             }
         }
     }
