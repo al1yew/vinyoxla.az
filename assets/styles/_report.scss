@@ -1,7 +1,8 @@
 #reportmain {
-    width: 100%;
-    padding: 0;
+    width: 100% !important;
+    padding: 8px !important;
     margin: 0;
+    max-width: 20000px !important;
     position: relative;
 
     .klassdlacssdownloadreport {
@@ -43,6 +44,9 @@
 
 @media(max-width: 576px) {
     #reportmain {
+        width: fit-content !important;
+        max-width: 20000px !important;
+        padding: 8px !important;
 
         .klassdlacssdownloadreport {
             right: 1% !important;
