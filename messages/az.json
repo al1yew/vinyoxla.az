@@ -1,0 +1,283 @@
+{
+  "brand": {
+    "name": "vinyoxla.az",
+    "owner": "Garant Auto MMC",
+    "developerCredit": "Done by Vasif Aliyev",
+    "developerUrl": "https://vasifaliyev.com"
+  },
+  "common": {
+    "azn": "AZN",
+    "loading": "Yüklənir...",
+    "search": "Axtar",
+    "continue": "Davam et",
+    "buy": "Almaq",
+    "buySelected": "Seçilənləri al",
+    "retry": "Yenidən cəhd et",
+    "close": "Bağla",
+    "cancel": "Ləğv et",
+    "confirm": "Təsdiqlə",
+    "save": "Yadda saxla",
+    "open": "Aç",
+    "contactSupport": "Dəstəklə əlaqə",
+    "whatsapp": "WhatsApp",
+    "phone": "Telefon",
+    "balance": "Balans",
+    "status": "Status",
+    "type": "Növ",
+    "date": "Tarix",
+    "price": "Qiymət",
+    "vin": "VIN",
+    "vehicle": "Avtomobil",
+    "year": "Buraxılış ili",
+    "records": "Məlumat sayı",
+    "selected": "Seçildi",
+    "select": "Seç",
+    "remove": "Sil",
+    "all": "Hamısı",
+    "from": "Başlanğıc",
+    "to": "Son",
+    "page": "Səhifə",
+    "previous": "Geri",
+    "next": "Növbəti",
+    "empty": "Məlumat tapılmadı",
+    "networkError": "Şəbəkə xətası baş verdi. Bir az sonra yenidən yoxlayın.",
+    "unauthorized": "Sessiyanız bitib. Zəhmət olmasa yenidən daxil olun.",
+    "validationError": "Məlumatları yoxlayın və yenidən cəhd edin.",
+    "serverError": "Serverdə xəta baş verdi. Dəstək komandamızla əlaqə saxlaya bilərsiniz.",
+    "menu": "Menyu",
+    "lightMode": "Açıq rejim",
+    "darkMode": "Tünd rejim",
+    "language": "Dil",
+    "securePayment": "Təhlükəsiz ödəniş",
+    "fastDelivery": "Sürətli təqdimat"
+  },
+  "nav": {
+    "about": "Haqqımızda",
+    "reviews": "Rəylər",
+    "login": "Daxil ol",
+    "account": "Hesabım",
+    "logout": "Çıxış",
+    "privacy": "Məxfilik",
+    "terms": "Şərtlər"
+  },
+  "footer": {
+    "description": "vinyoxla.az Garant Auto MMC-nin məhsuludur.",
+    "linksTitle": "Keçidlər",
+    "contactTitle": "Əlaqə",
+    "paymentTitle": "Ödəniş üsulları",
+    "rights": "Bütün hüquqlar qorunur.",
+    "whatsappLabel": "WhatsApp ilə yazın",
+    "phoneLabel": "+994 51 555 55 77"
+  },
+  "hero": {
+    "eyebrow": "Azərbaycanda VIN yoxlama xidməti",
+    "title": "Avtomobili almadan əvvəl tarixçəsini yoxlayın",
+    "subtitle": "VIN kodu daxil edin, Carfax və AutoCheck üzrə mövcud hesabatları görün, uyğun məhsulu seçin və təhlükəsiz ödənişlə əldə edin.",
+    "placeholder": "AAAAA11A11A111111",
+    "inputLabel": "VIN kod",
+    "errorRequired": "VIN kodu daxil edin.",
+    "errorInvalid": "VIN kod 17 simvol olmalı və I, O, Q hərflərini ehtiva etməməlidir.",
+    "trust1": "Carfax və AutoCheck məlumatları",
+    "trust2": "Azərbaycan üzrə dəstək",
+    "trust3": "Bank yönləndirməsi ilə ödəniş",
+    "searching": "Yoxlanılır..."
+  },
+  "home": {
+    "resultTitle": "Tapılan hesabatlar",
+    "resultSubtitle": "Aşağıdakı məhsullardan birini və ya hər ikisini seçərək alışa davam edin.",
+    "bundleTitle": "Daha dolğun yoxlama",
+    "bundleText": "Hər iki hesabatı birlikdə seçin və 15% qənaət edin.",
+    "noSelection": "Davam etmək üçün ən azı bir hesabat seçin.",
+    "selectionSaved": "Seçiminiz saxlandı.",
+    "badges": {
+      "delivery": "Sürətli təqdimat",
+      "payment": "Təhlükəsiz ödəniş",
+      "reports": "Avtomobil tarixçəsi hesabatları",
+      "support": "Azərbaycan dəstəyi"
+    },
+    "products": {
+      "carfax": {
+        "title": "Carfax hesabatı",
+        "description": "ABŞ və Kanada bazarı üzrə servis, qəza, sahiblilik və qeydiyyat məlumatları."
+      },
+      "autocheck": {
+        "title": "AutoCheck hesabatı",
+        "description": "Hərrac və tarixçə məlumatlarını müqayisəli görmək üçün əlavə mənbə."
+      }
+    },
+    "faqTitle": "VIN yoxlama haqqında",
+    "faq": {
+      "q1": "VIN kod nədir?",
+      "a1": "VIN avtomobilə verilən unikal 17 simvollu identifikasiya nömrəsidir.",
+      "q2": "Niyə iki hesabat almaq faydalıdır?",
+      "a2": "Məlumat bazaları fərqli mənbələrdən istifadə edir. Carfax və AutoCheck birlikdə daha geniş mənzərə yarada bilər.",
+      "q3": "Hesabatı harada görəcəyəm?",
+      "a3": "Satın aldığınız hesabatlar hesabınızda saxlanılır və istənilən vaxt açılır."
+    }
+  },
+  "auth": {
+    "title": "Telefon nömrəsi ilə giriş",
+    "subtitle": "Qeydiyyat lazım deyil. Azərbaycan mobil nömrənizi yazın, SMS kodu ilə daxil olun.",
+    "phoneLabel": "Telefon nömrəniz",
+    "phonePlaceholder": "50 555 55 55",
+    "sendCode": "Kodu göndər",
+    "sendingCode": "Kod göndərilir...",
+    "otpLabel": "SMS kod",
+    "otpPlaceholder": "1234",
+    "verify": "Daxil ol",
+    "verifying": "Yoxlanılır...",
+    "codeSent": "SMS kod göndərildi. Test üçün 1111 və ya 1234 istifadə edə bilərsiniz.",
+    "invalidPhone": "Azərbaycan mobil nömrəsini düzgün yazın.",
+    "invalidOtp": "OTP kodu 4 rəqəm olmalıdır.",
+    "loginSuccess": "Uğurla daxil oldunuz.",
+    "alreadyLoggedIn": "Siz artıq hesaba daxil olmusunuz."
+  },
+  "checkout": {
+    "title": "Alışı təsdiqləyin",
+    "subtitle": "Seçilmiş hesabatları yoxlayın, endirimi görün və ödənişi tamamlayın.",
+    "summary": "Sifariş xülasəsi",
+    "products": "Seçilmiş məhsullar",
+    "subtotal": "Ara cəm",
+    "discount": "Endirim",
+    "total": "Cəmi",
+    "currentBalance": "Cari balans",
+    "addProduct": "Hesabata əlavə et",
+    "removeProduct": "Sifarişdən çıxar",
+    "confirmBuy": "Təsdiqlə və al",
+    "confirming": "Təsdiqlənir...",
+    "empty": "Aktiv VIN seçimi tapılmadı.",
+    "paidFromBalance": "Alış balansınızdan ödənildi.",
+    "paymentRequired": "Balans kifayət etmir. Bank ödəniş səhifəsinə yönləndirilirsiniz.",
+    "bundleSuggestion": "Hər iki hesabatı al və 15% qənaət et.",
+    "secureNote": "Ödəniş bank səhifəsində tamamlanır. Kart məlumatları vinyoxla.az-da saxlanılmır."
+  },
+  "payment": {
+    "successTitle": "Ödəniş tamamlandı",
+    "successText": "Alışınız uğurla tamamlandı. Hesabatlarınızı hesabınızdan aça bilərsiniz.",
+    "errorTitle": "Ödəniş alınmadı",
+    "errorText": "Ödəniş ləğv edildi və ya bank tərəfindən təsdiqlənmədi.",
+    "reportsButton": "Hesabatlara keç",
+    "retryButton": "Checkout-a qayıt"
+  },
+  "account": {
+    "title": "Hesabım",
+    "subtitle": "Telefon nömrəniz, balansınız və satın aldığınız hesabatlar.",
+    "phone": "Telefon",
+    "topUp": "Balansı artır",
+    "topUpTitle": "Balans artırma",
+    "topUpNote": "Daha böyük balans yükləyərək hesabatları daha sürətli alın. Gələcəkdə böyük depozitlər üçün endirimlər tətbiq oluna bilər.",
+    "customAmount": "Fərdi məbləğ",
+    "confirmTopUp": "Ödənişə keç",
+    "topUpLoading": "Ödəniş yaradılır...",
+    "invalidAmount": "Məbləğ ən azı 1 AZN olmalıdır.",
+    "reportsTitle": "Hesabatlarım",
+    "reportsSubtitle": "VIN, tarix, hesabat növü və status üzrə filtrləyin.",
+    "vinSearch": "VIN üzrə axtar",
+    "reportType": "Hesabat növü",
+    "dateFrom": "Tarixdən",
+    "dateTo": "Tarixədək",
+    "sortBy": "Sırala",
+    "sortDirection": "İstiqamət",
+    "pageSize": "Səhifə ölçüsü",
+    "openReport": "Hesabata bax",
+    "noReports": "Hələ satın alınmış hesabat yoxdur.",
+    "successNotice": "Alış tamamlandı. Hesabatlarınız aşağıdadır.",
+    "statuses": {
+      "success": "Hazır",
+      "failed": "Xəta",
+      "pending": "Gözləyir"
+    },
+    "sort": {
+      "date": "Tarix",
+      "vin": "VIN",
+      "type": "Növ",
+      "asc": "Artan",
+      "desc": "Azalan"
+    }
+  },
+  "reviews": {
+    "title": "Müştəri rəyləri",
+    "subtitle": "Avtomobil almadan əvvəl daha inamlı qərar verən istifadəçilərin fikirləri.",
+    "formTitle": "Rəy yazın",
+    "name": "Adınız",
+    "rating": "Qiymət",
+    "comment": "Şərh",
+    "submit": "Rəyi göndər",
+    "submitting": "Göndərilir...",
+    "success": "Rəyiniz üçün təşəkkür edirik.",
+    "invalidName": "Ad ən azı 2 simvol olmalıdır.",
+    "invalidComment": "Şərh ən azı 10 simvol olmalıdır.",
+    "invalidRating": "Qiymət 1 ilə 5 arasında olmalıdır."
+  },
+  "about": {
+    "title": "Haqqımızda",
+    "subtitle": "vinyoxla.az Garant Auto MMC tərəfindən yaradılmış avtomobil tarixçəsi yoxlama platformasıdır.",
+    "ownerLine": "vinyoxla.az “GARANT AUTO” MMC-nin məhsuludur.",
+    "taxId": "“GARANT AUTO” MMC VÖEN: 1505094141",
+    "address": "71A Hüseynqulu Sarabski küçəsi, AZ1022, Bakı",
+    "customOffers": "Individual təkliflər və fərdi paketlər üçün bizimlə əlaqə saxlayın.",
+    "body": "“GARANT AUTO” MMC uzun müddətdir avtomobil çatdırılma sahəsində fəaliyyət göstərən peşəkar şirkətdir. Avtomobil alışı zamanı seçdiyiniz avtomobilin əvvəlki təmir və zədələri haqqında məlumatları onlayn platforma vasitəsi ilə əldə edə bilməyiniz üçün vinyoxla.az portalı yaradılmışdır. Artıq avtomobilin VIN kodunu daxil edərək məlumatlara rahatlıqla sahib ola bilərsiniz. Daxil etdiyiniz VIN kodun və seçdiyiniz məlumat bazasının düzgün olduğundan əmin olun. Satın alınan məlumat toplusu sənədi geri qaytarılmır. Satın al düyməsini kliklədikdə şərtlərimiz ilə razılaşmış olursunuz.",
+    "whyTitle": "Niyə VIN yoxlama vacibdir?",
+    "whyText": "İdxal və ikinci əl avtomobil alışında tarixçə məlumatları qərarı daha şəffaf edir: qəza qeydləri, servis tarixçəsi, sahiblilik və hərrac məlumatlarını əvvəlcədən görmək riskləri azaldır.",
+    "call": "Zəng edin",
+    "write": "WhatsApp yazın"
+  },
+  "legal": {
+    "privacyTitle": "Məxfilik siyasəti",
+    "privacyBody": "vinyoxla.az yalnız xidməti göstərmək üçün lazım olan məlumatları emal edir: telefon nömrəsi, VIN sorğuları, ödəniş statusu və satın alınmış hesabatlara giriş linkləri. Kart məlumatları bank səhifəsində emal olunur və bizdə saxlanılmır. Məlumatlar hesabınızı, balansınızı və hesabat girişlərini idarə etmək üçün istifadə olunur.",
+    "termsTitle": "İstifadə şərtləri",
+    "termsBody": "VIN kodu və seçilən hesabat bazası istifadəçi tərəfindən yoxlanılmalıdır. Satın alınan rəqəmsal hesabatlar geri qaytarılmır. Ödəniş tamamlandıqdan sonra hesabat linkləri hesabınızda göstərilir. Xidmət məlumat mənbələrinin mövcudluğundan asılıdır və texniki xəta zamanı dəstək komandamızla əlaqə saxlaya bilərsiniz."
+  },
+  "seo": {
+    "home": {
+      "title": "VIN yoxlama və Carfax hesabatı Azərbaycanda | vinyoxla.az",
+      "description": "VIN kodu yoxlayın, Carfax və AutoCheck hesabatlarını Azərbaycanda alın. Avtomobil tarixçəsi, qəza, servis və qeydiyyat məlumatlarını rahat əldə edin.",
+      "keywords": "VIN yoxlama, Carfax Azerbaijan, AutoCheck Azerbaijan, avtomobil tarixçəsi, VIN check, vehicle history report"
+    },
+    "login": {
+      "title": "Daxil ol | vinyoxla.az",
+      "description": "Azərbaycan telefon nömrəsi və SMS OTP ilə vinyoxla.az hesabınıza təhlükəsiz daxil olun.",
+      "keywords": "vinyoxla login, SMS OTP, VIN hesabat hesabı"
+    },
+    "checkout": {
+      "title": "Checkout | VIN hesabatı alışı",
+      "description": "Seçilmiş Carfax və AutoCheck VIN hesabatlarını yoxlayın və ödənişi tamamlayın.",
+      "keywords": "VIN hesabat alışı, Carfax al, AutoCheck al, balans ödənişi"
+    },
+    "account": {
+      "title": "Hesabım və hesabatlarım | vinyoxla.az",
+      "description": "Balansınızı, telefon nömrənizi və satın aldığınız VIN hesabatlarını idarə edin.",
+      "keywords": "VIN hesabatlarım, vinyoxla hesab, Carfax hesabat"
+    },
+    "about": {
+      "title": "Haqqımızda və əlaqə | vinyoxla.az",
+      "description": "Garant Auto MMC tərəfindən təqdim olunan vinyoxla.az platforması və əlaqə məlumatları.",
+      "keywords": "Garant Auto MMC, vinyoxla əlaqə, VIN yoxlama Bakı"
+    },
+    "reviews": {
+      "title": "Müştəri rəyləri | vinyoxla.az",
+      "description": "vinyoxla.az istifadəçilərinin VIN yoxlama və avtomobil tarixçəsi hesabatları barədə rəyləri.",
+      "keywords": "VIN yoxlama rəylər, Carfax rəylər, vinyoxla rəylər"
+    },
+    "privacy": {
+      "title": "Məxfilik siyasəti | vinyoxla.az",
+      "description": "Telefon nömrəsi, VIN sorğuları, ödəniş və hesabat girişləri üzrə məxfilik siyasəti.",
+      "keywords": "vinyoxla məxfilik, VIN məlumatları, ödəniş məxfiliyi"
+    },
+    "terms": {
+      "title": "İstifadə şərtləri | vinyoxla.az",
+      "description": "vinyoxla.az üzərindən VIN hesabatı almaq və istifadə qaydaları.",
+      "keywords": "vinyoxla şərtlər, VIN hesabat qaydaları, Carfax şərtlər"
+    },
+    "paymentSuccess": {
+      "title": "Ödəniş uğurludur | vinyoxla.az",
+      "description": "VIN hesabatı üzrə ödənişiniz tamamlandı.",
+      "keywords": "VIN hesabat ödənişi, uğurlu ödəniş"
+    },
+    "paymentError": {
+      "title": "Ödəniş alınmadı | vinyoxla.az",
+      "description": "VIN hesabatı üzrə ödəniş tamamlanmadı və ya ləğv edildi.",
+      "keywords": "ödəniş xətası, VIN hesabat ödənişi"
+    }
+  }
+}

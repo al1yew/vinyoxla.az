@@ -1,0 +1,283 @@
+{
+  "brand": {
+    "name": "vinyoxla.az",
+    "owner": "Garant Auto LLC",
+    "developerCredit": "Done by Vasif Aliyev",
+    "developerUrl": "https://vasifaliyev.com"
+  },
+  "common": {
+    "azn": "AZN",
+    "loading": "Loading...",
+    "search": "Search",
+    "continue": "Continue",
+    "buy": "Buy",
+    "buySelected": "Buy selected",
+    "retry": "Try again",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "open": "Open",
+    "contactSupport": "Contact support",
+    "whatsapp": "WhatsApp",
+    "phone": "Phone",
+    "balance": "Balance",
+    "status": "Status",
+    "type": "Type",
+    "date": "Date",
+    "price": "Price",
+    "vin": "VIN",
+    "vehicle": "Vehicle",
+    "year": "Year",
+    "records": "Records",
+    "selected": "Selected",
+    "select": "Select",
+    "remove": "Remove",
+    "all": "All",
+    "from": "From",
+    "to": "To",
+    "page": "Page",
+    "previous": "Previous",
+    "next": "Next",
+    "empty": "No data found",
+    "networkError": "A network error occurred. Please try again shortly.",
+    "unauthorized": "Your session has expired. Please log in again.",
+    "validationError": "Check the information and try again.",
+    "serverError": "A server error occurred. You can contact our support team.",
+    "menu": "Menu",
+    "lightMode": "Light mode",
+    "darkMode": "Dark mode",
+    "language": "Language",
+    "securePayment": "Secure payment",
+    "fastDelivery": "Fast delivery"
+  },
+  "nav": {
+    "about": "About",
+    "reviews": "Reviews",
+    "login": "Log in",
+    "account": "Account",
+    "logout": "Logout",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "footer": {
+    "description": "vinyoxla.az is a product of Garant Auto LLC.",
+    "linksTitle": "Links",
+    "contactTitle": "Contact",
+    "paymentTitle": "Payment methods",
+    "rights": "All rights reserved.",
+    "whatsappLabel": "Message on WhatsApp",
+    "phoneLabel": "+994 51 555 55 77"
+  },
+  "hero": {
+    "eyebrow": "VIN check service in Azerbaijan",
+    "title": "Check the vehicle history before you buy",
+    "subtitle": "Enter a VIN, view available Carfax and AutoCheck reports, choose the right product and purchase securely.",
+    "placeholder": "AAAAA11A11A111111",
+    "inputLabel": "VIN code",
+    "errorRequired": "Enter a VIN code.",
+    "errorInvalid": "VIN must be 17 characters and must not contain I, O or Q.",
+    "trust1": "Carfax and AutoCheck data",
+    "trust2": "Support in Azerbaijan",
+    "trust3": "Payment via bank redirect",
+    "searching": "Checking..."
+  },
+  "home": {
+    "resultTitle": "Available reports",
+    "resultSubtitle": "Choose one or both products below and continue to purchase.",
+    "bundleTitle": "More complete check",
+    "bundleText": "Select both reports together and save 15%.",
+    "noSelection": "Select at least one report to continue.",
+    "selectionSaved": "Your selection has been saved.",
+    "badges": {
+      "delivery": "Fast delivery",
+      "payment": "Secure payment",
+      "reports": "Vehicle history reports",
+      "support": "Azerbaijan support"
+    },
+    "products": {
+      "carfax": {
+        "title": "Carfax report",
+        "description": "Service, accident, ownership and registration records for the US and Canada markets."
+      },
+      "autocheck": {
+        "title": "AutoCheck report",
+        "description": "An additional source for comparing auction and vehicle history information."
+      }
+    },
+    "faqTitle": "About VIN checks",
+    "faq": {
+      "q1": "What is a VIN?",
+      "a1": "VIN is a unique 17-character identification number assigned to a vehicle.",
+      "q2": "Why is buying two reports useful?",
+      "a2": "Databases use different sources. Carfax and AutoCheck together can create a broader picture.",
+      "q3": "Where will I see the report?",
+      "a3": "Purchased reports are stored in your account and can be opened at any time."
+    }
+  },
+  "auth": {
+    "title": "Log in with phone number",
+    "subtitle": "No registration needed. Enter your Azerbaijani mobile number and sign in with an SMS code.",
+    "phoneLabel": "Your phone number",
+    "phonePlaceholder": "50 555 55 55",
+    "sendCode": "Send code",
+    "sendingCode": "Sending code...",
+    "otpLabel": "SMS code",
+    "otpPlaceholder": "1234",
+    "verify": "Log in",
+    "verifying": "Verifying...",
+    "codeSent": "SMS code sent. For testing, use 1111 or 1234.",
+    "invalidPhone": "Enter a valid Azerbaijani mobile number.",
+    "invalidOtp": "OTP code must contain 4 digits.",
+    "loginSuccess": "You are logged in.",
+    "alreadyLoggedIn": "You are already logged in."
+  },
+  "checkout": {
+    "title": "Confirm purchase",
+    "subtitle": "Review selected reports, see the discount and complete payment.",
+    "summary": "Order summary",
+    "products": "Selected products",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "total": "Total",
+    "currentBalance": "Current balance",
+    "addProduct": "Add to order",
+    "removeProduct": "Remove from order",
+    "confirmBuy": "Confirm and buy",
+    "confirming": "Confirming...",
+    "empty": "No active VIN selection found.",
+    "paidFromBalance": "The purchase was paid from your balance.",
+    "paymentRequired": "Your balance is not enough. Redirecting to the bank payment page.",
+    "bundleSuggestion": "Buy both reports and save 15%.",
+    "secureNote": "Payment is completed on the bank page. Card data is not stored on vinyoxla.az."
+  },
+  "payment": {
+    "successTitle": "Payment completed",
+    "successText": "Your purchase was completed successfully. You can open your reports from your account.",
+    "errorTitle": "Payment failed",
+    "errorText": "The payment was cancelled or not approved by the bank.",
+    "reportsButton": "Go to reports",
+    "retryButton": "Return to checkout"
+  },
+  "account": {
+    "title": "My account",
+    "subtitle": "Your phone number, balance and purchased reports.",
+    "phone": "Phone",
+    "topUp": "Top up",
+    "topUpTitle": "Top up balance",
+    "topUpNote": "Load a larger balance to buy reports faster. Future discounts may apply for larger deposits.",
+    "customAmount": "Custom amount",
+    "confirmTopUp": "Continue to payment",
+    "topUpLoading": "Creating payment...",
+    "invalidAmount": "Amount must be at least 1 AZN.",
+    "reportsTitle": "My reports",
+    "reportsSubtitle": "Filter by VIN, date, report type and status.",
+    "vinSearch": "Search by VIN",
+    "reportType": "Report type",
+    "dateFrom": "Date from",
+    "dateTo": "Date to",
+    "sortBy": "Sort by",
+    "sortDirection": "Direction",
+    "pageSize": "Page size",
+    "openReport": "Open report",
+    "noReports": "There are no purchased reports yet.",
+    "successNotice": "Purchase completed. Your reports are below.",
+    "statuses": {
+      "success": "Ready",
+      "failed": "Failed",
+      "pending": "Pending"
+    },
+    "sort": {
+      "date": "Date",
+      "vin": "VIN",
+      "type": "Type",
+      "asc": "Ascending",
+      "desc": "Descending"
+    }
+  },
+  "reviews": {
+    "title": "Customer reviews",
+    "subtitle": "Thoughts from users who made more confident car-buying decisions.",
+    "formTitle": "Write a review",
+    "name": "Your name",
+    "rating": "Rating",
+    "comment": "Comment",
+    "submit": "Submit review",
+    "submitting": "Submitting...",
+    "success": "Thank you for your review.",
+    "invalidName": "Name must be at least 2 characters.",
+    "invalidComment": "Comment must be at least 10 characters.",
+    "invalidRating": "Rating must be between 1 and 5."
+  },
+  "about": {
+    "title": "About us",
+    "subtitle": "vinyoxla.az is a vehicle history checking platform created by Garant Auto LLC.",
+    "ownerLine": "vinyoxla.az is a product of GARANT AUTO LLC.",
+    "taxId": "GARANT AUTO LLC tax ID: 1505094141",
+    "address": "71A Huseyngulu Sarabski Street, AZ1022, Baku",
+    "customOffers": "Contact us for individual offers and custom packages.",
+    "body": "GARANT AUTO LLC is a professional company with long-term experience in vehicle delivery. vinyoxla.az was created so car buyers can access information about previous repairs and damages online before purchasing a vehicle. You can now enter a vehicle VIN code and receive information easily. Please make sure the VIN code and selected data source are correct. Purchased digital report documents are non-refundable. By clicking the buy button, you accept our terms.",
+    "whyTitle": "Why is VIN checking important?",
+    "whyText": "For imported and used cars, history data makes the decision more transparent: accident records, service history, ownership and auction information can reduce risk before purchase.",
+    "call": "Call",
+    "write": "Write on WhatsApp"
+  },
+  "legal": {
+    "privacyTitle": "Privacy policy",
+    "privacyBody": "vinyoxla.az processes only the information needed to provide the service: phone number, VIN requests, payment status and access links to purchased reports. Card data is processed on the bank page and is not stored by us. Data is used to manage your account, balance and report access.",
+    "termsTitle": "Terms of use",
+    "termsBody": "The VIN code and selected report database must be checked by the user. Purchased digital reports are non-refundable. After payment is completed, report links are shown in your account. The service depends on the availability of data sources, and you can contact our support team if a technical error occurs."
+  },
+  "seo": {
+    "home": {
+      "title": "VIN check and Carfax reports in Azerbaijan | vinyoxla.az",
+      "description": "Check a VIN code and buy Carfax and AutoCheck reports in Azerbaijan. Access vehicle history, accident, service and registration data.",
+      "keywords": "VIN check, Carfax Azerbaijan, AutoCheck Azerbaijan, vehicle history, vehicle history report"
+    },
+    "login": {
+      "title": "Log in | vinyoxla.az",
+      "description": "Securely log in to your vinyoxla.az account with Azerbaijani phone number and SMS OTP.",
+      "keywords": "vinyoxla login, SMS OTP, VIN report account"
+    },
+    "checkout": {
+      "title": "Checkout | VIN report purchase",
+      "description": "Review selected Carfax and AutoCheck VIN reports and complete payment.",
+      "keywords": "VIN report purchase, buy Carfax, buy AutoCheck, balance payment"
+    },
+    "account": {
+      "title": "My account and reports | vinyoxla.az",
+      "description": "Manage your balance, phone number and purchased VIN reports.",
+      "keywords": "my VIN reports, vinyoxla account, Carfax report"
+    },
+    "about": {
+      "title": "About and contact | vinyoxla.az",
+      "description": "The vinyoxla.az platform by Garant Auto LLC and contact information.",
+      "keywords": "Garant Auto LLC, vinyoxla contact, VIN check Baku"
+    },
+    "reviews": {
+      "title": "Customer reviews | vinyoxla.az",
+      "description": "Reviews from vinyoxla.az users about VIN checks and vehicle history reports.",
+      "keywords": "VIN check reviews, Carfax reviews, vinyoxla reviews"
+    },
+    "privacy": {
+      "title": "Privacy policy | vinyoxla.az",
+      "description": "Privacy policy for phone number, VIN requests, payments and report access.",
+      "keywords": "vinyoxla privacy, VIN data, payment privacy"
+    },
+    "terms": {
+      "title": "Terms of use | vinyoxla.az",
+      "description": "Rules for buying and using VIN reports on vinyoxla.az.",
+      "keywords": "vinyoxla terms, VIN report rules, Carfax terms"
+    },
+    "paymentSuccess": {
+      "title": "Payment successful | vinyoxla.az",
+      "description": "Your VIN report payment has been completed.",
+      "keywords": "VIN report payment, successful payment"
+    },
+    "paymentError": {
+      "title": "Payment failed | vinyoxla.az",
+      "description": "Your VIN report payment was not completed or was cancelled.",
+      "keywords": "payment error, VIN report payment"
+    }
+  }
+}

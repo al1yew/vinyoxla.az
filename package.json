@@ -1,5 +1,33 @@
 {
+  "name": "vinyoxla-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "gettypes": "npx openapi-typescript@5.4.2 http://localhost:5222/swagger/v1/swagger.json --output utils/api/api.ts"
+  },
   "dependencies": {
-    "axios": "^1.2.1"
+    "axios": "1.16.1",
+    "clsx": "2.1.1",
+    "lucide-react": "1.15.0",
+    "next": "16.2.6",
+    "next-intl": "4.12.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.3.0",
+    "@types/node": "22.10.10",
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.18.0",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "4.3.0",
+    "typescript": "5.7.3"
   }
 }

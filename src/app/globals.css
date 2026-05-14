@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f7faff;
+  --foreground: #0d1b2a;
+  color-scheme: light;
+}
+
+.dark {
+  --background: #07111f;
+  --foreground: #eaf2ff;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(18, 119, 255, 0.12), transparent 34rem),
+    linear-gradient(180deg, var(--background), #ffffff 42%, #f5f8ff);
+  color: var(--foreground);
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(46, 144, 250, 0.24), transparent 34rem),
+    linear-gradient(180deg, var(--background), #08111f 44%, #050a12);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.18);
+}
+
+.container-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin-inline: auto;
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+}
