@@ -9,6 +9,7 @@ import { searchVin } from "@/lib/api/vin";
 import type { Locale } from "@/lib/i18n/routing";
 import type { ReportProductType, VinSearchResult } from "@/lib/api/types";
 import { vinSchema } from "@/lib/validation/schemas";
+import { VIN_CODE_LENGTH, VIN_INPUT_PATTERN } from "@/lib/validation/vin";
 import { normalizeApiError } from "@/lib/api/client";
 import { normalizeVin } from "@/lib/utils/format";
 import { savePendingPurchase } from "@/lib/utils/pending-purchase";
@@ -114,7 +115,9 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
                     value={vin}
                     onChange={(event) => setVin(normalizeVin(event.target.value))}
                     placeholder={t("hero.placeholder")}
-                    maxLength={17}
+                    maxLength={VIN_CODE_LENGTH}
+                    minLength={VIN_CODE_LENGTH}
+                    pattern={VIN_INPUT_PATTERN}
                     autoComplete="off"
                     inputMode="text"
                     className="focus-ring h-14 w-full rounded-lg border border-slate-200 bg-white pl-12 pr-4 text-[16px] font-bold uppercase tracking-[0.08em] text-slate-950 outline-none transition placeholder:font-semibold placeholder:tracking-normal placeholder:text-slate-400 focus:border-blue-500 dark:border-white/10 dark:bg-white/8 dark:text-white dark:placeholder:text-slate-500"

@@ -1,4 +1,5 @@
 import type { Locale } from "@/lib/i18n/routing";
+import { sanitizeVinInput } from "@/lib/validation/vin";
 
 export function formatMoney(amount: number, currency: "AZN" = "AZN") {
   return new Intl.NumberFormat("az-AZ", {
@@ -17,7 +18,7 @@ export function formatDate(value: string, locale: Locale) {
 }
 
 export function normalizeVin(value: string) {
-  return value.toUpperCase().replace(/[^A-HJ-NPR-Z0-9]/g, "").slice(0, 17);
+  return sanitizeVinInput(value);
 }
 
 export function digitsOnly(value: string) {

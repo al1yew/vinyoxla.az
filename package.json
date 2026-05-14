@@ -11,13 +11,16 @@
     "gettypes": "npx openapi-typescript@5.4.2 http://localhost:5222/swagger/v1/swagger.json --output utils/api/api.ts"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
     "axios": "1.16.1",
+    "class-variance-authority": "^0.7.1",
     "clsx": "2.1.1",
     "lucide-react": "1.15.0",
     "next": "16.2.6",
     "next-intl": "4.12.0",
     "react": "19.2.6",
     "react-dom": "19.2.6",
+    "tailwind-merge": "^3.6.0",
     "zod": "4.4.3"
   },
   "devDependencies": {

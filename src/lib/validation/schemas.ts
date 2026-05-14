@@ -1,10 +1,11 @@
 import { z } from "zod";
+import { canonicalizeVin, VIN_CODE_REGEX } from "./vin";
 
 export const vinSchema = z
   .string()
   .trim()
-  .transform((value) => value.toUpperCase())
-  .pipe(z.string().regex(/^[A-HJ-NPR-Z0-9]{17}$/));
+  .transform(canonicalizeVin)
+  .pipe(z.string().regex(VIN_CODE_REGEX));
 
 export const phoneSchema = z
   .string()

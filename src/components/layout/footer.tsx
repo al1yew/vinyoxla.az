@@ -55,8 +55,8 @@ export async function Footer({ locale }: { locale: Locale }) {
             <p className="text-slate-600 dark:text-slate-300">{t("about.address")}</p>
           </div>
           <div className="mt-5 flex items-center gap-3" aria-label={t("footer.paymentTitle")}>
-            <Image src="/assets/images/visa-card-logo-9.png" alt="Visa" width={46} height={24} className="h-6 w-auto" />
-            <Image src="/assets/images/mastercard-logo.png" alt="Mastercard" width={42} height={24} className="h-6 w-auto" />
+            <Image src="/assets/images/visa-card-logo-9.png" alt="Visa" width={78} height={24} />
+            <Image src="/assets/images/mastercard-logo.png" alt="Mastercard" width={30} height={24} />
           </div>
         </div>
       </div>
