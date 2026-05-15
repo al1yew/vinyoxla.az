@@ -117,7 +117,7 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
         <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-[var(--background)] to-transparent" />
 
         <div className="container-shell relative z-10 flex min-h-[calc(100vh-72px)] items-center py-12">
-          <div className="w-full max-w-2xl">
+          <div className="w-full max-w-xl">
             <Badge className="mb-5">{t("hero.eyebrow")}</Badge>
             <h1 className="max-w-3xl text-4xl font-black leading-tight text-slate-950 dark:text-white sm:text-5xl lg:text-6xl">
               {t("hero.title")}
@@ -132,7 +132,7 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
               </label>
               <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
                 <div className="relative">
-                  <Car className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-blue-600 dark:text-blue-300" aria-hidden="true" />
+                  <Car className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 shrink-0 -translate-y-1/2 text-blue-600 dark:text-blue-300" aria-hidden="true" />
                   <Input
                     id="vin"
                     value={vin}
@@ -153,9 +153,9 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
                     disabled={loading}
                     onClick={pasteVin}
                     aria-label={t("hero.pasteLabel")}
-                    className="absolute right-2 top-1/2 h-10 w-10 -translate-y-1/2 text-slate-500 hover:text-blue-700 dark:text-slate-300 dark:hover:text-blue-200"
+                    className="absolute right-2 top-1/2 z-10 h-10 w-10 -translate-y-1/2 text-slate-500 hover:text-blue-700 dark:text-slate-300 dark:hover:text-blue-200"
                   >
-                    <ClipboardPaste className="h-5 w-5" aria-hidden="true" />
+                    <ClipboardPaste className="h-5 w-5 shrink-0" aria-hidden="true" />
                   </Button>
                 </div>
                 <Button type="submit" size="lg" disabled={loading} icon={loading ? <Spinner /> : <Search className="h-5 w-5" aria-hidden="true" />}>
@@ -165,10 +165,10 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
               {error ? <p className="mt-3 px-1 text-sm font-semibold text-red-600 dark:text-red-300">{error}</p> : null}
             </form>
 
-            <div className="mt-6 grid gap-3 text-sm font-semibold text-slate-700 dark:text-slate-200 sm:grid-cols-3">
-              <TrustItem icon={<ShieldCheck className="h-5 w-5" />} text={t("hero.trust1")} />
-              <TrustItem icon={<Headphones className="h-5 w-5" />} text={t("hero.trust2")} />
-              <TrustItem icon={<CreditCard className="h-5 w-5" />} text={t("hero.trust3")} />
+            <div className="mt-6 grid gap-3 sm:grid-cols-3">
+              <TrustItem icon={<ShieldCheck className="h-5 w-5 shrink-0" />} text={t("hero.trust1")} />
+              <TrustItem icon={<Headphones className="h-5 w-5 shrink-0" />} text={t("hero.trust2")} />
+              <TrustItem icon={<CreditCard className="h-5 w-5 shrink-0" />} text={t("hero.trust3")} />
             </div>
           </div>
         </div>
@@ -234,9 +234,11 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
 
 function TrustItem({ icon, text }: { icon: React.ReactNode; text: string }) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/70 px-3 py-2 shadow-sm shadow-slate-950/5 backdrop-blur dark:border-white/10 dark:bg-slate-950/50">
-      <span className="text-blue-600 dark:text-blue-300">{icon}</span>
-      {text}
+    <span className="flex min-h-16 items-start gap-3 rounded-lg border border-white/70 bg-white/82 p-3 shadow-sm shadow-slate-950/5 backdrop-blur dark:border-white/10 dark:bg-slate-950/56">
+      <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-blue-600/10 text-blue-700 dark:bg-blue-400/12 dark:text-blue-200">
+        {icon}
+      </span>
+      <span className="min-w-0 text-sm font-semibold leading-5 text-slate-700 dark:text-slate-200">{text}</span>
     </span>
   );
 }

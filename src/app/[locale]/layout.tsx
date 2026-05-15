@@ -52,8 +52,8 @@ export default async function LocaleLayout({
   const session = await getAuthSession();
 
   return (
-    <html lang={locale} className={montserrat.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
-      <body className="font-sans antialiased">
+    <html lang={locale} className={`${montserrat.variable} ${montserrat.className}`} data-scroll-behavior="smooth" suppressHydrationWarning>
+      <body className="antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header locale={locale} isAuthenticated={Boolean(session)} />
           <main>{children}</main>
