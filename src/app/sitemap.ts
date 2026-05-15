@@ -12,9 +12,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: pathname === "" ? "daily" : "weekly",
       priority: pathname === "" ? 1 : 0.7,
       alternates: {
-        languages: Object.fromEntries(
-          locales.map((currentLocale) => [currentLocale, localizedUrl(currentLocale, pathname)])
-        )
+        languages: Object.fromEntries([
+          ...locales.map((currentLocale) => [currentLocale, localizedUrl(currentLocale, pathname)]),
+          ["x-default", localizedUrl("az", pathname)]
+        ])
       }
     }))
   );

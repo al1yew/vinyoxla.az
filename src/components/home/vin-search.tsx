@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import { Car, CheckCircle2, CreditCard, Headphones, Search, ShieldCheck } from "lucide-react";
+import { Car, CheckCircle2, ClipboardPaste, CreditCard, Headphones, Search, ShieldCheck } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { searchVin } from "@/lib/api/vin";
 import type { Locale } from "@/lib/i18n/routing";
@@ -17,6 +17,7 @@ import { Alert } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
 import { Spinner } from "@/components/ui/spinner";
 import { ProductCard } from "./product-card";
 
@@ -65,6 +66,28 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
     );
   }
 
+  async function pasteVin() {
+    if (!navigator.clipboard?.readText) {
+      setError(t("hero.pasteUnavailable"));
+      return;
+    }
+
+    try {
+      const clipboardText = await navigator.clipboard.readText();
+      const normalizedVin = normalizeVin(clipboardText);
+
+      if (!normalizedVin) {
+        setError(t("hero.pasteEmpty"));
+        return;
+      }
+
+      setVin(normalizedVin);
+      setError(null);
+    } catch {
+      setError(t("hero.pasteUnavailable"));
+    }
+  }
+
   function buySelected() {
     if (!result || selected.length === 0) {
       setError(t("home.noSelection"));
@@ -110,7 +133,7 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
               <div className="grid gap-3 sm:grid-cols-[1fr_auto]">
                 <div className="relative">
                   <Car className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-blue-600 dark:text-blue-300" aria-hidden="true" />
-                  <input
+                  <Input
                     id="vin"
                     value={vin}
                     onChange={(event) => setVin(normalizeVin(event.target.value))}
@@ -120,9 +143,20 @@ export function VinSearch({ locale, isAuthenticated }: { locale: Locale; isAuthe
                     pattern={VIN_INPUT_PATTERN}
                     autoComplete="off"
                     inputMode="text"
-                    className="focus-ring h-14 w-full rounded-lg border border-slate-200 bg-white pl-12 pr-4 text-[16px] font-bold uppercase tracking-[0.08em] text-slate-950 outline-none transition placeholder:font-semibold placeholder:tracking-normal placeholder:text-slate-400 focus:border-blue-500 dark:border-white/10 dark:bg-white/8 dark:text-white dark:placeholder:text-slate-500"
+                    className="h-14 pl-12 pr-14 font-bold uppercase tracking-[0.08em] placeholder:font-semibold placeholder:tracking-normal"
                     aria-invalid={Boolean(error)}
                   />
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="icon"
+                    disabled={loading}
+                    onClick={pasteVin}
+                    aria-label={t("hero.pasteLabel")}
+                    className="absolute right-2 top-1/2 h-10 w-10 -translate-y-1/2 text-slate-500 hover:text-blue-700 dark:text-slate-300 dark:hover:text-blue-200"
+                  >
+                    <ClipboardPaste className="h-5 w-5" aria-hidden="true" />
+                  </Button>
                 </div>
                 <Button type="submit" size="lg" disabled={loading} icon={loading ? <Spinner /> : <Search className="h-5 w-5" aria-hidden="true" />}>
                   {loading ? t("hero.searching") : t("common.search")}
