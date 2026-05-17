@@ -33,6 +33,22 @@ export async function createPageMetadata({
     title: t("title"),
     description: t("description"),
     keywords: t("keywords"),
+    icons: {
+      icon: [
+        {
+          url: "/assets/images/icons8-car-96.png",
+          sizes: "96x96",
+          type: "image/png"
+        }
+      ],
+      apple: [
+        {
+          url: "/assets/images/icons8-car-96.png",
+          sizes: "96x96",
+          type: "image/png"
+        }
+      ]
+    },
     alternates: {
       canonical,
       languages: Object.fromEntries([

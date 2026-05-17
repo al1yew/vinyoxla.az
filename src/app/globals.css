@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant dark {
+  &:where(.dark, .dark *) {
+    @slot;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:where(:root:not(.light), :root:not(.light) *) {
+      @slot;
+    }
+  }
+}
 
 :root {
   --background: #f7faff;
@@ -12,6 +22,14 @@
   --background: #07111f;
   --foreground: #eaf2ff;
   color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --background: #07111f;
+    --foreground: #eaf2ff;
+    color-scheme: dark;
+  }
 }
 
 * {
@@ -34,6 +52,14 @@ body {
   background:
     radial-gradient(circle at 15% 0%, rgba(46, 144, 250, 0.24), transparent 34rem),
     linear-gradient(180deg, var(--background), #08111f 44%, #050a12);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) body {
+    background:
+      radial-gradient(circle at 15% 0%, rgba(46, 144, 250, 0.24), transparent 34rem),
+      linear-gradient(180deg, var(--background), #08111f 44%, #050a12);
+  }
 }
 
 button,

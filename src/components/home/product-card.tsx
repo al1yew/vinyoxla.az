@@ -1,9 +1,10 @@
 "use client";
 
-import { Check, FileText, ShieldCheck } from "lucide-react";
+import { Check } from "lucide-react";
 import { useTranslations } from "next-intl";
 import type { ReportProductType, VinSearchProduct } from "@/lib/api/types";
 import { formatMoney } from "@/lib/utils/format";
+import { ReportProductLogo } from "@/components/report-product-logo";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -28,11 +29,9 @@ export function ProductCard({
       }`}
     >
       <div className="flex items-start justify-between gap-4">
-        <div className="flex items-start gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-slate-950 text-white dark:bg-white dark:text-slate-950">
-            {product.type === "carfax" ? <FileText className="h-5 w-5" /> : <ShieldCheck className="h-5 w-5" />}
-          </div>
-          <div>
+        <div className="grid min-w-0 gap-4">
+          <ReportProductLogo type={product.type} className="h-14 w-40" imageClassName="max-h-8" />
+          <div className="min-w-0">
             <h3 className="text-lg font-black text-slate-950 dark:text-white">{t(`${productKey}.title`)}</h3>
             <p className="mt-1 text-sm leading-6 text-slate-600 dark:text-slate-300">
               {t(`${productKey}.description`)}

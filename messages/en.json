@@ -76,6 +76,7 @@
     "placeholder": "4T1BG22K9YU930834",
     "inputLabel": "VIN code",
     "pasteLabel": "Paste VIN code",
+    "pasteHint": "Copied a VIN? Click the paste icon on the right.",
     "pasteUnavailable": "The browser did not allow reading copied text on this page. Enter the VIN manually.",
     "pasteEmpty": "No valid VIN characters were found in the copied text.",
     "errorRequired": "Enter a VIN code.",

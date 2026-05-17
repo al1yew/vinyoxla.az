@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/seo/metadata";
 import { contact } from "@/lib/seo/site";
 
 export async function generateMetadata({
-  params
+  params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
@@ -20,7 +20,7 @@ export async function generateMetadata({
 }
 
 export default async function AboutPage({
-  params
+  params,
 }: {
   params: Promise<{ locale: string }>;
 }) {
@@ -34,10 +34,11 @@ export default async function AboutPage({
 
       <div className="mt-10 grid gap-6 lg:grid-cols-[1fr_0.8fr]">
         <Card className="p-5 sm:p-7">
-          <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-blue-600 text-white">
-            <ShieldCheck className="h-6 w-6" aria-hidden="true" />
+          <div className="flex gap-4">
+            <h2 className="text-2xl font-bold text-slate-950 dark:text-white">
+              {t("about.ownerLine")}
+            </h2>
           </div>
-          <h2 className="mt-5 text-2xl font-black text-slate-950 dark:text-white">{t("about.ownerLine")}</h2>
           <div className="mt-5 grid gap-3 text-sm leading-6 text-slate-700 dark:text-slate-200">
             <p>{t("about.taxId")}</p>
             <p>{t("about.customOffers")}</p>
@@ -45,24 +46,44 @@ export default async function AboutPage({
           </div>
 
           <div className="mt-6 rounded-lg bg-slate-100 p-5 dark:bg-slate-950/50">
-            <h3 className="font-black text-slate-950 dark:text-white">{t("about.whyTitle")}</h3>
-            <p className="mt-2 text-sm leading-7 text-slate-700 dark:text-slate-200">{t("about.whyText")}</p>
+            <h3 className="font-black text-slate-950 dark:text-white">
+              {t("about.whyTitle")}
+            </h3>
+            <p className="mt-2 text-sm leading-7 text-slate-700 dark:text-slate-200">
+              {t("about.whyText")}
+            </p>
           </div>
         </Card>
 
         <div className="grid gap-5">
           <Card className="p-5 sm:p-6">
-            <h2 className="text-xl font-black text-slate-950 dark:text-white">{t("footer.contactTitle")}</h2>
+            <h2 className="text-xl font-black text-slate-950 dark:text-white">
+              {t("footer.contactTitle")}
+            </h2>
             <div className="mt-5 grid gap-4 text-sm text-slate-700 dark:text-slate-200">
               <div className="flex gap-3">
-                <MapPin className="h-5 w-5 shrink-0 text-blue-600 dark:text-blue-300" aria-hidden="true" />
+                <MapPin
+                  className="h-5 w-5 shrink-0 text-blue-600 dark:text-blue-300"
+                  aria-hidden="true"
+                />
                 <span>{t("about.address")}</span>
               </div>
               <div className="grid gap-3 sm:grid-cols-2">
-                <ButtonLink href={contact.phoneHref} icon={<Phone className="h-5 w-5" aria-hidden="true" />}>
+                <ButtonLink
+                  href={contact.phoneHref}
+                  icon={<Phone className="h-5 w-5" aria-hidden="true" />}
+                >
                   {t("about.call")}
                 </ButtonLink>
-                <ButtonLink href={contact.whatsapp} target="_blank" rel="noreferrer" variant="secondary" icon={<MessageCircle className="h-5 w-5" aria-hidden="true" />}>
+                <ButtonLink
+                  href={contact.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
+                  variant="secondary"
+                  icon={
+                    <MessageCircle className="h-5 w-5" aria-hidden="true" />
+                  }
+                >
                   {t("about.write")}
                 </ButtonLink>
               </div>

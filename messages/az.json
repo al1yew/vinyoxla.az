@@ -76,6 +76,7 @@
     "placeholder": "4T1BG22K9YU930834",
     "inputLabel": "VIN kod",
     "pasteLabel": "VIN kodu yapışdır",
+    "pasteHint": "VIN kopyalanıbsa, sağdakı yapışdır ikonuna toxunun.",
     "pasteUnavailable": "Brauzer bu səhifədə kopyalanmış mətni oxumağa icazə vermədi. VIN kodu əl ilə daxil edin.",
     "pasteEmpty": "Kopyalanmış mətndə uyğun VIN simvolu tapılmadı.",
     "errorRequired": "VIN kodu daxil edin.",
